@@ -1,0 +1,2 @@
+# motty-derby
+MOTTVダービースタリオンデータ
