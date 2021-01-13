@@ -2,8 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import { Redirect, Route, Switch } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import { Family } from './features/family/Family';
+import { Http404 } from './features/errors/404';
 
-function App() {
+const Sample: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +15,7 @@ function App() {
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    </p>
         <span>
           <span>Learn </span>
           <a
@@ -21,7 +25,7 @@ function App() {
             rel="noopener noreferrer"
           >
             React
-          </a>
+      </a>
           <span>, </span>
           <a
             className="App-link"
@@ -30,7 +34,7 @@ function App() {
             rel="noopener noreferrer"
           >
             Redux
-          </a>
+      </a>
           <span>, </span>
           <a
             className="App-link"
@@ -39,8 +43,8 @@ function App() {
             rel="noopener noreferrer"
           >
             Redux Toolkit
-          </a>
-          ,<span> and </span>
+      </a>
+      ,<span> and </span>
           <a
             className="App-link"
             href="https://react-redux.js.org/"
@@ -48,11 +52,25 @@ function App() {
             rel="noopener noreferrer"
           >
             React Redux
-          </a>
+      </a>
         </span>
       </header>
     </div>
   );
 }
 
-export default App;
+export const App: React.FC = () => {
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <React.Fragment>
+        <h1>MOTTV Derby</h1>
+        <Switch>
+          <Route path="/family"><Family /></Route>
+          <Route path="/sample"><Sample /></Route>
+          <Route exact path="/"><Redirect to="/family" /></Route>
+          <Route><Http404 /></Route>
+        </Switch>
+      </React.Fragment>
+    </BrowserRouter>
+  );
+};
