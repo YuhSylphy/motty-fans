@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { Redirect, Route, Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
@@ -15,6 +15,8 @@ import {
 } from "@material-ui/core";
 import { MenuOutlined } from "@material-ui/icons";
 import { MareLine } from "./features/mare-line/MareLine";
+import { useDispatch } from "react-redux";
+import { horseDefsActions } from "./features/horse-defs";
 
 const Header: React.FC = () => {
   return (
@@ -48,6 +50,12 @@ const Footer: React.FC = () => {
 
 export const App: React.FC = () => {
   const theme = useTheme();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(horseDefsActions.init());
+  }, [dispatch]);
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <React.Fragment>

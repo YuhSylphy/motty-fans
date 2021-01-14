@@ -4,98 +4,12 @@ import * as d3 from "d3";
 import * as dagreD3 from "dagre-d3";
 import * as graphlib from "graphlib";
 
-import { HorseDef } from "../core/horse";
+import { HorseDef } from "../../horse-defs/core/horse";
 
 import "./FamilyDiagram.css";
 import { Edge } from "dagre-d3";
-
-const dummyDefs: HorseDef[] = [
-  { name: "ロズウェルリポート", sex: "female" },
-  {
-    name: "モッティサイキョウ",
-    sex: "male",
-    fatherName: "パイロ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ステキマリオクン",
-    sex: "male",
-    fatherName: "ゴールドアリュール",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ゴマプリン",
-    sex: "female",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ミタラシダンゴ",
-    sex: "female",
-    fatherName: "ネオユニヴァース",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "カントリーマアム",
-    sex: "female",
-    fatherName: "マンハッタンカフェ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ルマンド",
-    sex: "female",
-    fatherName: "ダイワメジャー",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "モリナガノコエダ",
-    sex: "female",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "コーヒーゼリィ",
-    sex: "male",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "スウィートポテト",
-    sex: "female",
-    fatherName: "エンパイアメーカー",
-    motherName: "ゴマプリン",
-  },
-  {
-    name: "ムギチャ",
-    sex: "female",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "オレノオレオクッキ",
-    sex: "male",
-    fatherName: "ゴールドシップ",
-    motherName: "ゴマプリン",
-  },
-  {
-    name: "ペコチャン",
-    sex: "female",
-    fatherName: "ルーラーシップ",
-    motherName: "カントリーマアム",
-  },
-  {
-    name: "ピノ",
-    sex: "female",
-    fatherName: "アグネスデジタル",
-    motherName: "ゴマプリン",
-  },
-  {
-    name: "カブキアゲ",
-    sex: "male",
-    fatherName: "オルフェーブル",
-    motherName: "カントリーマアム",
-  },
-];
+import { useSelector } from "react-redux";
+import { RootState } from "../../../app/store";
 
 const prepareGraph = (defs: HorseDef[]) => {
   const nodes = new Map<string, dagreD3.Label>();
@@ -141,7 +55,7 @@ const prepareGraph = (defs: HorseDef[]) => {
 export const FamilyDiagram: React.FC = () => {
   const d3Container = useRef<SVGSVGElement>(null!);
 
-  const defs = useMemo(() => dummyDefs, []);
+  const defs = useSelector((state: RootState) => state.horseDefs.list);
   const data = useMemo(() => prepareGraph(defs), [defs]);
 
   useEffect(() => {
