@@ -41,7 +41,7 @@ export const FamilyDiagramExperiment1: React.FC = () => {
 
   useEffect(() => {
     const d3Svg = d3.select(d3Container.current);
-    const width = d3Container.current.width.animVal.value;
+    // const width = d3Container.current.width.animVal.value;
     const height = d3Container.current.height.animVal.value;
 
     // エッジ(linkと呼ぶらしい)の設定。
@@ -70,8 +70,8 @@ export const FamilyDiagramExperiment1: React.FC = () => {
           //     d.fy = d.y;
           // })
           .on("drag", (event, d) => {
-            d.fx = event.x;
-            d.fy = event.y;
+            // d.fx = event.x;
+            // d.fy = event.y;
           })
         // .on("end", (event, d) => {
         //     if (!event.active) simulation.alphaTarget(0);
@@ -130,7 +130,7 @@ export const FamilyDiagramExperiment1: React.FC = () => {
       })
       .force("link", d3.forceLink(edges).distance(200))
       .force("charge", d3.forceManyBody().strength(-200)) // 斥力。負にすることで反発力が働く
-      .force("center", d3.forceCenter(width / 2, height / 2).strength(0.2))
+      // .force("center", d3.forceCenter(width / 2, height / 2).strength(0.2))
       .force("x", d3.forceX())
       .force("y", d3.forceY())
       .force(
