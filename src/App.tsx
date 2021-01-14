@@ -14,6 +14,7 @@ import {
   useTheme,
 } from "@material-ui/core";
 import { MenuOutlined } from "@material-ui/icons";
+import { MareLine } from "./features/mare-line/MareLine";
 
 const Header: React.FC = () => {
   return (
@@ -55,6 +56,9 @@ export const App: React.FC = () => {
           <Switch>
             <Route path="/family">
               <Family />
+            </Route>
+            <Route path="/mare-line">
+              <MareLine />
             </Route>
             <Route exact path="/">
               <Redirect to="/family" />
