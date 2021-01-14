@@ -100,4 +100,16 @@ const dummyDefs: HorseDef[] = [
     fatherName: "オルフェーブル",
     motherName: "カントリーマアム",
   },
+  {
+    name: "アルフォート",
+    sex: "male",
+    fatherName: "アグネスデジタル",
+    motherName: "カントリーマアム",
+  },
+  {
+    name: "ジャイアントコーン",
+    sex: "male",
+    fatherName: "ケープブランコ",
+    motherName: "ミタラシダンゴ",
+  },
 ];
