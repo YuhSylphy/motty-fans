@@ -20,11 +20,27 @@
     "rxjs": "^6.6.3",
     "typescript": "~3.8.2"
   },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^14.14.20",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.7",
+    "cpx": "^1.5.0",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pages": "echo WIP :(; mkdirp docs && rimraf docs && cpx build docs/ && git add docs/ && git commit -m 'Rebuild'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,17 +56,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^14.14.20",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-redux": "^7.1.7",
-    "@types/react-router": "^5.1.11",
-    "@types/react-router-dom": "^5.1.7"
   }
 }
