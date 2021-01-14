@@ -59,6 +59,13 @@ export const FamilyDiagram: React.FC = () => {
   const data = useMemo(() => prepareGraph(defs), [defs]);
 
   useEffect(() => {
+    const svg = d3.select<SVGSVGElement, SVGSVGElement>(d3Container.current);
+    svg.selectAll("g").remove();
+
+    if (data.nodes.length === 0 && data.edges.length === 0) {
+      return;
+    }
+
     const g = new dagreD3.graphlib.Graph()
       .setGraph({
         rankdir: "LR",
@@ -84,7 +91,6 @@ export const FamilyDiagram: React.FC = () => {
 
     // Create the renderer
     var render = new dagreD3.render();
-    const svg = d3.select<SVGSVGElement, SVGSVGElement>(d3Container.current);
     const svgGroup = svg.append("g");
 
     // Set up zoom support
@@ -97,9 +103,12 @@ export const FamilyDiagram: React.FC = () => {
     render(d3.select("svg g"), (g as unknown) as graphlib.Graph);
 
     // Center the graph
-    var xCenterOffset =
+    const xCenterOffset =
       (Number(svg.attr("width")) - (g.graph().width || 0)) / 2;
-    svgGroup.attr("transform", "translate(" + xCenterOffset + ", 20)");
+    svgGroup.attr(
+      "transform",
+      `translate(${Number.isNaN(xCenterOffset) ? 0 : xCenterOffset}, 20)`
+    );
     // svg.attr("height", (g.graph().height || 0) + 40);
   }, [d3Container, data]);
 
