@@ -4,33 +4,149 @@ import * as d3 from "d3";
 import * as dagreD3 from "dagre-d3";
 import * as graphlib from "graphlib";
 
+import { HorseDef } from "../core/horse";
+
 import "./FamilyDiagram.css";
+import { Edge } from "dagre-d3";
+
+const dummyDefs: HorseDef[] = [
+  { name: "ロズウェルリポート", sex: "female" },
+  {
+    name: "モッティサイキョウ",
+    sex: "male",
+    fatherName: "パイロ",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "ステキマリオクン",
+    sex: "male",
+    fatherName: "ゴールドアリュール",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "ゴマプリン",
+    sex: "female",
+    fatherName: "ジョーカプチーノ",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "ミタラシダンゴ",
+    sex: "female",
+    fatherName: "ネオユニヴァース",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "カントリーマアム",
+    sex: "female",
+    fatherName: "マンハッタンカフェ",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "ルマンド",
+    sex: "female",
+    fatherName: "ダイワメジャー",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "モリナガノコエダ",
+    sex: "female",
+    fatherName: "ジョーカプチーノ",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "コーヒーゼリィ",
+    sex: "male",
+    fatherName: "ジョーカプチーノ",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "スウィートポテト",
+    sex: "female",
+    fatherName: "エンパイアメーカー",
+    motherName: "ゴマプリン",
+  },
+  {
+    name: "ムギチャ",
+    sex: "female",
+    fatherName: "ジョーカプチーノ",
+    motherName: "ロズウェルリポート",
+  },
+  {
+    name: "オレノオレオクッキ",
+    sex: "male",
+    fatherName: "ゴールドシップ",
+    motherName: "ゴマプリン",
+  },
+  {
+    name: "ペコチャン",
+    sex: "female",
+    fatherName: "ルーラーシップ",
+    motherName: "カントリーマアム",
+  },
+  {
+    name: "ピノ",
+    sex: "female",
+    fatherName: "アグネスデジタル",
+    motherName: "ゴマプリン",
+  },
+  {
+    name: "カブキアゲ",
+    sex: "male",
+    fatherName: "オルフェーブル",
+    motherName: "カントリーマアム",
+  },
+];
+
+const prepareGraph = (defs: HorseDef[]) => {
+  const nodes = new Map<string, dagreD3.Label>();
+  const edges: Edge[] = [];
+
+  defs.forEach((def) => {
+    nodes.set(def.name, {
+      label: def.name,
+      class: `owned ${def.sex}`,
+    });
+
+    if (def.motherName) {
+      if (!nodes.has(def.motherName)) {
+        nodes.set(def.motherName, {
+          label: def.motherName,
+          class: "anothers female",
+        });
+      }
+      edges.push({ v: def.motherName, w: def.name });
+    }
+
+    if (def.fatherName) {
+      if (!nodes.has(def.fatherName)) {
+        nodes.set(def.fatherName, {
+          label: def.fatherName,
+          class: "anothers male",
+        });
+      }
+      edges.push({ v: def.fatherName, w: def.name });
+    }
+  });
+
+  return { nodes: Array.from(nodes.entries()), edges };
+};
 
 export const FamilyDiagram: React.FC = () => {
   const d3Container = useRef<SVGSVGElement>(null!);
 
+  const defs = useMemo(() => dummyDefs, []);
+  const data = useMemo(() => prepareGraph(defs), [defs]);
+
   useEffect(() => {
     const g = new dagreD3.graphlib.Graph()
       .setGraph({})
-      .setDefaultEdgeLabel((v, w, name) => ({}));
+      .setDefaultEdgeLabel(() => ({}));
 
     // Here we're setting nodeclass, which is used by our custom drawNodes function
     // below.
-    g.setNode("0", { label: "TOP", class: "type-TOP" });
-    g.setNode("1", { label: "S", class: "type-S" });
-    g.setNode("2", { label: "NP", class: "type-NP" });
-    g.setNode("3", { label: "DT", class: "type-DT" });
-    g.setNode("4", { label: "This", class: "type-TK" });
-    g.setNode("5", { label: "VP", class: "type-VP" });
-    g.setNode("6", { label: "VBZ", class: "type-VBZ" });
-    g.setNode("7", { label: "is", class: "type-TK" });
-    g.setNode("8", { label: "NP", class: "type-NP" });
-    g.setNode("9", { label: "DT", class: "type-DT" });
-    g.setNode("10", { label: "an", class: "type-TK" });
-    g.setNode("11", { label: "NN", class: "type-NN" });
-    g.setNode("12", { label: "example", class: "type-TK" });
-    g.setNode("13", { label: ".", class: "type-." });
-    g.setNode("14", { label: "sentence", class: "type-TK" });
+    data.nodes.forEach((n) => {
+      g.setNode(n[0], n[1]);
+    });
 
     g.nodes().forEach(function (v) {
       var node = g.node(v);
@@ -39,20 +155,9 @@ export const FamilyDiagram: React.FC = () => {
     });
 
     // Set up edges, no special attributes.
-    g.setEdge({ v: "3", w: "4" });
-    g.setEdge({ v: "2", w: "3" });
-    g.setEdge({ v: "1", w: "2" });
-    g.setEdge({ v: "6", w: "7" });
-    g.setEdge({ v: "5", w: "6" });
-    g.setEdge({ v: "9", w: "10" });
-    g.setEdge({ v: "8", w: "9" });
-    g.setEdge({ v: "11", w: "12" });
-    g.setEdge({ v: "8", w: "11" });
-    g.setEdge({ v: "5", w: "8" });
-    g.setEdge({ v: "1", w: "5" });
-    g.setEdge({ v: "13", w: "14" });
-    g.setEdge({ v: "1", w: "13" });
-    g.setEdge({ v: "0", w: "1" });
+    data.edges.forEach((e) => {
+      g.setEdge(e);
+    });
 
     // Create the renderer
     var render = new dagreD3.render();
@@ -67,7 +172,7 @@ export const FamilyDiagram: React.FC = () => {
       (Number(svg.attr("width")) - (g.graph().width || 0)) / 2;
     svgGroup.attr("transform", "translate(" + xCenterOffset + ", 20)");
     svg.attr("height", (g.graph().height || 0) + 40);
-  }, [d3Container]);
+  }, [d3Container, data]);
 
   return (
     <React.Fragment>
