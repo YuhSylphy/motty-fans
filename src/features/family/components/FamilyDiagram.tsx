@@ -4,98 +4,12 @@ import * as d3 from "d3";
 import * as dagreD3 from "dagre-d3";
 import * as graphlib from "graphlib";
 
-import { HorseDef } from "../core/horse";
+import { HorseDef } from "../../horse-defs/core/horse";
 
 import "./FamilyDiagram.css";
 import { Edge } from "dagre-d3";
-
-const dummyDefs: HorseDef[] = [
-  { name: "ロズウェルリポート", sex: "female" },
-  {
-    name: "モッティサイキョウ",
-    sex: "male",
-    fatherName: "パイロ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ステキマリオクン",
-    sex: "male",
-    fatherName: "ゴールドアリュール",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ゴマプリン",
-    sex: "female",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ミタラシダンゴ",
-    sex: "female",
-    fatherName: "ネオユニヴァース",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "カントリーマアム",
-    sex: "female",
-    fatherName: "マンハッタンカフェ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "ルマンド",
-    sex: "female",
-    fatherName: "ダイワメジャー",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "モリナガノコエダ",
-    sex: "female",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "コーヒーゼリィ",
-    sex: "male",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "スウィートポテト",
-    sex: "female",
-    fatherName: "エンパイアメーカー",
-    motherName: "ゴマプリン",
-  },
-  {
-    name: "ムギチャ",
-    sex: "female",
-    fatherName: "ジョーカプチーノ",
-    motherName: "ロズウェルリポート",
-  },
-  {
-    name: "オレノオレオクッキ",
-    sex: "male",
-    fatherName: "ゴールドシップ",
-    motherName: "ゴマプリン",
-  },
-  {
-    name: "ペコチャン",
-    sex: "female",
-    fatherName: "ルーラーシップ",
-    motherName: "カントリーマアム",
-  },
-  {
-    name: "ピノ",
-    sex: "female",
-    fatherName: "アグネスデジタル",
-    motherName: "ゴマプリン",
-  },
-  {
-    name: "カブキアゲ",
-    sex: "male",
-    fatherName: "オルフェーブル",
-    motherName: "カントリーマアム",
-  },
-];
+import { useSelector } from "react-redux";
+import { RootState } from "../../../app/store";
 
 const prepareGraph = (defs: HorseDef[]) => {
   const nodes = new Map<string, dagreD3.Label>();
@@ -141,10 +55,17 @@ const prepareGraph = (defs: HorseDef[]) => {
 export const FamilyDiagram: React.FC = () => {
   const d3Container = useRef<SVGSVGElement>(null!);
 
-  const defs = useMemo(() => dummyDefs, []);
+  const defs = useSelector((state: RootState) => state.horseDefs.list);
   const data = useMemo(() => prepareGraph(defs), [defs]);
 
   useEffect(() => {
+    const svg = d3.select<SVGSVGElement, SVGSVGElement>(d3Container.current);
+    svg.selectAll("g").remove();
+
+    if (data.nodes.length === 0 && data.edges.length === 0) {
+      return;
+    }
+
     const g = new dagreD3.graphlib.Graph()
       .setGraph({
         rankdir: "LR",
@@ -170,7 +91,6 @@ export const FamilyDiagram: React.FC = () => {
 
     // Create the renderer
     var render = new dagreD3.render();
-    const svg = d3.select<SVGSVGElement, SVGSVGElement>(d3Container.current);
     const svgGroup = svg.append("g");
 
     // Set up zoom support
@@ -183,9 +103,12 @@ export const FamilyDiagram: React.FC = () => {
     render(d3.select("svg g"), (g as unknown) as graphlib.Graph);
 
     // Center the graph
-    var xCenterOffset =
+    const xCenterOffset =
       (Number(svg.attr("width")) - (g.graph().width || 0)) / 2;
-    svgGroup.attr("transform", "translate(" + xCenterOffset + ", 20)");
+    svgGroup.attr(
+      "transform",
+      `translate(${Number.isNaN(xCenterOffset) ? 0 : xCenterOffset}, 20)`
+    );
     // svg.attr("height", (g.graph().height || 0) + 40);
   }, [d3Container, data]);
 
