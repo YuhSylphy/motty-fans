@@ -99,22 +99,27 @@ const dummyDefs: HorseDef[] = [
 
 const prepareGraph = (defs: HorseDef[]) => {
   const nodes = new Map<string, dagreD3.Label>();
-  const edges: Edge[] = [];
+  const edges: [Edge, dagreD3.Label][] = [];
 
   defs.forEach((def) => {
+    // 定義された馬本体
     nodes.set(def.name, {
       label: def.name,
       class: `owned ${def.sex}`,
     });
 
+    // 母親
     if (def.motherName) {
+      // 未登録なら非所持馬として追加
       if (!nodes.has(def.motherName)) {
         nodes.set(def.motherName, {
           label: def.motherName,
           class: "anothers female",
         });
+      } else {
+        // TODO: 所持馬扱いに書き換える
       }
-      edges.push({ v: def.motherName, w: def.name });
+      edges.push([{ v: def.motherName, w: def.name }, { class: "mother" }]);
     }
 
     if (def.fatherName) {
@@ -123,8 +128,10 @@ const prepareGraph = (defs: HorseDef[]) => {
           label: def.fatherName,
           class: "anothers male",
         });
+      } else {
+        // TODO: 所持馬扱いに書き換える
       }
-      edges.push({ v: def.fatherName, w: def.name });
+      edges.push([{ v: def.fatherName, w: def.name }, { class: "father" }]);
     }
   });
 
@@ -139,7 +146,9 @@ export const FamilyDiagram: React.FC = () => {
 
   useEffect(() => {
     const g = new dagreD3.graphlib.Graph()
-      .setGraph({})
+      .setGraph({
+        rankdir: "LR",
+      })
       .setDefaultEdgeLabel(() => ({}));
 
     // Here we're setting nodeclass, which is used by our custom drawNodes function
@@ -156,13 +165,19 @@ export const FamilyDiagram: React.FC = () => {
 
     // Set up edges, no special attributes.
     data.edges.forEach((e) => {
-      g.setEdge(e);
+      g.setEdge(e[0], e[1]);
     });
 
     // Create the renderer
     var render = new dagreD3.render();
-    const svg = d3.select(d3Container.current);
+    const svg = d3.select<SVGSVGElement, SVGSVGElement>(d3Container.current);
     const svgGroup = svg.append("g");
+
+    // Set up zoom support
+    const zoom = d3.zoom<SVGSVGElement, SVGSVGElement>().on("zoom", () => {
+      svgGroup.attr("transform", d3.event.transform);
+    });
+    svg.call(zoom);
 
     // Run the renderer. This is what draws the final graph.
     render(d3.select("svg g"), (g as unknown) as graphlib.Graph);
@@ -171,15 +186,15 @@ export const FamilyDiagram: React.FC = () => {
     var xCenterOffset =
       (Number(svg.attr("width")) - (g.graph().width || 0)) / 2;
     svgGroup.attr("transform", "translate(" + xCenterOffset + ", 20)");
-    svg.attr("height", (g.graph().height || 0) + 40);
+    // svg.attr("height", (g.graph().height || 0) + 40);
   }, [d3Container, data]);
 
   return (
     <React.Fragment>
       <svg
-        className="d3-component"
+        className="d3-component mottv-derby-family"
         width="100%"
-        height="75vh"
+        height="70vh"
         ref={d3Container}
       />
     </React.Fragment>
