@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import "./App.css";
+import React, { useEffect, useMemo, useState } from "react";
 import { Redirect, Route, Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import { Family } from "./features/family/Family";
@@ -7,33 +6,82 @@ import { Http404 } from "./features/errors/404";
 import {
   AppBar,
   Box,
+  Drawer,
   IconButton,
-  Link,
+  Link as Anchor,
+  List,
+  ListItem,
   Toolbar,
   Typography,
   useTheme,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import { MenuOutlined } from "@material-ui/icons";
-import { MareLine } from "./features/mare-line/MareLine";
 import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
+import { MareLine } from "./features/mare-line/MareLine";
+
+import "./App.css";
+
+type MenuItemDef = {
+  label: string;
+  path: string;
+};
+
+const renderListItem = (def: MenuItemDef) => {
+  return (
+    <Typography>
+      <Link to={def.path}>{def.label}</Link>
+    </Typography>
+  );
+  // return <ListItem key={def.path}>{def}</ListItem>;
+};
+
+const MenuList: React.FC = () => {
+  const defs = [
+    {
+      label: "牝系図",
+      path: "/mare-line",
+    },
+    {
+      label: "家系図(旧)",
+      path: "/family",
+    },
+  ];
+
+  return <List>{defs.map(renderListItem)}</List>;
+};
 
 const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  const toggleMenu = useMemo(
+    () => () => {
+      setMenuOpen(!menuOpen);
+    },
+    [menuOpen, setMenuOpen]
+  );
+
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <IconButton
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          disabled={true}
-        >
-          <MenuOutlined />
-        </IconButton>
-        <Typography variant="h6">MOTTV Derby</Typography>
-        {/* <Button color="inherit">Login</Button> */}
-      </Toolbar>
-    </AppBar>
+    <React.Fragment>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            onClick={toggleMenu}
+          >
+            <MenuOutlined />
+          </IconButton>
+          <Typography variant="h6">MOTTV Derby</Typography>
+          {/* <Button color="inherit">Login</Button> */}
+        </Toolbar>
+      </AppBar>
+      <Drawer open={menuOpen} onClose={toggleMenu}>
+        <MenuList />
+      </Drawer>
+    </React.Fragment>
   );
 };
 
@@ -41,9 +89,9 @@ const Footer: React.FC = () => {
   const theme = useTheme();
   return (
     <Box display="flex" justifyContent="flex-end" margin={theme.spacing(0.2)}>
-      <Link href="https://www.youtube.com/user/MOTTYGAMES/" target="__blank">
+      <Anchor href="https://www.youtube.com/user/MOTTYGAMES/" target="__blank">
         MOTTV
-      </Link>
+      </Anchor>
     </Box>
   );
 };
