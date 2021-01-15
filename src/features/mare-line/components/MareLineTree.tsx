@@ -2,6 +2,9 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core";
 import { TreeItem, TreeView } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import RemoveIcon from "@material-ui/icons/Remove";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
 import { useSelector } from "react-redux";
@@ -10,13 +13,24 @@ import { HorseDef } from "../../horse-defs/core/horse";
 
 type Datum = {
   id: string;
+  label: JSX.Element;
   className?: string;
   children: Datum[];
 };
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {},
+    root: {
+      "& .name": {
+        marginLeft: theme.spacing(0.5),
+      },
+      "& .male": {
+        color: "#2196f3",
+      },
+      "& .female": {
+        color: "#f44336",
+      },
+    },
   })
 );
 
@@ -34,6 +48,7 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
         (() => {
           const created: Datum = {
             id,
+            label: <React.Fragment />,
             children: [],
           };
           map.set(id, created);
@@ -42,6 +57,26 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
 
   const append = (def: HorseDef) => {
     const node = fetchOrCreateNode(def.name);
+
+    node.className = [def.sex].join(" ");
+    node.label = (
+      <React.Fragment>
+        {(() => {
+          switch (def.sex) {
+            case "male":
+              return <FontAwesomeIcon icon={faMars} />;
+            case "female":
+              return <FontAwesomeIcon icon={faVenus} />;
+            case "unknown":
+              return null;
+            default:
+              const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
+          }
+        })()}
+        <span className="name">{def.name}</span>
+      </React.Fragment>
+    );
+
     if (def.motherName) {
       const mother = fetchOrCreateNode(def.motherName);
       mother.children.push(node);
@@ -59,9 +94,10 @@ const render = (toggleExpand: (node: Datum) => React.MouseEventHandler) => (
 ) => {
   return (
     <TreeItem
+      className={node.className}
       key={node.id}
       nodeId={node.id}
-      label={node.id}
+      label={node.label}
       onIconClick={toggleExpand(node)}
     >
       {node.children.map(render(toggleExpand))}
@@ -98,6 +134,7 @@ export const MareLineTree: React.FC = () => {
         expanded={expanded}
         defaultCollapseIcon={<ExpandMoreIcon />}
         defaultExpandIcon={<ChevronRightIcon />}
+        defaultEndIcon={<RemoveIcon />}
       >
         {nodes.map(render(toggleExpand))}
       </TreeView>
