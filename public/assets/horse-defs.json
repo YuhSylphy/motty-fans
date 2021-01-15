@@ -81,7 +81,7 @@
   {
     "name": "カブキアゲ",
     "sex": "male",
-    "fatherName": "オルフェーブル",
+    "fatherName": "オルフェーヴル",
     "motherName": "カントリーマアム"
   },
   {
@@ -97,7 +97,67 @@
     "motherName": "ミタラシダンゴ"
   },
   {
+    "name": "ナタデココ",
+    "sex": "male",
+    "fatherName": "ゴールドシップ",
+    "motherName": "ゴマプリン"
+  },
+  {
+    "name": "テリヤキバーガー",
+    "sex": "male",
+    "fatherName": "ケープブランコ",
+    "motherName": "ミタラシダンゴ"
+  },
+  {
+    "name": "ゴマプリンの35",
+    "sex": "male",
+    "fatherName": "ゴールドシップ",
+    "motherName": "ゴマプリン"
+  },
+  {
+    "name": "ミタラシダンゴの35",
+    "sex": "male",
+    "fatherName": "ケープブランコ",
+    "motherName": "ミタラシダンゴ"
+  },
+  {
+    "name": "ルマンドの35",
+    "sex": "female",
+    "fatherName": "ストリートセンス",
+    "motherName": "ルマンド"
+  },
+  {
     "name": "トランスカイ",
     "sex": "female"
+  },
+  {
+    "name": "ゴマプリンの36",
+    "sex": "male",
+    "fatherName": "ステイゴールド",
+    "motherName": "ゴマプリン"
+  },
+  {
+    "name": "ミタラシダンゴの36",
+    "sex": "female",
+    "fatherName": "",
+    "motherName": "ミタラシダンゴ"
+  },
+  {
+    "name": "ワールドプレミアム",
+    "sex": "male",
+    "fatherName": "ディープインパクト",
+    "motherName": "トランスカイ"
+  },
+  {
+    "name": "ルマンドの36",
+    "sex": "male",
+    "fatherName": "ストリートセンス",
+    "motherName": "ルマンド"
+  },
+  {
+    "name": "トランスカイの37",
+    "sex": "female",
+    "fatherName": "オルフェーヴル",
+    "motherName": "トランスカイ"
   }
 ]
