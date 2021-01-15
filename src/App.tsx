@@ -69,7 +69,7 @@ export const App: React.FC = () => {
               <MareLine />
             </Route>
             <Route exact path="/">
-              <Redirect to="/family" />
+              <Redirect to="/mare-line" />
             </Route>
             <Route>
               <Http404 />
