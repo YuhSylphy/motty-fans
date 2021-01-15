@@ -6,3 +6,8 @@ export type HorseDef = {
   motherName?: string;
   sex: Sex;
 };
+
+export const fetchHorseDefs = (): Promise<HorseDef[]> =>
+  fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`).then((res) =>
+    res.json()
+  );
