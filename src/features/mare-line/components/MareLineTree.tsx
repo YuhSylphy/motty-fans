@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme: Theme) =>
       "& .name": {
         marginLeft: theme.spacing(0.5),
       },
+      "& .father": {
+        marginLeft: theme.spacing(1),
+      },
       "& .male": {
         color: "#2196f3",
       },
@@ -74,6 +77,9 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
           }
         })()}
         <span className="name">{def.name}</span>
+        {def.fatherName ? (
+          <span className="father male">({def.fatherName})</span>
+        ) : null}
       </React.Fragment>
     );
 
