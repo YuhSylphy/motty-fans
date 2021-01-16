@@ -39,7 +39,7 @@ const renderListItem = (def: MenuItemDef) => {
 
 const MenuList: React.FC<{
   toggleMenu: () => void;
-}> = ({toggleMenu}) => {
+}> = ({ toggleMenu }) => {
   const defs = [
     {
       label: "牝系図",
@@ -51,7 +51,11 @@ const MenuList: React.FC<{
     },
   ];
 
-  return <List onClick={toggleMenu} onKeyDown={toggleMenu}>{defs.map(renderListItem)}</List>;
+  return (
+    <List onClick={toggleMenu} onKeyDown={toggleMenu}>
+      {defs.map(renderListItem)}
+    </List>
+  );
 };
 
 const Header: React.FC = () => {
