@@ -1,0 +1,25 @@
+name: publish
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish-gh-pages:
+    name: mainリポジトリ更新時にGithub Pagesへ公開
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: gh-pages
+      - run: |
+          git config --global user.name "YuhSylphy"
+          git config --global user.email "yuhsylphy@gmail.com"
+          git switch -C gh-pages origin/gh-pages
+          git merge --no-ff -X theirs origin/main
+          yarn --network-timeout=1000000
+          yarn build
+          yarn cpx -C 'build/**' './docs/'
+          git add docs/
+          git commit -m "Rebuild docs by Actions"
+          git push origin gh-pages
