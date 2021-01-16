@@ -37,7 +37,9 @@ const renderListItem = (def: MenuItemDef) => {
   // return <ListItem key={def.path}>{def}</ListItem>;
 };
 
-const MenuList: React.FC = () => {
+const MenuList: React.FC<{
+  toggleMenu: () => void;
+}> = ({toggleMenu}) => {
   const defs = [
     {
       label: "牝系図",
@@ -49,7 +51,7 @@ const MenuList: React.FC = () => {
     },
   ];
 
-  return <List>{defs.map(renderListItem)}</List>;
+  return <List onClick={toggleMenu} onKeyDown={toggleMenu}>{defs.map(renderListItem)}</List>;
 };
 
 const Header: React.FC = () => {
@@ -79,7 +81,7 @@ const Header: React.FC = () => {
         </Toolbar>
       </AppBar>
       <Drawer open={menuOpen} onClose={toggleMenu}>
-        <MenuList />
+        <MenuList toggleMenu={toggleMenu} />
       </Drawer>
     </React.Fragment>
   );
