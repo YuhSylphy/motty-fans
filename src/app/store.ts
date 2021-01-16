@@ -3,6 +3,7 @@ import { Action } from "redux";
 import { combineEpics, createEpicMiddleware } from "redux-observable";
 
 import { horseDefsReducer, horseDefsEpic } from "../features/horse-defs";
+import { indicatorReducer } from "../features/indicator";
 
 const dependencies = {};
 const epicMiddleware = createEpicMiddleware<
@@ -17,6 +18,7 @@ const epicMiddleware = createEpicMiddleware<
 export const store = configureStore({
   reducer: {
     horseDefs: horseDefsReducer,
+    indicator: indicatorReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

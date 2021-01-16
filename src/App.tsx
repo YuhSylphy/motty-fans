@@ -20,6 +20,7 @@ import { MenuOutlined } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
 import { MareLine } from "./features/mare-line/MareLine";
+import { Indicator } from "./features/indicator/Indicator";
 
 import "./App.css";
 
@@ -131,6 +132,7 @@ export const App: React.FC = () => {
           </Switch>
         </Box>
         <Footer />
+        <Indicator />
       </React.Fragment>
     </BrowserRouter>
   );

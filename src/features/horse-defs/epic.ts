@@ -1,14 +1,17 @@
 import { Epic, combineEpics } from "redux-observable";
-import { mergeMap } from "rxjs/operators";
 
 import { horseDefsActions, HorseDefsAction } from ".";
+import { withIndicator, IndicatorAction } from "../indicator";
 import { fetchHorseDefs } from "./core/horse";
 
-export const fetchDefsEpic: Epic<HorseDefsAction> = (action$) =>
+export const fetchDefsEpic: Epic<
+  HorseDefsAction | IndicatorAction,
+  HorseDefsAction | IndicatorAction
+> = (action$) =>
   action$
     .ofType(horseDefsActions.init.type)
     .pipe(
-      mergeMap(async () =>
+      withIndicator("horse-defs/fetch", async () =>
         horseDefsActions.set({ list: await fetchHorseDefs() })
       )
     );

@@ -7,9 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../app/store";
 import { HorseDef } from "../../horse-defs/core/horse";
+import { withIndicatorSync } from "../../indicator";
 
 type Datum = {
   id: string;
@@ -113,10 +114,19 @@ const render = (toggleExpand: (node: Datum) => React.MouseEventHandler) => (
 
 export const MareLineTree: React.FC = () => {
   const classes = useStyles();
+  const dispatch = useDispatch();
   const [expanded, setExpanded] = useState<string[]>([]);
 
   const defs = useSelector((state: RootState) => state.horseDefs.list);
-  const { nodes, ids } = useMemo(() => construct(defs), [defs]);
+  const { nodes, ids } = useMemo(() => {
+    if (defs.length > 0) {
+      return withIndicatorSync(dispatch)("mare-line/init")(() =>
+        construct(defs)
+      );
+    } else {
+      return { nodes: [], ids: [] };
+    }
+  }, [dispatch, defs]);
 
   useEffect(() => {
     setExpanded(ids);
