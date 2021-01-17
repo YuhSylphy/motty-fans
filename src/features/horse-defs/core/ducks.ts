@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { HorseDef } from "./core/horse";
+import { HorseDef } from "./horse";
 
 export type HorseDefState = {
   list: HorseDef[];
