@@ -67,7 +67,11 @@ const construct = (map: Map<string, HorseDef>) => (
           console.info("father", map.get(def.fatherName));
           mapPedigree(row, col + 1, map.get(def.fatherName)!);
         } else {
-          mapPedigree(row, col + 1, { name: def.fatherName, sex: "male" });
+          mapPedigree(row, col + 1, {
+            name: def.fatherName,
+            sex: "male",
+            system: "Uk",
+          });
         }
       }
       if (def.motherName) {
@@ -82,6 +86,7 @@ const construct = (map: Map<string, HorseDef>) => (
           mapPedigree(row + 2 ** (limit - col - 1), col + 1, {
             name: def.motherName,
             sex: "female",
+            system: "Uk",
           });
         }
       }
