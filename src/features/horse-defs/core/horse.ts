@@ -8,6 +8,8 @@ export type HorseDef = {
 };
 
 export const fetchHorseDefs = (): Promise<HorseDef[]> =>
-  fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`).then((res) =>
-    res.json()
-  );
+  fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`)
+    .then((res) => res.json())
+    .then((data: (HorseDef & { removed?: boolean })[]) =>
+      data.filter((def) => !def.removed)
+    );

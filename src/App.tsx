@@ -21,6 +21,7 @@ import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
 import { MareLine } from "./features/mare-line";
 import { Indicator } from "./features/indicator";
+import { PedigreeDialog } from "./features/pedigree";
 
 import "./App.css";
 
@@ -132,6 +133,7 @@ export const App: React.FC = () => {
           </Switch>
         </Box>
         <Footer />
+        <PedigreeDialog />
         <Indicator />
       </React.Fragment>
     </BrowserRouter>

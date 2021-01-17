@@ -20,6 +20,7 @@ const slice = createSlice({
     close: (draft, { payload: key }: PayloadAction<string>) => {
       if (!(key in draft.awaits)) {
         console.warn(`there isnt key [${key}] in `);
+        return;
       }
       const { [key]: target, ...rest } = draft.awaits;
       draft.awaits = {

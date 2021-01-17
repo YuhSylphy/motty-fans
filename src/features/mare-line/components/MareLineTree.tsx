@@ -1,8 +1,9 @@
-import { makeStyles, createStyles, Theme } from "@material-ui/core";
+import { makeStyles, createStyles, Theme, IconButton } from "@material-ui/core";
 import { TreeItem, TreeView } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import RemoveIcon from "@material-ui/icons/Remove";
+import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
@@ -11,12 +12,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../app/store";
 import { HorseDef } from "../../horse-defs/core/horse";
 import { withIndicatorSync } from "../../indicator";
+import { pedigreeActions } from "../../pedigree";
 
 type Datum = {
   id: string;
   label: JSX.Element;
   className?: string;
   children: Datum[];
+  fatherName?: string;
+  motherName?: string;
+  owned: boolean;
 };
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -38,8 +43,57 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+const InformationIcon: React.FC<{ name: string }> = ({ name }) => {
+  const dispatch = useDispatch();
+  const handleClick = useMemo(
+    () => () => {
+      dispatch(pedigreeActions.push(name));
+    },
+    [dispatch, name]
+  );
+
+  return (
+    <IconButton aria-label="horse info" size="small" onClick={handleClick}>
+      <InfoOutlinedIcon fontSize="inherit" />
+    </IconButton>
+  );
+};
+
+const setNodeProperty = (node: Datum, def: HorseDef) => {
+  node.owned = true;
+  node.className = [def.sex].join(" ");
+  node.label = (
+    <React.Fragment>
+      {(() => {
+        switch (def.sex) {
+          case "male":
+            return <FontAwesomeIcon icon={faMars} />;
+          case "female":
+            return <FontAwesomeIcon icon={faVenus} />;
+          case "unknown":
+            return null;
+          default:
+            const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
+        }
+      })()}
+      <span className="name">
+        {def.name}
+        <InformationIcon name={def.name} />
+      </span>
+      {def.fatherName ? (
+        <span className="father male">
+          ({def.fatherName}
+          {/* 種牡馬/繁殖牝馬に対応したらつける <InformationIcon name={def.fatherName} /> */}
+          )
+        </span>
+      ) : null}
+    </React.Fragment>
+  );
+  node.fatherName = def.fatherName;
+  node.motherName = def.motherName;
+};
+
 const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
-  const roots = new Set<Datum>();
   const map = new Map<string, Datum>();
 
   const fetchOrCreateNode = (id: string) =>
@@ -54,6 +108,7 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
             id,
             label: <React.Fragment />,
             children: [],
+            owned: false,
           };
           map.set(id, created);
           return created;
@@ -62,38 +117,29 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
   const append = (def: HorseDef) => {
     const node = fetchOrCreateNode(def.name);
 
-    node.className = [def.sex].join(" ");
-    node.label = (
-      <React.Fragment>
-        {(() => {
-          switch (def.sex) {
-            case "male":
-              return <FontAwesomeIcon icon={faMars} />;
-            case "female":
-              return <FontAwesomeIcon icon={faVenus} />;
-            case "unknown":
-              return null;
-            default:
-              const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
-          }
-        })()}
-        <span className="name">{def.name}</span>
-        {def.fatherName ? (
-          <span className="father male">({def.fatherName})</span>
-        ) : null}
-      </React.Fragment>
-    );
+    setNodeProperty(node, def);
 
     if (def.motherName) {
       const mother = fetchOrCreateNode(def.motherName);
       mother.children.push(node);
-    } else {
-      roots.add(node);
     }
   };
 
   defs.forEach(append);
-  return { nodes: Array.from(roots.values()), ids: Array.from(map.keys()) };
+  return {
+    nodes: Array.from(map.values()).filter(
+      (value) =>
+        // 所有場であることは絶対条件
+        value.owned &&
+        // 母の名前がわからないか
+        (!value.motherName ||
+          // 母が登録されていないか
+          !map.has(value.motherName) ||
+          // 母はいるけど所有場でないか
+          (map.has(value.motherName) && !map.get(value.motherName)?.owned))
+    ),
+    ids: Array.from(map.keys()),
+  };
 };
 
 const render = (toggleExpand: (node: Datum) => React.MouseEventHandler) => (
@@ -130,7 +176,7 @@ export const MareLineTree: React.FC = () => {
 
   useEffect(() => {
     setExpanded(ids);
-  }, [ids]);
+  }, [setExpanded, ids]);
 
   const toggleExpand = useMemo<(node: Datum) => React.MouseEventHandler>(
     () => (node) => (event) => {
