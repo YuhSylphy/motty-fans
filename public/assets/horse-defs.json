@@ -158,7 +158,7 @@
   {
     "name": "ミタラシダンゴの36",
     "sex": "female",
-    "fatherName": "",
+    "fatherName": "ケープブランコ",
     "motherName": "ミタラシダンゴ",
     "bornIn": 2036
   },
@@ -189,5 +189,12 @@
     "fatherName": "キングカメハメハ",
     "motherName": "ホワイトショコラ",
     "bornIn": 2035
+  },
+  {
+    "name": "ミタラシダンゴの37",
+    "sex": "male",
+    "fatherName": "ケープブランコ",
+    "motherName": "ミタラシダンゴ",
+    "bornIn": 2036
   }
 ]
