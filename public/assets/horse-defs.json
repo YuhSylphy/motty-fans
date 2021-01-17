@@ -2,7 +2,9 @@
   {
     "name": "ロズウェルリポート",
     "sex": "female",
-    "system": "Hi"
+    "system": "Hi",
+    "fatherName": "Flashy Bull",
+    "motherName": "Ms. Cornstalk"
   },
   {
     "name": "モッティサイキョウ",
@@ -170,7 +172,10 @@
   {
     "name": "トランスカイ",
     "sex": "female",
-    "system": "Ha"
+    "system": "Ha",
+    "fatherName": "Acatenango",
+    "motherName": "Mandellicht",
+    "memo": ["購入した繁殖牝馬"]
   },
   {
     "name": "ゴマプリンの36",
@@ -218,7 +223,8 @@
     "fatherName": "キングカメハメハ",
     "motherName": "ホワイトショコラ",
     "system": "Na",
-    "bornIn": 2035
+    "bornIn": 2035,
+    "memo": ["#11: '37の2歳馬セールで購入"]
   },
   {
     "name": "ミタラシダンゴの37",
