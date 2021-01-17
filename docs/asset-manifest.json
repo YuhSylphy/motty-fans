@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/motty-derby/static/css/main.df8e818c.chunk.css",
-    "main.js": "/motty-derby/static/js/main.3a9f5935.chunk.js",
-    "main.js.map": "/motty-derby/static/js/main.3a9f5935.chunk.js.map",
+    "main.js": "/motty-derby/static/js/main.47acd2aa.chunk.js",
+    "main.js.map": "/motty-derby/static/js/main.47acd2aa.chunk.js.map",
     "runtime-main.js": "/motty-derby/static/js/runtime-main.182e54e7.js",
     "runtime-main.js.map": "/motty-derby/static/js/runtime-main.182e54e7.js.map",
-    "static/js/2.72763801.chunk.js": "/motty-derby/static/js/2.72763801.chunk.js",
-    "static/js/2.72763801.chunk.js.map": "/motty-derby/static/js/2.72763801.chunk.js.map",
+    "static/js/2.c1d72672.chunk.js": "/motty-derby/static/js/2.c1d72672.chunk.js",
+    "static/js/2.c1d72672.chunk.js.map": "/motty-derby/static/js/2.c1d72672.chunk.js.map",
     "index.html": "/motty-derby/index.html",
     "static/css/main.df8e818c.chunk.css.map": "/motty-derby/static/css/main.df8e818c.chunk.css.map",
-    "static/js/2.72763801.chunk.js.LICENSE.txt": "/motty-derby/static/js/2.72763801.chunk.js.LICENSE.txt"
+    "static/js/2.c1d72672.chunk.js.LICENSE.txt": "/motty-derby/static/js/2.c1d72672.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.182e54e7.js",
-    "static/js/2.72763801.chunk.js",
+    "static/js/2.c1d72672.chunk.js",
     "static/css/main.df8e818c.chunk.css",
-    "static/js/main.3a9f5935.chunk.js"
+    "static/js/main.47acd2aa.chunk.js"
   ]
 }

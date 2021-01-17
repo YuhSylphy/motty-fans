@@ -1,5 +1,8 @@
 [
-  { "name": "ロズウェルリポート", "sex": "female" },
+  {
+    "name": "ロズウェルリポート",
+    "sex": "female"
+  },
   {
     "name": "モッティサイキョウ",
     "sex": "male",
@@ -88,43 +91,58 @@
     "name": "アルフォート",
     "sex": "male",
     "fatherName": "アグネスデジタル",
-    "motherName": "カントリーマアム"
+    "motherName": "カントリーマアム",
+    "bornIn": 2033
   },
   {
     "name": "ジャイアントコーン",
     "sex": "male",
     "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ"
+    "motherName": "ミタラシダンゴ",
+    "bornIn": 2033
   },
   {
     "name": "ナタデココ",
     "sex": "male",
     "fatherName": "ゴールドシップ",
-    "motherName": "ゴマプリン"
+    "motherName": "ゴマプリン",
+    "bornIn": 2034
   },
   {
     "name": "テリヤキバーガー",
     "sex": "male",
     "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ"
+    "motherName": "ミタラシダンゴ",
+    "bornIn": 2034
+  },
+  {
+    "name": "ルマンドの34",
+    "sex": "male",
+    "fatherName": "エンパイアメーカー",
+    "motherName": "ルマンド",
+    "bornIn": 2034
   },
   {
     "name": "ゴマプリンの35",
     "sex": "male",
     "fatherName": "ゴールドシップ",
-    "motherName": "ゴマプリン"
+    "motherName": "ゴマプリン",
+    "bornIn": 2035,
+    "removed": true
   },
   {
-    "name": "ミタラシダンゴの35",
+    "name": "デミグラスソース",
     "sex": "male",
     "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ"
+    "motherName": "ミタラシダンゴ",
+    "bornIn": 2035
   },
   {
-    "name": "ルマンドの35",
+    "name": "アジツキユデタマゴ",
     "sex": "female",
     "fatherName": "ストリートセンス",
-    "motherName": "ルマンド"
+    "motherName": "ルマンド",
+    "bornIn": 2035
   },
   {
     "name": "トランスカイ",
@@ -134,30 +152,49 @@
     "name": "ゴマプリンの36",
     "sex": "male",
     "fatherName": "ステイゴールド",
-    "motherName": "ゴマプリン"
+    "motherName": "ゴマプリン",
+    "bornIn": 2036
   },
   {
     "name": "ミタラシダンゴの36",
     "sex": "female",
-    "fatherName": "",
-    "motherName": "ミタラシダンゴ"
+    "fatherName": "ケープブランコ",
+    "motherName": "ミタラシダンゴ",
+    "bornIn": 2036
   },
   {
     "name": "ワールドプレミアム",
     "sex": "male",
     "fatherName": "ディープインパクト",
-    "motherName": "トランスカイ"
+    "motherName": "トランスカイ",
+    "bornIn": 2036
   },
   {
     "name": "ルマンドの36",
     "sex": "male",
     "fatherName": "ストリートセンス",
-    "motherName": "ルマンド"
+    "motherName": "ルマンド",
+    "bornIn": 2036
   },
   {
     "name": "トランスカイの37",
     "sex": "female",
     "fatherName": "オルフェーヴル",
-    "motherName": "トランスカイ"
+    "motherName": "トランスカイ",
+    "bornIn": 2037
+  },
+  {
+    "name": "ホワイトロリータ",
+    "sex": "female",
+    "fatherName": "キングカメハメハ",
+    "motherName": "ホワイトショコラ",
+    "bornIn": 2035
+  },
+  {
+    "name": "ミタラシダンゴの37",
+    "sex": "male",
+    "fatherName": "ケープブランコ",
+    "motherName": "ミタラシダンゴ",
+    "bornIn": 2036
   }
 ]
