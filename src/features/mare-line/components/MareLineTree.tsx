@@ -17,6 +17,9 @@ type Datum = {
   label: JSX.Element;
   className?: string;
   children: Datum[];
+  fatherName?: string;
+  motherName?: string;
+  owned: boolean;
 };
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -39,7 +42,6 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
-  const roots = new Set<Datum>();
   const map = new Map<string, Datum>();
 
   const fetchOrCreateNode = (id: string) =>
@@ -54,6 +56,7 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
             id,
             label: <React.Fragment />,
             children: [],
+            owned: false,
           };
           map.set(id, created);
           return created;
@@ -62,6 +65,7 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
   const append = (def: HorseDef) => {
     const node = fetchOrCreateNode(def.name);
 
+    node.owned = true;
     node.className = [def.sex].join(" ");
     node.label = (
       <React.Fragment>
@@ -83,17 +87,31 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
         ) : null}
       </React.Fragment>
     );
+    node.fatherName = def.fatherName;
+    node.motherName = def.motherName;
 
     if (def.motherName) {
       const mother = fetchOrCreateNode(def.motherName);
       mother.children.push(node);
-    } else {
-      roots.add(node);
     }
   };
 
   defs.forEach(append);
-  return { nodes: Array.from(roots.values()), ids: Array.from(map.keys()) };
+
+  return {
+    nodes: Array.from(map.values()).filter(
+      (value) =>
+        // 所有場であることは絶対条件
+        value.owned &&
+        // 母の名前がわからないか
+        (!value.motherName ||
+          // 母が登録されていないか
+          !map.has(value.motherName) ||
+          // 母はいるけど所有場でないか
+          (map.has(value.motherName) && !map.get(value.motherName)?.owned))
+    ),
+    ids: Array.from(map.keys()),
+  };
 };
 
 const render = (toggleExpand: (node: Datum) => React.MouseEventHandler) => (
@@ -130,7 +148,9 @@ export const MareLineTree: React.FC = () => {
 
   useEffect(() => {
     setExpanded(ids);
-  }, [ids]);
+
+    console.info(nodes, ids);
+  }, [setExpanded, ids]);
 
   const toggleExpand = useMemo<(node: Datum) => React.MouseEventHandler>(
     () => (node) => (event) => {
