@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Paper, Typography } from "@material-ui/core";
 
-import { MareLineTree } from "./components/MareLineTree";
+import { MareLineTree } from "./MareLineTree";
 
 export const MareLine: React.FC = () => {
   return (

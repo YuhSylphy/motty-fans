@@ -19,8 +19,8 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
-import { MareLine } from "./features/mare-line/MareLine";
-import { Indicator } from "./features/indicator/Indicator";
+import { MareLine } from "./features/mare-line";
+import { Indicator } from "./features/indicator";
 
 import "./App.css";
 

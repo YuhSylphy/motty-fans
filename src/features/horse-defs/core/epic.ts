@@ -1,8 +1,8 @@
 import { Epic, combineEpics } from "redux-observable";
 
-import { horseDefsActions, HorseDefsAction } from ".";
-import { withIndicator, IndicatorAction } from "../indicator";
-import { fetchHorseDefs } from "./core/horse";
+import { horseDefsActions, HorseDefsAction } from "..";
+import { withIndicator, IndicatorAction } from "../../indicator";
+import { fetchHorseDefs } from "./horse";
 
 export const fetchDefsEpic: Epic<
   HorseDefsAction | IndicatorAction,
