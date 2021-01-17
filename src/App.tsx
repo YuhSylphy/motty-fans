@@ -19,7 +19,8 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
-import { MareLine } from "./features/mare-line/MareLine";
+import { MareLine } from "./features/mare-line";
+import { Indicator } from "./features/indicator";
 
 import "./App.css";
 
@@ -39,7 +40,7 @@ const renderListItem = (def: MenuItemDef) => {
 
 const MenuList: React.FC<{
   toggleMenu: () => void;
-}> = ({toggleMenu}) => {
+}> = ({ toggleMenu }) => {
   const defs = [
     {
       label: "牝系図",
@@ -51,7 +52,11 @@ const MenuList: React.FC<{
     },
   ];
 
-  return <List onClick={toggleMenu} onKeyDown={toggleMenu}>{defs.map(renderListItem)}</List>;
+  return (
+    <List onClick={toggleMenu} onKeyDown={toggleMenu}>
+      {defs.map(renderListItem)}
+    </List>
+  );
 };
 
 const Header: React.FC = () => {
@@ -127,6 +132,7 @@ export const App: React.FC = () => {
           </Switch>
         </Box>
         <Footer />
+        <Indicator />
       </React.Fragment>
     </BrowserRouter>
   );
