@@ -1,8 +1,9 @@
-import { makeStyles, createStyles, Theme } from "@material-ui/core";
+import { makeStyles, createStyles, Theme, IconButton } from "@material-ui/core";
 import { TreeItem, TreeView } from "@material-ui/lab";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import RemoveIcon from "@material-ui/icons/Remove";
+import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
@@ -11,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../app/store";
 import { HorseDef } from "../../horse-defs/core/horse";
 import { withIndicatorSync } from "../../indicator";
+import { pedigreeActions } from "../../pedigree";
 
 type Datum = {
   id: string;
@@ -41,6 +43,56 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+const InformationIcon: React.FC<{ name: string }> = ({ name }) => {
+  const dispatch = useDispatch();
+  const handleClick = useMemo(
+    () => () => {
+      dispatch(pedigreeActions.push(name));
+    },
+    [dispatch, name]
+  );
+
+  return (
+    <IconButton aria-label="horse info" size="small" onClick={handleClick}>
+      <InfoOutlinedIcon fontSize="inherit" />
+    </IconButton>
+  );
+};
+
+const setNodeProperty = (node: Datum, def: HorseDef) => {
+  node.owned = true;
+  node.className = [def.sex].join(" ");
+  node.label = (
+    <React.Fragment>
+      {(() => {
+        switch (def.sex) {
+          case "male":
+            return <FontAwesomeIcon icon={faMars} />;
+          case "female":
+            return <FontAwesomeIcon icon={faVenus} />;
+          case "unknown":
+            return null;
+          default:
+            const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
+        }
+      })()}
+      <span className="name">
+        {def.name}
+        <InformationIcon name={def.name} />
+      </span>
+      {def.fatherName ? (
+        <span className="father male">
+          ({def.fatherName}
+          {/* 種牡馬/繁殖牝馬に対応したらつける <InformationIcon name={def.fatherName} /> */}
+          )
+        </span>
+      ) : null}
+    </React.Fragment>
+  );
+  node.fatherName = def.fatherName;
+  node.motherName = def.motherName;
+};
+
 const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
   const map = new Map<string, Datum>();
 
@@ -65,30 +117,7 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
   const append = (def: HorseDef) => {
     const node = fetchOrCreateNode(def.name);
 
-    node.owned = true;
-    node.className = [def.sex].join(" ");
-    node.label = (
-      <React.Fragment>
-        {(() => {
-          switch (def.sex) {
-            case "male":
-              return <FontAwesomeIcon icon={faMars} />;
-            case "female":
-              return <FontAwesomeIcon icon={faVenus} />;
-            case "unknown":
-              return null;
-            default:
-              const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
-          }
-        })()}
-        <span className="name">{def.name}</span>
-        {def.fatherName ? (
-          <span className="father male">({def.fatherName})</span>
-        ) : null}
-      </React.Fragment>
-    );
-    node.fatherName = def.fatherName;
-    node.motherName = def.motherName;
+    setNodeProperty(node, def);
 
     if (def.motherName) {
       const mother = fetchOrCreateNode(def.motherName);
@@ -97,7 +126,6 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
   };
 
   defs.forEach(append);
-
   return {
     nodes: Array.from(map.values()).filter(
       (value) =>
@@ -148,8 +176,6 @@ export const MareLineTree: React.FC = () => {
 
   useEffect(() => {
     setExpanded(ids);
-
-    console.info(nodes, ids);
   }, [setExpanded, ids]);
 
   const toggleExpand = useMemo<(node: Datum) => React.MouseEventHandler>(
