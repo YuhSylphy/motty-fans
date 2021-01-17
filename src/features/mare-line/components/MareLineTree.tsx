@@ -43,13 +43,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const InformationIcon: React.FC<{ def: HorseDef }> = ({ def }) => {
+const InformationIcon: React.FC<{ name: string }> = ({ name }) => {
   const dispatch = useDispatch();
   const handleClick = useMemo(
     () => () => {
-      dispatch(pedigreeActions.push(def.name));
+      dispatch(pedigreeActions.push(name));
     },
-    [dispatch, def.name]
+    [dispatch, name]
   );
 
   return (
@@ -76,11 +76,17 @@ const setNodeProperty = (node: Datum, def: HorseDef) => {
             const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
         }
       })()}
-      <span className="name">{def.name}</span>
+      <span className="name">
+        {def.name}
+        <InformationIcon name={def.name} />
+      </span>
       {def.fatherName ? (
-        <span className="father male">({def.fatherName})</span>
+        <span className="father male">
+          ({def.fatherName}
+          {/* 種牡馬/繁殖牝馬に対応したらつける <InformationIcon name={def.fatherName} /> */}
+          )
+        </span>
       ) : null}
-      <InformationIcon def={def} />
     </React.Fragment>
   );
   node.fatherName = def.fatherName;

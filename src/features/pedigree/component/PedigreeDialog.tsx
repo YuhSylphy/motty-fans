@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { Dialog, DialogTitle } from "@material-ui/core";
 
 import { RootState } from "../../../app/store";
-// import { HorseDef } from "../../horse-defs";
 
 import { pedigreeActions } from "..";
+import { PedigreeTable } from "./PedigreeTable";
 
 export const PedigreeDialog: React.FC = () => {
   const dispatch = useDispatch();
@@ -31,6 +31,7 @@ export const PedigreeDialog: React.FC = () => {
   return def ? (
     <Dialog open={open} onClose={handleClose}>
       <DialogTitle>血統表: {def.name}</DialogTitle>
+      <PedigreeTable def={def} />
     </Dialog>
   ) : null;
 };
