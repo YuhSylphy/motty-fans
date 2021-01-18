@@ -28,5 +28,35 @@
     "line": "Ne",
     "show": false,
     "fatherName": "Manila"
+  },
+  {
+    "name": "Ms. Cornstalk",
+    "listed": false,
+    "line": "Uk",
+    "show": true,
+    "fatherName": "Indian Charlie",
+    "motherName": "☆Ms. Cornstalk母"
+  },
+  {
+    "name": "☆Indian Charlie母",
+    "listed": false,
+    "line": "Uk",
+    "show": false,
+    "fatherName": "Leo Castelli"
+  },
+  {
+    "name": "☆Ms. Cornstalk母",
+    "listed": false,
+    "line": "Uk",
+    "show": false,
+    "fatherName": "Upper Nile",
+    "motherName": "☆Ms. Cornstalk母母"
+  },
+  {
+    "name": "☆Ms. Cornstalk母母",
+    "listed": false,
+    "line": "Uk",
+    "show": false,
+    "fatherName": "Court Recess"
   }
 ]

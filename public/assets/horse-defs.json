@@ -102,7 +102,8 @@
     "sex": "male",
     "fatherName": "オルフェーヴル",
     "motherName": "カントリーマアム",
-    "line": "Ro"
+    "line": "Ro",
+    "memo": ["#11: '37 復帰直後のレースで故障発生、予後不良と診断され死去"]
   },
   {
     "name": "アルフォート",
@@ -126,7 +127,8 @@
     "fatherName": "ゴールドシップ",
     "motherName": "ゴマプリン",
     "line": "Ro",
-    "bornIn": 2034
+    "bornIn": 2034,
+    "memo": ["#11: '37 未勝利戦で勝てずそのまま引退"]
   },
   {
     "name": "テリヤキバーガー",
@@ -233,5 +235,14 @@
     "motherName": "ミタラシダンゴ",
     "line": "Ne",
     "bornIn": 2036
+  },
+  {
+    "name": "ペコチャンの38",
+    "sex": "unknown",
+    "fatherName": "ステイゴールド",
+    "motherName": "ペコチャン",
+    "line": "Ro",
+    "bornIn": 2038,
+    "removed": true
   }
 ]

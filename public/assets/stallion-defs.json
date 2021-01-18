@@ -52,5 +52,51 @@
     "listed": false,
     "line": "Ne",
     "show": true
+  },
+  {
+    "name": "Indian Charlie",
+    "listed": false,
+    "line": "Ns",
+    "show": true,
+    "fatherName": "In Excess",
+    "motherName": "☆Indian Charlie母"
+  },
+  {
+    "name": "In Excess",
+    "listed": false,
+    "line": "Ns",
+    "show": true,
+    "fatherName": "Siberian Express"
+  },
+  {
+    "name": "Siberian Express",
+    "listed": false,
+    "line": "Ns",
+    "show": true
+  },
+  {
+    "name": "Leo Castelli",
+    "listed": false,
+    "line": "Ne",
+    "show": true
+  },
+  {
+    "name": "Upper Nile",
+    "listed": false,
+    "line": "Ne",
+    "show": true,
+    "fatherName": "Nijinsky"
+  },
+  {
+    "name": "Nijinsky",
+    "listed": false,
+    "line": "Ne",
+    "show": true
+  },
+  {
+    "name": "Court Recess",
+    "listed": false,
+    "line": "Ha",
+    "show": true
   }
 ]
