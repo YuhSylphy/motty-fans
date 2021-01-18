@@ -1,0 +1,122 @@
+[
+  {
+    "name": "ロズウェルリポート",
+    "listed": true,
+    "line": "Hi",
+    "show": true,
+    "fatherName": "Flashy Bull",
+    "motherName": "Ms. Cornstalk"
+  },
+  {
+    "name": "☆Holy Bull母",
+    "listed": false,
+    "line": "Sw",
+    "show": false,
+    "fatherName": "Al Hattab"
+  },
+  {
+    "name": "☆Flashy Bull母",
+    "listed": false,
+    "line": "Ns",
+    "show": false,
+    "fatherName": "Mt. Livermore",
+    "motherName": "☆Flashy Bull母母"
+  },
+  {
+    "name": "☆Flashy Bull母母",
+    "listed": false,
+    "line": "Ne",
+    "show": false,
+    "fatherName": "Manila"
+  },
+  {
+    "name": "Ms. Cornstalk",
+    "listed": false,
+    "line": "Ns",
+    "show": true,
+    "fatherName": "Indian Charlie",
+    "motherName": "☆Ms. Cornstalk母"
+  },
+  {
+    "name": "☆Indian Charlie母",
+    "listed": false,
+    "line": "Ne",
+    "show": false,
+    "fatherName": "Leo Castelli"
+  },
+  {
+    "name": "☆Ms. Cornstalk母",
+    "listed": false,
+    "line": "Ne",
+    "show": false,
+    "fatherName": "Upper Nile",
+    "motherName": "☆Ms. Cornstalk母母"
+  },
+  {
+    "name": "☆Ms. Cornstalk母母",
+    "listed": false,
+    "line": "Ha",
+    "show": false,
+    "fatherName": "Court Recess"
+  },
+  {
+    "name": "トランスカイ",
+    "listed": true,
+    "line": "Ha",
+    "show": true,
+    "fatherName": "Acatenango",
+    "motherName": "Mandellicht"
+  },
+  {
+    "name": "☆Surumu母",
+    "listed": false,
+    "line": "Te",
+    "show": false,
+    "fatherName": "Reliance"
+  },
+  {
+    "name": "☆Acatenango母",
+    "listed": false,
+    "line": "Sw",
+    "show": false,
+    "fatherName": "Aggressor",
+    "motherName": "☆Acatenango母母"
+  },
+  {
+    "name": "☆Acatenango母母",
+    "listed": false,
+    "line": "He",
+    "show": false,
+    "fatherName": "Mr Jinks"
+  },
+  {
+    "name": "Mandellicht",
+    "listed": false,
+    "line": "Ne",
+    "show": true,
+    "fatherName": "Be My Guest",
+    "motherName": "☆Mandellicht母"
+  },
+  {
+    "name": "☆Be My Guest母",
+    "listed": false,
+    "line": "Ha",
+    "show": false,
+    "fatherName": "Tudor Minstrel"
+  },
+  {
+    "name": "☆Mandellicht母",
+    "listed": false,
+    "line": "Sw",
+    "show": false,
+    "fatherName": "Elektrant",
+    "motherName": "☆Mandellicht母母"
+  },
+  {
+    "name": "☆Mandellicht母母",
+    "listed": false,
+    "line": "Ha",
+    "show": false,
+    "fatherName": "Norfolk"
+  }
+]
