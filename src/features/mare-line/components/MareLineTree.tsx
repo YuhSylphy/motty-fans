@@ -10,7 +10,7 @@ import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../app/store";
-import { HorseDef } from "../../horse-defs/core/horse";
+import { HorseDef } from "../../horse-defs";
 import { withIndicatorSync } from "../../indicator";
 import { pedigreeActions } from "../../pedigree";
 
