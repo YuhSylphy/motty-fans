@@ -82,6 +82,10 @@ const useStyles = makeStyles((theme: Theme) =>
         "&.He": {
           backgroundColor: "#b9f8ff",
         },
+        "&.mother": {
+          color: theme.palette.primary.contrastText,
+          backgroundColor: "#dd7165",
+        },
       },
     },
   })
@@ -158,13 +162,17 @@ const renderCell = (
   cell: PedigreeNode
 ): JSX.Element => {
   const threshold = 2 ** (limit - col - 2);
+  const className = [
+    "cell",
+    !cell.show ? "empty" : cell.line,
+    col === 0 && row === 2 ** (limit - 2) ? ["mother"] : [],
+  ]
+    .flatMap((x) => x)
+    .join(" ");
   return (
     <React.Fragment key={`col-${col}`}>
       {row % threshold === 0 ? (
-        <TableCell
-          rowSpan={threshold}
-          className={["cell", !cell.show ? "empty" : cell.line].join(" ")}
-        >
+        <TableCell rowSpan={threshold} className={className}>
           {cell.show ? <Typography>{cell.name}</Typography> : null}
         </TableCell>
       ) : null}
@@ -174,11 +182,19 @@ const renderCell = (
 
 const renderLine = (line: Line): JSX.Element => {
   return line !== "Uk" ? (
-    <TableCell key={`col-line`} className={["cell", line].join(" ")}>
+    <TableCell
+      key={`col-line`}
+      className={["cell", line].join(" ")}
+      rowSpan={2}
+    >
       <Typography>{lineMap[line].label}系</Typography>
     </TableCell>
   ) : (
-    <TableCell className={["cell", "empty"].join(" ")} />
+    <TableCell
+      key={`col-line`}
+      className={["cell", "empty"].join(" ")}
+      rowSpan={2}
+    />
   );
 };
 
@@ -190,7 +206,7 @@ const render = (data: PedigreeNode[][]): JSX.Element => {
           {cols
             .filter((_, ix) => ix > 0)
             .map((cell, col) => renderCell(row, col, cell))}
-          {renderLine(cols[cols.length - 1].line)}
+          {row % 2 === 0 ? renderLine(cols[cols.length - 1].line) : null}
         </TableRow>
       ))}
     </React.Fragment>
@@ -213,7 +229,7 @@ export const PedigreeTable: React.FC<PedigreeTableProps> = ({ def }) => {
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table}>
+      <Table className={classes.table} size="small">
         <TableBody>{render(array)}</TableBody>
       </Table>
     </TableContainer>
