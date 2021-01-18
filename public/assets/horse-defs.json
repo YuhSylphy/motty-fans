@@ -103,7 +103,9 @@
     "fatherName": "オルフェーヴル",
     "motherName": "カントリーマアム",
     "line": "Ro",
-    "memo": ["#11: '37 復帰直後のレースで故障発生、予後不良と診断され死去"]
+    "memo": [
+      "#11: '37 復帰直後のレースで故障発生、予後不良と診断され死去"
+    ]
   },
   {
     "name": "アルフォート",
@@ -128,7 +130,9 @@
     "motherName": "ゴマプリン",
     "line": "Ro",
     "bornIn": 2034,
-    "memo": ["#11: '37 未勝利戦で勝てずそのまま引退"]
+    "memo": [
+      "#11: '37 未勝利戦で勝てずそのまま引退"
+    ]
   },
   {
     "name": "テリヤキバーガー",
@@ -177,10 +181,12 @@
     "line": "Ha",
     "fatherName": "Acatenango",
     "motherName": "Mandellicht",
-    "memo": ["購入した繁殖牝馬"]
+    "memo": [
+      "購入した繁殖牝馬"
+    ]
   },
   {
-    "name": "ゴマプリンの36",
+    "name": "シオムスビ",
     "sex": "male",
     "fatherName": "ステイゴールド",
     "motherName": "ゴマプリン",
@@ -193,7 +199,10 @@
     "fatherName": "ケープブランコ",
     "motherName": "ミタラシダンゴ",
     "line": "Ne",
-    "bornIn": 2036
+    "bornIn": 2036,
+    "memo": [
+      "#12: 引退"
+    ]
   },
   {
     "name": "ワールドプレミアム",
@@ -201,14 +210,17 @@
     "fatherName": "ディープインパクト",
     "motherName": "トランスカイ",
     "line": "Ro",
-    "bornIn": 2036
+    "bornIn": 2036,
+    "memo": [
+      "#12: 10.3ついに新馬戦も7位に終わる"
+    ]
   },
   {
-    "name": "ルマンドの36",
+    "name": "ジックリコトコト",
     "sex": "male",
-    "fatherName": "ストリートセンス",
+    "fatherName": "クロフネ",
     "motherName": "ルマンド",
-    "line": "Na",
+    "line": "Ne",
     "bornIn": 2036
   },
   {
@@ -226,7 +238,17 @@
     "motherName": "ホワイトショコラ",
     "line": "Na",
     "bornIn": 2035,
-    "memo": ["#11: '37の2歳馬セールで購入"]
+    "memo": [
+      "#11: '37の2歳馬セールで購入"
+    ]
+  },
+  {
+    "name": "ルマンドの37",
+    "sex": "male",
+    "fatherName": "オルフェーヴル",
+    "motherName": "ルマンド",
+    "line": "Ro",
+    "bornIn": 2037
   },
   {
     "name": "ミタラシダンゴの37",
@@ -234,15 +256,82 @@
     "fatherName": "ケープブランコ",
     "motherName": "ミタラシダンゴ",
     "line": "Ne",
-    "bornIn": 2036
+    "bornIn": 2037
+  },
+  {
+    "name": "ペコチャンの37",
+    "sex": "male",
+    "fatherName": "ディープインパクト",
+    "motherName": "ペコチャン",
+    "line": "Ro",
+    "bornIn": 2037
+  },
+  {
+    "name": "ミタラシダンゴの38",
+    "sex": "male",
+    "fatherName": "ケープブランコ",
+    "motherName": "ミタラシダンゴ",
+    "line": "Ne",
+    "bornIn": 2038
+  },
+  {
+    "name": "ルマンドの38",
+    "sex": "female",
+    "fatherName": "エンパイアメーカー",
+    "motherName": "ルマンド",
+    "line": "Na",
+    "bornIn": 2038
+  },
+  {
+    "name": "トランスカイの38",
+    "sex": "male",
+    "fatherName": "ステイゴールド",
+    "motherName": "トランスカイ",
+    "line": "Ro",
+    "bornIn": 2038
   },
   {
     "name": "ペコチャンの38",
-    "sex": "unknown",
+    "sex": "female",
     "fatherName": "ステイゴールド",
     "motherName": "ペコチャン",
     "line": "Ro",
-    "bornIn": 2038,
+    "bornIn": 2038
+  },
+  {
+    "name": "ミタラシダンゴの39",
+    "sex": "male",
+    "fatherName": "オルフェーヴル",
+    "motherName": "ミタラシダンゴ",
+    "line": "Ro",
+    "bornIn": 2039,
+    "removed": true
+  },
+  {
+    "name": "トランスカイの39",
+    "sex": "male",
+    "fatherName": "キングカメハメハ",
+    "motherName": "トランスカイ",
+    "line": "Na",
+    "bornIn": 2039,
+    "removed": true
+  },
+  {
+    "name": "ルマンドの39",
+    "sex": "female",
+    "fatherName": "ストリートセンス",
+    "motherName": "ルマンド",
+    "line": "Na",
+    "bornIn": 2039,
+    "removed": true
+  },
+  {
+    "name": "ペコチャンの39",
+    "sex": "female",
+    "fatherName": "ヴァーミリアン",
+    "motherName": "ルマンド",
+    "line": "Na",
+    "bornIn": 2039,
     "removed": true
   }
 ]
