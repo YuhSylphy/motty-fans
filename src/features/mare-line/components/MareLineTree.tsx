@@ -10,7 +10,7 @@ import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../app/store";
-import { HorseDef } from "../../horse-defs/core/horse";
+import { HorseDef } from "../../horse-defs";
 import { withIndicatorSync } from "../../indicator";
 import { pedigreeActions } from "../../pedigree";
 
@@ -60,7 +60,7 @@ const InformationIcon: React.FC<{ name: string }> = ({ name }) => {
 };
 
 const setNodeProperty = (node: Datum, def: HorseDef) => {
-  node.owned = true;
+  node.owned = node.owned || def.owned;
   node.className = [def.sex].join(" ");
   node.label = (
     <React.Fragment>
@@ -89,8 +89,8 @@ const setNodeProperty = (node: Datum, def: HorseDef) => {
       ) : null}
     </React.Fragment>
   );
-  node.fatherName = def.fatherName;
-  node.motherName = def.motherName;
+  node.fatherName = def.fatherName ?? node.fatherName;
+  node.motherName = def.motherName ?? node.fatherName;
 };
 
 const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {

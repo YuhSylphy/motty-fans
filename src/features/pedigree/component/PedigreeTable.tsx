@@ -1,6 +1,5 @@
-import { makeStyles, createStyles, Theme } from "@material-ui/core";
+import { makeStyles, createStyles, Theme, Typography } from "@material-ui/core";
 import {
-  Box,
   TableContainer,
   Table,
   TableBody,
@@ -15,6 +14,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../app/store";
 
 import { HorseDef } from "../../horse-defs";
+import { Line, lineMap } from "../../horse-defs";
 
 export interface PedigreeTableProps {
   def: HorseDef;
@@ -24,64 +24,128 @@ type PedigreeNode = {
   name: string;
   generation: number;
   show: boolean;
+  line: Line;
 };
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     table: {
       "& .cell": {
+        backgroundColor: "gray",
         "&.empty": {
           backgroundColor: "lightgray",
+        },
+        "&.Ec": {
+          backgroundColor: "#ffffff",
+        },
+        "&.Ph": {
+          backgroundColor: "#cfe8ff",
+        },
+        "&.Ns": {
+          backgroundColor: "#00bb00",
+        },
+        "&.Ro": {
+          backgroundColor: "#ffb4c8",
+        },
+        "&.Ne": {
+          backgroundColor: "#fdf488",
+        },
+        "&.Na": {
+          backgroundColor: "##52d8fd",
+        },
+        "&.Fa": {
+          backgroundColor: "#ffc943",
+        },
+        "&.To": {
+          backgroundColor: "#ff9d4b",
+        },
+        "&.Te": {
+          color: theme.palette.primary.contrastText,
+          backgroundColor: "#9e57ff",
+        },
+        "&.Sw": {
+          backgroundColor: "#ffe0e1",
+        },
+        "&.Ha": {
+          backgroundColor: "#90ee71",
+        },
+        "&.Hi": {
+          color: theme.palette.primary.contrastText,
+          backgroundColor: "#2c6aff",
+        },
+        "&.St": {
+          backgroundColor: "#9e93ff",
+        },
+        "&.Ma": {
+          backgroundColor: "#c5b2fe",
+        },
+        "&.He": {
+          backgroundColor: "#b9f8ff",
+        },
+        "&.mother": {
+          color: theme.palette.primary.contrastText,
+          backgroundColor: "#dd7165",
         },
       },
     },
   })
 );
 
+/** 対象世代の限界点 */
+const limit = 5;
 const construct = (map: Map<string, HorseDef>) => (
   def: HorseDef
 ): PedigreeNode[][] => {
   const table = new Array<PedigreeNode[]>();
 
-  for (let row = 0; row < 32; ++row) {
+  for (let row = 0; row < 2 ** (limit - 1); ++row) {
     const cols = new Array<PedigreeNode>();
-    for (let col = 0; col < 5; ++col) {
-      cols.push({ name: "empty", generation: col, show: false });
+    for (let col = 0; col < limit; ++col) {
+      cols.push({ name: "empty", generation: col, show: false, line: "Uk" });
     }
     table.push(cols);
   }
 
-  const limit = 5;
   const mapPedigree = (row: number, col: number, def: HorseDef) => {
-    console.info("mapPedigree", row, col, def);
     table[row][col] = {
       name: def.name,
-      generation: 0,
-      show: true,
+      generation: col,
+      show: !!def.show,
+      line: def.line,
     };
 
-    if (col < limit) {
-      console.info("if", def);
+    if (col + 1 < limit) {
       if (def.fatherName) {
         if (map.has(def.fatherName)) {
-          console.info("father", map.get(def.fatherName));
           mapPedigree(row, col + 1, map.get(def.fatherName)!);
         } else {
-          mapPedigree(row, col + 1, { name: def.fatherName, sex: "male" });
+          mapPedigree(row, col + 1, {
+            name: def.fatherName,
+            sex: "male",
+            line: "Uk",
+            listed: false,
+            show: true,
+            owned: false,
+            memo: ["未定義"],
+          });
         }
       }
       if (def.motherName) {
         if (map.has(def.motherName)) {
-          console.info("mother", map.get(def.motherName));
           mapPedigree(
-            row + 2 ** (limit - col - 1),
+            row + 2 ** (limit - col - 2),
             col + 1,
             map.get(def.motherName)!
           );
         } else {
-          mapPedigree(row + 2 ** (limit - col - 1), col + 1, {
+          mapPedigree(row + 2 ** (limit - col - 2), col + 1, {
             name: def.motherName,
             sex: "female",
+            line: "Uk",
+            listed: false,
+            show: true,
+            owned: false,
+            memo: ["未定義"],
           });
         }
       }
@@ -89,7 +153,6 @@ const construct = (map: Map<string, HorseDef>) => (
   };
 
   mapPedigree(0, 0, def);
-  console.info(table);
   return table;
 };
 
@@ -98,18 +161,40 @@ const renderCell = (
   col: number,
   cell: PedigreeNode
 ): JSX.Element => {
-  const threshold = 2 ** (4 - col);
+  const threshold = 2 ** (limit - col - 2);
+  const className = [
+    "cell",
+    !cell.show ? "empty" : cell.line,
+    col === 0 && row === 2 ** (limit - 2) ? ["mother"] : [],
+  ]
+    .flatMap((x) => x)
+    .join(" ");
   return (
     <React.Fragment key={`col-${col}`}>
       {row % threshold === 0 ? (
-        <TableCell
-          rowSpan={threshold}
-          className={["cell", cell.show ? "" : "empty"].join(" ")}
-        >
-          {cell.show ? <Box>{cell.name}</Box> : <Box />}
+        <TableCell rowSpan={threshold} className={className}>
+          {cell.show ? <Typography>{cell.name}</Typography> : null}
         </TableCell>
       ) : null}
     </React.Fragment>
+  );
+};
+
+const renderLine = (line: Line): JSX.Element => {
+  return line !== "Uk" ? (
+    <TableCell
+      key={`col-line`}
+      className={["cell", line].join(" ")}
+      rowSpan={2}
+    >
+      <Typography>{lineMap[line].label}系</Typography>
+    </TableCell>
+  ) : (
+    <TableCell
+      key={`col-line`}
+      className={["cell", "empty"].join(" ")}
+      rowSpan={2}
+    />
   );
 };
 
@@ -121,6 +206,7 @@ const render = (data: PedigreeNode[][]): JSX.Element => {
           {cols
             .filter((_, ix) => ix > 0)
             .map((cell, col) => renderCell(row, col, cell))}
+          {row % 2 === 0 ? renderLine(cols[cols.length - 1].line) : null}
         </TableRow>
       ))}
     </React.Fragment>
@@ -143,7 +229,7 @@ export const PedigreeTable: React.FC<PedigreeTableProps> = ({ def }) => {
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table}>
+      <Table className={classes.table} size="small">
         <TableBody>{render(array)}</TableBody>
       </Table>
     </TableContainer>

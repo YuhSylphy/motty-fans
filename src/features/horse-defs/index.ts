@@ -4,4 +4,5 @@ export {
 } from "./core/ducks";
 export type { HorseDefState, HorseDefsAction } from "./core/ducks";
 export { epic as horseDefsEpic } from "./core/epic";
-export type { HorseDef } from "./core/horse";
+export { fetchHorseDefs, lineMap } from "./core/horse";
+export type { HorseDef, Line, Sex } from "./core/horse";
