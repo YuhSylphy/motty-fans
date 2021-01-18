@@ -1,12 +1,13 @@
 import * as React from "react";
 import { useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Dialog, DialogTitle } from "@material-ui/core";
+import { Dialog, DialogTitle, Typography } from "@material-ui/core";
 
 import { RootState } from "../../../app/store";
 
 import { pedigreeActions } from "..";
 import { PedigreeTable } from "./PedigreeTable";
+import { lineMap } from "../../horse-defs";
 
 export const PedigreeDialog: React.FC = () => {
   const dispatch = useDispatch();
@@ -30,7 +31,14 @@ export const PedigreeDialog: React.FC = () => {
 
   return def ? (
     <Dialog open={open} onClose={handleClose}>
-      <DialogTitle>血統表: {def.name}</DialogTitle>
+      <DialogTitle>
+        <Typography variant="h5">血統表: {def.name}</Typography>
+        {def.line !== "Uk" ? (
+          <Typography variant="h6" style={{ paddingLeft: "1em" }}>
+            {lineMap[def.line].label}系
+          </Typography>
+        ) : null}
+      </DialogTitle>
       <PedigreeTable def={def} />
     </Dialog>
   ) : null;

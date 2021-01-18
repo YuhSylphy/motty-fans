@@ -4,7 +4,7 @@ import * as d3 from "d3";
 import * as dagreD3 from "dagre-d3";
 import * as graphlib from "graphlib";
 
-import { HorseDef } from "../../horse-defs/core/horse";
+import { HorseDef } from "../../horse-defs";
 
 import "./FamilyDiagram.css";
 import { Edge } from "dagre-d3";
