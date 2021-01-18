@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Flashy Bull",
+    "listed": false,
+    "system": "Hi",
+    "show": true,
+    "fatherName": "Holy Bull",
+    "motherName": "☆Flashy Bull母"
+  },
+  {
+    "name": "Holy Bull",
+    "listed": false,
+    "system": "Hi",
+    "show": true,
+    "fatherName": "Great Above",
+    "motherName": "☆Holy Bull母"
+  },
+  {
+    "name": "Great Above",
+    "listed": false,
+    "system": "Hi",
+    "show": true,
+    "fatherName": "Minnesota Mac"
+  },
+  {
+    "name": "Minnesota Mac",
+    "listed": false,
+    "system": "Hi",
+    "show": true
+  },
+  {
+    "name": "Al Hattab",
+    "listed": false,
+    "system": "Sw",
+    "show": true
+  },
+  {
+    "name": "Mt. Livermore",
+    "listed": false,
+    "system": "Ns",
+    "show": true,
+    "fatherName": "Blushing Groom"
+  },
+  {
+    "name": "Blushing Groom",
+    "listed": false,
+    "system": "Ns",
+    "show": true
+  },
+  {
+    "name": "Manila",
+    "listed": false,
+    "system": "Ne",
+    "show": true
+  }
+]

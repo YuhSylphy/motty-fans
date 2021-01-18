@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ロズウェルリポート",
+    "listed": true,
+    "system": "Hi",
+    "show": true,
+    "fatherName": "Flashy Bull",
+    "motherName": "Ms. Cornstalk"
+  },
+  {
+    "name": "☆Holy Bull母",
+    "listed": false,
+    "system": "Sw",
+    "show": false,
+    "fatherName": "Al Hattab"
+  },
+  {
+    "name": "☆Flashy Bull母",
+    "listed": false,
+    "system": "Ns",
+    "show": false,
+    "fatherName": "Mt. Livermore",
+    "motherName": "☆Flashy Bull母母"
+  },
+  {
+    "name": "☆Flashy Bull母母",
+    "listed": false,
+    "system": "Ne",
+    "show": false,
+    "fatherName": "Manila"
+  }
+]

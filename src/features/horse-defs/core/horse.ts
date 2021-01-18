@@ -1,3 +1,6 @@
+import { of } from "rxjs";
+import { mergeAll, mergeMap, tap, toArray } from "rxjs/operators";
+
 export type Sex = "male" | "female" | "unknown";
 
 export type System =
@@ -19,16 +22,86 @@ export type System =
   | "He"; // ヘロド系
 
 export type HorseDef = {
+  /** 名称: ID代わり */
   name: string;
+  /** 父親名 */
   fatherName?: string;
+  /** 母親名 */
   motherName?: string;
+  /** 性別 */
   sex: Sex;
+  /** 系統 */
   system: System;
+  /** 種牡馬/繁殖牝馬一覧に載っているか */
+  listed: boolean;
+  /** 所有馬 */
+  owned: boolean;
+  /** 表示すべきか */
+  show: boolean;
+  /** メモ */
+  memo: string[];
 };
 
+const fetchOwned =
+  // 所有馬
+  (): Promise<HorseDef[]> =>
+    fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`)
+      .then((res) => res.json())
+      .then((data: (HorseDef & { removed?: boolean })[]) =>
+        data
+          .filter((def) => !def.removed)
+          .map((def) => ({
+            ...def,
+            listed: !!def.listed,
+            owned: true,
+            show: true,
+            memo: def.memo ?? [],
+          }))
+      );
+
+const fetchStallion =
+  // 種牡馬
+  (): Promise<HorseDef[]> =>
+    fetch(`${process.env.PUBLIC_URL}/assets/stallion-defs.json`)
+      .then((res) => res.json())
+      .then((data: HorseDef[]) =>
+        data.map((def) => ({
+          ...def,
+          sex: "male",
+          owned: false,
+          memo: def.memo ?? [],
+        }))
+      );
+
+const fetchBroodmare =
+  // 繁殖牝馬
+  (): Promise<HorseDef[]> =>
+    fetch(`${process.env.PUBLIC_URL}/assets/broodmare-defs.json`)
+      .then((res) => res.json())
+      .then((data: HorseDef[]) =>
+        data.map((def) => ({
+          ...def,
+          sex: "female",
+          owned: false,
+          memo: def.memo ?? [],
+        }))
+      );
+
 export const fetchHorseDefs = (): Promise<HorseDef[]> =>
-  fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`)
-    .then((res) => res.json())
-    .then((data: (HorseDef & { removed?: boolean })[]) =>
-      data.filter((def) => !def.removed)
-    );
+  of(fetchOwned, fetchStallion, fetchBroodmare)
+    .pipe(
+      mergeMap((func) => func()),
+      mergeAll(),
+      toArray(),
+      tap((x) => {
+        console.info(x);
+      })
+    )
+    .toPromise();
+
+// export const fetchHorseDefs = (): Promise<HorseDef[]> =>
+//   fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`)
+//     .then((res) => res.json())
+//     .then((data: (HorseDef & { removed?: boolean })[]) =>
+//       data.filter((def) => !def.removed)
+//     );

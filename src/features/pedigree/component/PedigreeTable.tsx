@@ -53,30 +53,30 @@ const construct = (map: Map<string, HorseDef>) => (
 
   const limit = 5;
   const mapPedigree = (row: number, col: number, def: HorseDef) => {
-    console.info("mapPedigree", row, col, def);
     table[row][col] = {
       name: def.name,
       generation: 0,
-      show: true,
+      show: !!def.show,
     };
 
-    if (col < limit) {
-      console.info("if", def);
+    if (col + 1 < limit) {
       if (def.fatherName) {
         if (map.has(def.fatherName)) {
-          console.info("father", map.get(def.fatherName));
           mapPedigree(row, col + 1, map.get(def.fatherName)!);
         } else {
           mapPedigree(row, col + 1, {
-            name: def.fatherName,
+            name: `${def.fatherName}`,
             sex: "male",
             system: "Uk",
+            listed: false,
+            show: true,
+            owned: false,
+            memo: ["未定義"],
           });
         }
       }
       if (def.motherName) {
         if (map.has(def.motherName)) {
-          console.info("mother", map.get(def.motherName));
           mapPedigree(
             row + 2 ** (limit - col - 1),
             col + 1,
@@ -84,9 +84,13 @@ const construct = (map: Map<string, HorseDef>) => (
           );
         } else {
           mapPedigree(row + 2 ** (limit - col - 1), col + 1, {
-            name: def.motherName,
+            name: `${def.motherName}(DATA NOT FOUND)`,
             sex: "female",
             system: "Uk",
+            listed: false,
+            show: true,
+            owned: false,
+            memo: ["未定義"],
           });
         }
       }
@@ -94,7 +98,6 @@ const construct = (map: Map<string, HorseDef>) => (
   };
 
   mapPedigree(0, 0, def);
-  console.info(table);
   return table;
 };
 
