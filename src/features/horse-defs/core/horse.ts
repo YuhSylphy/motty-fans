@@ -1,9 +1,9 @@
 import { of } from "rxjs";
-import { mergeAll, mergeMap, tap, toArray } from "rxjs/operators";
+import { mergeAll, mergeMap, toArray } from "rxjs/operators";
 
 export type Sex = "male" | "female" | "unknown";
 
-export type System =
+export type Line =
   | "Uk" // 不明(指定なし)
   | "Ec" // エクリプス系
   | "Ph" // ファラリス系
@@ -21,6 +21,25 @@ export type System =
   | "Ma" // マッチェム系
   | "He"; // ヘロド系
 
+export const lineMap: { [key in Line]: { label: string } } = {
+  Uk: { label: "不明(指定なし)" },
+  Ec: { label: "エクリプス" },
+  Ph: { label: "ファラリス" },
+  Ns: { label: "ナスルーラ" },
+  Ro: { label: "ロイヤルチャージャー" },
+  Ne: { label: "ニアークティック" },
+  Na: { label: "ネイティヴダンサー" },
+  Fa: { label: "フェアウェイ" },
+  To: { label: "トムフール" },
+  Te: { label: "テディ" },
+  Sw: { label: "スインフォード" },
+  Ha: { label: "ハンプトン" },
+  Hi: { label: "ヒムヤー" },
+  St: { label: "セントサイモン" },
+  Ma: { label: "マッチェム" },
+  He: { label: "ヘロド" },
+};
+
 export type HorseDef = {
   /** 名称: ID代わり */
   name: string;
@@ -31,7 +50,7 @@ export type HorseDef = {
   /** 性別 */
   sex: Sex;
   /** 系統 */
-  system: System;
+  line: Line;
   /** 種牡馬/繁殖牝馬一覧に載っているか */
   listed: boolean;
   /** 所有馬 */
@@ -92,16 +111,6 @@ export const fetchHorseDefs = (): Promise<HorseDef[]> =>
     .pipe(
       mergeMap((func) => func()),
       mergeAll(),
-      toArray(),
-      tap((x) => {
-        console.info(x);
-      })
+      toArray()
     )
     .toPromise();
-
-// export const fetchHorseDefs = (): Promise<HorseDef[]> =>
-//   fetch(`${process.env.PUBLIC_URL}/assets/horse-defs.json`)
-//     .then((res) => res.json())
-//     .then((data: (HorseDef & { removed?: boolean })[]) =>
-//       data.filter((def) => !def.removed)
-//     );
