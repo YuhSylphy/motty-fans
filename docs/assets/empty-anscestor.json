@@ -1,0 +1,71 @@
+{
+  "name": "",
+  "father": {
+    "name": "",
+    "father": {
+      "name": "",
+      "father": {
+        "name": "",
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      }
+    },
+    "mother": {
+      "father": {
+        "name": "",
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      }
+    }
+  },
+  "mother": {
+    "name": "",
+    "father": {
+      "name": "",
+      "father": {
+        "name": "",
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      }
+    },
+    "mother": {
+      "father": {
+        "name": "",
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "",
+          "line": ""
+        }
+      }
+    }
+  }
+}
