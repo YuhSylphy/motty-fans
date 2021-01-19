@@ -1,5 +1,12 @@
 import { of } from "rxjs";
-import { mergeAll, mergeMap, toArray } from "rxjs/operators";
+import {
+  groupBy,
+  mergeAll,
+  mergeMap,
+  toArray,
+  reduce,
+  tap,
+} from "rxjs/operators";
 
 export type Sex = "male" | "female" | "unknown";
 
@@ -61,6 +68,55 @@ export type HorseDef = {
   memo: string[];
 };
 
+type AnscestorHorse = {
+  name?: string;
+  father?: AnscestorHorse;
+  mother?: AnscestorHorse;
+  line?: Line;
+};
+interface ListedAnscestor extends AnscestorHorse {
+  name: Exclude<AnscestorHorse["name"], undefined>;
+  father: Exclude<AnscestorHorse["father"], undefined>;
+  mother: Exclude<AnscestorHorse["mother"], undefined>;
+}
+
+/**
+ * 種牡馬・繁殖牝馬リストを競走馬一覧にflattenして返す
+ * @param def
+ * @param param1
+ */
+const flatten = (
+  def: AnscestorHorse,
+  { sex, listed, childName }: { sex: Sex; listed?: boolean; childName: string }
+): HorseDef[] => {
+  const name =
+    def.name ??
+    `${childName}${sex === "female" ? "母" : sex === "male" ? "父" : "親"}`;
+  const show = def.name !== void 0;
+
+  const fathers = def.father
+    ? flatten(def.father, { sex: "male", childName: name })
+    : [];
+  const mothers = def.mother
+    ? flatten(def.mother, { sex: "female", childName: name })
+    : [];
+  const line = def.line ?? fathers?.[0]?.line ?? "Uk";
+
+  const target: HorseDef = {
+    name,
+    line,
+    listed: !!listed,
+    owned: false,
+    show,
+    fatherName: fathers?.[0]?.name,
+    motherName: mothers?.[0]?.name,
+    memo: [],
+    sex,
+  };
+
+  return [target, fathers, mothers].flat();
+};
+
 const fetchOwned =
   // 所有馬
   (): Promise<HorseDef[]> =>
@@ -78,39 +134,90 @@ const fetchOwned =
           }))
       );
 
-const fetchStallion =
-  // 種牡馬
-  (): Promise<HorseDef[]> =>
-    fetch(`${process.env.PUBLIC_URL}/assets/stallion-defs.json`)
-      .then((res) => res.json())
-      .then((data: HorseDef[]) =>
-        data.map((def) => ({
-          ...def,
-          sex: "male",
-          owned: false,
-          memo: def.memo ?? [],
-        }))
-      );
+/**
+ * 繁殖牝馬リスト
+ */
+const fetchBroodmare = (): Promise<HorseDef[]> =>
+  fetch(`${process.env.PUBLIC_URL}/assets/broodmares.json`)
+    .then((res) => res.json())
+    .then((data: ListedAnscestor[]) =>
+      data
+        .map((def) =>
+          flatten(def, { sex: "female", listed: true, childName: "N/A" })
+        )
+        .flat()
+    );
 
-const fetchBroodmare =
-  // 繁殖牝馬
-  (): Promise<HorseDef[]> =>
-    fetch(`${process.env.PUBLIC_URL}/assets/broodmare-defs.json`)
-      .then((res) => res.json())
-      .then((data: HorseDef[]) =>
-        data.map((def) => ({
-          ...def,
-          sex: "female",
-          owned: false,
-          memo: def.memo ?? [],
-        }))
-      );
+/**
+ * 種牡馬リスト
+ */
+const fetchStallion = (): Promise<HorseDef[]> =>
+  fetch(`${process.env.PUBLIC_URL}/assets/stallions.json`)
+    .then((res) => res.json())
+    .then((data: ListedAnscestor[]) =>
+      data
+        .map((def) =>
+          flatten(def, { sex: "male", listed: true, childName: "N/A" })
+        )
+        .flat()
+    );
 
+/**
+ * 競走馬の定義を取得してマージする
+ */
 export const fetchHorseDefs = (): Promise<HorseDef[]> =>
   of(fetchOwned, fetchStallion, fetchBroodmare)
     .pipe(
       mergeMap((func) => func()),
       mergeAll(),
-      toArray()
+      groupBy((def) => def.name),
+      mergeMap((group) =>
+        group.pipe(
+          reduce((lhs, rhs) => ({
+            name: lhs.name ?? rhs.name,
+            sex: lhs.sex ?? rhs.sex,
+            listed: lhs.listed || rhs.listed,
+            show: lhs.show || rhs.show,
+            owned: lhs.owned || rhs.owned,
+            line: lhs.line === "Uk" ? rhs.line : lhs.line,
+            memo: [...lhs.memo, ...rhs.memo],
+            fatherName: lhs.fatherName ?? rhs.fatherName,
+            motherName: lhs.motherName ?? rhs.motherName,
+          }))
+        )
+      ),
+      toArray(),
+      tap((defs) => {
+        const m = new Map<string, HorseDef>(defs.map((def) => [def.name, def]));
+
+        /** lineがUnknownのものを父親の情報から保完する */
+        const complementLine = (def: HorseDef) => {
+          // 対応不要
+          if (def.line && def.line !== "Uk") {
+            return;
+          }
+
+          // 父親が後ろにいるかも知れないので先に再帰しておく
+          if (def.fatherName) {
+            if (m.has(def.fatherName)) {
+              complementLine(m.get(def.fatherName)!);
+            } else {
+              console.warn(
+                `${def.fatherName}: father of ${def.name} doesnt exist in list`,
+                def,
+                m
+              );
+            }
+          }
+
+          // それでも未確定ならUkに設定
+          def.line = m.get(def.fatherName!)?.line ?? "Uk";
+
+          if (def.line === "Uk") {
+            console.warn(`couldnt determine line of ${def.name}`);
+          }
+        };
+        defs.forEach(complementLine);
+      })
     )
     .toPromise();
