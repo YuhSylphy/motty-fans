@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) =>
           backgroundColor: "#fdf488",
         },
         "&.Na": {
-          backgroundColor: "##52d8fd",
+          backgroundColor: "#52d8fd",
         },
         "&.Fa": {
           backgroundColor: "#ffc943",
@@ -173,7 +173,9 @@ const renderCell = (
     <React.Fragment key={`col-${col}`}>
       {row % threshold === 0 ? (
         <TableCell rowSpan={threshold} className={className}>
-          {cell.show ? <Typography>{cell.name}</Typography> : null}
+          {cell.show ? (
+            <Typography variant="body2">{cell.name}</Typography>
+          ) : null}
         </TableCell>
       ) : null}
     </React.Fragment>
@@ -187,7 +189,7 @@ const renderLine = (line: Line): JSX.Element => {
       className={["cell", line].join(" ")}
       rowSpan={2}
     >
-      <Typography>{lineMap[line].label}系</Typography>
+      <Typography variant="body2">{lineMap[line].label}系</Typography>
     </TableCell>
   ) : (
     <TableCell
