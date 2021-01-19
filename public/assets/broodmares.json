@@ -140,5 +140,45 @@
         }
       }
     }
+  },
+  {
+    "name": "ホワイトショコラ",
+    "father": {
+      "name": "クロフネ"
+    },
+    "mother": {
+      "name": "シラユキヒメ",
+      "father": {
+        "name": "サンデーサイレンス",
+        "father": {
+          "name": "Halo",
+          "father": {
+            "name": "Hail to Reason",
+            "line": "Ro"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Understanding",
+            "line": "Te"
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Topsider",
+          "father": {
+            "name": "Northern Dancer",
+            "line": "Ne"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Star de Naskra",
+            "line": "Ns"
+          }
+        }
+      }
+    }
   }
 ]
