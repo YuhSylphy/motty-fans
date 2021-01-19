@@ -1,0 +1,73 @@
+[
+  {
+    "name": "ディープインパクト",
+    "father": {
+      "name": "サンデーサイレンス",
+      "father": {
+        "name": "Halo",
+        "father": {
+          "name": "Hail to Reason",
+          "father": {
+            "name": "Turn-to",
+            "line": "Ro"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Cosmic Bomb",
+            "line": "Ph"
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Understanding",
+          "father": {
+            "name": "Promised Land",
+            "line": "Te"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Montparnasse",
+            "line": "Ha"
+          }
+        }
+      }
+    },
+    "mother": {
+      "name": "ウインドインハーヘア",
+      "father": {
+        "name": "Alzao",
+        "father": {
+          "name": "Lyphard",
+          "father": {
+            "name": "Northern Dancer",
+            "line": "Ne"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Sir Ivor",
+            "line": "Ro"
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Busted",
+          "father": {
+            "name": "Crepello",
+            "line": "Sw"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Queen's Hussar",
+            "line": "Fa"
+          }
+        }
+      }
+    }
+  }
+]
