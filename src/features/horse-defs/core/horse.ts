@@ -187,6 +187,36 @@ export const fetchHorseDefs = (): Promise<HorseDef[]> =>
         )
       ),
       toArray(),
-      tap((r) => console.info(r))
+      tap((defs) => {
+        const m = new Map<string, HorseDef>(defs.map((def) => [def.name, def]));
+
+        /** lineがUnknownのものを父親の情報から保完する */
+        const complementLine = (def: HorseDef) => {
+          if (def.line && def.line !== "Uk") {
+            return;
+          }
+
+          // 父親が後ろにいるかも知れないので先に再帰しておく
+          if (def.fatherName) {
+            if (m.has(def.fatherName)) {
+              complementLine(m.get(def.fatherName)!);
+            } else {
+              console.warn(
+                `${def.fatherName}: father of ${def.name} doesnt exist in list`,
+                def,
+                m
+              );
+            }
+          }
+
+          // それでも未確定ならUkに設定
+          def.line = m.get(def.fatherName!)?.line ?? "Uk";
+
+          if (def.line === "Uk") {
+            console.warn(`couldnt determine line of ${def.name}`);
+          }
+        };
+        defs.forEach(complementLine);
+      })
     )
     .toPromise();
