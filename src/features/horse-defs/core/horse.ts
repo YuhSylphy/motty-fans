@@ -192,6 +192,7 @@ export const fetchHorseDefs = (): Promise<HorseDef[]> =>
 
         /** lineがUnknownのものを父親の情報から保完する */
         const complementLine = (def: HorseDef) => {
+          // 対応不要
           if (def.line && def.line !== "Uk") {
             return;
           }
