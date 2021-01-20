@@ -10,13 +10,19 @@ import {
   IconButton,
   Link as Anchor,
   List,
-  // ListItem,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
   Toolbar,
   Typography,
   useTheme,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import { MenuOutlined } from "@material-ui/icons";
+import {
+  List as ListIcon,
+  MenuOutlined,
+  Timeline as TimelineIcon,
+} from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
 import { MareLine } from "./features/mare-line";
@@ -26,17 +32,18 @@ import { PedigreeDialog } from "./features/pedigree";
 import "./App.css";
 
 type MenuItemDef = {
+  icon: JSX.Element;
   label: string;
   path: string;
 };
 
 const renderListItem = (def: MenuItemDef) => {
   return (
-    <Typography>
-      <Link to={def.path}>{def.label}</Link>
-    </Typography>
+    <ListItem key={def.path} button={true} component={Link} to={def.path}>
+      <ListItemIcon>{def.icon}</ListItemIcon>
+      <ListItemText primary={def.label} />
+    </ListItem>
   );
-  // return <ListItem key={def.path}>{def}</ListItem>;
 };
 
 const MenuList: React.FC<{
@@ -44,10 +51,12 @@ const MenuList: React.FC<{
 }> = ({ toggleMenu }) => {
   const defs = [
     {
+      icon: <ListIcon />,
       label: "牝系図",
       path: "/mare-line",
     },
     {
+      icon: <TimelineIcon />,
       label: "家系図(旧)",
       path: "/family",
     },
