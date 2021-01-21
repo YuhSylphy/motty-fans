@@ -16,6 +16,9 @@ const prepareGraph = (defs: HorseDef[]) => {
   const edges: [Edge, dagreD3.Label][] = [];
 
   defs.forEach((def) => {
+    if (!def.owned && !def.listed) {
+      return;
+    }
     // 定義された馬本体
     nodes.set(def.name, {
       label: def.name,
