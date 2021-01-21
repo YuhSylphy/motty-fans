@@ -35,7 +35,7 @@ export const PedigreeDialog: React.FC = () => {
         <Typography variant="h5">血統表: {def.name}</Typography>
         {def.line !== "Uk" ? (
           <Typography variant="h6" style={{ paddingLeft: "1em" }}>
-            {lineMap[def.line].label}系
+            大系統: {lineMap[def.line].label}系
           </Typography>
         ) : null}
       </DialogTitle>
