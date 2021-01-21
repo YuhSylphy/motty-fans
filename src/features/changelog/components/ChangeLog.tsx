@@ -1,20 +1,14 @@
 import { Paper, Typography, createStyles, makeStyles } from "@material-ui/core";
 
 import * as React from "react";
+import { useEffect } from "react";
 import Markdown from "react-markdown";
+import { useDispatch } from "react-redux";
 
 import "github-markdown-css";
-
-const markdown = `
-# Header
-
-## section
-
-* A
-* B
-  * B-1
-  * **B-2**
-`;
+import { useSelector } from "react-redux";
+import { RootState } from "../../../app/store";
+import { changeLogActions } from "..";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -26,14 +20,19 @@ const useStyles = makeStyles((theme) =>
 
 export const ChangeLog: React.FC = () => {
   const classes = useStyles();
+  const dispatch = useDispatch();
+
+  const { article } = useSelector((state: RootState) => state.changeLog);
+  useEffect(() => {
+    dispatch(changeLogActions.init());
+  }, [dispatch]);
+
   return (
     <React.Fragment>
-      <Typography variant="h4">更新</Typography>
       <Paper className={classes.paper}>
-        <Markdown source={markdown} />
-      </Paper>
-      <Paper className={classes.paper}>
-        <Markdown source={markdown} className="markdown-body" />
+        {article !== "" ? (
+          <Markdown source={article} className="markdown-body" />
+        ) : null}
       </Paper>
     </React.Fragment>
   );
