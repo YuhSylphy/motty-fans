@@ -1,4 +1,4 @@
-import { Paper, Typography, createStyles, makeStyles } from "@material-ui/core";
+import { Paper, createStyles, makeStyles } from "@material-ui/core";
 
 import * as React from "react";
 import { useEffect } from "react";
