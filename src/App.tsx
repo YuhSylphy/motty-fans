@@ -22,12 +22,14 @@ import {
   List as ListIcon,
   MenuOutlined,
   Timeline as TimelineIcon,
+  ChangeHistory as ChangeHistoryIcon,
 } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { horseDefsActions } from "./features/horse-defs";
 import { MareLine } from "./features/mare-line";
 import { Indicator } from "./features/indicator";
 import { PedigreeDialog } from "./features/pedigree";
+import { ChangeLog } from "./features/changelog";
 
 import "./App.css";
 
@@ -35,6 +37,7 @@ type MenuItemDef = {
   icon: JSX.Element;
   label: string;
   path: string;
+  page: JSX.Element;
 };
 
 const renderListItem = (def: MenuItemDef) => {
@@ -46,22 +49,30 @@ const renderListItem = (def: MenuItemDef) => {
   );
 };
 
+const defs: MenuItemDef[] = [
+  {
+    icon: <ListIcon />,
+    label: "牝系図",
+    path: "/mare-line",
+    page: <MareLine />,
+  },
+  {
+    icon: <TimelineIcon />,
+    label: "家系図(旧)",
+    path: "/family",
+    page: <Family />,
+  },
+  {
+    icon: <ChangeHistoryIcon />,
+    label: "更新履歴",
+    path: "/change-log",
+    page: <ChangeLog />,
+  },
+];
+
 const MenuList: React.FC<{
   toggleMenu: () => void;
 }> = ({ toggleMenu }) => {
-  const defs = [
-    {
-      icon: <ListIcon />,
-      label: "牝系図",
-      path: "/mare-line",
-    },
-    {
-      icon: <TimelineIcon />,
-      label: "家系図(旧)",
-      path: "/family",
-    },
-  ];
-
   return (
     <List onClick={toggleMenu} onKeyDown={toggleMenu}>
       {defs.map(renderListItem)}
@@ -127,12 +138,9 @@ export const App: React.FC = () => {
         <Header />
         <Box margin={theme.spacing(0.5)}>
           <Switch>
-            <Route path="/family">
-              <Family />
-            </Route>
-            <Route path="/mare-line">
-              <MareLine />
-            </Route>
+            {defs.map(({ path, page }) => (
+              <Route path={path}>{page}</Route>
+            ))}
             <Route exact path="/">
               <Redirect to="/mare-line" />
             </Route>

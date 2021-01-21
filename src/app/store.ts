@@ -5,6 +5,7 @@ import { combineEpics, createEpicMiddleware } from "redux-observable";
 import { horseDefsReducer, horseDefsEpic } from "../features/horse-defs";
 import { indicatorReducer } from "../features/indicator";
 import { pedigreeReducer } from "../features/pedigree";
+import { changeLogReducer, changeLogEpic } from "../features/changelog";
 
 const dependencies = {};
 const epicMiddleware = createEpicMiddleware<
@@ -21,6 +22,7 @@ export const store = configureStore({
     horseDefs: horseDefsReducer,
     indicator: indicatorReducer,
     pedigree: pedigreeReducer,
+    changeLog: changeLogReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
@@ -28,7 +30,7 @@ export const store = configureStore({
     }).concat([epicMiddleware]),
 });
 
-epicMiddleware.run(combineEpics(horseDefsEpic) as any);
+epicMiddleware.run(combineEpics(horseDefsEpic, changeLogEpic) as any);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type Dependencies = typeof dependencies;
