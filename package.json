@@ -13,6 +13,7 @@
     "@reduxjs/toolkit": "^1.2.5",
     "@types/dagre-d3": "^0.6.2",
     "dagre-d3": "^0.6.4",
+    "github-markdown-css": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.3",
