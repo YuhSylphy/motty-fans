@@ -238,15 +238,15 @@
     "bornIn": 2038
   },
   {
-    "name": "ルマンドの38",
+    "name": "アマオウパフェ",
     "sex": "female",
     "fatherName": "エンパイアメーカー",
     "motherName": "ルマンド",
     "bornIn": 2038
   },
   {
-    "name": "トランスカイの38",
-    "sex": "male",
+    "name": "リアルゴールド",
+    "sex": "female",
     "fatherName": "ステイゴールド",
     "motherName": "トランスカイ",
     "bornIn": 2038
@@ -291,15 +291,13 @@
     "sex": "female",
     "fatherName": "キングカメハメハ",
     "motherName": "トランスカイ",
-    "removed": true,
     "bornIn": 2040
   },
   {
     "name": "ルマンドの40",
-    "sex": "female",
+    "sex": "male",
     "fatherName": "ストリートセンス",
     "motherName": "ルマンド",
-    "removed": true,
     "bornIn": 2040
   },
   {
@@ -307,7 +305,30 @@
     "sex": "male",
     "fatherName": "ヴァーミリアン",
     "motherName": "ペコチャン",
-    "removed": true,
     "bornIn": 2040
+  },
+  {
+    "name": "ルマンドの41",
+    "sex": "",
+    "fatherName": "ストリートセンス",
+    "motherName": "ルマンド",
+    "removed": true,
+    "bornIn": 2041
+  },
+  {
+    "name": "トランスカイの41",
+    "sex": "",
+    "fatherName": "ステイゴールド",
+    "motherName": "トランスカイ",
+    "removed": true,
+    "bornIn": 2041
+  },
+  {
+    "name": "ペコチャンの41",
+    "sex": "",
+    "fatherName": "ヴァーミリアン",
+    "motherName": "ペコチャン",
+    "removed": true,
+    "bornIn": 2041
   }
 ]
