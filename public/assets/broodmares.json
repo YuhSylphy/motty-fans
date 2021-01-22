@@ -180,5 +180,76 @@
         }
       }
     }
+  },
+  {
+    "name": "ドルフィングリート",
+    "father": {
+      "name": "クロフネ",
+      "father": {
+        "name": "フレンチデピュティ",
+        "father": {
+          "name": "Deputy Minister",
+          "father": {
+            "name": "Vice Regent",
+            "line": "Ne"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Hold Your Peace",
+            "line": "St"
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Classic Go Go",
+          "father": {
+            "name": "Pago Pago",
+            "line": "Fa"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Icecapade",
+            "line": "Ne"
+          }
+        }
+      }
+    },
+    "mother": {
+      "name": "グローバルピース",
+      "father": {
+        "name": "サンデーサイレンス",
+        "father": {
+          "name": "Halo",
+          "father": {
+            "name": "Hail to Reason",
+            "line": "Ro"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Understanding",
+            "line": "Te"
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Nashwan",
+          "father": {
+            "name": "BlushingGroom",
+            "line": "Ns"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "リマンド",
+            "line": "Sw"
+          }
+        }
+      }
+    }
   }
 ]
