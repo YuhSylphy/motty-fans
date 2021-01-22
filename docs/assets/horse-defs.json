@@ -225,7 +225,7 @@
   },
   {
     "name": "ホッペ",
-    "sex": "male",
+    "sex": "female",
     "fatherName": "ディープインパクト",
     "motherName": "ペコチャン",
     "bornIn": 2037
@@ -259,28 +259,28 @@
     "bornIn": 2038
   },
   {
-    "name": "ミタラシダンゴの39",
+    "name": "ミタラシダンゴの39(売却)",
     "sex": "female",
     "fatherName": "オルフェーヴル",
     "motherName": "ミタラシダンゴ",
     "bornIn": 2039
   },
   {
-    "name": "トランスカイの39",
+    "name": "トランスカイの39(売却)",
     "sex": "female",
     "fatherName": "キングカメハメハ",
     "motherName": "トランスカイ",
     "bornIn": 2039
   },
   {
-    "name": "ルマンドの39",
+    "name": "タマゴカケゴハン",
     "sex": "female",
     "fatherName": "ストリートセンス",
     "motherName": "ルマンド",
     "bornIn": 2039
   },
   {
-    "name": "ペコチャンの39",
+    "name": "ポコチャン",
     "sex": "male",
     "fatherName": "ヴァーミリアン",
     "motherName": "ペコチャン",
@@ -289,14 +289,14 @@
   {
     "name": "トランスカイの40",
     "sex": "female",
-    "fatherName": "キングカメハメハ",
+    "fatherName": "ダイワメジャー",
     "motherName": "トランスカイ",
     "bornIn": 2040
   },
   {
     "name": "ルマンドの40",
     "sex": "male",
-    "fatherName": "ストリートセンス",
+    "fatherName": "エンパイアメーカー",
     "motherName": "ルマンド",
     "bornIn": 2040
   },
@@ -309,26 +309,55 @@
   },
   {
     "name": "ルマンドの41",
-    "sex": "",
+    "sex": "female",
     "fatherName": "ストリートセンス",
     "motherName": "ルマンド",
-    "removed": true,
     "bornIn": 2041
   },
   {
     "name": "トランスカイの41",
-    "sex": "",
+    "sex": "female",
     "fatherName": "ステイゴールド",
     "motherName": "トランスカイ",
-    "removed": true,
     "bornIn": 2041
   },
   {
     "name": "ペコチャンの41",
-    "sex": "",
+    "sex": "female",
     "fatherName": "ヴァーミリアン",
     "motherName": "ペコチャン",
-    "removed": true,
     "bornIn": 2041
+  },
+  {
+    "name": "ドルフィングリート",
+    "sex": "female"
+  },
+  {
+    "name": "ホワイトロリータの42(受胎中)",
+    "sex": "unknown",
+    "fatherName": "ヴァーミリアン",
+    "motherName": "ホワイトロリータ",
+    "bornIn": 2042
+  },
+  {
+    "name": "ドルフィングリートの42(受胎中)",
+    "sex": "unknown",
+    "fatherName": "エピファネイア",
+    "motherName": "ドルフィングリート",
+    "bornIn": 2042
+  },
+  {
+    "name": "アジツキユデタマゴの42(受胎中)",
+    "sex": "unknown",
+    "fatherName": "オルフェーヴル",
+    "motherName": "アジツキユデタマゴ",
+    "bornIn": 2042
+  },
+  {
+    "name": "ペコチャンの42(受胎中)",
+    "sex": "unknown",
+    "fatherName": "ヴァーミリアン",
+    "motherName": "ペコチャン",
+    "bornIn": 2042
   }
 ]
