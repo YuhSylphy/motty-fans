@@ -17,14 +17,9 @@ jobs:
           git config --global user.email "yuhsylphy@gmail.com"
           git switch -C gh-pages origin/gh-pages
           git merge --no-ff -X theirs origin/main
-          git diff --exit-code --name-only @..@^1 -- src/* ./*.json
-          if [ $? -ne 0 ]; then
-            yarn --network-timeout=1000000
-            yarn build
-            yarn cpx -C 'build/**' './docs/'
-            git add docs/
-            git commit -m "Rebuild docs by Actions"
-          else
-            echo nothing to build.
-          fi
+          yarn --network-timeout=1000000
+          yarn build
+          yarn cpx -C 'build/**' './docs/'
+          git add docs/
+          git commit -m "Rebuild docs by Actions"
           git push origin gh-pages
