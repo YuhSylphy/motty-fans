@@ -5,7 +5,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import RemoveIcon from "@material-ui/icons/Remove";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
+import { faMars, faQuestion, faVenus } from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
 import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -39,6 +39,9 @@ const useStyles = makeStyles((theme: Theme) =>
       "& .female": {
         color: "#f44336",
       },
+      "& .unknown": {
+        color: "#888888",
+      },
     },
   })
 );
@@ -71,7 +74,7 @@ const setNodeProperty = (node: Datum, def: HorseDef) => {
           case "female":
             return <FontAwesomeIcon icon={faVenus} />;
           case "unknown":
-            return null;
+            return <FontAwesomeIcon icon={faQuestion} />;
           default:
             const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
         }
@@ -81,11 +84,14 @@ const setNodeProperty = (node: Datum, def: HorseDef) => {
         <InformationIcon name={def.name} />
       </span>
       {def.fatherName ? (
-        <span className="father male">
-          ({def.fatherName}
-          {/* 種牡馬/繁殖牝馬に対応したらつける <InformationIcon name={def.fatherName} /> */}
+        <React.Fragment>
+          (
+          <span className="father male">
+            {def.fatherName}
+            <InformationIcon name={def.fatherName} />
+          </span>
           )
-        </span>
+        </React.Fragment>
       ) : null}
     </React.Fragment>
   );
