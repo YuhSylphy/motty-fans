@@ -353,6 +353,77 @@
     }
   },
   {
+    "name": "エピファネイア",
+    "father": {
+      "name": "シンボリクリスエス",
+      "father": {
+        "name": "Kris S.",
+        "father": {
+          "name": "Roberto",
+          "father": {
+            "name": "Hail to Reason",
+            "line": "Ro"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Princequillo",
+            "line": "St"
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Gold Meridian",
+          "father": {
+            "name": "Seattle Slew",
+            "line": ""
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Tri Jet",
+            "line": "To"
+          }
+        }
+      }
+    },
+    "mother": {
+      "name": "シーザリオ",
+      "father": {
+        "name": "スペシャルウィーク",
+        "father": {
+          "name": "サンデーサイレンス",
+          "father": {
+            "name": "Halo",
+            "line": ""
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "マルゼンスキー",
+            "line": ""
+          }
+        }
+      },
+      "mother": {
+        "father": {
+          "name": "Sadler’s Wells",
+          "father": {
+            "name": "Northern Dancer",
+            "line": "Ne"
+          }
+        },
+        "mother": {
+          "father": {
+            "name": "Habitat",
+            "line": "Ro"
+          }
+        }
+      }
+    }
+  },
+  {
     "name": "ストリートセンス",
     "father": {
       "name": "Street Cry",
