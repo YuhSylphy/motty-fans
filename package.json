@@ -36,15 +36,23 @@
     "@types/react-redux": "^7.1.7",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
     "cpx": "^1.5.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
     "mkdirp": "^1.0.4",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "yarn lint && react-scripts start",
+    "build": "yarn lint && react-scripts build",
+    "test": "yarn lint && react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:prettier": "prettier --write src",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix src"
   },
   "eslintConfig": {
     "extends": "react-app"

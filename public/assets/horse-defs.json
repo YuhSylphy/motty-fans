@@ -1,363 +1,363 @@
 [
-  {
-    "name": "ロズウェルリポート",
-    "sex": "female",
-    "fatherName": "Flashy Bull",
-    "motherName": "Ms. Cornstalk"
-  },
-  {
-    "name": "モッティサイキョウ",
-    "sex": "male",
-    "fatherName": "パイロ",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "ステキマリオクン",
-    "sex": "male",
-    "fatherName": "ゴールドアリュール",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "ゴマプリン",
-    "sex": "female",
-    "fatherName": "ジョーカプチーノ",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "ミタラシダンゴ",
-    "sex": "female",
-    "fatherName": "ネオユニヴァース",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "カントリーマアム",
-    "sex": "female",
-    "fatherName": "マンハッタンカフェ",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "ルマンド",
-    "sex": "female",
-    "fatherName": "ダイワメジャー",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "モリナガノコエダ",
-    "sex": "female",
-    "fatherName": "ジョーカプチーノ",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "コーヒーゼリィ",
-    "sex": "male",
-    "fatherName": "ジョーカプチーノ",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "スウィートポテト",
-    "sex": "female",
-    "fatherName": "エンパイアメーカー",
-    "motherName": "ゴマプリン"
-  },
-  {
-    "name": "ムギチャ",
-    "sex": "female",
-    "fatherName": "ジョーカプチーノ",
-    "motherName": "ロズウェルリポート"
-  },
-  {
-    "name": "オレノオレオクッキ",
-    "sex": "male",
-    "fatherName": "ゴールドシップ",
-    "motherName": "ゴマプリン"
-  },
-  {
-    "name": "ペコチャン",
-    "sex": "female",
-    "fatherName": "ルーラーシップ",
-    "motherName": "カントリーマアム"
-  },
-  {
-    "name": "ピノ",
-    "sex": "female",
-    "fatherName": "アグネスデジタル",
-    "motherName": "ゴマプリン"
-  },
-  {
-    "name": "カブキアゲ",
-    "sex": "male",
-    "fatherName": "オルフェーヴル",
-    "motherName": "カントリーマアム",
-    "memo": ["#11: '37 復帰直後のレースで故障発生、予後不良と診断され死去"]
-  },
-  {
-    "name": "アルフォート",
-    "sex": "male",
-    "fatherName": "アグネスデジタル",
-    "motherName": "カントリーマアム",
-    "bornIn": 2033
-  },
-  {
-    "name": "ジャイアントコーン",
-    "sex": "male",
-    "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2033
-  },
-  {
-    "name": "ナタデココ",
-    "sex": "male",
-    "fatherName": "ゴールドシップ",
-    "motherName": "ゴマプリン",
-    "bornIn": 2034,
-    "memo": ["#11: '37 未勝利戦で勝てずそのまま引退"]
-  },
-  {
-    "name": "テリヤキバーガー",
-    "sex": "male",
-    "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2034,
-    "memo": [
-      "#11: GI 日本ダービー'37 5.4 10着",
-      "#12: GI 天皇賞(春)'38 4.4 12着",
-      "#12: GII オールカマー'38 9.3 3着",
-      "#12: GII ステイヤーズS'38 3.4 勝利",
-      "#12: GI 有馬記念'38 12.4 ×",
-      "#13: GII 阪神大賞典'39 3.3 勝利",
-      "#13: GI 天皇賞(春)'39 4.4 "
-    ]
-  },
-  {
-    "name": "ルマンドの34",
-    "sex": "male",
-    "fatherName": "エンパイアメーカー",
-    "motherName": "ルマンド",
-    "bornIn": 2034
-  },
-  {
-    "name": "ゴマプリンの35",
-    "sex": "male",
-    "fatherName": "ゴールドシップ",
-    "motherName": "ゴマプリン",
-    "bornIn": 2035,
-    "removed": true
-  },
-  {
-    "name": "デミグラスソース",
-    "sex": "male",
-    "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2035
-  },
-  {
-    "name": "アジツキユデタマゴ",
-    "sex": "female",
-    "fatherName": "ストリートセンス",
-    "motherName": "ルマンド",
-    "bornIn": 2035
-  },
-  {
-    "name": "トランスカイ",
-    "sex": "female",
-    "fatherName": "Acatenango",
-    "motherName": "Mandellicht",
-    "memo": ["購入した繁殖牝馬"]
-  },
-  {
-    "name": "シオムスビ",
-    "sex": "male",
-    "fatherName": "ステイゴールド",
-    "motherName": "ゴマプリン",
-    "bornIn": 2036
-  },
-  {
-    "name": "ミタラシダンゴの36",
-    "sex": "female",
-    "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2036,
-    "memo": ["#12: 引退"]
-  },
-  {
-    "name": "ワールドプレミアム",
-    "sex": "male",
-    "fatherName": "ディープインパクト",
-    "motherName": "トランスカイ",
-    "bornIn": 2036,
-    "memo": ["#12: 10.3ついに新馬戦も7位に終わる"]
-  },
-  {
-    "name": "ジックリコトコト",
-    "sex": "male",
-    "fatherName": "クロフネ",
-    "motherName": "ルマンド",
-    "bornIn": 2036
-  },
-  {
-    "name": "ヴァンホーテン",
-    "sex": "female",
-    "fatherName": "オルフェーヴル",
-    "motherName": "トランスカイ",
-    "bornIn": 2037
-  },
-  {
-    "name": "ホワイトロリータ",
-    "sex": "female",
-    "fatherName": "キングカメハメハ",
-    "motherName": "ホワイトショコラ",
-    "bornIn": 2035,
-    "memo": ["#11: '37の2歳馬セールで購入"]
-  },
-  {
-    "name": "マンマンマンゾク",
-    "sex": "male",
-    "fatherName": "オルフェーヴル",
-    "motherName": "ルマンド",
-    "bornIn": 2037
-  },
-  {
-    "name": "トルネードポテト",
-    "sex": "male",
-    "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2037
-  },
-  {
-    "name": "ホッペ",
-    "sex": "female",
-    "fatherName": "ディープインパクト",
-    "motherName": "ペコチャン",
-    "bornIn": 2037
-  },
-  {
-    "name": "ミタラシダンゴの38",
-    "sex": "male",
-    "fatherName": "ケープブランコ",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2038
-  },
-  {
-    "name": "アマオウパフェ",
-    "sex": "female",
-    "fatherName": "エンパイアメーカー",
-    "motherName": "ルマンド",
-    "bornIn": 2038
-  },
-  {
-    "name": "リアルゴールド",
-    "sex": "female",
-    "fatherName": "ステイゴールド",
-    "motherName": "トランスカイ",
-    "bornIn": 2038
-  },
-  {
-    "name": "ペコチャンの38",
-    "sex": "female",
-    "fatherName": "ステイゴールド",
-    "motherName": "ペコチャン",
-    "bornIn": 2038
-  },
-  {
-    "name": "ミタラシダンゴの39(売却)",
-    "sex": "female",
-    "fatherName": "オルフェーヴル",
-    "motherName": "ミタラシダンゴ",
-    "bornIn": 2039
-  },
-  {
-    "name": "トランスカイの39(売却)",
-    "sex": "female",
-    "fatherName": "キングカメハメハ",
-    "motherName": "トランスカイ",
-    "bornIn": 2039
-  },
-  {
-    "name": "タマゴカケゴハン",
-    "sex": "female",
-    "fatherName": "ストリートセンス",
-    "motherName": "ルマンド",
-    "bornIn": 2039
-  },
-  {
-    "name": "ポコチャン",
-    "sex": "male",
-    "fatherName": "ヴァーミリアン",
-    "motherName": "ペコチャン",
-    "bornIn": 2039
-  },
-  {
-    "name": "トランスカイの40",
-    "sex": "female",
-    "fatherName": "ダイワメジャー",
-    "motherName": "トランスカイ",
-    "bornIn": 2040
-  },
-  {
-    "name": "ルマンドの40",
-    "sex": "male",
-    "fatherName": "エンパイアメーカー",
-    "motherName": "ルマンド",
-    "bornIn": 2040
-  },
-  {
-    "name": "ペコチャンの40",
-    "sex": "male",
-    "fatherName": "ヴァーミリアン",
-    "motherName": "ペコチャン",
-    "bornIn": 2040
-  },
-  {
-    "name": "ルマンドの41",
-    "sex": "female",
-    "fatherName": "ストリートセンス",
-    "motherName": "ルマンド",
-    "bornIn": 2041
-  },
-  {
-    "name": "トランスカイの41",
-    "sex": "female",
-    "fatherName": "ステイゴールド",
-    "motherName": "トランスカイ",
-    "bornIn": 2041
-  },
-  {
-    "name": "ペコチャンの41",
-    "sex": "female",
-    "fatherName": "ヴァーミリアン",
-    "motherName": "ペコチャン",
-    "bornIn": 2041
-  },
-  {
-    "name": "ドルフィングリート",
-    "sex": "female"
-  },
-  {
-    "name": "ホワイトロリータの42(受胎中)",
-    "sex": "unknown",
-    "fatherName": "ヴァーミリアン",
-    "motherName": "ホワイトロリータ",
-    "bornIn": 2042
-  },
-  {
-    "name": "ドルフィングリートの42(受胎中)",
-    "sex": "unknown",
-    "fatherName": "エピファネイア",
-    "motherName": "ドルフィングリート",
-    "bornIn": 2042
-  },
-  {
-    "name": "アジツキユデタマゴの42(受胎中)",
-    "sex": "unknown",
-    "fatherName": "オルフェーヴル",
-    "motherName": "アジツキユデタマゴ",
-    "bornIn": 2042
-  },
-  {
-    "name": "ペコチャンの42(受胎中)",
-    "sex": "unknown",
-    "fatherName": "ヴァーミリアン",
-    "motherName": "ペコチャン",
-    "bornIn": 2042
-  }
+	{
+		"name": "ロズウェルリポート",
+		"sex": "female",
+		"fatherName": "Flashy Bull",
+		"motherName": "Ms. Cornstalk"
+	},
+	{
+		"name": "モッティサイキョウ",
+		"sex": "male",
+		"fatherName": "パイロ",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "ステキマリオクン",
+		"sex": "male",
+		"fatherName": "ゴールドアリュール",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "ゴマプリン",
+		"sex": "female",
+		"fatherName": "ジョーカプチーノ",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "ミタラシダンゴ",
+		"sex": "female",
+		"fatherName": "ネオユニヴァース",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "カントリーマアム",
+		"sex": "female",
+		"fatherName": "マンハッタンカフェ",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "ルマンド",
+		"sex": "female",
+		"fatherName": "ダイワメジャー",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "モリナガノコエダ",
+		"sex": "female",
+		"fatherName": "ジョーカプチーノ",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "コーヒーゼリィ",
+		"sex": "male",
+		"fatherName": "ジョーカプチーノ",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "スウィートポテト",
+		"sex": "female",
+		"fatherName": "エンパイアメーカー",
+		"motherName": "ゴマプリン"
+	},
+	{
+		"name": "ムギチャ",
+		"sex": "female",
+		"fatherName": "ジョーカプチーノ",
+		"motherName": "ロズウェルリポート"
+	},
+	{
+		"name": "オレノオレオクッキ",
+		"sex": "male",
+		"fatherName": "ゴールドシップ",
+		"motherName": "ゴマプリン"
+	},
+	{
+		"name": "ペコチャン",
+		"sex": "female",
+		"fatherName": "ルーラーシップ",
+		"motherName": "カントリーマアム"
+	},
+	{
+		"name": "ピノ",
+		"sex": "female",
+		"fatherName": "アグネスデジタル",
+		"motherName": "ゴマプリン"
+	},
+	{
+		"name": "カブキアゲ",
+		"sex": "male",
+		"fatherName": "オルフェーヴル",
+		"motherName": "カントリーマアム",
+		"memo": ["#11: '37 復帰直後のレースで故障発生、予後不良と診断され死去"]
+	},
+	{
+		"name": "アルフォート",
+		"sex": "male",
+		"fatherName": "アグネスデジタル",
+		"motherName": "カントリーマアム",
+		"bornIn": 2033
+	},
+	{
+		"name": "ジャイアントコーン",
+		"sex": "male",
+		"fatherName": "ケープブランコ",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2033
+	},
+	{
+		"name": "ナタデココ",
+		"sex": "male",
+		"fatherName": "ゴールドシップ",
+		"motherName": "ゴマプリン",
+		"bornIn": 2034,
+		"memo": ["#11: '37 未勝利戦で勝てずそのまま引退"]
+	},
+	{
+		"name": "テリヤキバーガー",
+		"sex": "male",
+		"fatherName": "ケープブランコ",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2034,
+		"memo": [
+			"#11: GI 日本ダービー'37 5.4 10着",
+			"#12: GI 天皇賞(春)'38 4.4 12着",
+			"#12: GII オールカマー'38 9.3 3着",
+			"#12: GII ステイヤーズS'38 3.4 勝利",
+			"#12: GI 有馬記念'38 12.4 ×",
+			"#13: GII 阪神大賞典'39 3.3 勝利",
+			"#13: GI 天皇賞(春)'39 4.4 "
+		]
+	},
+	{
+		"name": "ルマンドの34",
+		"sex": "male",
+		"fatherName": "エンパイアメーカー",
+		"motherName": "ルマンド",
+		"bornIn": 2034
+	},
+	{
+		"name": "ゴマプリンの35",
+		"sex": "male",
+		"fatherName": "ゴールドシップ",
+		"motherName": "ゴマプリン",
+		"bornIn": 2035,
+		"removed": true
+	},
+	{
+		"name": "デミグラスソース",
+		"sex": "male",
+		"fatherName": "ケープブランコ",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2035
+	},
+	{
+		"name": "アジツキユデタマゴ",
+		"sex": "female",
+		"fatherName": "ストリートセンス",
+		"motherName": "ルマンド",
+		"bornIn": 2035
+	},
+	{
+		"name": "トランスカイ",
+		"sex": "female",
+		"fatherName": "Acatenango",
+		"motherName": "Mandellicht",
+		"memo": ["購入した繁殖牝馬"]
+	},
+	{
+		"name": "シオムスビ",
+		"sex": "male",
+		"fatherName": "ステイゴールド",
+		"motherName": "ゴマプリン",
+		"bornIn": 2036
+	},
+	{
+		"name": "ミタラシダンゴの36",
+		"sex": "female",
+		"fatherName": "ケープブランコ",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2036,
+		"memo": ["#12: 引退"]
+	},
+	{
+		"name": "ワールドプレミアム",
+		"sex": "male",
+		"fatherName": "ディープインパクト",
+		"motherName": "トランスカイ",
+		"bornIn": 2036,
+		"memo": ["#12: 10.3ついに新馬戦も7位に終わる"]
+	},
+	{
+		"name": "ジックリコトコト",
+		"sex": "male",
+		"fatherName": "クロフネ",
+		"motherName": "ルマンド",
+		"bornIn": 2036
+	},
+	{
+		"name": "ヴァンホーテン",
+		"sex": "female",
+		"fatherName": "オルフェーヴル",
+		"motherName": "トランスカイ",
+		"bornIn": 2037
+	},
+	{
+		"name": "ホワイトロリータ",
+		"sex": "female",
+		"fatherName": "キングカメハメハ",
+		"motherName": "ホワイトショコラ",
+		"bornIn": 2035,
+		"memo": ["#11: '37の2歳馬セールで購入"]
+	},
+	{
+		"name": "マンマンマンゾク",
+		"sex": "male",
+		"fatherName": "オルフェーヴル",
+		"motherName": "ルマンド",
+		"bornIn": 2037
+	},
+	{
+		"name": "トルネードポテト",
+		"sex": "male",
+		"fatherName": "ケープブランコ",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2037
+	},
+	{
+		"name": "ホッペ",
+		"sex": "female",
+		"fatherName": "ディープインパクト",
+		"motherName": "ペコチャン",
+		"bornIn": 2037
+	},
+	{
+		"name": "ミタラシダンゴの38",
+		"sex": "male",
+		"fatherName": "ケープブランコ",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2038
+	},
+	{
+		"name": "アマオウパフェ",
+		"sex": "female",
+		"fatherName": "エンパイアメーカー",
+		"motherName": "ルマンド",
+		"bornIn": 2038
+	},
+	{
+		"name": "リアルゴールド",
+		"sex": "female",
+		"fatherName": "ステイゴールド",
+		"motherName": "トランスカイ",
+		"bornIn": 2038
+	},
+	{
+		"name": "ペコチャンの38",
+		"sex": "female",
+		"fatherName": "ステイゴールド",
+		"motherName": "ペコチャン",
+		"bornIn": 2038
+	},
+	{
+		"name": "ミタラシダンゴの39(売却)",
+		"sex": "female",
+		"fatherName": "オルフェーヴル",
+		"motherName": "ミタラシダンゴ",
+		"bornIn": 2039
+	},
+	{
+		"name": "トランスカイの39(売却)",
+		"sex": "female",
+		"fatherName": "キングカメハメハ",
+		"motherName": "トランスカイ",
+		"bornIn": 2039
+	},
+	{
+		"name": "タマゴカケゴハン",
+		"sex": "female",
+		"fatherName": "ストリートセンス",
+		"motherName": "ルマンド",
+		"bornIn": 2039
+	},
+	{
+		"name": "ポコチャン",
+		"sex": "male",
+		"fatherName": "ヴァーミリアン",
+		"motherName": "ペコチャン",
+		"bornIn": 2039
+	},
+	{
+		"name": "トランスカイの40",
+		"sex": "female",
+		"fatherName": "ダイワメジャー",
+		"motherName": "トランスカイ",
+		"bornIn": 2040
+	},
+	{
+		"name": "ルマンドの40",
+		"sex": "male",
+		"fatherName": "エンパイアメーカー",
+		"motherName": "ルマンド",
+		"bornIn": 2040
+	},
+	{
+		"name": "ペコチャンの40",
+		"sex": "male",
+		"fatherName": "ヴァーミリアン",
+		"motherName": "ペコチャン",
+		"bornIn": 2040
+	},
+	{
+		"name": "ルマンドの41",
+		"sex": "female",
+		"fatherName": "ストリートセンス",
+		"motherName": "ルマンド",
+		"bornIn": 2041
+	},
+	{
+		"name": "トランスカイの41",
+		"sex": "female",
+		"fatherName": "ステイゴールド",
+		"motherName": "トランスカイ",
+		"bornIn": 2041
+	},
+	{
+		"name": "ペコチャンの41",
+		"sex": "female",
+		"fatherName": "ヴァーミリアン",
+		"motherName": "ペコチャン",
+		"bornIn": 2041
+	},
+	{
+		"name": "ドルフィングリート",
+		"sex": "female"
+	},
+	{
+		"name": "ホワイトロリータの42(受胎中)",
+		"sex": "unknown",
+		"fatherName": "ヴァーミリアン",
+		"motherName": "ホワイトロリータ",
+		"bornIn": 2042
+	},
+	{
+		"name": "ドルフィングリートの42(受胎中)",
+		"sex": "unknown",
+		"fatherName": "エピファネイア",
+		"motherName": "ドルフィングリート",
+		"bornIn": 2042
+	},
+	{
+		"name": "アジツキユデタマゴの42(受胎中)",
+		"sex": "unknown",
+		"fatherName": "オルフェーヴル",
+		"motherName": "アジツキユデタマゴ",
+		"bornIn": 2042
+	},
+	{
+		"name": "ペコチャンの42(受胎中)",
+		"sex": "unknown",
+		"fatherName": "ヴァーミリアン",
+		"motherName": "ペコチャン",
+		"bornIn": 2042
+	}
 ]

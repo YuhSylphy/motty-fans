@@ -10,14 +10,14 @@ import * as serviceWorker from './serviceWorker';
 const theme = createMuiTheme({});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <MuiThemeProvider theme={theme}>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </MuiThemeProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<MuiThemeProvider theme={theme}>
+			<Provider store={store}>
+				<App />
+			</Provider>
+		</MuiThemeProvider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
