@@ -15,7 +15,7 @@ jobs:
       - uses: actions/cache@v2
         id: yarn-cache
         with:
-          path: ./node_modules
+          path: '**/node_modules'
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
@@ -30,6 +30,11 @@ jobs:
             yarn cpx -C 'build/**' './docs/'
             git add docs/
             git commit -m "Rebuild docs by Actions"
+          elif ! git diff --exit-code --quiet @..@^1 -- ./public/assets/*; then
+            yarn --network-timeout=1000000
+            yarn cpx -C './public/assets/**' './docs/assets/'
+            git add docs/
+            git commit -m "apply assets to docs by Actions"
           else
             echo nothing to build.
           fi
