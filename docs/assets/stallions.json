@@ -377,7 +377,7 @@
 					"name": "Gold Meridian",
 					"father": {
 						"name": "Seattle Slew",
-						"line": ""
+						"line": "Ne"
 					}
 				},
 				"mother": {
@@ -396,13 +396,13 @@
 					"name": "サンデーサイレンス",
 					"father": {
 						"name": "Halo",
-						"line": ""
+						"line": "Ro"
 					}
 				},
 				"mother": {
 					"father": {
 						"name": "マルゼンスキー",
-						"line": ""
+						"line": "Ne"
 					}
 				}
 			},
