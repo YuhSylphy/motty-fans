@@ -30,6 +30,10 @@ jobs:
             yarn cpx -C 'build/**' './docs/'
             git add docs/
             git commit -m "Rebuild docs by Actions"
+          elif ! git diff --exit-code --quiet @..@^1 -- ./public/assets/*; then
+            yarn cpx -C './public/assets/**' './docs/assets/'
+            git add docs/
+            git commit -m "apply assets to docs by Actions"
           else
             echo nothing to build.
           fi
