@@ -11,11 +11,8 @@ import * as React from 'react';
 import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
-import { RootState } from '../../../app/store';
-
-import { HorseDef } from '../../horse-defs';
-import { Line, lineMap } from '../../horse-defs';
-
+import { RootState } from 'src/app';
+import { HorseDef, Line, lineMap } from 'src/features/horse-defs';
 export interface PedigreeTableProps {
 	def: HorseDef;
 }

@@ -1,7 +1,8 @@
 import { Backdrop, CircularProgress, makeStyles } from '@material-ui/core';
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../../app/store';
+
+import { RootState } from 'src/app';
 
 const useStyles = makeStyles((theme) => ({
 	backdrop: {

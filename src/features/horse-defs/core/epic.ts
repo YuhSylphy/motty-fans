@@ -1,9 +1,10 @@
 import { combineEpics } from 'redux-observable';
 import { filter } from 'rxjs/operators';
 
+import type { Epic } from 'src/app';
+import { withIndicator } from 'src/util';
+
 import { horseDefsActions } from '..';
-import { Epic } from '../../../app/store';
-import { withIndicator } from '../../indicator';
 import { fetchHorseDefs } from './horse';
 
 export const fetchDefsEpic: Epic = (action$) =>

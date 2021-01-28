@@ -2,10 +2,10 @@ import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
 
-import { horseDefsReducer, horseDefsEpic } from '../features/horse-defs';
-import { indicatorReducer } from '../features/indicator';
-import { pedigreeReducer } from '../features/pedigree';
-import { changeLogReducer, changeLogEpic } from '../features/changelog';
+import { horseDefsReducer, horseDefsEpic } from 'src/features/horse-defs';
+import { indicatorReducer } from 'src/features/indicator';
+import { pedigreeReducer } from 'src/features/pedigree';
+import { changeLogReducer, changeLogEpic } from 'src/features/changelog';
 
 import type { AppAction } from './actions';
 
