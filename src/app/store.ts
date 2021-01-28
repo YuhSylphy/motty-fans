@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { Action } from 'redux';
+import { useDispatch } from 'react-redux';
 import { combineEpics, createEpicMiddleware } from 'redux-observable';
 
 import { horseDefsReducer, horseDefsEpic } from '../features/horse-defs';
@@ -7,12 +7,14 @@ import { indicatorReducer } from '../features/indicator';
 import { pedigreeReducer } from '../features/pedigree';
 import { changeLogReducer, changeLogEpic } from '../features/changelog';
 
+import type { AppAction } from './actions';
+
 const dependencies = {};
 const epicMiddleware = createEpicMiddleware<
-	Action,
-	Action,
+	AppAction,
+	AppAction,
 	void,
-	typeof dependencies
+	Dependencies
 >({
 	dependencies,
 });
@@ -30,7 +32,17 @@ export const store = configureStore({
 		}).concat([epicMiddleware]),
 });
 
-epicMiddleware.run(combineEpics(horseDefsEpic, changeLogEpic));
-
-export type RootState = ReturnType<typeof store.getState>;
 export type Dependencies = typeof dependencies;
+export type Epic = Parameters<typeof epicMiddleware.run>[0];
+export type RootState = ReturnType<typeof store.getState>;
+
+const epics: Epic[] = [];
+export const registerEpic = (...es: Epic[]) => {
+	epics.push(...es);
+	epicMiddleware.run(combineEpics(...epics));
+};
+
+registerEpic(horseDefsEpic, changeLogEpic);
+
+export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch = () => useDispatch<AppDispatch>();
