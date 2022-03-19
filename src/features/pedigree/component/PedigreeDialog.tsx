@@ -3,11 +3,12 @@ import { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Dialog, DialogTitle, Typography } from '@material-ui/core';
 
-import { RootState } from '../../../app/store';
+import { RootState } from 'src/app';
+
+import { lineMap } from 'src/features/horse-defs';
 
 import { pedigreeActions } from '..';
 import { PedigreeTable } from './PedigreeTable';
-import { lineMap } from '../../horse-defs';
 
 export const PedigreeDialog: React.FC = () => {
 	const dispatch = useDispatch();

@@ -1,8 +1,3 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { Redirect, Route, Switch } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
-import { Family } from './features/family/Family';
-import { Http404 } from './features/errors/404';
 import {
 	AppBar,
 	Box,
@@ -17,19 +12,22 @@ import {
 	Typography,
 	useTheme,
 } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import {
 	List as ListIcon,
 	MenuOutlined,
 	Timeline as TimelineIcon,
 	ChangeHistory as ChangeHistoryIcon,
 } from '@material-ui/icons';
-import { useDispatch } from 'react-redux';
-import { horseDefsActions } from './features/horse-defs';
-import { MareLine } from './features/mare-line';
-import { Indicator } from './features/indicator';
-import { PedigreeDialog } from './features/pedigree';
-import { ChangeLog } from './features/changelog';
+import React, { Suspense, useEffect, useMemo, useState } from 'react';
+import { Redirect, Route, Switch } from 'react-router';
+import { BrowserRouter, Link } from 'react-router-dom';
+
+import { useAppDispatch } from 'src/util';
+
+import { Http404 } from 'src/features/errors/404';
+import { horseDefsActions } from 'src/features/horse-defs';
+import { Indicator } from 'src/features/indicator';
+import { PedigreeDialog } from 'src/features/pedigree';
 
 import './App.css';
 
@@ -37,7 +35,7 @@ type MenuItemDef = {
 	icon: JSX.Element;
 	label: string;
 	path: string;
-	page: JSX.Element;
+	Page: React.ComponentType;
 };
 
 const renderListItem = (def: MenuItemDef) => {
@@ -54,19 +52,31 @@ const defs: MenuItemDef[] = [
 		icon: <ListIcon />,
 		label: '牝系図',
 		path: '/mare-line',
-		page: <MareLine />,
+		Page: React.lazy(() =>
+			import('src/features/mare-line').then((module) => ({
+				default: module.MareLine,
+			}))
+		),
 	},
 	{
 		icon: <TimelineIcon />,
 		label: '家系図(旧)',
 		path: '/family',
-		page: <Family />,
+		Page: React.lazy(() =>
+			import('src/features/family').then((module) => ({
+				default: module.Family,
+			}))
+		),
 	},
 	{
 		icon: <ChangeHistoryIcon />,
 		label: '更新履歴',
 		path: '/change-log',
-		page: <ChangeLog />,
+		Page: React.lazy(() =>
+			import('src/features/changelog').then((module) => ({
+				default: module.ChangeLog,
+			}))
+		),
 	},
 ];
 
@@ -126,7 +136,7 @@ const Footer: React.FC = () => {
 
 export const App: React.FC = () => {
 	const theme = useTheme();
-	const dispatch = useDispatch();
+	const dispatch = useAppDispatch();
 
 	useEffect(() => {
 		dispatch(horseDefsActions.init());
@@ -137,19 +147,21 @@ export const App: React.FC = () => {
 			<React.Fragment>
 				<Header />
 				<Box margin={theme.spacing(0.5)}>
-					<Switch>
-						{defs.map(({ path, page }) => (
-							<Route key={path} path={path}>
-								{page}
+					<Suspense fallback={<div>loading...</div>}>
+						<Switch>
+							{defs.map(({ path, Page }) => (
+								<Route key={path} path={path}>
+									<Page />
+								</Route>
+							))}
+							<Route exact path="/" key="/">
+								<Redirect to="/mare-line" />
 							</Route>
-						))}
-						<Route exact path="/">
-							<Redirect to="/mare-line" />
-						</Route>
-						<Route>
-							<Http404 />
-						</Route>
-					</Switch>
+							<Route key="404">
+								<Http404 />
+							</Route>
+						</Switch>
+					</Suspense>
 				</Box>
 				<Footer />
 				<PedigreeDialog />
