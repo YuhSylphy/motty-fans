@@ -9,10 +9,12 @@ import { faMars, faQuestion, faVenus } from '@fortawesome/free-solid-svg-icons';
 import * as React from 'react';
 import { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../../app/store';
-import { HorseDef } from '../../horse-defs';
-import { withIndicatorSync } from '../../indicator';
-import { pedigreeActions } from '../../pedigree';
+
+import { RootState } from 'src/app';
+import { withIndicatorSync } from 'src/util';
+
+import { HorseDef } from 'src/features/horse-defs';
+import { pedigreeActions } from 'src/features/pedigree';
 
 type Datum = {
 	id: string;
