@@ -2045,10 +2045,10 @@
     "@types/d3-voronoi" "*"
     "@types/d3-zoom" "^1"
 
-"@types/dagre-d3@^0.6.2":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@types/dagre-d3/-/dagre-d3-0.6.3.tgz#41e82c01f7010b7848570d18cb1407784e559a87"
-  integrity sha512-qPd9DtaIbZArKqvEXXHrY1uljoFVQs812aIMCzJPX5TulVz/jEyqD05SJT9Oaan8abszUdqUjlXom9aZvLWpew==
+"@types/dagre-d3@0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@types/dagre-d3/-/dagre-d3-0.6.2.tgz#1a7ddfbbe454d96a54b252ea5df8223e0d834226"
+  integrity sha512-wnlXrCWu1Xr1etcCVkVUHr7zOmDEB0zV/Tz2+QjIAqeyHT4gD4JCqdivBPGkgsDqEMYOx6JdWxJPQ3LSdd0jHw==
   dependencies:
     "@types/d3" "^5"
     "@types/dagre" "*"
@@ -4724,7 +4724,7 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-dagre-d3@^0.6.4:
+dagre-d3@0.6.4:
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/dagre-d3/-/dagre-d3-0.6.4.tgz#0728d5ce7f177ca2337df141ceb60fbe6eeb7b29"
   integrity sha512-e/6jXeCP7/ptlAM48clmX4xTZc5Ek6T6kagS7Oz2HrYSdqcLZFLqpAfh7ldbZRFfxCZVyh61NEPR08UQRVxJzQ==
