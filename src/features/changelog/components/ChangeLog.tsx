@@ -28,9 +28,7 @@ export const ChangeLog: React.FC = () => {
 	return (
 		<React.Fragment>
 			<Paper className={classes.paper}>
-				{article !== '' ? (
-					<Markdown source={article} className="markdown-body" />
-				) : null}
+				<Markdown className="markdown-body">{article}</Markdown>
 			</Paper>
 		</React.Fragment>
 	);
