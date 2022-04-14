@@ -1,35 +1,23 @@
 {
   "files": {
-    "main.css": "/motty-fans/static/css/main.b491e766.chunk.css",
-    "main.js": "/motty-fans/static/js/main.04e44abd.chunk.js",
-    "main.js.map": "/motty-fans/static/js/main.04e44abd.chunk.js.map",
-    "runtime-main.js": "/motty-fans/static/js/runtime-main.3483740d.js",
-    "runtime-main.js.map": "/motty-fans/static/js/runtime-main.3483740d.js.map",
-    "static/js/2.b4d01ea5.chunk.js": "/motty-fans/static/js/2.b4d01ea5.chunk.js",
-    "static/js/2.b4d01ea5.chunk.js.map": "/motty-fans/static/js/2.b4d01ea5.chunk.js.map",
-    "static/css/3.97ab3077.chunk.css": "/motty-fans/static/css/3.97ab3077.chunk.css",
-    "static/js/3.46eee86d.chunk.js": "/motty-fans/static/js/3.46eee86d.chunk.js",
-    "static/js/3.46eee86d.chunk.js.map": "/motty-fans/static/js/3.46eee86d.chunk.js.map",
-    "static/js/4.c3fe6be1.chunk.js": "/motty-fans/static/js/4.c3fe6be1.chunk.js",
-    "static/js/4.c3fe6be1.chunk.js.map": "/motty-fans/static/js/4.c3fe6be1.chunk.js.map",
-    "static/css/5.b58e8cdb.chunk.css": "/motty-fans/static/css/5.b58e8cdb.chunk.css",
-    "static/js/5.72108b52.chunk.js": "/motty-fans/static/js/5.72108b52.chunk.js",
-    "static/js/5.72108b52.chunk.js.map": "/motty-fans/static/js/5.72108b52.chunk.js.map",
-    "static/js/6.d15dca02.chunk.js": "/motty-fans/static/js/6.d15dca02.chunk.js",
-    "static/js/6.d15dca02.chunk.js.map": "/motty-fans/static/js/6.d15dca02.chunk.js.map",
+    "main.css": "/motty-fans/static/css/main.7035645f.css",
+    "main.js": "/motty-fans/static/js/main.a59282b2.js",
+    "static/js/360.3a4dd2db.chunk.js": "/motty-fans/static/js/360.3a4dd2db.chunk.js",
+    "static/css/514.73cd1855.chunk.css": "/motty-fans/static/css/514.73cd1855.chunk.css",
+    "static/js/514.e4795cd2.chunk.js": "/motty-fans/static/js/514.e4795cd2.chunk.js",
+    "static/js/572.f39abf74.chunk.js": "/motty-fans/static/js/572.f39abf74.chunk.js",
+    "static/js/509.b352b48c.chunk.js": "/motty-fans/static/js/509.b352b48c.chunk.js",
     "index.html": "/motty-fans/index.html",
-    "static/css/3.97ab3077.chunk.css.map": "/motty-fans/static/css/3.97ab3077.chunk.css.map",
-    "static/css/5.b58e8cdb.chunk.css.map": "/motty-fans/static/css/5.b58e8cdb.chunk.css.map",
-    "static/css/main.b491e766.chunk.css.map": "/motty-fans/static/css/main.b491e766.chunk.css.map",
-    "static/js/2.b4d01ea5.chunk.js.LICENSE.txt": "/motty-fans/static/js/2.b4d01ea5.chunk.js.LICENSE.txt",
-    "static/js/3.46eee86d.chunk.js.LICENSE.txt": "/motty-fans/static/js/3.46eee86d.chunk.js.LICENSE.txt",
-    "static/js/4.c3fe6be1.chunk.js.LICENSE.txt": "/motty-fans/static/js/4.c3fe6be1.chunk.js.LICENSE.txt"
+    "main.7035645f.css.map": "/motty-fans/static/css/main.7035645f.css.map",
+    "main.a59282b2.js.map": "/motty-fans/static/js/main.a59282b2.js.map",
+    "360.3a4dd2db.chunk.js.map": "/motty-fans/static/js/360.3a4dd2db.chunk.js.map",
+    "514.73cd1855.chunk.css.map": "/motty-fans/static/css/514.73cd1855.chunk.css.map",
+    "514.e4795cd2.chunk.js.map": "/motty-fans/static/js/514.e4795cd2.chunk.js.map",
+    "572.f39abf74.chunk.js.map": "/motty-fans/static/js/572.f39abf74.chunk.js.map",
+    "509.b352b48c.chunk.js.map": "/motty-fans/static/js/509.b352b48c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3483740d.js",
-    "static/css/3.97ab3077.chunk.css",
-    "static/js/3.46eee86d.chunk.js",
-    "static/css/main.b491e766.chunk.css",
-    "static/js/main.04e44abd.chunk.js"
+    "static/css/main.7035645f.css",
+    "static/js/main.a59282b2.js"
   ]
 }
