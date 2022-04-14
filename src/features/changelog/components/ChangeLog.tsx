@@ -2,11 +2,9 @@ import { Paper, createStyles, makeStyles } from '@material-ui/core';
 import * as React from 'react';
 import { useEffect } from 'react';
 import Markdown from 'react-markdown';
-import { useSelector } from 'react-redux';
 import 'github-markdown-css';
 
-import { RootState } from 'src/app';
-import { useAppDispatch } from 'src/util';
+import { useAppDispatch, useAppSelector } from 'src/util';
 
 import { changeLogActions } from '..';
 
@@ -22,7 +20,7 @@ export const ChangeLog: React.FC = () => {
 	const classes = useStyles();
 	const dispatch = useAppDispatch();
 
-	const { article } = useSelector((state: RootState) => state.changeLog);
+	const { article } = useAppSelector((state) => state.changeLog);
 	useEffect(() => {
 		dispatch(changeLogActions.init());
 	}, [dispatch]);
@@ -30,9 +28,7 @@ export const ChangeLog: React.FC = () => {
 	return (
 		<React.Fragment>
 			<Paper className={classes.paper}>
-				{article !== '' ? (
-					<Markdown source={article} className="markdown-body" />
-				) : null}
+				<Markdown className="markdown-body">{article}</Markdown>
 			</Paper>
 		</React.Fragment>
 	);

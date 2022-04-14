@@ -7,11 +7,9 @@ import {
 	TableCell,
 	Paper,
 } from '@material-ui/core';
-import * as React from 'react';
-import { useMemo } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useMemo } from 'react';
 
-import { RootState } from 'src/app';
+import { useAppSelector } from 'src/util';
 import { HorseDef, Line, lineMap } from 'src/features/horse-defs';
 export interface PedigreeTableProps {
 	def: HorseDef;
@@ -90,66 +88,66 @@ const useStyles = makeStyles((theme: Theme) =>
 
 /** 対象世代の限界点 */
 const limit = 5;
-const construct = (map: Map<string, HorseDef>) => (
-	def: HorseDef
-): PedigreeNode[][] => {
-	const table = new Array<PedigreeNode[]>();
+const construct =
+	(map: Map<string, HorseDef>) =>
+	(def: HorseDef): PedigreeNode[][] => {
+		const table = new Array<PedigreeNode[]>();
 
-	for (let row = 0; row < 2 ** (limit - 1); ++row) {
-		const cols = new Array<PedigreeNode>();
-		for (let col = 0; col < limit; ++col) {
-			cols.push({ name: 'empty', generation: col, show: false, line: 'Uk' });
+		for (let row = 0; row < 2 ** (limit - 1); ++row) {
+			const cols = new Array<PedigreeNode>();
+			for (let col = 0; col < limit; ++col) {
+				cols.push({ name: 'empty', generation: col, show: false, line: 'Uk' });
+			}
+			table.push(cols);
 		}
-		table.push(cols);
-	}
 
-	const mapPedigree = (row: number, col: number, def: HorseDef) => {
-		table[row][col] = {
-			name: def.name,
-			generation: col,
-			show: !!def.show,
-			line: def.line,
+		const mapPedigree = (row: number, col: number, def: HorseDef) => {
+			table[row][col] = {
+				name: def.name,
+				generation: col,
+				show: !!def.show,
+				line: def.line,
+			};
+
+			if (col + 1 < limit) {
+				if (def.fatherName) {
+					const father = map.get(def.fatherName);
+					if (father) {
+						mapPedigree(row, col + 1, father);
+					} else {
+						mapPedigree(row, col + 1, {
+							name: def.fatherName,
+							sex: 'male',
+							line: 'Uk',
+							listed: false,
+							show: true,
+							owned: false,
+							memo: ['未定義'],
+						});
+					}
+				}
+				if (def.motherName) {
+					const mother = map.get(def.motherName);
+					if (mother) {
+						mapPedigree(row + 2 ** (limit - col - 2), col + 1, mother);
+					} else {
+						mapPedigree(row + 2 ** (limit - col - 2), col + 1, {
+							name: def.motherName,
+							sex: 'female',
+							line: 'Uk',
+							listed: false,
+							show: true,
+							owned: false,
+							memo: ['未定義'],
+						});
+					}
+				}
+			}
 		};
 
-		if (col + 1 < limit) {
-			if (def.fatherName) {
-				const father = map.get(def.fatherName);
-				if (father) {
-					mapPedigree(row, col + 1, father);
-				} else {
-					mapPedigree(row, col + 1, {
-						name: def.fatherName,
-						sex: 'male',
-						line: 'Uk',
-						listed: false,
-						show: true,
-						owned: false,
-						memo: ['未定義'],
-					});
-				}
-			}
-			if (def.motherName) {
-				const mother = map.get(def.motherName);
-				if (mother) {
-					mapPedigree(row + 2 ** (limit - col - 2), col + 1, mother);
-				} else {
-					mapPedigree(row + 2 ** (limit - col - 2), col + 1, {
-						name: def.motherName,
-						sex: 'female',
-						line: 'Uk',
-						listed: false,
-						show: true,
-						owned: false,
-						memo: ['未定義'],
-					});
-				}
-			}
-		}
+		mapPedigree(0, 0, def);
+		return table;
 	};
-
-	mapPedigree(0, 0, def);
-	return table;
-};
 
 const renderCell = (
 	row: number,
@@ -212,7 +210,7 @@ const render = (data: PedigreeNode[][]): JSX.Element => {
 
 export const PedigreeTable: React.FC<PedigreeTableProps> = ({ def }) => {
 	const classes = useStyles();
-	const defs = useSelector((state: RootState) => state.horseDefs.list);
+	const defs = useAppSelector((state) => state.horseDefs.list);
 	const map = useMemo(
 		() =>
 			defs.reduce(

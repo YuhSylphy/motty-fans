@@ -1,4 +1,4 @@
-import { of } from 'rxjs';
+import { firstValueFrom, of } from 'rxjs';
 import {
 	groupBy,
 	mergeAll,
@@ -166,8 +166,8 @@ const fetchStallion = (): Promise<HorseDef[]> =>
  * 競走馬の定義を取得してマージする
  */
 export const fetchHorseDefs = (): Promise<HorseDef[]> =>
-	of(fetchOwned, fetchStallion, fetchBroodmare)
-		.pipe(
+	firstValueFrom(
+		of(fetchOwned, fetchStallion, fetchBroodmare).pipe(
 			mergeMap((func) => func()),
 			mergeAll(),
 			groupBy((def) => def.name),
@@ -221,4 +221,4 @@ export const fetchHorseDefs = (): Promise<HorseDef[]> =>
 				defs.forEach(complementLine);
 			})
 		)
-		.toPromise();
+	);

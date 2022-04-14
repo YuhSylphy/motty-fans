@@ -1,24 +1,31 @@
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+import { createTheme, MuiThemeProvider } from '@material-ui/core';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 
 import './index.css';
 
 import { App, store } from './app';
+import { igniteEpics } from './app/core/epics';
+
 import * as serviceWorker from './serviceWorker';
 
-const theme = createMuiTheme({});
+const theme = createTheme({});
 
-ReactDOM.render(
+const target = document.getElementById('root');
+
+if (!target) throw new Error('root div not found');
+const root = createRoot(target);
+
+igniteEpics();
+root.render(
 	<React.StrictMode>
 		<MuiThemeProvider theme={theme}>
 			<Provider store={store}>
 				<App />
 			</Provider>
 		</MuiThemeProvider>
-	</React.StrictMode>,
-	document.getElementById('root')
+	</React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
