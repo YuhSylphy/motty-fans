@@ -2,12 +2,10 @@ import * as React from 'react';
 import { useEffect, useMemo, useRef } from 'react';
 import * as d3 from 'd3';
 import * as dagreD3 from 'dagre-d3';
-import { Edge } from 'dagre-d3';
+import type { Edge } from 'dagre-d3';
 import * as graphlib from 'graphlib';
 
-import { useSelector } from 'react-redux';
-
-import { RootState } from 'src/app';
+import { useAppSelector } from 'src/util';
 import { HorseDef } from 'src/features/horse-defs';
 
 import './FamilyDiagram.css';
@@ -59,7 +57,7 @@ const prepareGraph = (defs: HorseDef[]) => {
 export const FamilyDiagram: React.FC = () => {
 	const d3Container = useRef<SVGSVGElement | null>(null);
 
-	const defs = useSelector((state: RootState) => state.horseDefs.list);
+	const defs = useAppSelector((state) => state.horseDefs.list);
 	const data = useMemo(() => prepareGraph(defs), [defs]);
 
 	useEffect(() => {
@@ -107,7 +105,7 @@ export const FamilyDiagram: React.FC = () => {
 		svg.call(zoom);
 
 		// Run the renderer. This is what draws the final graph.
-		render(d3.select('svg g'), (g as unknown) as graphlib.Graph);
+		render(d3.select('svg g'), g as unknown as graphlib.Graph);
 
 		// Center the graph
 		const xCenterOffset =

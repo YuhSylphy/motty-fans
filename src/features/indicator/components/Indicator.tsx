@@ -1,8 +1,7 @@
 import { Backdrop, CircularProgress, makeStyles } from '@material-ui/core';
 import React, { useMemo } from 'react';
-import { useSelector } from 'react-redux';
 
-import { RootState } from 'src/app';
+import { useAppSelector } from 'src/util';
 
 const useStyles = makeStyles((theme) => ({
 	backdrop: {
@@ -13,11 +12,12 @@ const useStyles = makeStyles((theme) => ({
 
 export const Indicator: React.FC = () => {
 	const classes = useStyles();
-	const { awaits } = useSelector((state: RootState) => state.indicator);
+	const { awaits } = useAppSelector((state) => state.indicator);
 
-	const waiting = useMemo(() => Object.values(awaits).some((x) => x > 0), [
-		awaits,
-	]);
+	const waiting = useMemo(
+		() => Object.values(awaits).some((x) => x > 0),
+		[awaits]
+	);
 
 	return (
 		<Backdrop className={classes.backdrop} open={waiting}>
