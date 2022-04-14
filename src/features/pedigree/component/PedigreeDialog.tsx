@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { useMemo } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { Dialog, DialogTitle, Typography } from '@material-ui/core';
 
-import { RootState } from 'src/app';
+import { useAppDispatch, useAppSelector } from 'src/util';
 
 import { lineMap } from 'src/features/horse-defs';
 
@@ -11,10 +10,10 @@ import { pedigreeActions } from '..';
 import { PedigreeTable } from './PedigreeTable';
 
 export const PedigreeDialog: React.FC = () => {
-	const dispatch = useDispatch();
-	const { displays } = useSelector((state: RootState) => state.pedigree);
+	const dispatch = useAppDispatch();
+	const { displays } = useAppSelector((state) => state.pedigree);
 	const open = useMemo(() => displays.length > 0, [displays]);
-	const defs = useSelector((state: RootState) => state.horseDefs.list);
+	const defs = useAppSelector((state) => state.horseDefs.list);
 	const def = useMemo(
 		() =>
 			displays.length > 0

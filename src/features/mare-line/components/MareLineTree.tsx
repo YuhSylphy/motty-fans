@@ -8,10 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMars, faQuestion, faVenus } from '@fortawesome/free-solid-svg-icons';
 import * as React from 'react';
 import { useEffect, useMemo, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 
-import { RootState } from 'src/app';
-import { withIndicatorSync } from 'src/util';
+import { useAppDispatch, useAppSelector, withIndicatorSync } from 'src/util';
 
 import { HorseDef } from 'src/features/horse-defs';
 import { pedigreeActions } from 'src/features/pedigree';
@@ -49,7 +47,7 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const InformationIcon: React.FC<{ name: string }> = ({ name }) => {
-	const dispatch = useDispatch();
+	const dispatch = useAppDispatch();
 	const handleClick = useMemo(
 		() => () => {
 			dispatch(pedigreeActions.push(name));
@@ -164,10 +162,10 @@ const renderTree = (toggleExpand: (node: Datum) => React.MouseEventHandler) =>
 
 export const MareLineTree: React.FC = function MareLineTree() {
 	const classes = useStyles();
-	const dispatch = useDispatch();
+	const dispatch = useAppDispatch();
 	const [expanded, setExpanded] = useState<string[]>([]);
 
-	const defs = useSelector((state: RootState) => state.horseDefs.list);
+	const defs = useAppSelector((state) => state.horseDefs.list);
 	const { nodes, ids } = useMemo(() => {
 		if (defs.length > 0) {
 			return withIndicatorSync(dispatch)('mare-line/init')(() =>

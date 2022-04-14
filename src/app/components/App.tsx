@@ -19,8 +19,7 @@ import {
 	ChangeHistory as ChangeHistoryIcon,
 } from '@material-ui/icons';
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
-import { Redirect, Route, Switch } from 'react-router';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
 
 import { useAppDispatch } from 'src/util';
 
@@ -148,19 +147,13 @@ export const App: React.FC = () => {
 				<Header />
 				<Box margin={theme.spacing(0.5)}>
 					<Suspense fallback={<div>loading...</div>}>
-						<Switch>
+						<Routes>
 							{defs.map(({ path, Page }) => (
-								<Route key={path} path={path}>
-									<Page />
-								</Route>
+								<Route key={path} path={path} element={<Page />} />
 							))}
-							<Route exact path="/" key="/">
-								<Redirect to="/mare-line" />
-							</Route>
-							<Route key="404">
-								<Http404 />
-							</Route>
-						</Switch>
+							<Route path="/" key="/" element={<Navigate to="/mare-line" />} />
+							<Route key="404" element={<Http404 />} />
+						</Routes>
 					</Suspense>
 				</Box>
 				<Footer />
