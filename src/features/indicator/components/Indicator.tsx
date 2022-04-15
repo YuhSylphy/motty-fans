@@ -1,4 +1,5 @@
-import { Backdrop, CircularProgress, makeStyles } from '@material-ui/core';
+import { Backdrop, CircularProgress } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 import React, { useMemo } from 'react';
 
 import { useAppSelector } from 'src/util';

@@ -11,13 +11,13 @@ import {
 	Toolbar,
 	Typography,
 	useTheme,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
 	List as ListIcon,
 	MenuOutlined,
 	Timeline as TimelineIcon,
 	ChangeHistory as ChangeHistoryIcon,
-} from '@material-ui/icons';
+} from '@mui/icons-material';
 import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
 
@@ -100,15 +100,15 @@ const Header: React.FC = () => {
 	);
 
 	return (
-		<React.Fragment>
+        <React.Fragment>
 			<AppBar position="static">
 				<Toolbar>
 					<IconButton
-						edge="start"
-						color="inherit"
-						aria-label="menu"
-						onClick={toggleMenu}
-					>
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        onClick={toggleMenu}
+                        size="large">
 						<MenuOutlined />
 					</IconButton>
 					<Typography variant="h6">MOTTV Derby</Typography>
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
 				<MenuList toggleMenu={toggleMenu} />
 			</Drawer>
 		</React.Fragment>
-	);
+    );
 };
 
 const Footer: React.FC = () => {

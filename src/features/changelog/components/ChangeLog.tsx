@@ -1,4 +1,6 @@
-import { Paper, createStyles, makeStyles } from '@material-ui/core';
+import { Paper } from '@mui/material';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import * as React from 'react';
 import { useEffect } from 'react';
 import Markdown from 'react-markdown';

@@ -1,4 +1,4 @@
-import { createTheme, MuiThemeProvider } from '@material-ui/core';
+import { createTheme, ThemeProvider, Theme, StyledEngineProvider, adaptV4Theme } from '@mui/material';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
@@ -10,7 +10,7 @@ import { igniteEpics } from './app/core/epics';
 
 import * as serviceWorker from './serviceWorker';
 
-const theme = createTheme({});
+const theme = createTheme(adaptV4Theme({}));
 
 const target = document.getElementById('root');
 
@@ -20,11 +20,13 @@ const root = createRoot(target);
 igniteEpics();
 root.render(
 	<React.StrictMode>
-		<MuiThemeProvider theme={theme}>
-			<Provider store={store}>
-				<App />
-			</Provider>
-		</MuiThemeProvider>
+		<StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>
+                <Provider store={store}>
+                    <App />
+                </Provider>
+            </ThemeProvider>
+        </StyledEngineProvider>
 	</React.StrictMode>
 );
 

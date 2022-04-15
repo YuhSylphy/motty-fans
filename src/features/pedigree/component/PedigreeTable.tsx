@@ -1,4 +1,6 @@
-import { makeStyles, createStyles, Theme, Typography } from '@material-ui/core';
+import { Theme, Typography } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
+import createStyles from '@mui/styles/createStyles';
 import {
 	TableContainer,
 	Table,
@@ -6,7 +8,7 @@ import {
 	TableRow,
 	TableCell,
 	Paper,
-} from '@material-ui/core';
+} from '@mui/material';
 import React, { useMemo } from 'react';
 
 import { useAppSelector } from 'src/util';

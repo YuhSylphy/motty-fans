@@ -1,9 +1,11 @@
-import { makeStyles, createStyles, Theme, IconButton } from '@material-ui/core';
-import { TreeItem, TreeView } from '@material-ui/lab';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import RemoveIcon from '@material-ui/icons/Remove';
-import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import { Theme, IconButton } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
+import createStyles from '@mui/styles/createStyles';
+import { TreeItem, TreeView } from '@mui/lab';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import RemoveIcon from '@mui/icons-material/Remove';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMars, faQuestion, faVenus } from '@fortawesome/free-solid-svg-icons';
 import * as React from 'react';
@@ -146,7 +148,7 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
 };
 
 const renderTree = (toggleExpand: (node: Datum) => React.MouseEventHandler) =>
-	function MareLineTreeNode(node: Datum) {
+	(function MareLineTreeNode(node: Datum) {
 		return (
 			<TreeItem
 				className={node.className}
@@ -158,7 +160,7 @@ const renderTree = (toggleExpand: (node: Datum) => React.MouseEventHandler) =>
 				{node.children.map(renderTree(toggleExpand))}
 			</TreeItem>
 		);
-	};
+	});
 
 export const MareLineTree: React.FC = function MareLineTree() {
 	const classes = useStyles();

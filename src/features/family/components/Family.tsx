@@ -1,4 +1,4 @@
-import { Box, Paper, Typography } from '@material-ui/core';
+import { Box, Paper, Typography } from '@mui/material';
 import * as React from 'react';
 import { FamilyDiagram } from './FamilyDiagram';
 

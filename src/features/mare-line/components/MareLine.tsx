@@ -1,5 +1,8 @@
 import * as React from 'react';
-import { createStyles, Paper, Typography, makeStyles } from '@material-ui/core';
+import { Paper, Typography } from '@mui/material';
+
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 
 import { MareLineTree } from './MareLineTree';
 
