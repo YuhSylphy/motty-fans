@@ -52,9 +52,11 @@ const defs: MenuItemDef[] = [
 		label: '牝系図',
 		path: '/mare-line',
 		Page: React.lazy(() =>
-			import('src/features/mare-line').then((module) => ({
-				default: module.MareLine,
-			}))
+			import(/* webpackChunkName: "mare-line" */ 'src/features/mare-line').then(
+				(module) => ({
+					default: module.MareLine,
+				})
+			)
 		),
 	},
 	{
@@ -62,9 +64,11 @@ const defs: MenuItemDef[] = [
 		label: '家系図(旧)',
 		path: '/family',
 		Page: React.lazy(() =>
-			import('src/features/family').then((module) => ({
-				default: module.Family,
-			}))
+			import(/* webpackChunkName: "family" */ 'src/features/family').then(
+				(module) => ({
+					default: module.Family,
+				})
+			)
 		),
 	},
 	{
@@ -72,7 +76,9 @@ const defs: MenuItemDef[] = [
 		label: '更新履歴',
 		path: '/change-log',
 		Page: React.lazy(() =>
-			import('src/features/changelog').then((module) => ({
+			import(
+				/* webpackChunkName: "change-log" */ 'src/features/changelog'
+			).then((module) => ({
 				default: module.ChangeLog,
 			}))
 		),
@@ -100,15 +106,16 @@ const Header: React.FC = () => {
 	);
 
 	return (
-        <React.Fragment>
+		<React.Fragment>
 			<AppBar position="static">
 				<Toolbar>
 					<IconButton
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        onClick={toggleMenu}
-                        size="large">
+						edge="start"
+						color="inherit"
+						aria-label="menu"
+						onClick={toggleMenu}
+						size="large"
+					>
 						<MenuOutlined />
 					</IconButton>
 					<Typography variant="h6">MOTTV Derby</Typography>
@@ -119,7 +126,7 @@ const Header: React.FC = () => {
 				<MenuList toggleMenu={toggleMenu} />
 			</Drawer>
 		</React.Fragment>
-    );
+	);
 };
 
 const Footer: React.FC = () => {
