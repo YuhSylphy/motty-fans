@@ -37,8 +37,8 @@ export type Epic = Parameters<typeof epicMiddleware.run>[0];
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
-const epics: Epic[] = [];
+const epics = new Set<Epic>();
 export const registerEpic = (...es: Epic[]) => {
-	epics.push(...es);
-	epicMiddleware.run(combineEpics(...epics));
+	es.forEach((e) => epics.add(e));
+	epicMiddleware.run(combineEpics(...Array.from(epics.values())));
 };

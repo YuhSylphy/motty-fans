@@ -1,24 +1,22 @@
-import * as React from 'react';
-import { createStyles, Paper, Typography, makeStyles } from '@material-ui/core';
+import React from 'react';
+import { Paper, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
+
+import { HorseDefsContainer } from 'src/features/horse-defs';
 
 import { MareLineTree } from './MareLineTree';
 
-const useStyles = makeStyles((theme) =>
-	createStyles({
-		paper: {
-			padding: theme.spacing(2),
-		},
-	})
-);
+const StyledPaper = styled(Paper)(({ theme }) => ({
+	padding: theme.spacing(2),
+}));
 
-export const MareLine: React.FC = () => {
-	const classes = useStyles();
+export function MareLine() {
 	return (
-		<React.Fragment>
+		<HorseDefsContainer>
 			<Typography variant="h4">牝系図</Typography>
-			<Paper className={classes.paper}>
+			<StyledPaper>
 				<MareLineTree />
-			</Paper>
-		</React.Fragment>
+			</StyledPaper>
+		</HorseDefsContainer>
 	);
-};
+}

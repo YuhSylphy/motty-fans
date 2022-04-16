@@ -1,17 +1,15 @@
-import { Backdrop, CircularProgress, makeStyles } from '@material-ui/core';
+import { Backdrop, CircularProgress } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import React, { useMemo } from 'react';
 
 import { useAppSelector } from 'src/util';
 
-const useStyles = makeStyles((theme) => ({
-	backdrop: {
-		zIndex: theme.zIndex.drawer + 1,
-		color: '#fff',
-	},
+const StyledBackdrop = styled(Backdrop)(({ theme }) => ({
+	zIndex: theme.zIndex.drawer + 1,
+	color: '#fff',
 }));
 
-export const Indicator: React.FC = () => {
-	const classes = useStyles();
+export function Indicator() {
 	const { awaits } = useAppSelector((state) => state.indicator);
 
 	const waiting = useMemo(
@@ -20,8 +18,8 @@ export const Indicator: React.FC = () => {
 	);
 
 	return (
-		<Backdrop className={classes.backdrop} open={waiting}>
+		<StyledBackdrop open={waiting}>
 			<CircularProgress color="inherit" />
-		</Backdrop>
+		</StyledBackdrop>
 	);
-};
+}
