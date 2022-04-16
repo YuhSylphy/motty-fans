@@ -1,1 +1,1 @@
-export { Family } from './components/Family';
+export default null;

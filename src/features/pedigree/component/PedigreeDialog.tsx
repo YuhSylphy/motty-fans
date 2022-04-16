@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useMemo } from 'react';
-import { Dialog, DialogTitle, Typography } from '@material-ui/core';
+import { Dialog, DialogTitle, Typography } from '@mui/material';
 
 import { useAppDispatch, useAppSelector } from 'src/util';
 
