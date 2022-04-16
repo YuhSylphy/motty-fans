@@ -1,7 +1,6 @@
-import { Theme, IconButton } from '@mui/material';
-import makeStyles from '@mui/styles/makeStyles';
-import createStyles from '@mui/styles/createStyles';
+import { IconButton } from '@mui/material';
 import { TreeItem, TreeView } from '@mui/lab';
+import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -25,27 +24,23 @@ type Datum = {
 	owned: boolean;
 };
 
-const useStyles = makeStyles((theme: Theme) =>
-	createStyles({
-		root: {
-			'& .name': {
-				marginLeft: theme.spacing(0.5),
-			},
-			'& .father': {
-				marginLeft: theme.spacing(1),
-			},
-			'& .male': {
-				color: '#2196f3',
-			},
-			'& .female': {
-				color: '#f44336',
-			},
-			'& .unknown': {
-				color: '#888888',
-			},
-		},
-	})
-);
+const StyledTreeView = styled(TreeView)(({ theme }) => ({
+	'& .name': {
+		marginLeft: theme.spacing(0.5),
+	},
+	'& .father': {
+		marginLeft: theme.spacing(1),
+	},
+	'& .male': {
+		color: '#2196f3',
+	},
+	'& .female': {
+		color: '#f44336',
+	},
+	'& .unknown': {
+		color: '#888888',
+	},
+}));
 
 const InformationIcon: React.FC<{ name: string }> = ({ name }) => {
 	const dispatch = useAppDispatch();
@@ -171,7 +166,6 @@ function MareLineTreeNode({ node, toggleExpand }: MareLineTreeNodeProps) {
 }
 
 export const MareLineTree: React.FC = function MareLineTree() {
-	const classes = useStyles();
 	const dispatch = useAppDispatch();
 	const [expanded, setExpanded] = useState<string[]>([]);
 
@@ -202,16 +196,13 @@ export const MareLineTree: React.FC = function MareLineTree() {
 	);
 
 	return (
-		<React.Fragment>
-			<TreeView
-				className={classes.root}
-				expanded={expanded}
-				defaultCollapseIcon={<ExpandMoreIcon />}
-				defaultExpandIcon={<ChevronRightIcon />}
-				defaultEndIcon={<RemoveIcon />}
-			>
-				{nodes.map((node) => ({ node, toggleExpand })).map(MareLineTreeNode)}
-			</TreeView>
-		</React.Fragment>
+		<StyledTreeView
+			expanded={expanded}
+			defaultCollapseIcon={<ExpandMoreIcon />}
+			defaultExpandIcon={<ChevronRightIcon />}
+			defaultEndIcon={<RemoveIcon />}
+		>
+			{nodes.map((node) => ({ node, toggleExpand })).map(MareLineTreeNode)}
+		</StyledTreeView>
 	);
 };

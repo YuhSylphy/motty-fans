@@ -1,14 +1,13 @@
-import { Theme, Typography } from '@mui/material';
-import makeStyles from '@mui/styles/makeStyles';
-import createStyles from '@mui/styles/createStyles';
 import {
 	TableContainer,
 	Table,
 	TableBody,
 	TableRow,
 	TableCell,
+	Typography,
 	Paper,
 } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import React, { useMemo } from 'react';
 
 import { useAppSelector } from 'src/util';
@@ -24,69 +23,65 @@ type PedigreeNode = {
 	line: Line;
 };
 
-const useStyles = makeStyles((theme: Theme) =>
-	createStyles({
-		table: {
-			'& .cell': {
-				backgroundColor: 'gray',
-				'&.empty': {
-					backgroundColor: 'lightgray',
-				},
-				'&.Ec': {
-					backgroundColor: '#ffffff',
-				},
-				'&.Ph': {
-					backgroundColor: '#cfe8ff',
-				},
-				'&.Ns': {
-					backgroundColor: '#00bb00',
-				},
-				'&.Ro': {
-					backgroundColor: '#ffb4c8',
-				},
-				'&.Ne': {
-					backgroundColor: '#fdf488',
-				},
-				'&.Na': {
-					backgroundColor: '#52d8fd',
-				},
-				'&.Fa': {
-					backgroundColor: '#ffc943',
-				},
-				'&.To': {
-					backgroundColor: '#ff9d4b',
-				},
-				'&.Te': {
-					color: theme.palette.primary.contrastText,
-					backgroundColor: '#9e57ff',
-				},
-				'&.Sw': {
-					backgroundColor: '#ffe0e1',
-				},
-				'&.Ha': {
-					backgroundColor: '#90ee71',
-				},
-				'&.Hi': {
-					color: theme.palette.primary.contrastText,
-					backgroundColor: '#2c6aff',
-				},
-				'&.St': {
-					backgroundColor: '#9e93ff',
-				},
-				'&.Ma': {
-					backgroundColor: '#c5b2fe',
-				},
-				'&.He': {
-					backgroundColor: '#b9f8ff',
-				},
-				'&.mother': {
-					color: theme.palette.primary.contrastText,
-					backgroundColor: '#dd7165',
-				},
-			},
+const StyledTable = styled(Table)(({ theme }) => ({
+	'& .cell': {
+		backgroundColor: 'gray',
+		'&.empty': {
+			backgroundColor: 'lightgray',
 		},
-	})
-);
+		'&.Ec': {
+			backgroundColor: '#ffffff',
+		},
+		'&.Ph': {
+			backgroundColor: '#cfe8ff',
+		},
+		'&.Ns': {
+			backgroundColor: '#00bb00',
+		},
+		'&.Ro': {
+			backgroundColor: '#ffb4c8',
+		},
+		'&.Ne': {
+			backgroundColor: '#fdf488',
+		},
+		'&.Na': {
+			backgroundColor: '#52d8fd',
+		},
+		'&.Fa': {
+			backgroundColor: '#ffc943',
+		},
+		'&.To': {
+			backgroundColor: '#ff9d4b',
+		},
+		'&.Te': {
+			color: theme.palette.primary.contrastText,
+			backgroundColor: '#9e57ff',
+		},
+		'&.Sw': {
+			backgroundColor: '#ffe0e1',
+		},
+		'&.Ha': {
+			backgroundColor: '#90ee71',
+		},
+		'&.Hi': {
+			color: theme.palette.primary.contrastText,
+			backgroundColor: '#2c6aff',
+		},
+		'&.St': {
+			backgroundColor: '#9e93ff',
+		},
+		'&.Ma': {
+			backgroundColor: '#c5b2fe',
+		},
+		'&.He': {
+			backgroundColor: '#b9f8ff',
+		},
+		'&.mother': {
+			color: theme.palette.primary.contrastText,
+			backgroundColor: '#dd7165',
+		},
+	},
+}));
 
 /** 対象世代の限界点 */
 const limit = 5;
@@ -211,7 +206,6 @@ const render = (data: PedigreeNode[][]): JSX.Element => {
 };
 
 export const PedigreeTable: React.FC<PedigreeTableProps> = ({ def }) => {
-	const classes = useStyles();
 	const defs = useAppSelector((state) => state.horseDefs.list);
 	const map = useMemo(
 		() =>
@@ -226,9 +220,9 @@ export const PedigreeTable: React.FC<PedigreeTableProps> = ({ def }) => {
 
 	return (
 		<TableContainer component={Paper}>
-			<Table className={classes.table} size="small">
+			<StyledTable size="small">
 				<TableBody>{render(array)}</TableBody>
-			</Table>
+			</StyledTable>
 		</TableContainer>
 	);
 };

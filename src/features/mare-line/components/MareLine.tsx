@@ -1,27 +1,20 @@
-import * as React from 'react';
+import React from 'react';
 import { Paper, Typography } from '@mui/material';
-
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
 
 import { MareLineTree } from './MareLineTree';
 
-const useStyles = makeStyles((theme) =>
-	createStyles({
-		paper: {
-			padding: theme.spacing(2),
-		},
-	})
-);
+const StyledPaper = styled(Paper)(({ theme }) => ({
+	padding: theme.spacing(2),
+}));
 
-export const MareLine: React.FC = () => {
-	const classes = useStyles();
+export function MareLine() {
 	return (
 		<React.Fragment>
 			<Typography variant="h4">牝系図</Typography>
-			<Paper className={classes.paper}>
+			<StyledPaper>
 				<MareLineTree />
-			</Paper>
+			</StyledPaper>
 		</React.Fragment>
 	);
-};
+}
