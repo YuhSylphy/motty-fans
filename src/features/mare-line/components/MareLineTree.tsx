@@ -8,8 +8,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMars, faQuestion, faVenus } from '@fortawesome/free-solid-svg-icons';
-import * as React from 'react';
-import { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import { useAppDispatch, useAppSelector, withIndicatorSync } from 'src/util';
 
@@ -134,33 +133,42 @@ const construct = (defs: HorseDef[]): { nodes: Datum[]; ids: string[] } => {
 	return {
 		nodes: Array.from(map.values()).filter(
 			(value) =>
-				// 所有場であることは絶対条件
+				// 所有馬であることは絶対条件
 				value.owned &&
 				// 母の名前がわからないか
 				(!value.motherName ||
 					// 母が登録されていないか
 					!map.has(value.motherName) ||
-					// 母はいるけど所有場でないか
+					// 母はいるけど所有馬でないか
 					(map.has(value.motherName) && !map.get(value.motherName)?.owned))
 		),
 		ids: Array.from(map.keys()),
 	};
 };
 
-const renderTree = (toggleExpand: (node: Datum) => React.MouseEventHandler) =>
-	(function MareLineTreeNode(node: Datum) {
-		return (
-			<TreeItem
-				className={node.className}
-				key={node.id}
-				nodeId={node.id}
-				label={node.label}
-				onIconClick={toggleExpand(node)}
-			>
-				{node.children.map(renderTree(toggleExpand))}
-			</TreeItem>
-		);
-	});
+type MareLineTreeNodeProps = {
+	node: Datum;
+	toggleExpand: (node: Datum) => React.MouseEventHandler;
+};
+
+function MareLineTreeNode({ node, toggleExpand }: MareLineTreeNodeProps) {
+	const onIconClick = toggleExpand(node);
+	return (
+		<TreeItem
+			className={node.className}
+			key={node.id}
+			nodeId={node.id}
+			label={node.label}
+			collapseIcon={<ExpandMoreIcon onClick={onIconClick} />}
+			expandIcon={<ChevronRightIcon onClick={onIconClick} />}
+			endIcon={<RemoveIcon />}
+		>
+			{node.children
+				.map((node) => ({ node, toggleExpand }))
+				.map(MareLineTreeNode)}
+		</TreeItem>
+	);
+}
 
 export const MareLineTree: React.FC = function MareLineTree() {
 	const classes = useStyles();
@@ -202,7 +210,7 @@ export const MareLineTree: React.FC = function MareLineTree() {
 				defaultExpandIcon={<ChevronRightIcon />}
 				defaultEndIcon={<RemoveIcon />}
 			>
-				{nodes.map(renderTree(toggleExpand))}
+				{nodes.map((node) => ({ node, toggleExpand })).map(MareLineTreeNode)}
 			</TreeView>
 		</React.Fragment>
 	);
