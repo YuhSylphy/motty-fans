@@ -49,36 +49,30 @@ const defs: MenuItemDef[] = [
 		icon: <ListIcon />,
 		label: '牝系図',
 		path: '/mare-line',
-		Page: React.lazy(() =>
-			import(/* webpackChunkName: "mare-line" */ 'src/features/mare-line').then(
-				(module) => ({
-					default: module.MareLine,
-				})
-			)
+		Page: React.lazy(
+			() =>
+				import(
+					/* webpackChunkName: "mare-line" */ 'src/features/mare-line/lazy'
+				)
 		),
 	},
 	{
 		icon: <TimelineIcon />,
 		label: '家系図(旧)',
 		path: '/family',
-		Page: React.lazy(() =>
-			import(/* webpackChunkName: "family" */ 'src/features/family').then(
-				(module) => ({
-					default: module.Family,
-				})
-			)
+		Page: React.lazy(
+			() => import(/* webpackChunkName: "family" */ 'src/features/family/lazy')
 		),
 	},
 	{
 		icon: <ChangeHistoryIcon />,
 		label: '更新履歴',
 		path: '/change-log',
-		Page: React.lazy(() =>
-			import(
-				/* webpackChunkName: "change-log" */ 'src/features/changelog'
-			).then((module) => ({
-				default: module.ChangeLog,
-			}))
+		Page: React.lazy(
+			() =>
+				import(
+					/* webpackChunkName: "change-log" */ 'src/features/changelog/lazy'
+				)
 		),
 	},
 ];
