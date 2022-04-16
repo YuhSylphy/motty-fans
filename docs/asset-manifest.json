@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/motty-fans/static/css/main.7035645f.css",
-    "main.js": "/motty-fans/static/js/main.a59282b2.js",
-    "static/js/360.3a4dd2db.chunk.js": "/motty-fans/static/js/360.3a4dd2db.chunk.js",
-    "static/css/514.73cd1855.chunk.css": "/motty-fans/static/css/514.73cd1855.chunk.css",
-    "static/js/514.e4795cd2.chunk.js": "/motty-fans/static/js/514.e4795cd2.chunk.js",
-    "static/js/572.f39abf74.chunk.js": "/motty-fans/static/js/572.f39abf74.chunk.js",
-    "static/js/509.b352b48c.chunk.js": "/motty-fans/static/js/509.b352b48c.chunk.js",
+    "main.css": "/motty-fans/static/css/main.c6bebc4e.css",
+    "main.js": "/motty-fans/static/js/main.65057c0d.js",
+    "mare-line.js": "/motty-fans/static/js/mare-line.3f084064.chunk.js",
+    "family.css": "/motty-fans/static/css/family.a292d857.chunk.css",
+    "family.js": "/motty-fans/static/js/family.164da15c.chunk.js",
+    "change-log.js": "/motty-fans/static/js/change-log.31c24c90.chunk.js",
+    "static/js/980.5a55ff87.chunk.js": "/motty-fans/static/js/980.5a55ff87.chunk.js",
+    "static/js/572.1b6c7d96.chunk.js": "/motty-fans/static/js/572.1b6c7d96.chunk.js",
+    "static/js/625.0edc04cd.chunk.js": "/motty-fans/static/js/625.0edc04cd.chunk.js",
+    "static/css/485.14afd8e7.chunk.css": "/motty-fans/static/css/485.14afd8e7.chunk.css",
     "index.html": "/motty-fans/index.html",
-    "main.7035645f.css.map": "/motty-fans/static/css/main.7035645f.css.map",
-    "main.a59282b2.js.map": "/motty-fans/static/js/main.a59282b2.js.map",
-    "360.3a4dd2db.chunk.js.map": "/motty-fans/static/js/360.3a4dd2db.chunk.js.map",
-    "514.73cd1855.chunk.css.map": "/motty-fans/static/css/514.73cd1855.chunk.css.map",
-    "514.e4795cd2.chunk.js.map": "/motty-fans/static/js/514.e4795cd2.chunk.js.map",
-    "572.f39abf74.chunk.js.map": "/motty-fans/static/js/572.f39abf74.chunk.js.map",
-    "509.b352b48c.chunk.js.map": "/motty-fans/static/js/509.b352b48c.chunk.js.map"
+    "main.c6bebc4e.css.map": "/motty-fans/static/css/main.c6bebc4e.css.map",
+    "main.65057c0d.js.map": "/motty-fans/static/js/main.65057c0d.js.map",
+    "mare-line.3f084064.chunk.js.map": "/motty-fans/static/js/mare-line.3f084064.chunk.js.map",
+    "family.a292d857.chunk.css.map": "/motty-fans/static/css/family.a292d857.chunk.css.map",
+    "family.164da15c.chunk.js.map": "/motty-fans/static/js/family.164da15c.chunk.js.map",
+    "change-log.31c24c90.chunk.js.map": "/motty-fans/static/js/change-log.31c24c90.chunk.js.map",
+    "980.5a55ff87.chunk.js.map": "/motty-fans/static/js/980.5a55ff87.chunk.js.map",
+    "572.1b6c7d96.chunk.js.map": "/motty-fans/static/js/572.1b6c7d96.chunk.js.map",
+    "625.0edc04cd.chunk.js.map": "/motty-fans/static/js/625.0edc04cd.chunk.js.map",
+    "485.14afd8e7.chunk.css.map": "/motty-fans/static/css/485.14afd8e7.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.7035645f.css",
-    "static/js/main.a59282b2.js"
+    "static/css/main.c6bebc4e.css",
+    "static/js/main.65057c0d.js"
   ]
 }
