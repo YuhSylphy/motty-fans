@@ -10,7 +10,6 @@ import {
 	ListItemText,
 	Toolbar,
 	Typography,
-	useTheme,
 } from '@mui/material';
 import {
 	List as ListIcon,
@@ -18,13 +17,12 @@ import {
 	Timeline as TimelineIcon,
 	ChangeHistory as ChangeHistoryIcon,
 } from '@mui/icons-material';
-import React, { Suspense, useEffect, useMemo, useState } from 'react';
+import { styled } from '@mui/material/styles';
+
+import React, { Suspense, useMemo, useState } from 'react';
 import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
 
-import { useAppDispatch } from 'src/util';
-
 import { Http404 } from 'src/features/errors/404';
-import { horseDefsActions } from 'src/features/horse-defs';
 import { Indicator } from 'src/features/indicator';
 import { PedigreeDialog } from 'src/features/pedigree';
 
@@ -37,14 +35,14 @@ type MenuItemDef = {
 	Page: React.ComponentType;
 };
 
-const renderListItem = (def: MenuItemDef) => {
+function MenuListItem(def: MenuItemDef) {
 	return (
 		<ListItem key={def.path} button={true} component={Link} to={def.path}>
 			<ListItemIcon>{def.icon}</ListItemIcon>
 			<ListItemText primary={def.label} />
 		</ListItem>
 	);
-};
+}
 
 const defs: MenuItemDef[] = [
 	{
@@ -85,17 +83,19 @@ const defs: MenuItemDef[] = [
 	},
 ];
 
-const MenuList: React.FC<{
+type MenuListProps = {
 	toggleMenu: () => void;
-}> = ({ toggleMenu }) => {
-	return (
-		<List onClick={toggleMenu} onKeyDown={toggleMenu}>
-			{defs.map(renderListItem)}
-		</List>
-	);
 };
 
-const Header: React.FC = () => {
+function MenuList({ toggleMenu }: MenuListProps) {
+	return (
+		<List onClick={toggleMenu} onKeyDown={toggleMenu}>
+			{defs.map(MenuListItem)}
+		</List>
+	);
+}
+
+function Header() {
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
 	const toggleMenu = useMemo(
@@ -127,32 +127,34 @@ const Header: React.FC = () => {
 			</Drawer>
 		</React.Fragment>
 	);
-};
+}
 
-const Footer: React.FC = () => {
-	const theme = useTheme();
+const FooterBox = styled(Box)(({ theme }) => ({
+	display: 'flex',
+	justifyContent: 'flex-end',
+	margin: theme.spacing(0.2),
+}));
+
+function Footer() {
 	return (
-		<Box display="flex" justifyContent="flex-end" margin={theme.spacing(0.2)}>
+		<FooterBox>
 			<Anchor href="https://www.youtube.com/user/MOTTYGAMES/" target="__blank">
 				MOTTV
 			</Anchor>
-		</Box>
+		</FooterBox>
 	);
-};
+}
 
-export const App: React.FC = () => {
-	const theme = useTheme();
-	const dispatch = useAppDispatch();
+const AppBox = styled(Box)(({ theme }) => ({
+	margin: theme.spacing(0.5),
+}));
 
-	useEffect(() => {
-		dispatch(horseDefsActions.init());
-	}, [dispatch]);
-
+export function App() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<React.Fragment>
 				<Header />
-				<Box margin={theme.spacing(0.5)}>
+				<AppBox>
 					<Suspense fallback={<div>loading...</div>}>
 						<Routes>
 							{defs.map(({ path, Page }) => (
@@ -162,11 +164,11 @@ export const App: React.FC = () => {
 							<Route key="404" element={<Http404 />} />
 						</Routes>
 					</Suspense>
-				</Box>
+				</AppBox>
 				<Footer />
 				<PedigreeDialog />
 				<Indicator />
 			</React.Fragment>
 		</BrowserRouter>
 	);
-};
+}
