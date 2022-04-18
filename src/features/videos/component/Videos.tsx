@@ -4,7 +4,7 @@ import { videosActions } from '..';
 import { VideoDef } from '../core/logic';
 
 function Loader() {
-	return <div>fallback</div>;
+	return <div>Loading...</div>;
 }
 
 type VideoProps = {
@@ -15,10 +15,11 @@ function VideoBody({ defs }: VideoProps) {
 	// tentative
 	return (
 		<div>
-			<span>test</span>
 			<ul>
 				{defs.map((def, ix) => (
-					<li key={ix}>{def.id}</li>
+					<li key={ix}>
+						<pre>{JSON.stringify(def, null, '\t')}</pre>
+					</li>
 				))}
 			</ul>
 		</div>

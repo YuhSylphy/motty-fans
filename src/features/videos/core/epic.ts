@@ -5,13 +5,13 @@ import type { Epic } from 'src/app';
 import { withIndicator } from 'src/util';
 
 import { videosActions } from '..';
-import { dummyVideoDefs } from './logic';
+import { fetchVideoDefs } from './logic';
 
 export const fetchDefsEpic: Epic = (action$) =>
 	action$.pipe(
 		filter(videosActions.init.match),
 		withIndicator('videos/fetch', async () =>
-			videosActions.set(await dummyVideoDefs())
+			videosActions.set(await fetchVideoDefs())
 		)
 	);
 
