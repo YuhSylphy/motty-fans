@@ -39,7 +39,7 @@ type JsonType = {
 
 const dummy: VideoDef = {
 	id: 'dummy',
-	publishedAt: new Date('2014-09-07T00:00:00Z'),
+	publishedAt: Date.parse('2014-09-07T00:00:00Z'),
 	title: 'dummy',
 	description: 'no videos fetched',
 	// thumbnails: {
@@ -64,7 +64,7 @@ const dummy: VideoDef = {
 
 export type VideoDef = {
 	id: string;
-	publishedAt: Date;
+	publishedAt: number;
 	title: string;
 	description: string;
 	// thumbnail:
@@ -79,7 +79,7 @@ export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 				? [dummy]
 				: items.map((def) => ({
 						id: def.id.videoId,
-						publishedAt: new Date(def.snippet.publishedAt),
+						publishedAt: Date.parse(def.snippet.publishedAt),
 						title: def.snippet.title,
 						description: def.snippet.description,
 						tags: [],
