@@ -19,8 +19,11 @@ import {
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 
-import React, { Suspense, useMemo, useState } from 'react';
+import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
+
+import { registerEpic } from '../core/store';
+import { exportEpic } from '../core/export-actions';
 
 import { Http404 } from 'src/features/errors/404';
 import { Indicator } from 'src/features/indicator';
@@ -144,6 +147,10 @@ const AppBox = styled(Box)(({ theme }) => ({
 }));
 
 export function App() {
+	useEffect(() => {
+		registerEpic(exportEpic);
+	}, [registerEpic, exportEpic]);
+
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<React.Fragment>
