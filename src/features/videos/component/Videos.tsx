@@ -3,6 +3,7 @@ import React, { Suspense, useEffect, useMemo } from 'react';
 import {
 	Button,
 	Card,
+	CardActionArea,
 	CardActions,
 	CardContent,
 	CardMedia,
@@ -17,6 +18,11 @@ import { DateTime } from 'luxon';
 import { useAppDispatch, useAppSelector } from 'src/util';
 import { videosActions } from '..';
 import { VideoDef } from '../core/logic';
+
+const showImage = true;
+
+const createVideoUrl = (videoId: string) =>
+	`https://www.youtube.com/watch?v=${videoId}`;
 
 function Loader() {
 	return <div>Loading...</div>;
@@ -70,11 +76,11 @@ function DescriptionTypography(props: React.ComponentProps<typeof Typography>) {
 }
 
 type LinkToMovieButtonProps = {
-	id: string;
+	videoId: string;
 };
-function LinkToMovieButton({ id }: LinkToMovieButtonProps) {
+function LinkToMovieButton({ videoId }: LinkToMovieButtonProps) {
 	return (
-		<Button href={`https://www.youtube.com/watch?v=${id}`} target="_blank">
+		<Button href={createVideoUrl(videoId)} target="_blank">
 			Watch
 		</Button>
 	);
@@ -83,6 +89,20 @@ function LinkToMovieButton({ id }: LinkToMovieButtonProps) {
 const RightAlignedCardActions = styled(CardActions)({
 	justifyContent: 'right',
 });
+
+type VideoThumbnailProps = {
+	alt: string;
+	imageUrl: string;
+	videoId: string;
+};
+
+function VideoThumbnail({ imageUrl, alt, videoId }: VideoThumbnailProps) {
+	return (
+		<CardActionArea href={createVideoUrl(videoId)}>
+			<CardMedia component="img" src={showImage ? imageUrl : ''} alt={alt} />
+		</CardActionArea>
+	);
+}
 
 function VideoCard({ def }: VideoCardProps) {
 	const thumb = def.thumbnails.default;
@@ -95,14 +115,14 @@ function VideoCard({ def }: VideoCardProps) {
 	);
 	return (
 		<Card>
-			<CardMedia component="img" image={thumb.url} alt={def.title} />
+			<VideoThumbnail imageUrl={thumb.url} alt={def.title} videoId={def.id} />
 			<CardContent>
 				<TitleTypography>{def.title}</TitleTypography>
 				<PublishedAtTypography>{publishedAt}</PublishedAtTypography>
 				<DescriptionTypography>{def.description}</DescriptionTypography>
 			</CardContent>
 			<RightAlignedCardActions>
-				<LinkToMovieButton id={def.id} />
+				<LinkToMovieButton videoId={def.id} />
 			</RightAlignedCardActions>
 		</Card>
 	);
