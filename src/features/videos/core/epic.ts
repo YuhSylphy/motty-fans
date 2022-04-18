@@ -5,7 +5,7 @@ import type { Epic } from 'src/app';
 import { withIndicator } from 'src/util';
 
 import { videosActions } from '..';
-import { fetchVideoDefs } from './logic';
+import { fetchVideoDefs } from './fetch';
 
 export const fetchDefsEpic: Epic = (action$) =>
 	action$.pipe(

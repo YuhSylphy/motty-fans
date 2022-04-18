@@ -17,7 +17,7 @@ import { DateTime } from 'luxon';
 
 import { useAppDispatch, useAppSelector } from 'src/util';
 import { videosActions } from '..';
-import { VideoDef } from '../core/logic';
+import { VideoDef } from '../core/fetch';
 
 const showImage = true;
 
@@ -78,6 +78,7 @@ function DescriptionTypography(props: React.ComponentProps<typeof Typography>) {
 type LinkToMovieButtonProps = {
 	videoId: string;
 };
+
 function LinkToMovieButton({ videoId }: LinkToMovieButtonProps) {
 	return (
 		<Button href={createVideoUrl(videoId)} target="_blank">
@@ -133,7 +134,6 @@ type VideoBodyProps = {
 };
 
 function VideoBody({ defs }: VideoBodyProps) {
-	// tentative
 	return (
 		<Masonry>
 			{defs.map((def) => (

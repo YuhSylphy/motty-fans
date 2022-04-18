@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { VideoDef } from './logic';
+import { VideoDef } from './fetch';
 
 export type VideosState = {
 	list: VideoDef[];
