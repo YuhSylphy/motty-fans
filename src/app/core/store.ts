@@ -6,6 +6,7 @@ import { horseDefsReducer } from 'src/features/horse-defs';
 import { indicatorReducer } from 'src/features/indicator';
 import { pedigreeReducer } from 'src/features/pedigree';
 import { changeLogReducer } from 'src/features/changelog';
+import { videosReducer } from 'src/features/videos';
 
 import type { AppAction } from './actions';
 
@@ -25,6 +26,7 @@ export const store = configureStore({
 		indicator: indicatorReducer,
 		pedigree: pedigreeReducer,
 		changeLog: changeLogReducer,
+		videos: videosReducer,
 	},
 	middleware: (getDefaultMiddleware) =>
 		getDefaultMiddleware({

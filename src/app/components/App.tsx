@@ -16,6 +16,7 @@ import {
 	MenuOutlined,
 	Timeline as TimelineIcon,
 	ChangeHistory as ChangeHistoryIcon,
+	YouTube as YouTubeIcon,
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 
@@ -48,6 +49,14 @@ function MenuListItem(def: MenuItemDef) {
 }
 
 const defs: MenuItemDef[] = [
+	{
+		icon: <YouTubeIcon />,
+		label: 'YouTube 動画一覧',
+		path: '/videos',
+		Page: React.lazy(
+			() => import(/* webpackChunkName: "videos" */ 'src/features/videos/lazy')
+		),
+	},
 	{
 		icon: <ListIcon />,
 		label: '牝系図',
