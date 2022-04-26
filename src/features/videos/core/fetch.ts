@@ -76,21 +76,16 @@ export type VideoDef = {
 export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 	fetch(`${process.env.PUBLIC_URL}/assets/videos/videos.json`)
 		.then((res) => res.json())
-		.then(
-			({ items }: JsonType) =>
-				!(items && items.length > 0)
-					? [dummy]
-					: items
-							.map((def) => ({
-								id: def.id.videoId,
-								publishedAt: DateTime.fromISO(
-									def.snippet.publishedAt
-								).toMillis(),
-								title: def.snippet.title,
-								description: def.snippet.description,
-								thumbnails: def.snippet.thumbnails,
-								tags: [],
-							}))
-							.slice(0, 20) // tentative
+		.then(({ items }: JsonType) =>
+			!(items && items.length > 0)
+				? [dummy]
+				: items.map((def) => ({
+						id: def.id.videoId,
+						publishedAt: DateTime.fromISO(def.snippet.publishedAt).toMillis(),
+						title: def.snippet.title,
+						description: def.snippet.description,
+						thumbnails: def.snippet.thumbnails,
+						tags: [],
+				  }))
 		)
 		.catch((e) => [{ ...dummy, description: e }]);

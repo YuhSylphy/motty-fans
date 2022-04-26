@@ -1,4 +1,10 @@
-import React, { Suspense, useEffect, useMemo } from 'react';
+import React, {
+	Suspense,
+	useCallback,
+	useEffect,
+	useMemo,
+	useState,
+} from 'react';
 
 import {
 	Button,
@@ -7,10 +13,10 @@ import {
 	CardActions,
 	CardContent,
 	CardMedia,
+	Grid,
 	Tooltip,
 	Typography,
 } from '@mui/material';
-import { Masonry } from '@mui/lab';
 import { styled } from '@mui/styles';
 
 import { DateTime } from 'luxon';
@@ -18,6 +24,7 @@ import { DateTime } from 'luxon';
 import { useAppDispatch, useAppSelector } from 'src/util';
 import { videosActions } from '..';
 import { VideoDef } from '../core/fetch';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const showImage = true;
 
@@ -133,13 +140,38 @@ type VideoBodyProps = {
 	defs: VideoDef[];
 };
 
+const steps = 20;
 function VideoBody({ defs }: VideoBodyProps) {
+	const [loaded, setLoaded] = useState<VideoDef[]>([]);
+
+	const fetchNext = useCallback(() => {
+		const next = loaded.length + steps;
+		if (defs.length > next) {
+			setLoaded(defs.slice(0, next));
+		} else {
+			setLoaded([...defs]);
+		}
+	}, [loaded, steps, setLoaded, defs]);
+
+	useEffect(() => {
+		fetchNext(); // 初回
+	}, [defs]);
+
 	return (
-		<Masonry>
-			{defs.map((def) => (
-				<VideoCard key={def.id} def={def} />
-			))}
-		</Masonry>
+		<InfiniteScroll
+			dataLength={loaded.length}
+			next={fetchNext}
+			hasMore={loaded.length < defs.length}
+			loader={<Loader />}
+		>
+			<Grid container spacing={2}>
+				{loaded.map((def) => (
+					<Grid item xs={3} md={2} key={def.id}>
+						<VideoCard def={def} />
+					</Grid>
+				))}
+			</Grid>
+		</InfiniteScroll>
 	);
 }
 
@@ -153,7 +185,12 @@ function VideoContainer() {
 		}
 	}, [defs]);
 
-	return defs.length === 0 ? <Loader /> : <VideoBody defs={defs} />;
+	const sorted = useMemo(
+		() => [...defs].sort((lhs, rhs) => -(lhs.publishedAt - rhs.publishedAt)),
+		[defs]
+	);
+
+	return defs.length === 0 ? <Loader /> : <VideoBody defs={sorted} />;
 }
 
 export function Videos() {
