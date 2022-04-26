@@ -13,6 +13,7 @@ import {
 	CardActions,
 	CardContent,
 	CardMedia,
+	Container,
 	Grid,
 	Tooltip,
 	Typography,
@@ -44,6 +45,7 @@ const TitleStyledTypography = styled(Typography)({
 	overflow: 'hidden',
 	lineClamp: 2,
 	boxOrient: 'vertical',
+	fontSize: '.9rem',
 });
 
 function TitleTypography(props: React.ComponentProps<typeof Typography>) {
@@ -72,6 +74,7 @@ const DescriptionStyledTypography = styled(Typography)({
 	overflow: 'hidden',
 	lineClamp: 3,
 	boxOrient: 'vertical',
+	fontSize: '.75rem',
 });
 
 function DescriptionTypography(props: React.ComponentProps<typeof Typography>) {
@@ -158,20 +161,22 @@ function VideoBody({ defs }: VideoBodyProps) {
 	}, [defs]);
 
 	return (
-		<InfiniteScroll
-			dataLength={loaded.length}
-			next={fetchNext}
-			hasMore={loaded.length < defs.length}
-			loader={<Loader />}
-		>
-			<Grid container spacing={2}>
-				{loaded.map((def) => (
-					<Grid item xs={3} md={2} key={def.id}>
-						<VideoCard def={def} />
-					</Grid>
-				))}
-			</Grid>
-		</InfiniteScroll>
+		<Container>
+			<InfiniteScroll
+				dataLength={loaded.length}
+				next={fetchNext}
+				hasMore={loaded.length < defs.length}
+				loader={<Loader />}
+			>
+				<Grid container spacing={2}>
+					{loaded.map((def) => (
+						<Grid item xs={4} md={3} key={def.id}>
+							<VideoCard def={def} />
+						</Grid>
+					))}
+				</Grid>
+			</InfiniteScroll>
+		</Container>
 	);
 }
 
