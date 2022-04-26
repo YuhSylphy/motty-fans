@@ -1,6 +1,7 @@
 import {
 	AppBar,
 	Box,
+	CssBaseline,
 	Drawer,
 	IconButton,
 	Link as Anchor,
@@ -31,6 +32,7 @@ import { Indicator } from 'src/features/indicator';
 import { PedigreeDialog } from 'src/features/pedigree';
 
 import './App.css';
+import { AppThemeProvider } from './AppThemeProvider';
 
 type MenuItemDef = {
 	icon: JSX.Element;
@@ -113,7 +115,7 @@ function Header() {
 
 	return (
 		<React.Fragment>
-			<AppBar position="static">
+			<AppBar position="static" enableColorOnDark>
 				<Toolbar>
 					<IconButton
 						edge="start"
@@ -161,24 +163,31 @@ export function App() {
 	}, [registerEpic, exportEpic]);
 
 	return (
-		<BrowserRouter basename={process.env.PUBLIC_URL}>
-			<React.Fragment>
-				<Header />
-				<AppBox>
-					<Suspense fallback={<div>loading...</div>}>
-						<Routes>
-							{defs.map(({ path, Page }) => (
-								<Route key={path} path={path} element={<Page />} />
-							))}
-							<Route path="/" key="/" element={<Navigate to="/mare-line" />} />
-							<Route key="404" element={<Http404 />} />
-						</Routes>
-					</Suspense>
-				</AppBox>
-				<Footer />
-				<PedigreeDialog />
-				<Indicator />
-			</React.Fragment>
-		</BrowserRouter>
+		<AppThemeProvider>
+			<CssBaseline />
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
+				<React.Fragment>
+					<Header />
+					<AppBox>
+						<Suspense fallback={<div>loading...</div>}>
+							<Routes>
+								{defs.map(({ path, Page }) => (
+									<Route key={path} path={path} element={<Page />} />
+								))}
+								<Route
+									path="/"
+									key="/"
+									element={<Navigate to="/mare-line" />}
+								/>
+								<Route key="404" element={<Http404 />} />
+							</Routes>
+						</Suspense>
+					</AppBox>
+					<Footer />
+					<PedigreeDialog />
+					<Indicator />
+				</React.Fragment>
+			</BrowserRouter>
+		</AppThemeProvider>
 	);
 }
