@@ -5,24 +5,14 @@ import {
 	Drawer,
 	IconButton,
 	Link as Anchor,
-	List,
-	ListItem,
-	ListItemIcon,
-	ListItemText,
 	Toolbar,
 	Typography,
 } from '@mui/material';
-import {
-	List as ListIcon,
-	MenuOutlined,
-	Timeline as TimelineIcon,
-	ChangeHistory as ChangeHistoryIcon,
-	YouTube as YouTubeIcon,
-} from '@mui/icons-material';
+import { MenuOutlined } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';
 
-import React, { Suspense, useEffect, useMemo, useState } from 'react';
-import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
+import React, { Suspense, useCallback, useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import { registerEpic } from '../core/store';
 import { exportEpic } from '../core/export-actions';
@@ -33,86 +23,21 @@ import { PedigreeDialog } from 'src/features/pedigree';
 
 import './App.css';
 import { AppThemeProvider } from './AppThemeProvider';
+import { getPageDef, MenuList } from './Menu';
+import { defaultRoute } from '../core/menu-defs';
 
-type MenuItemDef = {
-	icon: JSX.Element;
-	label: string;
-	path: string;
-	Page: React.ComponentType;
-};
-
-function MenuListItem(def: MenuItemDef) {
-	return (
-		<ListItem key={def.path} button={true} component={Link} to={def.path}>
-			<ListItemIcon>{def.icon}</ListItemIcon>
-			<ListItemText primary={def.label} />
-		</ListItem>
-	);
-}
-
-const defs: MenuItemDef[] = [
-	{
-		icon: <YouTubeIcon />,
-		label: 'YouTube 動画一覧',
-		path: '/videos',
-		Page: React.lazy(
-			() => import(/* webpackChunkName: "videos" */ 'src/features/videos/lazy')
-		),
-	},
-	{
-		icon: <ListIcon />,
-		label: '牝系図',
-		path: '/mare-line',
-		Page: React.lazy(
-			() =>
-				import(
-					/* webpackChunkName: "mare-line" */ 'src/features/mare-line/lazy'
-				)
-		),
-	},
-	{
-		icon: <TimelineIcon />,
-		label: '家系図(旧)',
-		path: '/family',
-		Page: React.lazy(
-			() => import(/* webpackChunkName: "family" */ 'src/features/family/lazy')
-		),
-	},
-	{
-		icon: <ChangeHistoryIcon />,
-		label: '更新履歴',
-		path: '/change-log',
-		Page: React.lazy(
-			() =>
-				import(
-					/* webpackChunkName: "change-log" */ 'src/features/changelog/lazy'
-				)
-		),
-	},
-];
-
-type MenuListProps = {
-	toggleMenu: () => void;
-};
-
-function MenuList({ toggleMenu }: MenuListProps) {
-	return (
-		<List onClick={toggleMenu} onKeyDown={toggleMenu}>
-			{defs.map(MenuListItem)}
-		</List>
-	);
-}
-
-function Header() {
+const useHeaderHooks = () => {
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-	const toggleMenu = useMemo(
-		() => () => {
-			setMenuOpen(!menuOpen);
-		},
-		[menuOpen, setMenuOpen]
-	);
+	const toggleMenu = useCallback(() => {
+		setMenuOpen(!menuOpen);
+	}, [menuOpen, setMenuOpen]);
 
+	return { menuOpen, toggleMenu };
+};
+
+function Header() {
+	const { menuOpen, toggleMenu } = useHeaderHooks();
 	return (
 		<React.Fragment>
 			<AppBar position="static" enableColorOnDark>
@@ -157,6 +82,7 @@ const AppBox = styled(Box)(({ theme }) => ({
 	margin: theme.spacing(0.5),
 }));
 
+const defs = getPageDef();
 export function App() {
 	useEffect(() => {
 		registerEpic(exportEpic);
@@ -177,7 +103,7 @@ export function App() {
 								<Route
 									path="/"
 									key="/"
-									element={<Navigate to="/mare-line" />}
+									element={<Navigate to={defaultRoute} />}
 								/>
 								<Route key="404" element={<Http404 />} />
 							</Routes>
