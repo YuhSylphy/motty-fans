@@ -13,12 +13,14 @@ import {
 	CardActions,
 	CardContent,
 	CardMedia,
+	Chip,
 	Container,
 	Grid,
 	Tooltip,
 	Typography,
 } from '@mui/material';
-import { styled } from '@mui/styles';
+import { styled } from '@mui/material/styles';
+import SearchIcon from '@mui/icons-material/Search';
 
 import { DateTime } from 'luxon';
 
@@ -26,6 +28,7 @@ import { useAppDispatch, useAppSelector } from 'src/util';
 import { videosActions } from '..';
 import { VideoDef } from '../core/fetch';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { Box } from '@mui/system';
 
 const showImage = true;
 
@@ -41,10 +44,12 @@ type VideoCardProps = {
 };
 
 const TitleStyledTypography = styled(Typography)({
-	display: 'box',
+	display: '-webkit-box',
 	overflow: 'hidden',
 	lineClamp: 2,
+	WebkitLineClamp: 2,
 	boxOrient: 'vertical',
+	WebkitBoxOrient: 'vertical',
 	fontSize: '.9rem',
 });
 
@@ -70,10 +75,12 @@ function PublishedAtTypography(props: React.ComponentProps<typeof Typography>) {
 }
 
 const DescriptionStyledTypography = styled(Typography)({
-	display: 'box',
+	display: '-webkit-box',
 	overflow: 'hidden',
 	lineClamp: 3,
+	WebkitLineClamp: 3,
 	boxOrient: 'vertical',
+	WebkitBoxOrient: 'vertical',
 	fontSize: '.75rem',
 });
 
@@ -115,6 +122,40 @@ function VideoThumbnail({ imageUrl, alt, videoId }: VideoThumbnailProps) {
 	);
 }
 
+type TagsProps = {
+	tags: string[];
+};
+
+const VideoTagsBox = styled(Box)({
+	// justifyContent: 'right',
+});
+
+const TagChip = styled(Chip)({
+	fontSize: '.4rem',
+});
+
+function VideoTags({ tags }: TagsProps) {
+	return (
+		<VideoTagsBox>
+			{tags.map((tag) => (
+				<TagChip
+					key={tag}
+					label={tag}
+					size="small"
+					icon={<SearchIcon />}
+					clickable
+				/>
+			))}
+		</VideoTagsBox>
+	);
+}
+
+const Spacer = styled('div')(({ theme }) => ({
+	height: '0px',
+	width: '100%',
+	margin: `${theme.spacing(1)} 0`,
+}));
+
 function VideoCard({ def }: VideoCardProps) {
 	const thumb = def.thumbnails.default;
 	const publishedAt = useMemo(
@@ -128,6 +169,8 @@ function VideoCard({ def }: VideoCardProps) {
 		<Card>
 			<VideoThumbnail imageUrl={thumb.url} alt={def.title} videoId={def.id} />
 			<CardContent>
+				<VideoTags tags={def.tags} />
+				<Spacer />
 				<TitleTypography>{def.title}</TitleTypography>
 				<PublishedAtTypography>{publishedAt}</PublishedAtTypography>
 				<DescriptionTypography>{def.description}</DescriptionTypography>

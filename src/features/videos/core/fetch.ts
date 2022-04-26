@@ -33,6 +33,7 @@ type JsonVideoDef = {
 	etag: string;
 	id: YouTubeId;
 	snippet: YouTubeSnippet;
+	tags?: string[];
 };
 
 type JsonType = {
@@ -85,7 +86,7 @@ export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 						title: def.snippet.title,
 						description: def.snippet.description,
 						thumbnails: def.snippet.thumbnails,
-						tags: [],
+						tags: def.tags && def.tags.length > 0 ? [...def.tags] : ['no tags'],
 				  }))
 		)
 		.catch((e) => [{ ...dummy, description: e }]);
