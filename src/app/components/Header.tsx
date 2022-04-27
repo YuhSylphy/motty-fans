@@ -1,9 +1,17 @@
-import { AppBar, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
+import {
+	AppBar,
+	Divider,
+	Drawer,
+	IconButton,
+	Toolbar,
+	Typography,
+} from '@mui/material';
 import { MenuOutlined } from '@mui/icons-material';
 
 import React, { useCallback, useState } from 'react';
 import { MenuList } from './Menu';
 import { useAppSelector } from 'src/util';
+import { Footer } from './Footer';
 
 const useHeaderHooks = () => {
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -38,6 +46,8 @@ export function Header() {
 			</AppBar>
 			<Drawer open={menuOpen} onClose={toggleMenu}>
 				<MenuList toggleMenu={toggleMenu} />
+				<Divider />
+				<Footer />
 			</Drawer>
 		</React.Fragment>
 	);
