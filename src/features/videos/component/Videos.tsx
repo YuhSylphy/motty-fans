@@ -98,7 +98,11 @@ type LinkToMovieButtonProps = {
 
 function LinkToMovieButton({ videoId }: LinkToMovieButtonProps) {
 	return (
-		<Button href={createVideoUrl(videoId)} target="_blank">
+		<Button
+			href={createVideoUrl(videoId)}
+			target="_blank"
+			referrerPolicy="no-referrer"
+		>
 			Watch
 		</Button>
 	);
@@ -116,7 +120,11 @@ type VideoThumbnailProps = {
 
 function VideoThumbnail({ imageUrl, alt, videoId }: VideoThumbnailProps) {
 	return (
-		<CardActionArea href={createVideoUrl(videoId)}>
+		<CardActionArea
+			href={createVideoUrl(videoId)}
+			target="_blank"
+			referrerPolicy="no-referrer"
+		>
 			<CardMedia component="img" src={showImage ? imageUrl : ''} alt={alt} />
 		</CardActionArea>
 	);
