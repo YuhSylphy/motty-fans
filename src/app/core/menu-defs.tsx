@@ -5,6 +5,8 @@ import {
 	ChangeHistory as ChangeHistoryIcon,
 	YouTube as YouTubeIcon,
 } from '@mui/icons-material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHorse } from '@fortawesome/free-solid-svg-icons';
 
 export type MenuItemDef = PageMenuItemDef | NestMenuItemDef;
 
@@ -36,7 +38,7 @@ export const menuDefs: MenuItemDef[] = [
 	},
 	{
 		type: 'nest',
-		icon: <React.Fragment />, // to be horse icon
+		icon: <FontAwesomeIcon icon={faHorse} />, // to be horse icon
 		label: 'ダビスタ',
 		children: [
 			{
