@@ -10,7 +10,7 @@ const videoSlice = createSlice({
 	initialState: { list: [] as VideoDef[] },
 	reducers: {
 		init: () => {},
-		set: (draft, action: PayloadAction<VideosState['list']>) => {
+		setList: (draft, action: PayloadAction<VideosState['list']>) => {
 			draft.list = action.payload;
 		},
 	},

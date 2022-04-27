@@ -11,7 +11,7 @@ export const fetchDefsEpic: Epic = (action$) =>
 	action$.pipe(
 		filter(videosActions.init.match),
 		withIndicator('videos/fetch', async () =>
-			videosActions.set(await fetchVideoDefs())
+			videosActions.setList(await fetchVideoDefs())
 		)
 	);
 
