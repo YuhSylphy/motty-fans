@@ -8,7 +8,10 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHorse } from '@fortawesome/free-solid-svg-icons';
 
-export type MenuItemDef = PageMenuItemDef | NestMenuItemDef;
+export type MenuItemDef =
+	| PageMenuItemDef
+	| NestMenuItemDef
+	| DividerMenuItemDef;
 
 export type NestMenuItemDef = {
 	type: 'nest';
@@ -25,6 +28,13 @@ export type PageMenuItemDef = {
 	Page: React.ComponentType;
 };
 
+export type DividerMenuItemDef = {
+	type: 'divider';
+};
+const divider: DividerMenuItemDef = {
+	type: 'divider',
+};
+
 export const defaultRoute = '/videos';
 export const menuDefs: MenuItemDef[] = [
 	{
@@ -36,6 +46,7 @@ export const menuDefs: MenuItemDef[] = [
 			() => import(/* webpackChunkName: "videos" */ 'src/features/videos/lazy')
 		),
 	},
+	divider,
 	{
 		type: 'nest',
 		icon: <FontAwesomeIcon icon={faHorse} />, // to be horse icon
@@ -65,6 +76,7 @@ export const menuDefs: MenuItemDef[] = [
 			},
 		],
 	},
+	divider,
 	{
 		type: 'page',
 		icon: <ChangeHistoryIcon />,

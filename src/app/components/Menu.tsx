@@ -1,5 +1,6 @@
 import {
 	Collapse,
+	Divider,
 	List,
 	ListItem,
 	ListItemButton,
@@ -65,6 +66,8 @@ function MenuListItem(def: MenuItemDefWithDepth) {
 			return NestItem(def);
 		case 'page':
 			return PageItem(def);
+		case 'divider':
+			return <Divider />;
 		default: {
 			const exhaust: never = def;
 			throw exhaust;
@@ -80,8 +83,8 @@ const defs = menuDefs.map((def) => ({ ...def, depth: 0 }));
 export function MenuList({ toggleMenu }: MenuListProps) {
 	return (
 		<List onClick={toggleMenu} onKeyDown={toggleMenu}>
-			{defs.map((def) => (
-				<MenuListItem key={`menu-${def.label}`} {...def} />
+			{defs.map((def, ix) => (
+				<MenuListItem key={`menu-${ix}`} {...def} />
 			))}
 		</List>
 	);
@@ -101,6 +104,8 @@ function extractPageDef(
 				return extractPageDef(def.children);
 			case 'page':
 				return selectPageDef(def);
+			case 'divider':
+				return [];
 			default: {
 				const exhaust: never = def;
 				throw exhaust;
