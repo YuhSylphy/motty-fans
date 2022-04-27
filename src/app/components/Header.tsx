@@ -3,6 +3,7 @@ import { MenuOutlined } from '@mui/icons-material';
 
 import React, { useCallback, useState } from 'react';
 import { MenuList } from './Menu';
+import { useAppSelector } from 'src/util';
 
 const useHeaderHooks = () => {
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -11,11 +12,13 @@ const useHeaderHooks = () => {
 		setMenuOpen(!menuOpen);
 	}, [menuOpen, setMenuOpen]);
 
-	return { menuOpen, toggleMenu };
+	const title = useAppSelector((state) => state.core.title);
+
+	return { menuOpen, toggleMenu, title };
 };
 
 export function Header() {
-	const { menuOpen, toggleMenu } = useHeaderHooks();
+	const { menuOpen, toggleMenu, title } = useHeaderHooks();
 	return (
 		<React.Fragment>
 			<AppBar position="static" enableColorOnDark>
@@ -29,7 +32,7 @@ export function Header() {
 					>
 						<MenuOutlined />
 					</IconButton>
-					<Typography variant="h6">MOTTV Derby</Typography>
+					<Typography variant="h6">{title}</Typography>
 					{/* <Button color="inherit">Login</Button> */}
 				</Toolbar>
 			</AppBar>
