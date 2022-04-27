@@ -26,6 +26,7 @@ export type PageMenuItemDef = {
 	label: string;
 	path: string;
 	Page: React.ComponentType;
+	title: string;
 };
 
 export type DividerMenuItemDef = {
@@ -45,6 +46,7 @@ export const menuDefs: MenuItemDef[] = [
 		Page: React.lazy(
 			() => import(/* webpackChunkName: "videos" */ 'src/features/videos/lazy')
 		),
+		title: 'MOTTY fans - YouTube 動画一覧',
 	},
 	divider,
 	{
@@ -63,6 +65,7 @@ export const menuDefs: MenuItemDef[] = [
 							/* webpackChunkName: "mare-line" */ 'src/features/mare-line/lazy'
 						)
 				),
+				title: 'MOTTY fans - ダビスタ - 牝系図',
 			},
 			{
 				type: 'page',
@@ -73,6 +76,7 @@ export const menuDefs: MenuItemDef[] = [
 					() =>
 						import(/* webpackChunkName: "family" */ 'src/features/family/lazy')
 				),
+				title: 'MOTTY fans - ダビスタ - 家系図(旧)',
 			},
 		],
 	},
@@ -80,7 +84,7 @@ export const menuDefs: MenuItemDef[] = [
 	{
 		type: 'page',
 		icon: <ChangeHistoryIcon />,
-		label: '更新履歴',
+		label: '変更履歴',
 		path: '/change-log',
 		Page: React.lazy(
 			() =>
@@ -88,5 +92,6 @@ export const menuDefs: MenuItemDef[] = [
 					/* webpackChunkName: "change-log" */ 'src/features/changelog/lazy'
 				)
 		),
+		title: 'MOTTY fans - 変更履歴',
 	},
 ];

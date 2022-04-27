@@ -90,9 +90,10 @@ export function MenuList({ toggleMenu }: MenuListProps) {
 	);
 }
 
-const selectPageDef = ({ path, Page }: PageMenuItemDef) => ({
+const selectPageDef = ({ path, Page, title }: PageMenuItemDef) => ({
 	path,
 	Page,
+	title,
 });
 
 function extractPageDef(

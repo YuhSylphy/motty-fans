@@ -17,6 +17,8 @@ import { getPageDef } from './Menu';
 import { defaultRoute } from '../core/menu-defs';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import { useAppDispatch } from 'src/util';
+import { coreActions } from '../core/ducks';
 
 const AppBox = styled(Box)(({ theme }) => ({
 	margin: theme.spacing(0.5),
@@ -24,13 +26,35 @@ const AppBox = styled(Box)(({ theme }) => ({
 
 const defs = getPageDef();
 
+type RoutedElementProps = {
+	path: string;
+	Page: React.ComponentType;
+	title: string;
+};
+
+const useRoutedElementHooks = (title: string) => {
+	const dispatch = useAppDispatch();
+	useEffect(() => {
+		dispatch(coreActions.setTitle(title));
+	}, [title, dispatch]);
+};
+
+function RoutedElement({ Page, title }: RoutedElementProps) {
+	useRoutedElementHooks(title);
+	return <Page />;
+}
+
 function AppBody() {
 	return (
 		<AppBox>
 			<Suspense fallback={<Indicator />}>
 				<Routes>
-					{defs.map(({ path, Page }) => (
-						<Route key={path} path={path} element={<Page />} />
+					{defs.map((def) => (
+						<Route
+							key={def.path}
+							path={def.path}
+							element={<RoutedElement {...def} />}
+						/>
 					))}
 					<Route path="/" key="/" element={<Navigate to={defaultRoute} />} />
 					<Route key="404" element={<Http404 />} />
