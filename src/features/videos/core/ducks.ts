@@ -1,17 +1,68 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 import { VideoDef } from './fetch';
+
+export type VideoFinderCondition = {
+	tags: string[];
+	dateSpan: {
+		from: number | null;
+		to: number | null;
+	};
+};
 
 export type VideosState = {
 	list: VideoDef[];
+	condition: VideoFinderCondition;
 };
 
 const videoSlice = createSlice({
 	name: 'videos',
-	initialState: { list: [] as VideoDef[] },
+	initialState: {
+		list: [] as VideoDef[],
+		condition: {
+			tags: [] as string[],
+			dateSpan: {
+				from: null as number | null,
+				to: null as number | null,
+			},
+		},
+	},
 	reducers: {
 		init: () => {},
 		setList: (draft, action: PayloadAction<VideosState['list']>) => {
 			draft.list = action.payload;
+		},
+		addConditionTags: (
+			draft,
+			action: PayloadAction<VideosState['condition']['tags']>
+		) => {
+			draft.condition.tags = [
+				...draft.condition.tags,
+				...action.payload.filter((t) => !draft.condition.tags.includes(t)),
+			];
+		},
+		removeConditionTags: (
+			draft,
+			action: PayloadAction<VideosState['condition']['tags']>
+		) => {
+			draft.condition.tags = [
+				...draft.condition.tags.filter((t) => !action.payload.includes(t)),
+			];
+		},
+		clearConditionTags: (draft, _action: PayloadAction) => {
+			draft.condition.tags = [];
+		},
+		setConditionDateFrom: (draft, action: PayloadAction<Date>) => {
+			draft.condition.dateSpan.from = action.payload.getMilliseconds();
+		},
+		clearConditionDateFrom: (draft, _action: PayloadAction) => {
+			draft.condition.dateSpan.from = null;
+		},
+		setConditionDateTo: (draft, action: PayloadAction<Date>) => {
+			draft.condition.dateSpan.to = action.payload.getMilliseconds();
+		},
+		clearConditionDateTo: (draft, _action: PayloadAction) => {
+			draft.condition.dateSpan.to = null;
 		},
 	},
 });

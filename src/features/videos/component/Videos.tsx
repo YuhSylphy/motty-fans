@@ -231,22 +231,48 @@ function VideoBody({ defs }: VideoBodyProps) {
 	);
 }
 
-function VideoContainer() {
+const useVideoContainerHooks = () => {
 	const dispatch = useAppDispatch();
-	const defs = useAppSelector((state) => state.videos.list);
+	const {
+		list,
+		condition: {
+			tags,
+			dateSpan: { from, to },
+		},
+	} = useAppSelector((state) => state.videos);
+
+	const loading = list.length === 0;
 
 	useEffect(() => {
-		if (defs.length === 0) {
+		if (loading) {
 			dispatch(videosActions.init());
 		}
-	}, [defs]);
+	}, [list]);
 
-	const sorted = useMemo(
-		() => [...defs].sort((lhs, rhs) => -(lhs.publishedAt - rhs.publishedAt)),
-		[defs]
+	const defs = useMemo(
+		() =>
+			[
+				...list.filter(
+					(d) =>
+						// タグ判定
+						(tags.length === 0 ||
+							d.tags.find((tag) => tags.includes(tag)) !== void 0) &&
+						// 公開日範囲
+						(from === null || from <= d.publishedAt) &&
+						(to === null || d.publishedAt <= to)
+				),
+			]
+				// 公開日降順
+				.sort((lhs, rhs) => -(lhs.publishedAt - rhs.publishedAt)),
+		[list, tags, from, to]
 	);
 
-	return defs.length === 0 ? <Loader /> : <VideoBody defs={sorted} />;
+	return { loading, defs };
+};
+
+function VideoContainer() {
+	const { loading, defs } = useVideoContainerHooks();
+	return loading ? <Loader /> : <VideoBody defs={defs} />;
 }
 
 export function Videos() {
