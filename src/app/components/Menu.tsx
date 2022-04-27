@@ -30,7 +30,7 @@ function PageItem(def: PageMenuItemDefWithDepth) {
 			key={def.path}
 			component={Link}
 			to={def.path}
-			sx={{ pl: def.depth * 4 }}
+			sx={{ pl: (def.depth + 1) * 2 }}
 		>
 			<ListItemIcon>{def.icon}</ListItemIcon>
 			<ListItemText primary={def.label} />
@@ -48,11 +48,13 @@ function NestItem(def: NestMenuItemDefWithDepth) {
 	);
 	return (
 		<React.Fragment>
-			<ListItem key={`nest-${def.label}`} sx={{ pl: def.depth * 4 }}>
+			<ListItem key={`nest-${def.label}`} sx={{ pl: (def.depth + 1) * 2 }}>
 				<ListItemIcon>{def.icon}</ListItemIcon>
 				<ListItemText primary={def.label} />
 			</ListItem>
-			<Collapse in>{children}</Collapse>
+			<Collapse in key={`collapse-${def.label}`}>
+				{children}
+			</Collapse>
 		</React.Fragment>
 	);
 }
@@ -78,7 +80,9 @@ const defs = menuDefs.map((def) => ({ ...def, depth: 0 }));
 export function MenuList({ toggleMenu }: MenuListProps) {
 	return (
 		<List onClick={toggleMenu} onKeyDown={toggleMenu}>
-			{defs.map(MenuListItem)}
+			{defs.map((def) => (
+				<MenuListItem key={`menu-${def.label}`} {...def} />
+			))}
 		</List>
 	);
 }
