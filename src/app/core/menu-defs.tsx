@@ -49,7 +49,7 @@ export const menuDefs: MenuItemDef[] = [
 	divider,
 	{
 		type: 'nest',
-		icon: <FontAwesomeIcon icon={faHorse} />, // to be horse icon
+		icon: <FontAwesomeIcon icon={faHorse} />,
 		label: 'ダビスタ',
 		children: [
 			{
