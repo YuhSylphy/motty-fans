@@ -7,6 +7,7 @@ import React, {
 } from 'react';
 
 import {
+	Autocomplete,
 	Button,
 	Card,
 	CardActionArea,
@@ -16,6 +17,8 @@ import {
 	Chip,
 	Container,
 	Grid,
+	Paper,
+	TextField,
 	Tooltip,
 	Typography,
 } from '@mui/material';
@@ -130,8 +133,49 @@ function VideoThumbnail({ imageUrl, alt, videoId }: VideoThumbnailProps) {
 	);
 }
 
+type VideoChipProps = {
+	tag: string;
+	deletable?: boolean;
+	findable?: boolean;
+};
+
+const useVideoChipHooks = (
+	tag: string,
+	deletable?: boolean,
+	findable?: boolean
+) => {
+	const dispatch = useAppDispatch();
+	const findTag = useCallback(() => {
+		dispatch(videosActions.addConditionTags([tag]));
+	}, [tag]);
+	const deleteTag = useCallback(() => {
+		dispatch(videosActions.removeConditionTags([tag]));
+	}, [tag]);
+
+	return {
+		findTag: findable ? findTag : void 0,
+		deleteTag: deletable ? deleteTag : void 0,
+	};
+};
+
+function VideoChip({ tag, deletable, findable }: VideoChipProps) {
+	const { findTag, deleteTag } = useVideoChipHooks(tag, deletable, findable);
+	return (
+		<TagChip
+			label={tag}
+			size="small"
+			icon={findable ? <SearchIcon /> : void 0}
+			clickable={findable}
+			onClick={findTag}
+			onDelete={deleteTag}
+		/>
+	);
+}
+
 type TagsProps = {
 	tags: string[];
+	deletable?: boolean;
+	findable?: boolean;
 };
 
 const VideoTagsBox = styled(Box)({
@@ -142,16 +186,15 @@ const TagChip = styled(Chip)({
 	fontSize: '.4rem',
 });
 
-function VideoTags({ tags }: TagsProps) {
+function VideoTags({ tags, deletable, findable }: TagsProps) {
 	return (
 		<VideoTagsBox>
 			{tags.map((tag) => (
-				<TagChip
+				<VideoChip
 					key={tag}
-					label={tag}
-					size="small"
-					icon={<SearchIcon />}
-					clickable
+					tag={tag}
+					deletable={deletable}
+					findable={findable}
 				/>
 			))}
 		</VideoTagsBox>
@@ -177,7 +220,7 @@ function VideoCard({ def }: VideoCardProps) {
 		<Card>
 			<VideoThumbnail imageUrl={thumb.url} alt={def.title} videoId={def.id} />
 			<CardContent>
-				<VideoTags tags={def.tags} />
+				<VideoTags tags={def.tags} findable />
 				<Spacer />
 				<TitleTypography>{def.title}</TitleTypography>
 				<PublishedAtTypography>{publishedAt}</PublishedAtTypography>
@@ -195,7 +238,8 @@ type VideoBodyProps = {
 };
 
 const steps = 20;
-function VideoBody({ defs }: VideoBodyProps) {
+
+const useVideoBodyHooks = (defs: VideoBodyProps['defs']) => {
 	const [loaded, setLoaded] = useState<VideoDef[]>([]);
 
 	const fetchNext = useCallback(() => {
@@ -210,6 +254,12 @@ function VideoBody({ defs }: VideoBodyProps) {
 	useEffect(() => {
 		fetchNext(); // 初回
 	}, [defs]);
+
+	return { loaded, fetchNext };
+};
+
+function VideoBody({ defs }: VideoBodyProps) {
+	const { loaded, fetchNext } = useVideoBodyHooks(defs);
 
 	return (
 		<Container>
@@ -227,6 +277,57 @@ function VideoBody({ defs }: VideoBodyProps) {
 					))}
 				</Grid>
 			</InfiniteScroll>
+		</Container>
+	);
+}
+
+const VideoConditionFormPaper = styled(Paper)(({ theme }) => ({
+	marginTop: theme.spacing(1),
+	marginBottom: theme.spacing(1),
+	padding: theme.spacing(1),
+}));
+
+const useVideoConditionFormHooks = () => {
+	const {
+		condition: { tags },
+		tagCandidates,
+	} = useAppSelector((state) => state.videos);
+
+	const renderTagAutocompleteInput = useCallback<
+		React.ComponentProps<typeof Autocomplete>['renderInput']
+	>(
+		(params) => <TextField {...params} label="タグ入力" variant="standard" />,
+		[]
+	);
+
+	return { tags, tagCandidates, renderTagAutocompleteInput };
+};
+
+function VideoConditionForm() {
+	const { tags, tagCandidates, renderTagAutocompleteInput } =
+		useVideoConditionFormHooks();
+	return (
+		<Container>
+			<VideoConditionFormPaper>
+				<Grid container spacing={2}>
+					<Grid item xs={12} md={4}>
+						<Typography>タグ</Typography>
+					</Grid>
+					<Grid item xs={12} md={8}>
+						<Autocomplete
+							options={tagCandidates}
+							renderInput={renderTagAutocompleteInput}
+						/>
+						<VideoTags tags={tags} deletable />
+					</Grid>
+					<Grid item xs={12} md={4}>
+						<Typography>配信・投稿日</Typography>
+					</Grid>
+					<Grid item xs={12} md={8}>
+						<Typography>(date picker)</Typography>
+					</Grid>
+				</Grid>
+			</VideoConditionFormPaper>
 		</Container>
 	);
 }
@@ -256,7 +357,7 @@ const useVideoContainerHooks = () => {
 					(d) =>
 						// タグ判定
 						(tags.length === 0 ||
-							d.tags.find((tag) => tags.includes(tag)) !== void 0) &&
+							tags.every((selected) => d.tags.includes(selected))) &&
 						// 公開日範囲
 						(from === null || from <= d.publishedAt) &&
 						(to === null || d.publishedAt <= to)
@@ -272,7 +373,14 @@ const useVideoContainerHooks = () => {
 
 function VideoContainer() {
 	const { loading, defs } = useVideoContainerHooks();
-	return loading ? <Loader /> : <VideoBody defs={defs} />;
+	return loading ? (
+		<Loader />
+	) : (
+		<React.Fragment>
+			<VideoConditionForm />
+			<VideoBody defs={defs} />
+		</React.Fragment>
+	);
 }
 
 export function Videos() {
