@@ -298,13 +298,6 @@ const useVideoConditionFormHooks = () => {
 		tagCandidates,
 	} = useAppSelector((state) => state.videos);
 
-	const renderTagAutocompleteInput = useCallback<
-		React.ComponentProps<typeof Autocomplete>['renderInput']
-	>(
-		(params) => <TextField {...params} label="タグ入力" variant="standard" />,
-		[]
-	);
-
 	const onChangeFrom = useCallback<
 		React.ComponentProps<typeof MobileDatePicker>['onChange']
 	>(
@@ -339,14 +332,51 @@ const useVideoConditionFormHooks = () => {
 		[dispatch]
 	);
 
+	const [autocompleteValue, setAutocompleteValue] = useState<string>();
+
+	const renderTagAutocompleteInput = useCallback<
+		React.ComponentProps<typeof Autocomplete>['renderInput']
+	>(
+		(params) => <TextField {...params} label="タグ入力" variant="standard" />,
+		[]
+	);
+
+	const onChangeTag = useCallback<
+		Exclude<
+			React.ComponentProps<typeof Autocomplete>['onInputChange'],
+			undefined
+		>
+	>(
+		(event, option, reason) => {
+			switch (reason) {
+				case 'reset': {
+					dispatch(videosActions.addConditionTags([option]));
+					setAutocompleteValue('');
+					return;
+				}
+				case 'clear': {
+					setAutocompleteValue('');
+					return;
+				}
+				case 'input': {
+					setAutocompleteValue(option);
+					return;
+				}
+			}
+		},
+		[setAutocompleteValue, dispatch]
+	);
+
 	return {
 		tags,
 		from: from !== null ? new Date(from) : null,
 		to: to !== null ? new Date(to) : null,
 		tagCandidates,
+		autocompleteValue,
 		renderTagAutocompleteInput,
 		onChangeFrom,
 		onChangeTo,
+		onChangeTag,
 	};
 };
 
@@ -356,9 +386,11 @@ function VideoConditionForm() {
 		from,
 		to,
 		tagCandidates,
+		autocompleteValue,
 		renderTagAutocompleteInput,
 		onChangeFrom,
 		onChangeTo,
+		onChangeTag,
 	} = useVideoConditionFormHooks();
 	return (
 		<Container>
@@ -371,6 +403,12 @@ function VideoConditionForm() {
 						<Autocomplete
 							options={tagCandidates}
 							renderInput={renderTagAutocompleteInput}
+							autoHighlight
+							autoSelect
+							blurOnSelect
+							clearOnBlur
+							onInputChange={onChangeTag}
+							inputValue={autocompleteValue}
 						/>
 						<VideoTags tags={tags} deletable />
 					</Grid>
