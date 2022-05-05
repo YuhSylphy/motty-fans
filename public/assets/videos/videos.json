@@ -96910,7 +96910,7 @@
 			"kind": "youtube#searchResult",
 			"etag": "Lzj8RI5FWyvaq9WA37-EQc-sUhQ",
 			"id": { "kind": "youtube#video", "videoId": "UCE8wWUKbLM" },
-			"snippet": {	
+			"snippet": {
 				"publishedAt": "2022-02-04T13:34:21Z",
 				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
 				"title": "冬季五輪開幕！マリオ＆ソニック AT 北京オリンピック(2008) 実況プレイ！#1【マリソニ北京】",
@@ -96999,7 +96999,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2022-02-19T13:56:27Z"
 			},
-			"tags": ["Wiiスポーツリゾート"]
+			"tags": ["Wii Sports Resort", "Nintendo Sportsシリーズ"]
 		},
 		{
 			"kind": "youtube#searchResult",
@@ -97031,7 +97031,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2022-02-20T13:40:37Z"
 			},
-			"tags": ["Wiiスポーツリゾート"]
+			"tags": ["Wii Sports Resort", "Nintendo Sportsシリーズ"]
 		},
 		{
 			"kind": "youtube#searchResult",
@@ -97063,7 +97063,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2022-02-21T13:29:29Z"
 			},
-			"tags": ["Wiiスポーツリゾート"]
+			"tags": ["Wii Sports Resort", "Nintendo Sportsシリーズ"]
 		},
 		{
 			"kind": "youtube#searchResult",
@@ -97095,7 +97095,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2022-02-22T13:38:44Z"
 			},
-			"tags": ["Wiiスポーツリゾート"]
+			"tags": ["Wii Sports Resort", "Nintendo Sportsシリーズ"]
 		},
 		{
 			"kind": "youtube#searchResult",
@@ -97127,7 +97127,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2022-02-23T13:44:26Z"
 			},
-			"tags": ["Wiiスポーツリゾート"]
+			"tags": ["Wii Sports Resort", "Nintendo Sportsシリーズ"]
 		},
 		{
 			"kind": "youtube#searchResult",
@@ -97703,7 +97703,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2022-03-18T13:55:08Z"
 			},
-			"tags": ["星のカービィシリーズ", "星のカービィ 参上！ドロッチェ団"]
+			"tags": ["マリオシリーズ", "マリオカート8デラックス"]
 		},
 		{
 			"kind": "youtube#searchResult",
@@ -98504,6 +98504,518 @@
 				"publishTime": "2022-04-14T13:52:10Z"
 			},
 			"tags": ["マリオシリーズ", "マリオカート8デラックス"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "RYPDU0Zgex8oFv8pocvsrVXiXD8",
+			"id": { "kind": "youtube#video", "videoId": "oathmgiJysA" },
+			"snippet": {
+				"publishedAt": "2022-04-15T13:33:39Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#1 ～亜空の使者編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/oathmgiJysA/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/oathmgiJysA/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/oathmgiJysA/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-15T13:33:39Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "SI1Ji_UgkhuX8NIppqnMCSZEjMM",
+			"id": { "kind": "youtube#video", "videoId": "C37phjrwxfQ" },
+			"snippet": {
+				"publishedAt": "2022-04-16T13:22:50Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#2 ～亜空の使者編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/C37phjrwxfQ/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/C37phjrwxfQ/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/C37phjrwxfQ/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-16T13:22:50Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "7I486azP4WjWa64Tj-E72pXzKDs",
+			"id": { "kind": "youtube#video", "videoId": "9hEizBXIblM" },
+			"snippet": {
+				"publishedAt": "2022-04-17T13:23:21Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#3 ～亜空の使者編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/9hEizBXIblM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/9hEizBXIblM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/9hEizBXIblM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-17T13:23:21Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "9fQFDj0c07EodpG3YZhZgEWZ818",
+			"id": { "kind": "youtube#video", "videoId": "GYBxHOIg_ok" },
+			"snippet": {
+				"publishedAt": "2022-04-19T13:43:29Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#4 ～亜空の使者編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/GYBxHOIg_ok/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/GYBxHOIg_ok/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/GYBxHOIg_ok/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-19T13:43:29Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "JT3w2jVIqgobpEHdexXI7DhKQDM",
+			"id": { "kind": "youtube#video", "videoId": "dleuldmTIMY" },
+			"snippet": {
+				"publishedAt": "2022-04-20T13:44:53Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#5 ～亜空の使者100%クリア編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/dleuldmTIMY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/dleuldmTIMY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/dleuldmTIMY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-20T13:44:53Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "31dPyYj9iU5pNwGBWihAn6UHzz4",
+			"id": { "kind": "youtube#video", "videoId": "n5jre4r0a3M" },
+			"snippet": {
+				"publishedAt": "2022-04-21T13:29:18Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#6 ～シンプル・イベント戦編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/n5jre4r0a3M/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/n5jre4r0a3M/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/n5jre4r0a3M/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-21T13:29:18Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "j_y_nOkdYbzb7thzX5PNb_8-6fo",
+			"id": { "kind": "youtube#video", "videoId": "Wd8Rstotygc" },
+			"snippet": {
+				"publishedAt": "2022-04-22T13:48:03Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Wii】大乱闘スマッシュブラザーズX 実況プレイ！#7(完) ～イベント戦・オールスター編～【スマブラX】",
+				"description": "Wii「大乱闘スマッシュブラザーズX」の生配信です。 本作品は2008年1月に発売された、スマブラシリーズ第3作目です。 既プレイではある ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Wd8Rstotygc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Wd8Rstotygc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Wd8Rstotygc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-22T13:48:03Z"
+			},
+			"tags": ["スマブラシリーズ", "スマブラX"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "G_o_kUKM1udXDW8ymWvXrciOpwU",
+			"id": { "kind": "youtube#video", "videoId": "oFYI3QwzuZo" },
+			"snippet": {
+				"publishedAt": "2022-04-23T13:48:55Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "ウルトラなスーパーデラックス！星のカービィ ウルトラスーパーデラックス 実況プレイ！#1",
+				"description": "ニンテンドーDS「星のカービィ ウルトラスーパーデラックス」の生配信です。本作品は2008年11月に発売された、ファンに愛される「星の ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/oFYI3QwzuZo/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/oFYI3QwzuZo/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/oFYI3QwzuZo/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-23T13:48:55Z"
+			},
+			"tags": ["星のカービィシリーズ", "星のカービィ ウルトラスーパーデラックス"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "srkQkW2fPo0BNdLmAnZ_BS8SNyo",
+			"id": { "kind": "youtube#video", "videoId": "otw-T137jF4" },
+			"snippet": {
+				"publishedAt": "2022-04-24T13:25:08Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "スプラトゥーン3発売日決定記念！スプラトゥーン2 実況プレイ！【ウデマエXガチマッチ】",
+				"description": "ニンテンドースイッチ「スプラトゥーン2」の実況プレイ生配信をやります！ スプラトゥーン3の発売日が9月9日に決定したので、これを機に ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/otw-T137jF4/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/otw-T137jF4/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/otw-T137jF4/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-24T13:25:08Z"
+			},
+			"tags": ["スプラートゥーンシリーズ", "スプラトゥーン2"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "LQR5OcEONW21zEU16LucJO5xq68",
+			"id": { "kind": "youtube#video", "videoId": "BSSn9OPn948" },
+			"snippet": {
+				"publishedAt": "2022-04-25T13:27:03Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "ウルトラなスーパーデラックス！星のカービィ ウルトラスーパーデラックス 実況プレイ！#2",
+				"description": "ニンテンドーDS「星のカービィ ウルトラスーパーデラックス」の生配信です。本作品は2008年11月に発売された、ファンに愛される「星の ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/BSSn9OPn948/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/BSSn9OPn948/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/BSSn9OPn948/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-25T13:27:03Z"
+			},
+			"tags": ["星のカービィシリーズ", "星のカービィ ウルトラスーパーデラックス"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "jSPRcIki8yBMD8OA8zfIyzhZD4g",
+			"id": { "kind": "youtube#video", "videoId": "z09huA5DRzM" },
+			"snippet": {
+				"publishedAt": "2022-04-26T13:46:39Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "ウルトラなスーパーデラックス！星のカービィ ウルトラスーパーデラックス 実況プレイ！#3",
+				"description": "ニンテンドーDS「星のカービィ ウルトラスーパーデラックス」の生配信です。本作品は2008年11月に発売された、ファンに愛される「星の ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/z09huA5DRzM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/z09huA5DRzM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/z09huA5DRzM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-26T13:46:39Z"
+			},
+			"tags": ["星のカービィシリーズ", "星のカービィ ウルトラスーパーデラックス"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "oDyJzKPD4CUyW7QyItKnUYHDU3M",
+			"id": { "kind": "youtube#video", "videoId": "RZHifZCrXFU" },
+			"snippet": {
+				"publishedAt": "2022-04-27T13:36:05Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "ウルトラなスーパーデラックス！星のカービィ ウルトラスーパーデラックス 実況プレイ！#4(完)",
+				"description": "ニンテンドーDS「星のカービィ ウルトラスーパーデラックス」の生配信です。本作品は2008年11月に発売された、ファンに愛される「星の ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/RZHifZCrXFU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/RZHifZCrXFU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/RZHifZCrXFU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-04-27T13:36:05Z"
+			},
+			"tags": ["星のカービィシリーズ", "星のカービィ ウルトラスーパーデラックス"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "sCptufCFs4S7IeTry7RBBTNHNMw",
+			"id": { "kind": "youtube#video", "videoId": "XlfHAA4gkNk" },
+			"snippet": {
+				"publishedAt": "2022-05-02T13:22:17Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "体感スポーツ！Nintendo Switch Sports 実況プレイ！#1【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii Sports ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/XlfHAA4gkNk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/XlfHAA4gkNk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/XlfHAA4gkNk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-02T13:22:17Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "sBM4astyyKO4FWYuk2ktAnFdjw4",
+			"id": { "kind": "youtube#video", "videoId": "YoeMhnv3-Uo" },
+			"snippet": {
+				"publishedAt": "2022-05-03T13:29:21Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "体感スポーツ！Nintendo Switch Sports 実況プレイ！#2【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii Sports ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/YoeMhnv3-Uo/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/YoeMhnv3-Uo/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/YoeMhnv3-Uo/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-03T13:29:21Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Auav6-xac8pqxyg6NJ24V8nKTlk",
+			"id": { "kind": "youtube#video", "videoId": "IX-UcaEd4Jw" },
+			"snippet": {
+				"publishedAt": "2022-05-04T13:29:24Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "めざせ！全競技プロ級！Nintendo Switch Sports 実況プレイ！#3【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii Sports ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/IX-UcaEd4Jw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/IX-UcaEd4Jw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/IX-UcaEd4Jw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-04T13:29:24Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "NtkRns-kFTqsqtyApX3jkjA1KP4",
+			"id": { "kind": "youtube#video", "videoId": "Ndfc0UwEixY" },
+			"snippet": {
+				"publishedAt": "2022-05-05T09:47:25Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "めざせ！ランクAプロリーグ！Nintendo Switch Sports 実況プレイ！#4【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii Sports ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Ndfc0UwEixY/default_live.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Ndfc0UwEixY/mqdefault_live.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Ndfc0UwEixY/hqdefault_live.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "live",
+				"publishTime": "2022-05-05T09:47:25Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ"]
 		}
 	]
 }
