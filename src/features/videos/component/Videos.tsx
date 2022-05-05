@@ -336,10 +336,7 @@ const useVideoConditionFormHooks = () => {
 
 	const renderTagAutocompleteInput = useCallback<
 		React.ComponentProps<typeof Autocomplete>['renderInput']
-	>(
-		(params) => <TextField {...params} label="タグ入力" variant="standard" />,
-		[]
-	);
+	>((params) => <TextField {...params} label="タグ" variant="standard" />, []);
 
 	const onChangeTag = useCallback<
 		Exclude<
@@ -395,11 +392,11 @@ function VideoConditionForm() {
 	return (
 		<Container>
 			<VideoConditionFormPaper>
+				<Typography variant="caption">
+					<SearchIcon />
+				</Typography>
 				<Grid container spacing={2}>
-					<Grid item xs={12} md={4}>
-						<Typography>タグ</Typography>
-					</Grid>
-					<Grid item xs={12} md={8}>
+					<Grid item xs={12}>
 						<Autocomplete
 							options={tagCandidates}
 							renderInput={renderTagAutocompleteInput}
@@ -412,12 +409,9 @@ function VideoConditionForm() {
 						/>
 						<VideoTags tags={tags} deletable />
 					</Grid>
-					<Grid item xs={12} md={4}>
-						<Typography>配信・投稿日</Typography>
-					</Grid>
-					<Grid item xs={12} md={8}>
+					<Grid item xs={12}>
 						<MobileDatePicker
-							label="from"
+							label="配信・投稿日(from)"
 							inputFormat="yyyy-MM-dd"
 							value={from}
 							onChange={onChangeFrom}
@@ -425,7 +419,7 @@ function VideoConditionForm() {
 							clearable
 						/>
 						<MobileDatePicker
-							label="to"
+							label="配信・投稿日(to)"
 							inputFormat="yyyy-MM-dd"
 							value={to}
 							onChange={onChangeTo}
