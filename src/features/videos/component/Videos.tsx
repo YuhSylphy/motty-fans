@@ -272,7 +272,7 @@ function VideoBody({ defs }: VideoBodyProps) {
 			>
 				<Grid container spacing={2}>
 					{loaded.map((def) => (
-						<Grid item xs={4} md={3} key={def.id}>
+						<Grid item xs={12} sm={6} md={4} lg={3} key={def.id}>
 							<VideoCard def={def} />
 						</Grid>
 					))}
