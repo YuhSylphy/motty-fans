@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Typography } from '@mui/material';
+import { Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import { HorseDefsContainer } from 'src/features/horse-defs';
@@ -13,7 +13,6 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 export function MareLine() {
 	return (
 		<HorseDefsContainer>
-			<Typography variant="h4">牝系図</Typography>
 			<StyledPaper>
 				<MareLineTree />
 			</StyledPaper>
