@@ -32,6 +32,7 @@ import { videosActions } from '..';
 import { VideoDef } from '../core/fetch';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { Box } from '@mui/system';
+import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 
 const showImage = true;
 
@@ -288,8 +289,12 @@ const VideoConditionFormPaper = styled(Paper)(({ theme }) => ({
 }));
 
 const useVideoConditionFormHooks = () => {
+	const dispatch = useAppDispatch();
 	const {
-		condition: { tags },
+		condition: {
+			tags,
+			dateSpan: { from, to },
+		},
 		tagCandidates,
 	} = useAppSelector((state) => state.videos);
 
@@ -300,12 +305,61 @@ const useVideoConditionFormHooks = () => {
 		[]
 	);
 
-	return { tags, tagCandidates, renderTagAutocompleteInput };
+	const onChangeFrom = useCallback<
+		React.ComponentProps<typeof MobileDatePicker>['onChange']
+	>(
+		(date) => {
+			if (date === null) {
+				dispatch(videosActions.clearConditionDateFrom());
+			} else if (date instanceof DateTime) {
+				dispatch(videosActions.setConditionDateFrom(date.toMillis()));
+			} else if (date instanceof Date) {
+				dispatch(videosActions.setConditionDateFrom(date));
+			} else {
+				console.error('from condition is not a date nor null', date);
+			}
+		},
+		[dispatch]
+	);
+
+	const onChangeTo = useCallback<
+		React.ComponentProps<typeof MobileDatePicker>['onChange']
+	>(
+		(date) => {
+			if (date === null) {
+				dispatch(videosActions.clearConditionDateTo());
+			} else if (date instanceof DateTime) {
+				dispatch(videosActions.setConditionDateTo(date.toMillis()));
+			} else if (date instanceof Date) {
+				dispatch(videosActions.setConditionDateTo(date));
+			} else {
+				console.error('to condition is not a date nor null', date);
+			}
+		},
+		[dispatch]
+	);
+
+	return {
+		tags,
+		from: from !== null ? new Date(from) : null,
+		to: to !== null ? new Date(to) : null,
+		tagCandidates,
+		renderTagAutocompleteInput,
+		onChangeFrom,
+		onChangeTo,
+	};
 };
 
 function VideoConditionForm() {
-	const { tags, tagCandidates, renderTagAutocompleteInput } =
-		useVideoConditionFormHooks();
+	const {
+		tags,
+		from,
+		to,
+		tagCandidates,
+		renderTagAutocompleteInput,
+		onChangeFrom,
+		onChangeTo,
+	} = useVideoConditionFormHooks();
 	return (
 		<Container>
 			<VideoConditionFormPaper>
@@ -324,7 +378,22 @@ function VideoConditionForm() {
 						<Typography>配信・投稿日</Typography>
 					</Grid>
 					<Grid item xs={12} md={8}>
-						<Typography>(date picker)</Typography>
+						<MobileDatePicker
+							label="from"
+							inputFormat="yyyy-MM-dd"
+							value={from}
+							onChange={onChangeFrom}
+							renderInput={(params) => <TextField {...params} />}
+							clearable
+						/>
+						<MobileDatePicker
+							label="to"
+							inputFormat="yyyy-MM-dd"
+							value={to}
+							onChange={onChangeTo}
+							renderInput={(params) => <TextField {...params} />}
+							clearable
+						/>
 					</Grid>
 				</Grid>
 			</VideoConditionFormPaper>

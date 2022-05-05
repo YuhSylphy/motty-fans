@@ -60,14 +60,19 @@ const videoSlice = createSlice({
 		clearConditionTags: (draft, _action: PayloadAction) => {
 			draft.condition.tags = [];
 		},
-		setConditionDateFrom: (draft, action: PayloadAction<Date>) => {
-			draft.condition.dateSpan.from = action.payload.getMilliseconds();
+		setConditionDateFrom: (
+			draft,
+			{ payload }: PayloadAction<Date | number>
+		) => {
+			draft.condition.dateSpan.from =
+				payload instanceof Date ? payload.getMilliseconds() : payload;
 		},
 		clearConditionDateFrom: (draft, _action: PayloadAction) => {
 			draft.condition.dateSpan.from = null;
 		},
-		setConditionDateTo: (draft, action: PayloadAction<Date>) => {
-			draft.condition.dateSpan.to = action.payload.getMilliseconds();
+		setConditionDateTo: (draft, { payload }: PayloadAction<Date | number>) => {
+			draft.condition.dateSpan.to =
+				payload instanceof Date ? payload.getMilliseconds() : payload;
 		},
 		clearConditionDateTo: (draft, _action: PayloadAction) => {
 			draft.condition.dateSpan.to = null;
