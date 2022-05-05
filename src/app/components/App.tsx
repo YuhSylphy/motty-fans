@@ -1,5 +1,6 @@
 import { Box, CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
 
 import React, { Suspense, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
@@ -19,6 +20,7 @@ import { Footer } from './Footer';
 import { Header } from './Header';
 import { useAppDispatch } from 'src/util';
 import { coreActions } from '../core/ducks';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 const AppBox = styled(Box)(({ theme }) => ({
 	margin: theme.spacing(0.5),
@@ -70,17 +72,19 @@ export function App() {
 	}, [registerEpic, exportEpic]);
 
 	return (
-		<AppThemeProvider>
-			<CssBaseline />
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
-				<React.Fragment>
-					<Header />
-					<AppBody />
-					<Footer />
-					<PedigreeDialog />
-					<Indicator />
-				</React.Fragment>
-			</BrowserRouter>
-		</AppThemeProvider>
+		<LocalizationProvider dateAdapter={AdapterLuxon}>
+			<AppThemeProvider>
+				<CssBaseline />
+				<BrowserRouter basename={process.env.PUBLIC_URL}>
+					<React.Fragment>
+						<Header />
+						<AppBody />
+						<Footer />
+						<PedigreeDialog />
+						<Indicator />
+					</React.Fragment>
+				</BrowserRouter>
+			</AppThemeProvider>
+		</LocalizationProvider>
 	);
 }
