@@ -1,8 +1,3 @@
-import {
-	createTheme,
-	ThemeProvider,
-	StyledEngineProvider,
-} from '@mui/material/styles';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
@@ -13,8 +8,6 @@ import { App, store } from './app';
 
 import * as serviceWorker from './serviceWorker';
 
-const theme = createTheme({});
-
 const target = document.getElementById('root');
 
 if (!target) throw new Error('root div not found');
@@ -22,13 +15,9 @@ const root = createRoot(target);
 
 root.render(
 	<React.StrictMode>
-		<StyledEngineProvider injectFirst>
-			<ThemeProvider theme={theme}>
-				<Provider store={store}>
-					<App />
-				</Provider>
-			</ThemeProvider>
-		</StyledEngineProvider>
+		<Provider store={store}>
+			<App />
+		</Provider>
 	</React.StrictMode>
 );
 
