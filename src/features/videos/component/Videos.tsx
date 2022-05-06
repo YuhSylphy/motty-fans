@@ -209,7 +209,7 @@ const Spacer = styled('div')(({ theme }) => ({
 }));
 
 function VideoCard({ def }: VideoCardProps) {
-	const thumb = def.thumbnails.default;
+	const thumb = def.thumbnails.high;
 	const publishedAt = useMemo(
 		() =>
 			DateTime.fromMillis(def.publishedAt)
