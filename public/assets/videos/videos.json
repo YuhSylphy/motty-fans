@@ -100924,6 +100924,41 @@
 				"publishTime": "2022-05-06T13:41:49Z"
 			},
 			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ", "Switch"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "JyHeK0qgWvshlWz7X-q4PoaJuOk",
+			"id": {
+				"kind": "youtube#video",
+				"videoId": "E5iDXQgyYIU"
+			},
+			"snippet": {
+				"publishedAt": "2022-05-07T09:50:20Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "めざせ！ランクAプロリーグ！Nintendo Switch Sports 実況プレイ！#6【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/E5iDXQgyYIU/default_live.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/E5iDXQgyYIU/mqdefault_live.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/E5iDXQgyYIU/hqdefault_live.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "live",
+				"publishTime": "2022-05-07T09:50:20Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ", "Switch"]
 		}
 	]
 }
