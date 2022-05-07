@@ -18,9 +18,10 @@ import { getPageDef } from './Menu';
 import { defaultRoute } from '../core/menu-defs';
 import { Footer } from './Footer';
 import { Header } from './Header';
-import { useAppDispatch } from 'src/util';
+import { useAppDispatch, useAppSelector } from 'src/util';
 import { coreActions } from '../core/ducks';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const AppBox = styled(Box)(({ theme }) => ({
 	margin: theme.spacing(0.5),
@@ -66,6 +67,15 @@ function AppBody() {
 	);
 }
 
+function Head() {
+	const title = useAppSelector((state) => state.core.title);
+	return (
+		<Helmet>
+			<title>{title}</title>
+		</Helmet>
+	);
+}
+
 export function App() {
 	useEffect(() => {
 		registerEpic(exportEpic);
@@ -73,18 +83,21 @@ export function App() {
 
 	return (
 		<LocalizationProvider dateAdapter={AdapterLuxon}>
-			<AppThemeProvider>
-				<CssBaseline />
-				<BrowserRouter basename={process.env.PUBLIC_URL}>
-					<React.Fragment>
-						<Header />
-						<AppBody />
-						<Footer />
-						<PedigreeDialog />
-						<Indicator />
-					</React.Fragment>
-				</BrowserRouter>
-			</AppThemeProvider>
+			<HelmetProvider>
+				<AppThemeProvider>
+					<CssBaseline />
+					<Head />
+					<BrowserRouter basename={process.env.PUBLIC_URL}>
+						<React.Fragment>
+							<Header />
+							<AppBody />
+							<Footer />
+							<PedigreeDialog />
+							<Indicator />
+						</React.Fragment>
+					</BrowserRouter>
+				</AppThemeProvider>
+			</HelmetProvider>
 		</LocalizationProvider>
 	);
 }
