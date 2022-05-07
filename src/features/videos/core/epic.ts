@@ -7,21 +7,13 @@ import type { Epic } from 'src/app';
 import { withIndicator } from 'src/util';
 
 import { videosActions } from '..';
-import { calcTagCandidates, fetchVideoDefs } from './fetch';
+import { fetchVideoDefs } from './fetch';
 
 export const fetchDefsEpic: Epic = (action$) =>
 	action$.pipe(
 		filter(videosActions.init.match),
 		withIndicator('videos/fetch', async () =>
 			videosActions.setList(await fetchVideoDefs())
-		)
-	);
-
-export const calcTagCandidatesEpic: Epic = (action$) =>
-	action$.pipe(
-		filter(videosActions.setList.match),
-		withIndicator('videos/tag-cadidates', async ({ payload: defs }) =>
-			videosActions.setTagCandidates(await calcTagCandidates(defs))
 		)
 	);
 
@@ -35,8 +27,4 @@ export const setDefaultConditionEpic: Epic = (action$) =>
 		)
 	);
 
-export const epic = combineEpics(
-	fetchDefsEpic,
-	calcTagCandidatesEpic,
-	setDefaultConditionEpic
-);
+export const epic = combineEpics(fetchDefsEpic, setDefaultConditionEpic);
