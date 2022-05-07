@@ -335,7 +335,6 @@ const useVideoConditionFormHooks = () => {
 			tags,
 			dateSpan: { from, to },
 		},
-		tagCandidates,
 	} = useAppSelector((state) => state.videos);
 
 	const onChangeFrom = useCallback<
@@ -420,7 +419,6 @@ const useVideoConditionFormHooks = () => {
 		tags,
 		from: from !== null ? new Date(from) : null,
 		to: to !== null ? new Date(to) : null,
-		tagCandidates,
 		autocompleteValue,
 		renderTagAutocompleteInput,
 		onChangeFrom,
@@ -430,12 +428,15 @@ const useVideoConditionFormHooks = () => {
 	};
 };
 
-function VideoConditionForm() {
+type VideoConditionFormProps = {
+	tagCandidates: string[];
+};
+
+function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 	const {
 		tags,
 		from,
 		to,
-		tagCandidates,
 		autocompleteValue,
 		renderTagAutocompleteInput,
 		onChangeFrom,
@@ -540,16 +541,24 @@ const useVideoContainerHooks = () => {
 		[list, tags, from, to]
 	);
 
-	return { loading, defs };
+	const tagCandidates = Array.from(
+		(() => {
+			const ret = new Set(defs.flatMap(({ tags }) => tags));
+			tags.forEach((selected) => ret.delete(selected));
+			return ret;
+		})().keys()
+	).sort();
+
+	return { loading, defs, tagCandidates };
 };
 
 function VideoContainer() {
-	const { loading, defs } = useVideoContainerHooks();
+	const { loading, defs, tagCandidates } = useVideoContainerHooks();
 	return loading ? (
 		<Loader />
 	) : (
 		<React.Fragment>
-			<VideoConditionForm />
+			<VideoConditionForm tagCandidates={tagCandidates} />
 			<VideoBody defs={defs} />
 		</React.Fragment>
 	);

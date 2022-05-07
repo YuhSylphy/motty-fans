@@ -90,6 +90,3 @@ export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 				  }))
 		)
 		.catch((e) => [{ ...dummy, description: e }]);
-
-export const calcTagCandidates = async (defs: VideoDef[]): Promise<string[]> =>
-	Array.from(new Set(defs.flatMap(({ tags }) => tags)).keys()).sort();

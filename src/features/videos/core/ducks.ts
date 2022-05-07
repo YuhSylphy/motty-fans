@@ -12,7 +12,6 @@ export type VideoFinderCondition = {
 
 export type VideosState = {
 	list: VideoDef[];
-	tagCandidates: string[];
 	condition: VideoFinderCondition;
 };
 
@@ -20,7 +19,6 @@ const videoSlice = createSlice({
 	name: 'videos',
 	initialState: {
 		list: [],
-		tagCandidates: [],
 		condition: {
 			tags: [],
 			dateSpan: {
@@ -33,12 +31,6 @@ const videoSlice = createSlice({
 		init: () => {},
 		setList: (draft, action: PayloadAction<VideosState['list']>) => {
 			draft.list = action.payload;
-		},
-		setTagCandidates: (
-			draft,
-			action: PayloadAction<VideosState['tagCandidates']>
-		) => {
-			draft.tagCandidates = action.payload;
 		},
 		addConditionTags: (
 			draft,
