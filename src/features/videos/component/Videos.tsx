@@ -372,36 +372,48 @@ const useVideoConditionFormHooks = () => {
 		[dispatch]
 	);
 
-	const [autocompleteValue, setAutocompleteValue] = useState<string>();
+	const [autocompleteValue, setAutocompleteValue] = useState<string>('');
 
 	const renderTagAutocompleteInput = useCallback<
 		React.ComponentProps<typeof Autocomplete>['renderInput']
 	>((params) => <TextField {...params} label="タグ" variant="standard" />, []);
 
 	const onChangeTag = useCallback<
+		Exclude<React.ComponentProps<typeof Autocomplete>['onChange'], undefined>
+	>(
+		(_event, value, reason, _details) => {
+			if (typeof value !== 'string') {
+				return;
+			}
+			switch (reason) {
+				case 'blur': {
+					dispatch(videosActions.addConditionTags([value]));
+					setAutocompleteValue('');
+					return;
+				}
+			}
+		},
+		[dispatch, setAutocompleteValue]
+	);
+
+	const onInputChangeTag = useCallback<
 		Exclude<
 			React.ComponentProps<typeof Autocomplete>['onInputChange'],
 			undefined
 		>
 	>(
-		(event, option, reason) => {
+		(_event, value, reason) => {
+			if (typeof value !== 'string') {
+				return;
+			}
 			switch (reason) {
-				case 'reset': {
-					dispatch(videosActions.addConditionTags([option]));
-					setAutocompleteValue('');
-					return;
-				}
-				case 'clear': {
-					setAutocompleteValue('');
-					return;
-				}
 				case 'input': {
-					setAutocompleteValue(option);
+					setAutocompleteValue(value);
 					return;
 				}
 			}
 		},
-		[setAutocompleteValue, dispatch]
+		[setAutocompleteValue]
 	);
 
 	return {
@@ -414,6 +426,7 @@ const useVideoConditionFormHooks = () => {
 		onChangeFrom,
 		onChangeTo,
 		onChangeTag,
+		onInputChangeTag,
 	};
 };
 
@@ -428,6 +441,7 @@ function VideoConditionForm() {
 		onChangeFrom,
 		onChangeTo,
 		onChangeTag,
+		onInputChangeTag,
 	} = useVideoConditionFormHooks();
 	return (
 		<Container>
@@ -444,7 +458,24 @@ function VideoConditionForm() {
 							autoSelect
 							blurOnSelect
 							clearOnBlur
-							onInputChange={onChangeTag}
+							onChange={(event, value, reason, details) => {
+								console.info('onChange', { event, value, reason, details });
+								onChangeTag(event, value, reason, details);
+							}}
+							onInputChange={(event, value, reason) => {
+								console.info('onInputchange', { event, value, reason });
+								onInputChangeTag(event, value, reason);
+							}}
+							onHighlightChange={(event, option, reason) => {
+								console.info('onInputchange', { event, option, reason });
+							}}
+							onClose={(event, reason) => {
+								console.info('onClose', { event, reason });
+							}}
+							onOpen={(event) => {
+								console.info('onOpen', { event });
+							}}
+							// onInputChange={onChangeTag}
 							inputValue={autocompleteValue}
 						/>
 						<VideoTags tags={tags} deletable />
