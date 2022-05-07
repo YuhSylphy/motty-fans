@@ -8,6 +8,7 @@ import React, {
 
 import {
 	Autocomplete,
+	Box,
 	Button,
 	Card,
 	CardActionArea,
@@ -17,22 +18,30 @@ import {
 	Chip,
 	Container,
 	Grid,
+	IconButton,
 	Paper,
 	TextField,
 	Tooltip,
 	Typography,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+
 import SearchIcon from '@mui/icons-material/Search';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 import { DateTime } from 'luxon';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import { animateScroll } from 'react-scroll';
 
-import { useAppDispatch, useAppSelector } from 'src/util';
+import {
+	useAppDispatch,
+	useAppSelector,
+	useValueWithMediaQuery,
+} from 'src/util';
+
 import { videosActions } from '..';
 import { VideoDef } from '../core/fetch';
-import InfiniteScroll from 'react-infinite-scroll-component';
-import { Box } from '@mui/system';
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 
 const showImage = true;
 
@@ -234,11 +243,25 @@ function VideoCard({ def }: VideoCardProps) {
 	);
 }
 
+const steps = 20;
+
+function ScrollToTop() {
+	return (
+		<Box display="flex" justifyContent="flex-end">
+			<IconButton
+				aria-label="scroll to top"
+				component="span"
+				onClick={animateScroll.scrollToTop}
+			>
+				<ArrowDropUpIcon />
+			</IconButton>
+		</Box>
+	);
+}
+
 type VideoBodyProps = {
 	defs: VideoDef[];
 };
-
-const steps = 20;
 
 const useVideoBodyHooks = (defs: VideoBodyProps['defs']) => {
 	const [loaded, setLoaded] = useState<VideoDef[]>([]);
@@ -256,11 +279,20 @@ const useVideoBodyHooks = (defs: VideoBodyProps['defs']) => {
 		fetchNext(); // 初回
 	}, [defs]);
 
-	return { loaded, fetchNext };
+	const itemsPerRow = useValueWithMediaQuery({
+		xs: 1,
+		sm: 2,
+		md: 3,
+		lg: 4,
+		xl: 4,
+	});
+
+	return { loaded, fetchNext, itemsPerRow };
 };
 
+const scrollToTopPerLines = 3;
 function VideoBody({ defs }: VideoBodyProps) {
-	const { loaded, fetchNext } = useVideoBodyHooks(defs);
+	const { loaded, fetchNext, itemsPerRow } = useVideoBodyHooks(defs);
 
 	return (
 		<Container>
@@ -271,10 +303,18 @@ function VideoBody({ defs }: VideoBodyProps) {
 				loader={<Loader />}
 			>
 				<Grid container spacing={2}>
-					{loaded.map((def) => (
-						<Grid item xs={12} sm={6} md={4} lg={3} key={def.id}>
-							<VideoCard def={def} />
-						</Grid>
+					{loaded.map((def, ix) => (
+						<React.Fragment key={def.id}>
+							{ix === 0 ||
+							ix % (itemsPerRow * scrollToTopPerLines) !== 0 ? null : (
+								<Grid item xs={12}>
+									<ScrollToTop />
+								</Grid>
+							)}
+							<Grid item xs={12} sm={6} md={4} lg={3}>
+								<VideoCard def={def} />
+							</Grid>
+						</React.Fragment>
 					))}
 				</Grid>
 			</InfiniteScroll>
