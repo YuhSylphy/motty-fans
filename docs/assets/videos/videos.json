@@ -100959,6 +100959,108 @@
 				"publishTime": "2022-05-07T09:50:20Z"
 			},
 			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ", "Switch"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "4kJ3ZIvLopg0SJcRFAF19JxitE8",
+			"id": { "kind": "youtube#video", "videoId": "Baq07lNp2f8" },
+			"snippet": {
+				"publishedAt": "2022-05-08T13:34:10Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "祝☆ランクAプロリーグ達成！Nintendo Switch Sports 実況プレイ！#7【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Baq07lNp2f8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Baq07lNp2f8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Baq07lNp2f8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-08T13:34:10Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ", "Switch"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "u3ojjSnEDDr1PK2BTQxOOuT6IqU",
+			"id": { "kind": "youtube#video", "videoId": "fF78H6medk8" },
+			"snippet": {
+				"publishedAt": "2022-05-09T13:42:17Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "ランクAプロリーグ&amp;フレ戦企画！Nintendo Switch Sports 実況プレイ！#8(完)【ニンテンドースイッチスポーツ】",
+				"description": "先日発売された、ニンテンドースイッチ「Nintendo Switch Sports」の生配信です。本作品は2022年4月29日に発売された、Wii ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/fF78H6medk8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/fF78H6medk8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/fF78H6medk8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-09T13:42:17Z"
+			},
+			"tags": ["Nintendo Switch Sports", "Nintendo Sportsシリーズ", "Switch"]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "G2eNbXOCcTH7P6XstlFYlV0M9hE",
+			"id": { "kind": "youtube#video", "videoId": "aNUc65moqJw" },
+			"snippet": {
+				"publishedAt": "2022-05-10T10:11:15Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "スーパーマリオ64☆全スター入手タイムアタック！～120枚RTA～【3Dコレ版元世界一】",
+				"description": "ニンテンドースイッチ「スーパーマリオ3Dコレクション版」スーパーマリオ64の120枚RTAの生放送をやります！ 本放送は初期 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/aNUc65moqJw/default_live.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/aNUc65moqJw/mqdefault_live.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/aNUc65moqJw/hqdefault_live.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "upcoming",
+				"publishTime": "2022-05-10T10:11:15Z"
+			},
+			"tags": [
+				"マリオシリーズ",
+				"スーパーマリオ64",
+				"120枚RTA",
+				"スーパーマリオ3Dコレクション",
+				"Switch"
+			]
 		}
 	]
 }
