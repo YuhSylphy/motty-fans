@@ -489,6 +489,9 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 							onChange={onChangeFrom}
 							renderInput={(params) => <TextField {...params} />}
 							clearable
+							showDaysOutsideCurrentMonth
+							showTodayButton
+							showToolbar
 						/>
 						<MobileDatePicker
 							label="配信・投稿日(to)"
@@ -497,6 +500,9 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 							onChange={onChangeTo}
 							renderInput={(params) => <TextField {...params} />}
 							clearable
+							showDaysOutsideCurrentMonth
+							showTodayButton
+							showToolbar
 						/>
 					</Grid>
 				</Grid>
