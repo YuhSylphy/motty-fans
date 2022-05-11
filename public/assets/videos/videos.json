@@ -101061,6 +101061,41 @@
 				"スーパーマリオ3Dコレクション",
 				"Switch"
 			]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "nekfQPFdrpNzK1PVFtlxh9OvwQ0",
+			"id": {
+				"kind": "youtube#video",
+				"videoId": "S1WOz_VAXDI"
+			},
+			"snippet": {
+				"publishedAt": "2022-05-11T09:31:46Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "MOTTYのおたんじょうび会2022 ～100001歳になりました。～",
+				"description": "本日5月11日はMOTTYの誕生日なので、毎年恒例の顔出し雑談をやります。 前半はYouTubeLIVEでケーキを食べて少しだけ乾杯 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/S1WOz_VAXDI/default_live.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/S1WOz_VAXDI/mqdefault_live.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/S1WOz_VAXDI/hqdefault_live.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "upcoming",
+				"publishTime": "2022-05-11T09:31:46Z"
+			},
+			"tags": ["雑談"]
 		}
 	]
 }
