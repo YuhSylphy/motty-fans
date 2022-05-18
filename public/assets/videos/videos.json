@@ -101824,6 +101824,117 @@
 				"ゼルダ無双 厄災の黙示録",
 				"Switch"
 			]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "1E-Vn-1d86Ikha6uCpyl1UnKTJQ",
+			"id": { "kind": "youtube#video", "videoId": "hW93uaIbVow" },
+			"snippet": {
+				"publishedAt": "2022-05-16T13:36:26Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "100年前のハイラルを無双せよ『ゼルダ無双 厄災の黙示録』実況プレイ！#4【ニンテンドースイッチ】",
+				"description": "ニンテンドースイッチ「ゼルダ無双 厄災の黙示録」の生配信です。本作品は2020年に発売された、ゼルダの伝説×無双シリーズの ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/hW93uaIbVow/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/hW93uaIbVow/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/hW93uaIbVow/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-16T13:36:26Z"
+			},
+			"tags": [
+				"ゼルダの伝説シリーズ",
+				"無双シリーズ",
+				"ゼルダ無双 厄災の黙示録",
+				"Switch"
+			]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "-42L3iupWG81vg848sB-dBVp2E4",
+			"id": { "kind": "youtube#video", "videoId": "H1zfqXJNS7Y" },
+			"snippet": {
+				"publishedAt": "2022-05-17T13:43:03Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "100年前のハイラルを無双せよ『ゼルダ無双 厄災の黙示録』実況プレイ！#5【ニンテンドースイッチ】",
+				"description": "ニンテンドースイッチ「ゼルダ無双 厄災の黙示録」の生配信です。本作品は2020年に発売された、ゼルダの伝説×無双シリーズの ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/H1zfqXJNS7Y/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/H1zfqXJNS7Y/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/H1zfqXJNS7Y/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2022-05-17T13:43:03Z"
+			},
+			"tags": [
+				"ゼルダの伝説シリーズ",
+				"無双シリーズ",
+				"ゼルダ無双 厄災の黙示録",
+				"Switch"
+			]
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "RN66Qk1poVyPJTcAQgEBkeboZxY",
+			"id": { "kind": "youtube#video", "videoId": "ZpajTe-T_aQ" },
+			"snippet": {
+				"publishedAt": "2022-05-18T10:18:00Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "100年前のハイラルを無双せよ『ゼルダ無双 厄災の黙示録』実況プレイ！#6【ニンテンドースイッチ】",
+				"description": "ニンテンドースイッチ「ゼルダ無双 厄災の黙示録」の生配信です。本作品は2020年に発売された、ゼルダの伝説×無双シリーズの ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/ZpajTe-T_aQ/default_live.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/ZpajTe-T_aQ/mqdefault_live.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/ZpajTe-T_aQ/hqdefault_live.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "live",
+				"publishTime": "2022-05-18T10:18:00Z"
+			},
+			"tags": [
+				"ゼルダの伝説シリーズ",
+				"無双シリーズ",
+				"ゼルダ無双 厄災の黙示録",
+				"Switch"
+			]
 		}
 	]
 }
