@@ -67,6 +67,29 @@ function AppBody() {
 	);
 }
 
+function GoogleAnalytics() {
+	const id = process.env.GA_MEASUREMENT_ID;
+	if (!id) {
+		return null;
+	}
+
+	return (
+		<Helmet>
+			<script
+				async
+				src={`https://www.googletagmanager.com/gtag/js?id=${id}`}
+			></script>
+			<script>{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${id}');
+`}</script>
+		</Helmet>
+	);
+}
+
 function Head() {
 	const title = useAppSelector((state) => state.core.title);
 	return (
@@ -86,6 +109,7 @@ export function App() {
 			<HelmetProvider>
 				<AppThemeProvider>
 					<CssBaseline />
+					<GoogleAnalytics />
 					<Head />
 					<BrowserRouter basename={process.env.PUBLIC_URL}>
 						<React.Fragment>
