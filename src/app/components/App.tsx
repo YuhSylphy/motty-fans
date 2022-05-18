@@ -81,10 +81,6 @@ export function App() {
 		registerEpic(exportEpic);
 	}, [registerEpic, exportEpic]);
 
-	useEffect(() => {
-		console.info('env:', process.env);
-	}, []);
-
 	return (
 		<LocalizationProvider dateAdapter={AdapterLuxon}>
 			<HelmetProvider>
