@@ -68,9 +68,10 @@ function AppBody() {
 }
 
 function GoogleAnalytics() {
-	const id = process.env.GA_MEASUREMENT_ID;
+	const id = process.env.REACT_APP_GA_MEASUREMENT_ID;
 	if (!id) {
-		return null;
+		console.info('GA_MEASUREMENT_ID has NOT been found. ', process.env);
+		return <script>{`// GA_MEASUREMENT_ID = ${id}`}</script>;
 	}
 
 	return (
