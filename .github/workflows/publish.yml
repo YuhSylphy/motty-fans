@@ -8,6 +8,8 @@ jobs:
   publish-gh-pages:
     name: mainリポジトリ更新時にGithub Pagesへ公開
     runs-on: ubuntu-20.04
+    environment:
+      name: github-pages
     steps:
       - uses: actions/checkout@v2
         with:
