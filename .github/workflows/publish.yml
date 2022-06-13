@@ -29,7 +29,8 @@ jobs:
           git config --global user.email "yuhsylphy@gmail.com"
           git switch -C gh-pages origin/gh-pages
           git merge --no-ff -X theirs origin/main
-          if ! git diff --exit-code --quiet @..@^1 -- src/* ./*.json; then
+          if ! git diff --exit-code --quiet @..@^1 -- src/* ./*.json ./*.md; then
+            echo REACT_APP_GA_MEASUREMENT_ID=G-4ZNXNCE4SW > .env.prod
             yarn --network-timeout=1000000
             yarn build
             yarn cpx -C 'build/**' './docs/'
