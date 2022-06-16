@@ -68,10 +68,25 @@ function AppBody() {
 }
 
 function GoogleAnalytics() {
-	const id = process.env.REACT_APP_GA_MEASUREMENT_ID;
+	const id = (() => {
+		switch (process.env.NODE_ENV) {
+			case 'development':
+				return 'G-F5TRJ2Q2C2';
+			case 'production':
+				return 'G-4ZNXNCE4SW';
+			default: {
+				console.info('GA_MEASUREMENT_ID has NOT been found. ', process.env);
+				return null;
+			}
+		}
+	})();
+
 	if (!id) {
-		console.info('GA_MEASUREMENT_ID has NOT been found. ', process.env);
-		return <script>{`// GA_MEASUREMENT_ID = ${id}`}</script>;
+		return (
+			<Helmet>
+				<script>{`// GA_MEASUREMENT_ID = ${id}`}</script>
+			</Helmet>
+		);
 	}
 
 	return (
