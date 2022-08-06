@@ -124,3 +124,6 @@ dist
 
 .env.dev
 .env.prod
+
+/work/*
+!/work/last-fetched
