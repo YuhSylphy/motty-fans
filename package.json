@@ -68,7 +68,7 @@
     "refetch": "run-s refetch:*",
     "refetch:dotnetrun": "cd work/fetch-youtube-videos && (cat ../last-fetched | xargs -I {} dotnet run -- app fetch -f \"{}\") && dotnet run -- app merge -i \"../../public/assets/videos/videos.json\"",
     "refetch:date": "node -p \"require('luxon').DateTime.now().toFormat('yyyy-LL-dd HH:mm:ss ZZ')\" > work/last-fetched",
-    "refetch:cp": "cpx \"work/fetch-youtube-videos/Data/Merged/`ls Data/Merged | tail -n 1`\" \"/public/assets/videos/videos.json\"",
+    "refetch:cp": "ls work/fetch-youtube-videos/Data/Merged | tail -n 1 | xargs -I {} node -e \"require('fs').copyFileSync('work/fetch-youtube-videos/Data/Merged/{}', 'public/assets/videos/videos.json')\"",
     "refetch:prettier": "run-s lint:prettier:assets"
   },
   "eslintConfig": {
