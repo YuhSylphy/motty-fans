@@ -42,6 +42,7 @@ import {
 
 import { videosActions } from '..';
 import { VideoDef } from '../core/fetch';
+import { useParams } from 'react-router';
 
 const showImage = true;
 
@@ -555,7 +556,9 @@ const useVideoContainerHooks = () => {
 		})().keys()
 	).sort();
 
-	return { loading, defs, tagCandidates };
+	const { hash } = useParams();
+
+	return { loading, defs, tagCandidates, hash };
 };
 
 function VideoContainer() {
