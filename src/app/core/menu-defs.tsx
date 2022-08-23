@@ -4,6 +4,7 @@ import {
 	Timeline as TimelineIcon,
 	ChangeHistory as ChangeHistoryIcon,
 	YouTube as YouTubeIcon,
+	Info as InfoIcon,
 } from '@mui/icons-material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHorse } from '@fortawesome/free-solid-svg-icons';
@@ -27,6 +28,7 @@ export type PageMenuItemDef = {
 	path: string;
 	Page: React.ComponentType;
 	title: string;
+	hideInMenu?: boolean;
 };
 
 export type DividerMenuItemDef = {
@@ -39,15 +41,28 @@ const divider: DividerMenuItemDef = {
 export const defaultRoute = '/videos';
 export const menuDefs: MenuItemDef[] = [
 	{
-		type: 'page',
+		type: 'page' as const,
+		icon: <InfoIcon />,
+		label: 'プロフィール',
+		path: '/profile',
+		Page: React.lazy(
+			() =>
+				import(/* webpackChunkName: "profile" */ 'src/features/profile/lazy')
+		),
+		title: 'MOTTY fans - プロフィール',
+		hideInMenu: true, // 公開前
+	},
+	...['', '/:hash'].map((params) => ({
+		type: 'page' as const,
 		icon: <YouTubeIcon />,
 		label: 'YouTube 動画一覧',
-		path: '/videos',
+		path: `/videos${params}`,
 		Page: React.lazy(
 			() => import(/* webpackChunkName: "videos" */ 'src/features/videos/lazy')
 		),
 		title: 'MOTTY fans - YouTube 動画一覧',
-	},
+		hideInMenu: !!params,
+	})),
 	divider,
 	{
 		type: 'nest',

@@ -26,6 +26,9 @@ type NestMenuItemDefWithDepth = NestMenuItemDef & HasDepth;
 type PageMenuItemDefWithDepth = PageMenuItemDef & HasDepth;
 
 function PageItem(def: PageMenuItemDefWithDepth) {
+	if (def.hideInMenu) {
+		return null;
+	}
 	return (
 		<ListItemButton
 			key={def.path}
