@@ -27,6 +27,7 @@ export type PageMenuItemDef = {
 	path: string;
 	Page: React.ComponentType;
 	title: string;
+	hideInMenu?: boolean;
 };
 
 export type DividerMenuItemDef = {
@@ -38,16 +39,17 @@ const divider: DividerMenuItemDef = {
 
 export const defaultRoute = '/videos';
 export const menuDefs: MenuItemDef[] = [
-	{
-		type: 'page',
+	...['', '/:hash'].map((params) => ({
+		type: 'page' as const,
 		icon: <YouTubeIcon />,
 		label: 'YouTube 動画一覧',
-		path: '/videos',
+		path: `/videos${params}`,
 		Page: React.lazy(
 			() => import(/* webpackChunkName: "videos" */ 'src/features/videos/lazy')
 		),
 		title: 'MOTTY fans - YouTube 動画一覧',
-	},
+		hideInMenu: !!params,
+	})),
 	divider,
 	{
 		type: 'nest',
