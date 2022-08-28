@@ -1,8 +1,8 @@
 import { Avatar, Link, List, ListItem, Paper, Typography } from '@mui/material';
-import React, { Suspense, useCallback, useEffect, useState } from 'react';
+import React, { Suspense, useCallback, useEffect, useRef } from 'react';
 import { useAppDispatch, useAppSelector } from 'src/util';
 import { profileActions } from '..';
-import { HistoryItemProps, LinkExpression } from '../core/ducks';
+import { HistoryItemProps, LinkExpression } from '../core/fetch';
 
 function Loader() {
 	return <div>Loading...</div>;
@@ -100,14 +100,15 @@ function Histories() {
 }
 
 function ProfileContainer() {
-	const [notInitialized, setNotInitialized] = useState(true);
+	const initializedRef = useRef(false);
 	const dispatch = useAppDispatch();
 	useEffect(() => {
-		if (notInitialized) {
+		console.info('useEffect in Profile Container', initializedRef);
+		if (!initializedRef.current) {
+			initializedRef.current = true;
 			dispatch(profileActions.init());
-			setNotInitialized(false);
 		}
-	}, [notInitialized]);
+	}, [initializedRef]);
 
 	return (
 		<div id="profile">

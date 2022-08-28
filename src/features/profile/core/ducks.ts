@@ -1,27 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-export interface LinkExpression {
-	href: string;
-	label: string;
-}
-
-export interface HistoryItemProps {
-	date: string;
-	link?: LinkExpression | LinkExpression[];
-	text: string;
-}
-
-export interface HistoryProps {
-	key: string;
-	header: string;
-	items: HistoryItemProps[];
-}
-
-export interface ProfileDefinitionProps {
-	updatedAt: string;
-	description: string[];
-	history: HistoryProps[];
-}
+import { ProfileDefinitionProps } from './fetch';
 
 export type ProfileState = {
 	defs: ProfileDefinitionProps;
