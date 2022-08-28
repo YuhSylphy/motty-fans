@@ -4,6 +4,7 @@ import type { IndicatorAction } from 'src/features/indicator';
 import type { PedigreeAction } from 'src/features/pedigree';
 import type { ChangeLogAction } from 'src/features/changelog';
 import type { VideosAction } from 'src/features/videos';
+import type { ProfileAction } from 'src/features/profile';
 
 export type AppAction =
 	| CoreAction
@@ -11,4 +12,5 @@ export type AppAction =
 	| IndicatorAction
 	| PedigreeAction
 	| ChangeLogAction
-	| VideosAction;
+	| VideosAction
+	| ProfileAction;

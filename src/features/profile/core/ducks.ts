@@ -1,18 +1,42 @@
-import {
-	createSlice,
-	// PayloadAction
-} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-export type ProfileState = Record<string, never>;
+export interface LinkExpression {
+	href: string;
+	label: string;
+}
+
+export interface HistoryItemProps {
+	date: string;
+	link?: LinkExpression | LinkExpression[];
+	text: string;
+}
+
+export interface HistoryProps {
+	key: string;
+	header: string;
+	items: HistoryItemProps[];
+}
+
+export interface ProfileDefinitionProps {
+	updatedAt: string;
+	description: string[];
+	history: HistoryProps[];
+}
+
+export type ProfileState = {
+	defs: ProfileDefinitionProps;
+};
 
 const profileSlice = createSlice({
 	name: 'profile',
-	initialState: {} as ProfileState,
+	initialState: {
+		defs: { description: [], updatedAt: '', history: [] },
+	} as ProfileState,
 	reducers: {
 		init: () => {},
-		// setList: (draft, action: PayloadAction<ProfileState['list']>) => {
-		// 	draft.list = action.payload;
-		// },
+		setDefs: (draft, action: PayloadAction<ProfileState['defs']>) => {
+			draft.defs = action.payload;
+		},
 	},
 });
 
