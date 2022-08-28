@@ -15,14 +15,19 @@ export interface HistoryProps {
 	items: HistoryItemProps[];
 }
 
+export interface Description {
+	header: string;
+	body: string[];
+}
+
 export interface ProfileDefinitionProps {
 	updatedAt: string;
-	description: string[];
+	description: Description;
 	history: HistoryProps[];
 }
 
 export const blankProfile: ProfileDefinitionProps = {
-	description: [],
+	description: { header: '', body: [] },
 	history: [],
 	updatedAt: '',
 };

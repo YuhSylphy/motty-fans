@@ -1,5 +1,15 @@
-import { Avatar, Link, List, ListItem, Paper, Typography } from '@mui/material';
-import React, { Suspense, useCallback, useEffect, useRef } from 'react';
+import {
+	Avatar,
+	Container,
+	Link,
+	List,
+	ListItem,
+	Paper,
+	Typography,
+} from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Box } from '@mui/system';
+import React, { Suspense, useEffect, useRef } from 'react';
 import { useAppDispatch, useAppSelector } from 'src/util';
 import { profileActions } from '..';
 import { HistoryItemProps, LinkExpression } from '../core/fetch';
@@ -8,22 +18,36 @@ function Loader() {
 	return <div>Loading...</div>;
 }
 
+const CenteringBox = styled(Box)({
+	display: 'flex',
+	justifyContent: 'center',
+});
+
+const ProfileAvatar = styled(Avatar)(({ theme }) => ({
+	width: theme.spacing(24),
+	height: theme.spacing(24),
+}));
+
 function Description() {
-	const { description } = useAppSelector((state) => state.profile.defs);
-	const Descriptions = useCallback(
-		() => (
-			<React.Fragment>
-				{description.map((body, ix) => (
-					<Typography key={ix}>{body}</Typography>
-				))}
-			</React.Fragment>
-		),
-		[description]
-	);
+	const {
+		description: { header, body },
+	} = useAppSelector((state) => state.profile.defs);
 	return (
 		<Paper>
-			<Avatar />
-			<Descriptions />
+			<CenteringBox>
+				<ProfileAvatar
+					alt="MOTTY"
+					src={`${process.env.PUBLIC_URL}/logo192.png`}
+				/>
+			</CenteringBox>
+			<CenteringBox>
+				<Typography variant="h4">{header}</Typography>
+			</CenteringBox>
+			<CenteringBox>
+				<Typography paragraph sx={{ whiteSpace: 'pre-line' }}>
+					{body.join('\n')}
+				</Typography>
+			</CenteringBox>
 		</Paper>
 	);
 }
@@ -99,6 +123,8 @@ function Histories() {
 	);
 }
 
+const ProfileStyledContainer = styled(Container)(() => ({}));
+
 function ProfileContainer() {
 	const initializedRef = useRef(false);
 	const dispatch = useAppDispatch();
@@ -111,11 +137,11 @@ function ProfileContainer() {
 	}, [initializedRef]);
 
 	return (
-		<div id="profile">
+		<ProfileStyledContainer id="profile">
 			<Description />
 			<LastUpdated />
 			<Histories />
-		</div>
+		</ProfileStyledContainer>
 	);
 }
 

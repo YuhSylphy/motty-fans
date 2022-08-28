@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { ProfileDefinitionProps } from './fetch';
+import { blankProfile, ProfileDefinitionProps } from './fetch';
 
 export type ProfileState = {
 	defs: ProfileDefinitionProps;
@@ -7,9 +7,7 @@ export type ProfileState = {
 
 const profileSlice = createSlice({
 	name: 'profile',
-	initialState: {
-		defs: { description: [], updatedAt: '', history: [] },
-	} as ProfileState,
+	initialState: { defs: blankProfile } as ProfileState,
 	reducers: {
 		init: () => {},
 		setDefs: (draft, action: PayloadAction<ProfileState['defs']>) => {
