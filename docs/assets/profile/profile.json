@@ -1,0 +1,501 @@
+{
+	"description": {
+		"header": "ゲーム実況者・YouTuber「MOTTY」のプロフィール",
+		"body": [
+			"YouTube・ニコニコ生放送などで活動中のゲーム実況者。",
+			"主に任天堂系のゲームを軸に実況しているが、基本的にジャンル問わずゲーム大好き。",
+			"2012 年 1 月にニコ生で活動開始。2014 年 9 月から YouTube で動画投稿開始。2022 年で活動 10 周年を迎えた。"
+		]
+	},
+	"updatedAt": "2022/4/30",
+	"history": [
+		{
+			"key": "realEvents",
+			"header": "リアルイベント関係",
+			"items": [
+				{
+					"date": "22/04/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv336489773",
+						"label": "lv336489773"
+					},
+					"text": "ニコニコ超会議 2022 ゲーム実況者 超大集合 DAY2"
+				},
+				{
+					"date": "22/04/29",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv335925791",
+						"label": "lv335925791"
+					},
+					"text": "ニコニコ超会議 2022 ゲーム実況者 超大集合 DAY1"
+				},
+				{
+					"date": "19/04/27",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv319370077",
+						"label": "lv319370077"
+					},
+					"text": "ニコニコ超会議 2019 日本電信電話ミカカランド"
+				},
+				{
+					"date": "18/04/29",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv312097124",
+						"label": "lv312097124"
+					},
+					"text": "ニコニコ超会議 2018 NTT 超未来大都会 2 日目"
+				},
+				{
+					"date": "18/04/28",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv312097123",
+						"label": "lv312097123"
+					},
+					"text": "ニコニコ超会議 2018 NTT 超未来大都会 1 日目"
+				},
+				{
+					"date": "18/02/11",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv310500946",
+						"label": "lv310500946"
+					},
+					"text": "闘会議 2018 ゲーム実況天国ブース"
+				},
+				{
+					"date": "18/02/11",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv310500858",
+						"label": "lv310500858"
+					},
+					"text": "闘会議 2018 ゲーム実況者ステージ"
+				},
+				{
+					"date": "18/02/10",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv310504185",
+						"label": "lv310504185"
+					},
+					"text": "闘会議 2018 PONOS ブース"
+				},
+				{
+					"date": "17/08/14",
+					"text": "Pokémon GO STADIUM 　※ゲーム実況者として出演"
+				},
+				{
+					"date": "17/04/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv294312581",
+						"label": "lv294312581"
+					},
+					"text": "ニコニコ超会議 2017 NTT ULTRA FUTURE MUSEUM 2017"
+				},
+				{
+					"date": "17/04/29",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv294387834",
+						"label": "lv294387834"
+					},
+					"text": "ニコニコ超会議 2017 超ボンバーマン神ステージ"
+				},
+				{
+					"date": "17/02/12",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv281178380",
+						"label": "lv281178380"
+					},
+					"text": "闘会議 2017 【闘会議ニュース】生放送"
+				},
+				{
+					"date": "17/02/11",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv287957306",
+						"label": "lv287957306"
+					},
+					"text": "闘会議 2017 ゲーム実況ストリート 1st"
+				},
+				{
+					"date": "16/04/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv259380246",
+						"label": "lv259380246"
+					},
+					"text": "ニコニコ超会議 2016 超ボンバーマン神(ゴッド)"
+				},
+				{
+					"date": "16/04/29",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv259288195",
+						"label": "lv259288195"
+					},
+					"text": "ニコニコ超会議 2016 NTT 超未来大博覧会 2016"
+				},
+				{
+					"date": "16/04/29",
+					"text": "ニコニコ超会議 2016 JNCA ブース"
+				},
+				{
+					"date": "16/01/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv249080284",
+						"label": "lv249080284"
+					},
+					"text": "闘会議 2016 ゲーム実況神ステージ"
+				},
+				{
+					"date": "15/10/25",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv232070057",
+						"label": "lv232070057"
+					},
+					"text": "ニコニコ超パーティー 2015 ゲーム実況チャレンジ"
+				},
+				{
+					"date": "15/04/26",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv217754666",
+						"label": "lv217754666"
+					},
+					"text": "ニコニコ超会議 2015 NTT 超未来研究所 Z"
+				},
+				{
+					"date": "15/01/31",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv207727163",
+						"label": "lv207727163"
+					},
+					"text": "闘会議 2015 スーパーマリオ 64"
+				}
+			]
+		},
+		{
+			"key": "officialPrograms",
+			"header": "公式生放送・公式番組出演関係",
+			"items": [
+				{
+					"date": "20/08/09 ～ 16",
+					"link": [
+						{
+							"href": "https://live2.nicovideo.jp/watch/lv327359801",
+							"label": "lv327359801"
+						},
+						{
+							"href": "https://live2.nicovideo.jp/watch/lv327359948",
+							"label": "lv327359948"
+						}
+					],
+					"text": "ニコニコネット超会議 2020 夏「ゼルダの伝説 ブレスオブザワイルド 長時間ゲーム実況」※自宅にてリモート配信。1 人で計 68 時間ゲーム実況をする。"
+				},
+				{ "date": "20/07/15", "text": "Mildom 公式生『ゲーション』" },
+				{
+					"date": "20/04/12 ～ 19",
+					"link": [
+						{
+							"href": "https://live.nicovideo.jp/watch/lv325197544",
+							"label": "lv325197544"
+						},
+						{
+							"href": "https://live2.nicovideo.jp/watch/lv325197788",
+							"label": "lv325197788"
+						},
+						{
+							"href": "https://live.nicovideo.jp/watch/lv325245613",
+							"label": "lv325245613"
+						}
+					],
+					"text": "ニコニコネット超会議 2020「FF1 長時間ゲーム実況」「FF2 長時間ゲーム実況」※自宅にてリモート配信。1 人で計 50 時間ゲーム実況をする。"
+				},
+				{
+					"date": "19/12/14",
+					"link": {
+						"href": "https://live2.nicovideo.jp/watch/lv323303185",
+						"label": "lv323303185"
+					},
+					"text": "『ロマンシング サガ３』リマスター版 ゲーム実況"
+				},
+				{
+					"date": "17/12/08",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv309052847",
+						"label": "lv309052847"
+					},
+					"text": "『ロマンシング サガ２』リマスター版～ 48 時間ゲーム実況"
+				},
+				{
+					"date": "17/09/02",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv305891426",
+						"label": "lv305891426"
+					},
+					"text": "東京ゲームショウ公式 ch 『スーパーマリオギャラクシー』"
+				},
+				{
+					"date": "17/08/12",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv303436115",
+						"label": "lv303436115"
+					},
+					"text": "ヲタ × マニ リターンズ ～ゲームの部屋～"
+				},
+				{
+					"date": "17/08/05",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv302070531",
+						"label": "lv302070531"
+					},
+					"text": "ポケモン SM ゲーム実況者最強決定戦 ～シングル決勝～"
+				},
+				{
+					"date": "17/07/22",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv302069504",
+						"label": "lv302069504"
+					},
+					"text": "ポケモン SM ゲーム実況者最強決定戦 ～シングル予選～"
+				},
+				{
+					"date": "17/04/23",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv294871852",
+						"label": "lv294871852"
+					},
+					"text": "ポケモン SM ゲーム実況者最強決定戦 ～ダブル部門～"
+				},
+				{
+					"date": "17/04/02",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv293089574",
+						"label": "lv293089574"
+					},
+					"text": "【超会議特番】超ゲームエリア SP"
+				},
+				{
+					"date": "17/03/08",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv291644020",
+						"label": "lv291644020"
+					},
+					"text": "ゲームチャンピオン ～クリアするまで帰れません～"
+				},
+				{ "date": "16/11/02", "text": "OPENREC 公式生『マイクラ OPEN』" },
+				{
+					"date": "16/12/18",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv282717566",
+						"label": "lv282717566"
+					},
+					"text": "【RPG アツマール公開記念】投稿ゲームほぼ全部実況"
+				},
+				{
+					"date": "16/09/26",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv273576179",
+						"label": "lv273576179"
+					},
+					"text": "神(ゴッド) Calling ～ VR ホラーに再挑戦～"
+				},
+				{ "date": "16/03/26", "text": "YouTube 公式生『Game Week 2016 春』" },
+				{
+					"date": "16/02/27",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv251359089",
+						"label": "lv251359089"
+					},
+					"text": "自作ゲーム傑作選 26 時間ぶっ通し生放送"
+				},
+				{
+					"date": "16/01/01",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv246178742",
+						"label": "lv246178742"
+					},
+					"text": "新春ゲーム実況国とり合戦 2016"
+				},
+				{
+					"date": "15/12-01",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv247807337",
+						"label": "lv247807337"
+					},
+					"text": "マリオメーカー「つくる王」「あそぶ王」への道 ※番組 MC"
+				},
+				{
+					"date": "15/12/26",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv245421301",
+						"label": "lv245421301"
+					},
+					"text": "「ファイナルファンタジー Ⅶ」48 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "15/12/20",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv244271654",
+						"label": "lv244271654"
+					},
+					"text": "本格レースゲーム「アスファルト８」"
+				},
+				{
+					"date": "15/12/05",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv241623994",
+						"label": "lv241623994"
+					},
+					"text": "レトロ傑作選 38 時間ぶっ通し生放送"
+				},
+				{
+					"date": "15/11/14",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv240123110",
+						"label": "lv240123110"
+					},
+					"text": "マリオメーカー『つくる王』『あそぶ王』トライアル"
+				},
+				{
+					"date": "15/11/07",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv240721127",
+						"label": "lv240721127"
+					},
+					"text": "『ゼルダの伝説 風のタクト HD」ぶっとおし生放送"
+				},
+				{
+					"date": "15/11/06",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv240148043",
+						"label": "lv240148043"
+					},
+					"text": "ゲーム実況神(ゴッド)第 10 回【闘 TV】"
+				},
+				{
+					"date": "15/10/04",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv236382988",
+						"label": "lv236382988"
+					},
+					"text": "レトロ傑作選　 41 時間ぶっ通し生放送"
+				},
+				{
+					"date": "15/09/22",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv235369846",
+						"label": "lv235369846"
+					},
+					"text": "「スーパーマリオメーカー」30 時間ゲーム実況リレー"
+				},
+				{
+					"date": "15/09/06",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv232401838",
+						"label": "lv232401838"
+					},
+					"text": "レトロゲーム傑作選　 22 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "14/11/24",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv197724344",
+						"label": "lv197724344"
+					},
+					"text": "スマブラ 3DS プレミアムファイト"
+				},
+				{
+					"date": "14/08/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv189592169",
+						"label": "lv189592169"
+					},
+					"text": "ファイナルファンタジー V 48 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "14/08/09",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv187191471",
+						"label": "lv187191471"
+					},
+					"text": "ロマンシング サ・ガ 2 48 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "14/05/05",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv176893602",
+						"label": "lv176893602"
+					},
+					"text": "ロマンシング サ･ガ 30 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "14/03/23",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv172496843",
+						"label": "lv172496843"
+					},
+					"text": "FFIV・IV 月の帰還 51 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "14/01/19",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv163703777",
+						"label": "lv163703777"
+					},
+					"text": "セインツロウシリーズ 30 時間ぶっ通しゲーム実況"
+				},
+				{
+					"date": "13/07-09",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv150700656",
+						"label": "lv150700656"
+					},
+					"text": "水曜ニコラジ ※アシスタント MC"
+				},
+				{
+					"date": "13/08/11",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv146304167",
+						"label": "lv146304167"
+					},
+					"text": "零シリーズ+フリーゲーム 7​2 時間ゲーム実況"
+				},
+				{
+					"date": "13/07/07",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv142307487",
+						"label": "lv142307487"
+					},
+					"text": "地球防衛軍シ ​ リーズ 28 時間ぶっ通しゲーム ​ 実況"
+				}
+			]
+		},
+		{
+			"key": "offlineGetherings",
+			"header": "（ほぼお仕事ではないですが）オフ会関係",
+			"items": [
+				{
+					"date": "18/08/25",
+					"text": "『もてぃおふ。7 in 品川 (JOYSOUND 品川港南口店)』"
+				},
+				{ "date": "17/01/15", "text": "『もてぃおふ。6』" },
+				{ "date": "16/06/25", "text": "『もてぃおふ。5 in 関西』" },
+				{ "date": "16/01/30", "text": "『もてぃおふ。4』" },
+				{ "date": "14/11/24", "text": "『もてぃおふ。２＆もてぃおふ。'14』" },
+				{
+					"date": "14/07/25",
+					"text": "『もてぃおふ　 Vol.1.5 in ピカチュウカフェ』"
+				},
+				{ "date": "14/03/15", "text": "『もてぃおふ　 Vol.01』" }
+			]
+		},
+		{
+			"key": "misc",
+			"header": "その他",
+			"items": [
+				{
+					"date": "19/07/14",
+					"text": "インターネットラジオ番組「かいわいず」出演"
+				},
+				{
+					"date": "16/11/08",
+					"text": "週刊アスキー No.1101 ※YouTuber としてインタビュー掲載"
+				}
+			]
+		}
+	]
+}
