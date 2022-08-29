@@ -50,7 +50,7 @@ export const menuDefs: MenuItemDef[] = [
 				import(/* webpackChunkName: "profile" */ 'src/features/profile/lazy')
 		),
 		title: 'MOTTY fans - プロフィール',
-		hideInMenu: true, // 公開前
+		hideInMenu: false,
 	},
 	...['', '/:hash'].map((params) => ({
 		type: 'page' as const,
