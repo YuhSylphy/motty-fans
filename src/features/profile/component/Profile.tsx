@@ -23,9 +23,19 @@ const CenteringBox = styled(Box)({
 	justifyContent: 'center',
 });
 
+const RightAlignedBox = styled(Box)({
+	display: 'flex',
+	justifyContent: 'right',
+});
+
 const ProfileAvatar = styled(Avatar)(({ theme }) => ({
 	width: theme.spacing(24),
 	height: theme.spacing(24),
+}));
+
+const MarginedPaper = styled(Paper)(({ theme }) => ({
+	marginBottom: theme.spacing(1),
+	overflow: 'hidden',
 }));
 
 function Description() {
@@ -33,7 +43,7 @@ function Description() {
 		description: { header, body },
 	} = useAppSelector((state) => state.profile.defs);
 	return (
-		<Paper>
+		<MarginedPaper>
 			<CenteringBox>
 				<ProfileAvatar
 					alt="MOTTY"
@@ -48,16 +58,18 @@ function Description() {
 					{body.join('\n')}
 				</Typography>
 			</CenteringBox>
-		</Paper>
+		</MarginedPaper>
 	);
 }
 
 function LastUpdated() {
 	const { updatedAt } = useAppSelector((state) => state.profile.defs);
 	return (
-		<Paper>
-			<Typography>最終更新: {updatedAt}</Typography>
-		</Paper>
+		<RightAlignedBox>
+			<MarginedPaper>
+				<Typography>最終更新: {updatedAt}</Typography>
+			</MarginedPaper>
+		</RightAlignedBox>
 	);
 }
 
@@ -69,28 +81,50 @@ function HistoryLink(link: LinkExpression) {
 	);
 }
 
+const HistoryItemDateBox = styled(CenteringBox)(({ theme: _theme }) => ({
+	// width: theme.spacing(20),
+	flexBasis: '15%',
+}));
+const HistoryItemLinkBox = styled(CenteringBox)(({ theme: _theme }) => ({
+	// width: theme.spacing(24),
+	flexBasis: '15%',
+}));
+const HistoryItemTextBox = styled(CenteringBox)(({ theme: _theme }) => ({
+	// width: 'auto',
+	flexBasis: '70%',
+	display: 'flex',
+	justifyContent: 'left',
+}));
+
 function HistoryItem({ date, link, text }: HistoryItemProps) {
+	// useMediaQuery() でモバイル用レイアウトを構成したい
 	return (
-		<ListItem>
-			<Typography>{date}</Typography>
-			<List>
-				{link instanceof Array ? (
-					link.map((l) => (
-						<ListItem key={l.label}>
-							<HistoryLink {...l} />
+		<ListItem sx={{ paddingTop: 0, paddingBottom: 0 }}>
+			<HistoryItemDateBox className="date">
+				<Typography>{date}</Typography>
+			</HistoryItemDateBox>
+			<HistoryItemLinkBox>
+				<List>
+					{link instanceof Array ? (
+						link.map((l) => (
+							<ListItem key={l.label}>
+								<HistoryLink {...l} />
+							</ListItem>
+						))
+					) : link ? (
+						<ListItem>
+							<HistoryLink {...link} />
 						</ListItem>
-					))
-				) : link ? (
-					<ListItem>
-						<HistoryLink {...link} />
-					</ListItem>
-				) : (
-					<ListItem>
-						<Typography>---------------</Typography>
-					</ListItem>
-				)}
-			</List>
-			<Typography>{text}</Typography>
+					) : (
+						<ListItem>
+							<Typography>---------------</Typography>
+						</ListItem>
+					)}
+				</List>
+			</HistoryItemLinkBox>
+			<HistoryItemTextBox>
+				<Typography>{text}</Typography>
+			</HistoryItemTextBox>
 		</ListItem>
 	);
 }
@@ -98,6 +132,7 @@ function HistoryItem({ date, link, text }: HistoryItemProps) {
 interface HistoryListProps {
 	items: HistoryItemProps[];
 }
+
 function HistoryList({ items }: HistoryListProps) {
 	return (
 		<List>
@@ -108,16 +143,26 @@ function HistoryList({ items }: HistoryListProps) {
 	);
 }
 
+const HistoryHeaderTypography = styled(Typography)(({ theme }) => ({
+	backgroundColor: theme.palette.primary.dark,
+}));
+
+function HistoryHeader({ children }: { children: string }) {
+	return (
+		<HistoryHeaderTypography variant="h6">{children}</HistoryHeaderTypography>
+	);
+}
+
 function Histories() {
 	const { history } = useAppSelector((state) => state.profile.defs);
 
 	return (
 		<React.Fragment>
 			{history.map(({ key, header, items }) => (
-				<Paper key={key}>
-					<Typography variant="h2">{header}</Typography>
+				<MarginedPaper key={key}>
+					<HistoryHeader>{header}</HistoryHeader>
 					<HistoryList items={items} />
-				</Paper>
+				</MarginedPaper>
 			))}
 		</React.Fragment>
 	);
