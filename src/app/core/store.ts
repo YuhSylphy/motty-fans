@@ -10,6 +10,7 @@ import { changeLogReducer } from 'src/features/changelog';
 import { videosReducer } from 'src/features/videos';
 
 import type { AppAction } from './actions';
+import { profileReducer } from 'src/features/profile';
 
 const dependencies = {};
 const epicMiddleware = createEpicMiddleware<
@@ -29,6 +30,7 @@ export const store = configureStore({
 		pedigree: pedigreeReducer,
 		changeLog: changeLogReducer,
 		videos: videosReducer,
+		profile: profileReducer,
 	},
 	middleware: (getDefaultMiddleware) =>
 		getDefaultMiddleware({
