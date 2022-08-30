@@ -14,6 +14,8 @@ import { useAppDispatch, useAppSelector } from 'src/util';
 import { profileActions } from '..';
 import { HistoryItemProps, LinkExpression } from '../core/fetch';
 
+import avatarImage from './media/avatar.jpeg';
+
 function Loader() {
 	return <div>Loading...</div>;
 }
@@ -45,10 +47,7 @@ function Description() {
 	return (
 		<MarginedPaper>
 			<CenteringBox>
-				<ProfileAvatar
-					alt="MOTTY"
-					src={`${process.env.PUBLIC_URL}/logo192.png`}
-				/>
+				<ProfileAvatar alt="MOTTY" src={avatarImage} />
 			</CenteringBox>
 			<CenteringBox>
 				<Typography variant="h4">{header}</Typography>
