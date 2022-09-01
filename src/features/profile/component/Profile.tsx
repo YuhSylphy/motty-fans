@@ -40,7 +40,7 @@ const ProfileAvatar = styled(Avatar)(({ theme }) => ({
 
 const youtubeUrl = 'https://www.youtube.com/user/MOTTYGAMES';
 const twitterUrl = 'https://twitter.com/MottyMusume';
-const nicoUrl = 'https://com.nicovideo.jp/community/co1500167';
+const nicoUrl = 'https://live.nicovideo.jp/watch/user/2264536';
 
 const PerfectCircleButton = styled(IconButton)(() => ({
 	width: '40px',
