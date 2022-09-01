@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
 	Avatar,
 	Container,
+	IconButton,
 	Link,
 	List,
 	ListItem,
@@ -35,6 +38,96 @@ const ProfileAvatar = styled(Avatar)(({ theme }) => ({
 	height: theme.spacing(24),
 }));
 
+const youtubeUrl = 'https://www.youtube.com/user/MOTTYGAMES';
+const twitterUrl = 'https://twitter.com/MottyMusume';
+const nicoUrl = 'https://com.nicovideo.jp/community/co1500167';
+
+const PerfectCircleButton = styled(IconButton)(() => ({
+	width: '40px',
+	height: '40px',
+}));
+
+interface SocialMediaLinkProps {
+	children: JSX.Element;
+	href: string;
+}
+function SocialMediaLink({ children, href }: SocialMediaLinkProps) {
+	return (
+		<a href={href} target="_blank" rel="noreferrer">
+			<PerfectCircleButton>{children}</PerfectCircleButton>
+		</a>
+	);
+}
+
+function YoutubeLink() {
+	return (
+		<SocialMediaLink href={youtubeUrl}>
+			<Box sx={{ color: '#FF0000' }}>
+				<FontAwesomeIcon icon={faYoutube} />
+			</Box>
+		</SocialMediaLink>
+	);
+}
+
+function TwitterLink() {
+	return (
+		<SocialMediaLink href={twitterUrl}>
+			<Box sx={{ color: '#1DA1F2' }}>
+				<FontAwesomeIcon icon={faTwitter} />
+			</Box>
+		</SocialMediaLink>
+	);
+}
+
+/**
+ * from a path on public domain
+ * @see https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Niconico_Channel_logo.svg
+ */
+function NicoIcon() {
+	return (
+		<svg
+			aria-hidden="true"
+			focusable="false"
+			data-prefix="fab"
+			data-icon="nico"
+			className="svg-inline--fa"
+			role="img"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 512 512"
+		>
+			<path
+				fill="currentColor"
+				d="M 466.24924,97.071125 H 317.35186 l 61.12891,-57.623981 c 8.44088,-7.96387 8.92825,-21.37179 1.068,-29.9370903 -7.84981,-8.57568002 -21.07106,-9.05268002 -29.52232,-1.08881 L 255.99482,97.071125 161.97347,8.4212437 c -8.46161,-7.96387002 -21.67251,-7.48687002 -29.53268,1.08881 -7.86017,8.5653003 -7.3728,21.9732203 1.07844,29.9370903 l 61.11854,57.623981 H 45.7715 C 20.531848,97.071125 -5.0000001e-7,117.5926 -5.0000001e-7,142.93596 V 418.02124 C -5.0000001e-7,443.37498 20.531848,463.92756 45.7715,463.92756 h 57.99729 l 34.56195,40.27561 c 5.76551,6.72987 15.13964,6.72987 20.91552,0 l 34.55158,-40.27561 h 124.39397 l 34.55157,40.27561 c 5.78624,6.72987 15.15002,6.72987 20.92589,0 l 34.56194,-40.27561 h 58.01803 C 491.56149,463.92756 512,443.37498 512,418.02124 V 142.93596 C 512,117.5926 491.56149,97.071125 466.24924,97.071125"
+			/>
+		</svg>
+	);
+}
+
+function NicoVideoLink() {
+	return (
+		<SocialMediaLink href={nicoUrl}>
+			<Box sx={{ color: '#FFFFFF' }}>
+				<NicoIcon />
+			</Box>
+		</SocialMediaLink>
+	);
+}
+
+const SocialMediaBox = styled(CenteringBox)(({ theme }) => ({
+	padding: theme.spacing(1),
+	display: 'flex',
+	flexDirection: 'row',
+}));
+function SocialMedia() {
+	return (
+		<SocialMediaBox>
+			<TwitterLink />
+			<YoutubeLink />
+			<NicoVideoLink />
+		</SocialMediaBox>
+	);
+}
+
 const MarginedPaper = styled(Paper)(({ theme }) => ({
 	marginBottom: theme.spacing(1),
 	overflow: 'hidden',
@@ -57,6 +150,7 @@ function Description() {
 					{body.join('\n')}
 				</Typography>
 			</CenteringBox>
+			<SocialMedia />
 		</MarginedPaper>
 	);
 }
