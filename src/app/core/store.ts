@@ -11,27 +11,34 @@ import { videosReducer } from 'src/features/videos';
 
 import type { AppAction } from './actions';
 import { profileReducer } from 'src/features/profile';
+import { ReducerState } from 'react';
+
+const reducer = {
+	core: coreReducer,
+	horseDefs: horseDefsReducer,
+	indicator: indicatorReducer,
+	pedigree: pedigreeReducer,
+	changeLog: changeLogReducer,
+	videos: videosReducer,
+	profile: profileReducer,
+};
+
+export type RootState = {
+	[K in keyof typeof reducer]: ReducerState<typeof reducer[K]>;
+};
 
 const dependencies = {};
 const epicMiddleware = createEpicMiddleware<
 	AppAction,
 	AppAction,
-	void,
+	RootState,
 	Dependencies
 >({
 	dependencies,
 });
 
 export const store = configureStore({
-	reducer: {
-		core: coreReducer,
-		horseDefs: horseDefsReducer,
-		indicator: indicatorReducer,
-		pedigree: pedigreeReducer,
-		changeLog: changeLogReducer,
-		videos: videosReducer,
-		profile: profileReducer,
-	},
+	reducer,
 	middleware: (getDefaultMiddleware) =>
 		getDefaultMiddleware({
 			thunk: false,
@@ -40,7 +47,6 @@ export const store = configureStore({
 
 export type Dependencies = typeof dependencies;
 export type Epic = Parameters<typeof epicMiddleware.run>[0];
-export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
 const epics = new Set<Epic>();
