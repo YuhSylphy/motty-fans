@@ -127,3 +127,4 @@ dist
 
 /work/*
 !/work/last-fetched
+.bak
