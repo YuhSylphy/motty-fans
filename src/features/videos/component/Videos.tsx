@@ -4,6 +4,7 @@ import React, {
 	useEffect,
 	useMemo,
 	useState,
+	useRef,
 } from 'react';
 
 import {
@@ -513,6 +514,8 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 }
 
 const useVideoContainerHooks = () => {
+	const initialized = useRef(true);
+
 	const dispatch = useAppDispatch();
 	const {
 		list,
@@ -522,13 +525,12 @@ const useVideoContainerHooks = () => {
 		},
 	} = useAppSelector((state) => state.videos);
 
-	const loading = list.length === 0;
-
 	useEffect(() => {
-		if (loading) {
+		if (initialized.current) {
 			dispatch(videosActions.init());
+			initialized.current = false;
 		}
-	}, [list]);
+	}, [initialized]);
 
 	const defs = useMemo(
 		() =>
@@ -557,6 +559,8 @@ const useVideoContainerHooks = () => {
 	).sort();
 
 	const { hash } = useParams();
+
+	const loading = useMemo(() => list.length === 0, [list]);
 
 	return { loading, defs, tagCandidates, hash };
 };
