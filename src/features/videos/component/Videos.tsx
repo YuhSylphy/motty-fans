@@ -462,22 +462,22 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 							blurOnSelect
 							clearOnBlur
 							onChange={(event, value, reason, details) => {
-								console.info('onChange', { event, value, reason, details });
+								// console.info('onChange', { event, value, reason, details });
 								onChangeTag(event, value, reason, details);
 							}}
 							onInputChange={(event, value, reason) => {
-								console.info('onInputchange', { event, value, reason });
+								// console.info('onInputchange', { event, value, reason });
 								onInputChangeTag(event, value, reason);
 							}}
-							onHighlightChange={(event, option, reason) => {
-								console.info('onInputchange', { event, option, reason });
-							}}
-							onClose={(event, reason) => {
-								console.info('onClose', { event, reason });
-							}}
-							onOpen={(event) => {
-								console.info('onOpen', { event });
-							}}
+							// onHighlightChange={(event, option, reason) => {
+							// 	console.info('onInputchange', { event, option, reason });
+							// }}
+							// onClose={(event, reason) => {
+							// 	console.info('onClose', { event, reason });
+							// }}
+							// onOpen={(event) => {
+							// 	console.info('onOpen', { event });
+							// }}
 							// onInputChange={onChangeTag}
 							inputValue={autocompleteValue}
 						/>
