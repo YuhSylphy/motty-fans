@@ -7,6 +7,7 @@ import './index.css';
 import { App, store } from './app';
 
 import * as serviceWorker from './serviceWorker';
+// import { ConnectedRouter } from 'connected-react-router';
 
 const target = document.getElementById('root');
 
@@ -16,7 +17,9 @@ const root = createRoot(target);
 root.render(
 	<React.StrictMode>
 		<Provider store={store}>
+			{/* <ConnectedRouter history={history}> */}
 			<App />
+			{/* </ConnectedRouter> */}
 		</Provider>
 	</React.StrictMode>
 );
