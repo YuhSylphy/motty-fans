@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/motty-fans/static/css/main.c6bebc4e.css",
-    "main.js": "/motty-fans/static/js/main.440adeb6.js",
-    "profile.js": "/motty-fans/static/js/profile.53fe005f.chunk.js",
+    "main.js": "/motty-fans/static/js/main.66f31c2b.js",
+    "profile.js": "/motty-fans/static/js/profile.fcbe144d.chunk.js",
     "videos.js": "/motty-fans/static/js/videos.b56d74e7.chunk.js",
     "mare-line.js": "/motty-fans/static/js/mare-line.abcb2c5f.chunk.js",
     "family.css": "/motty-fans/static/css/family.a292d857.chunk.css",
@@ -16,8 +16,8 @@
     "static/media/avatar.jpeg": "/motty-fans/static/media/avatar.9aeec8254fb32b56e9af.jpeg",
     "index.html": "/motty-fans/index.html",
     "main.c6bebc4e.css.map": "/motty-fans/static/css/main.c6bebc4e.css.map",
-    "main.440adeb6.js.map": "/motty-fans/static/js/main.440adeb6.js.map",
-    "profile.53fe005f.chunk.js.map": "/motty-fans/static/js/profile.53fe005f.chunk.js.map",
+    "main.66f31c2b.js.map": "/motty-fans/static/js/main.66f31c2b.js.map",
+    "profile.fcbe144d.chunk.js.map": "/motty-fans/static/js/profile.fcbe144d.chunk.js.map",
     "videos.b56d74e7.chunk.js.map": "/motty-fans/static/js/videos.b56d74e7.chunk.js.map",
     "mare-line.abcb2c5f.chunk.js.map": "/motty-fans/static/js/mare-line.abcb2c5f.chunk.js.map",
     "family.a292d857.chunk.css.map": "/motty-fans/static/css/family.a292d857.chunk.css.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.c6bebc4e.css",
-    "static/js/main.440adeb6.js"
+    "static/js/main.66f31c2b.js"
   ]
 }
