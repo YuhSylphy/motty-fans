@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
 	Avatar,
@@ -41,6 +42,7 @@ const ProfileAvatar = styled(Avatar)(({ theme }) => ({
 const youtubeUrl = 'https://www.youtube.com/user/MOTTYGAMES';
 const twitterUrl = 'https://twitter.com/MottyMusume';
 const nicoUrl = 'https://live.nicovideo.jp/watch/user/2264536';
+const email = 'mottymusume@gmail.com';
 
 const PerfectCircleButton = styled(IconButton)(() => ({
 	width: '40px',
@@ -113,18 +115,39 @@ function NicoVideoLink() {
 	);
 }
 
-const SocialMediaBox = styled(CenteringBox)(({ theme }) => ({
+const ExternalBox = styled(CenteringBox)(({ theme }) => ({
 	padding: theme.spacing(1),
 	display: 'flex',
 	flexDirection: 'row',
 }));
+
 function SocialMedia() {
 	return (
-		<SocialMediaBox>
+		<ExternalBox>
 			<TwitterLink />
 			<YoutubeLink />
 			<NicoVideoLink />
-		</SocialMediaBox>
+		</ExternalBox>
+	);
+}
+
+const EMailLink = styled(Link)(() => ({
+	display: 'flex',
+	alignItems: 'center',
+}));
+
+const MarginedFontAwesomeIcon = styled(FontAwesomeIcon)(({ theme }) => ({
+	margin: theme.spacing(1),
+}));
+
+function EMail() {
+	return (
+		<ExternalBox>
+			<EMailLink href={`mailto:${email}`}>
+				<MarginedFontAwesomeIcon icon={faEnvelope} />
+				<Typography>{email}</Typography>
+			</EMailLink>
+		</ExternalBox>
 	);
 }
 
@@ -151,6 +174,7 @@ function Description() {
 				</Typography>
 			</CenteringBox>
 			<SocialMedia />
+			<EMail />
 		</MarginedPaper>
 	);
 }
@@ -267,7 +291,6 @@ function ProfileContainer() {
 	const initializedRef = useRef(false);
 	const dispatch = useAppDispatch();
 	useEffect(() => {
-		console.info('useEffect in Profile Container', initializedRef);
 		if (!initializedRef.current) {
 			initializedRef.current = true;
 			dispatch(profileActions.init());
