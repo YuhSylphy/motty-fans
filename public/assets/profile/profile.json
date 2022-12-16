@@ -7,12 +7,20 @@
 			"2012 年 1 月にニコ生で活動開始。2014 年 9 月から YouTube で動画投稿開始。2022 年で活動 10 周年を迎えた。"
 		]
 	},
-	"updatedAt": "2022/4/30",
+	"updatedAt": "22/11/13",
 	"history": [
 		{
 			"key": "realEvents",
 			"header": "リアルイベント関係",
 			"items": [
+				{
+					"date": "22/11/13",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv338372372",
+						"label": "lv338372372"
+					},
+					"text": "【DAY2】ニコニコ町会議2022 特別版《武蔵野回廊文化祭 powered by ニコニコ》"
+				},
 				{
 					"date": "22/04/30",
 					"link": {
