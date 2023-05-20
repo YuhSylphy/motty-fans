@@ -7,12 +7,36 @@
 			"2012 年 1 月にニコ生で活動開始。2014 年 9 月から YouTube で動画投稿開始。2022 年で活動 10 周年を迎えた。"
 		]
 	},
-	"updatedAt": "22/11/13",
+	"updatedAt": "23/04/30",
 	"history": [
 		{
 			"key": "realEvents",
 			"header": "リアルイベント関係",
 			"items": [
+				{
+					"date": "23/04/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv340592638#03:59:59",
+						"label": "lv340592638"
+					},
+					"text": "【DAY2】ニコニコ超会議2023 超競馬 ニコニコ競馬予想家甲子園2023"
+				},
+				{
+					"date": "23/04/30",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv340307042",
+						"label": "lv340307042"
+					},
+					"text": "【DAY2】ニコニコ超会議2023 ゲーム実況者 超大集合"
+				},
+				{
+					"date": "23/04/29",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv340306992",
+						"label": "lv340306992"
+					},
+					"text": "【DAY1】ニコニコ超会議2023 ゲーム実況者 超大集合"
+				},
 				{
 					"date": "22/11/13",
 					"link": {
