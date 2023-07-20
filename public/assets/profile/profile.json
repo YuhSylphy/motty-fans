@@ -7,7 +7,7 @@
 			"2012 年 1 月にニコ生で活動開始。2014 年 9 月から YouTube で動画投稿開始。2022 年で活動 10 周年を迎えた。"
 		]
 	},
-	"updatedAt": "23/04/30",
+	"updatedAt": "23/07/17",
 	"history": [
 		{
 			"key": "realEvents",
@@ -203,6 +203,16 @@
 			"key": "officialPrograms",
 			"header": "公式生放送・公式番組出演関係",
 			"items": [
+				{
+					"date": "23/07/15 ～ 17",
+					"link": [
+						{
+							"href": "https://live.nicovideo.jp/watch/lv342088884",
+							"label": "lv342088884"
+						}
+					],
+					"text": "【ファミコン40周年】『レッキングクルー』をMOTTYがプレイ！"
+				},
 				{
 					"date": "23/03/29",
 					"link": [
@@ -510,6 +520,10 @@
 			"key": "offlineGetherings",
 			"header": "（ほぼお仕事ではないですが）オフ会関係",
 			"items": [
+				{
+					"date": "23/06/11",
+					"text": "『MOTTYの競馬オフ会 '23 in 東京競馬場』"
+				},
 				{
 					"date": "18/08/25",
 					"text": "『もてぃおふ。7 in 品川 (JOYSOUND 品川港南口店)』"
