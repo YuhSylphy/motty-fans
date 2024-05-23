@@ -14,6 +14,22 @@
 			"header": "リアルイベント関係",
 			"items": [
 				{
+					"date": "23/04/28",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv344477334",
+						"label": "lv344477334"
+					},
+					"text": "ゲーム実況者 超大集合 2024 Supported by 永谷園 Day2@ニコニコ超会議2024【4/28】"
+				},
+				{
+					"date": "23/04/27",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv344477313",
+						"label": "lv344477313"
+					},
+					"text": "ゲーム実況者 超大集合 2024 Supported by 永谷園 Day1@ニコニコ超会議2024【4/27】"
+				},
+				{
 					"date": "23/04/30",
 					"link": {
 						"href": "https://live.nicovideo.jp/watch/lv340592638#03:59:59",
