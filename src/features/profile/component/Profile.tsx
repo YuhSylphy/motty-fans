@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
 	Avatar,
 	Container,
@@ -74,8 +74,8 @@ function YoutubeLink() {
 function TwitterLink() {
 	return (
 		<SocialMediaLink href={twitterUrl}>
-			<Box sx={{ color: '#1DA1F2' }}>
-				<FontAwesomeIcon icon={faTwitter} />
+			<Box sx={{ color: '#FFFFFF' }}>
+				<FontAwesomeIcon icon={faXTwitter} />
 			</Box>
 		</SocialMediaLink>
 	);
