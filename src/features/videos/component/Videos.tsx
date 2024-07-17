@@ -514,10 +514,11 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 }
 
 const useVideoContainerHooks = () => {
-	const initialized = useRef(true);
+	const [toBeInitialized, setToBeInitialized] = useState(true);
 
 	const dispatch = useAppDispatch();
 	const {
+		loaded,
 		list,
 		condition: {
 			tags,
@@ -526,11 +527,11 @@ const useVideoContainerHooks = () => {
 	} = useAppSelector((state) => state.videos);
 
 	useEffect(() => {
-		if (initialized.current) {
+		if (toBeInitialized) {
 			dispatch(videosActions.init());
-			initialized.current = false;
+			setToBeInitialized(false);
 		}
-	}, [initialized]);
+	}, [toBeInitialized, setToBeInitialized, dispatch]);
 
 	const defs = useMemo(
 		() =>
@@ -560,7 +561,7 @@ const useVideoContainerHooks = () => {
 
 	const { hash } = useParams();
 
-	const loading = useMemo(() => list.length === 0, [list]);
+	const loading = useMemo(() => !loaded, [loaded]);
 
 	return { loading, defs, tagCandidates, hash };
 };

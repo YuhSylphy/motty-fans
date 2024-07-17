@@ -11,6 +11,7 @@ export type VideoFinderCondition = {
 };
 
 export type VideosState = {
+	loaded: boolean;
 	list: VideoDef[];
 	condition: VideoFinderCondition;
 };
@@ -18,6 +19,7 @@ export type VideosState = {
 const videoSlice = createSlice({
 	name: 'videos',
 	initialState: {
+		loaded: false,
 		list: [],
 		condition: {
 			tags: [],
@@ -31,6 +33,7 @@ const videoSlice = createSlice({
 		init: () => {},
 		setList: (draft, action: PayloadAction<VideosState['list']>) => {
 			draft.list = action.payload;
+			draft.loaded = true;
 		},
 		addConditionTags: (
 			draft,
