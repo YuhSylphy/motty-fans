@@ -5,9 +5,12 @@ import {
 	ChangeHistory as ChangeHistoryIcon,
 	YouTube as YouTubeIcon,
 	Info as InfoIcon,
+	BrowseGallery as BrowseGalleryIcon,
 } from '@mui/icons-material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHorse } from '@fortawesome/free-solid-svg-icons';
+
+const hideInDev = process.env.NODE_ENV !== 'development';
 
 export type MenuItemDef =
 	| PageMenuItemDef
@@ -52,6 +55,18 @@ export const menuDefs: MenuItemDef[] = [
 		title: 'MOTTY fans - プロフィール',
 		hideInMenu: false,
 	},
+	{
+		type: 'page' as const,
+		icon: <BrowseGalleryIcon />,
+		label: '実況シリーズ一覧',
+		path: '/live-series',
+		Page: React.lazy(
+			() =>
+				import(/* webpackChunkName: "live-series" */ 'src/features/live-series/lazy')
+		),
+		title: 'MOTTY fans - 実況シリーズ一覧',
+		hideInMenu: hideInDev,
+	},
 	...['', '/:hash'].map((params) => ({
 		type: 'page' as const,
 		icon: <YouTubeIcon />,
@@ -67,7 +82,7 @@ export const menuDefs: MenuItemDef[] = [
 	{
 		type: 'nest',
 		icon: <FontAwesomeIcon icon={faHorse} />,
-		label: 'ダビスタ',
+		label: 'ダビスタ(Switch版)記録',
 		children: [
 			{
 				type: 'page',
