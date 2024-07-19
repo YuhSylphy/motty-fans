@@ -1,3 +1,5 @@
+import { LiveStyle } from 'src/features/live-series/core/jsonTypes';
+
 export type YouTubeId = {
 	kind: 'youtube#video';
 	videoId: string;
@@ -32,6 +34,8 @@ export type JsonVideoDef = {
 	id: YouTubeId;
 	snippet: YouTubeSnippet;
 	tags?: string[];
+	liveSeriesId: string | null;
+	liveStyle: LiveStyle | null;
 };
 
 export type JsonType = {
