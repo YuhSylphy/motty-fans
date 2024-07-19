@@ -1,44 +1,5 @@
 import { DateTime } from 'luxon';
-
-type YouTubeId = {
-	kind: 'youtube#video';
-	videoId: string;
-};
-
-type Resolution = 'default' | 'medium' | 'high';
-
-type Thumbnail = {
-	url: string;
-	width: number;
-	height: number;
-};
-
-type Thumbnails = {
-	[key in Resolution]: Thumbnail;
-};
-
-type YouTubeSnippet = {
-	publishedAt: string;
-	channelId: string;
-	title: string;
-	description: string;
-	thumbnails: Thumbnails;
-	channelTitle: string;
-	liveBroadcastContent: string;
-	publishTime: string;
-};
-
-type JsonVideoDef = {
-	kind: 'youtube#searchResult';
-	etag: string;
-	id: YouTubeId;
-	snippet: YouTubeSnippet;
-	tags?: string[];
-};
-
-type JsonType = {
-	items: JsonVideoDef[];
-};
+import { JsonType, Thumbnails } from './jsonTypes';
 
 const dummy: VideoDef = {
 	id: 'dummy',
