@@ -6,7 +6,7 @@ curl https://sheets.googleapis.com/v4/spreadsheets/1aGNBpMi2K-q_JLGTTynAOM-EAHX6
 
 import { writeFile } from 'fs/promises';
 
-import './libs/scoped';
+import '../src/util/scoped';
 import path from 'path';
 
 const outputDir = './public/assets/live-series/';
