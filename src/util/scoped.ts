@@ -6,14 +6,14 @@ declare global {
 		letAsync<T, R>(this: T, block: (_: T) => Promise<R>): Promise<R>;
 	}
 	interface Array<T> {
-		let<T, R>(this: T[], block: (_: T[]) => R): R;
-		letAsync<T, R>(this: T[], block: (_: T[]) => Promise<R>): Promise<R>;
+		let<R>(this: T[], block: (_: T[]) => R): R;
+		letAsync<R>(this: T[], block: (_: T[]) => Promise<R>): Promise<R>;
 
-		takeWhile<T, R extends T>(
+		takeWhile<R extends T>(
 			this: T[],
 			block: (elem: T, index: number, obj: T[]) => elem is R
 		): R[];
-		takeWhile<T>(
+		takeWhile(
 			this: T[],
 			block: (elem: T, index: number, obj: T[]) => boolean
 		): T[];
