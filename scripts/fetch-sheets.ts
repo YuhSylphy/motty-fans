@@ -85,7 +85,7 @@ function constructLives(lives: Sheet) {
 			})
 		)
 		.filter(({ id }) => !!id)
-		.map(({ no, publishedIn, publishedAt, ...rest }) => ({
+		.map(({ no, liveTitle, publishedIn, publishedAt, ...rest }) => ({
 			...rest,
 		}));
 }
@@ -143,6 +143,40 @@ function constructGameTitles(games: Sheet) {
 		}));
 }
 
+function linkIds(
+	livesLoaded: ReturnType<typeof constructLives>,
+	liveSeriesLoaded: ReturnType<typeof constructLiveSeries>,
+	gamesLoaded: ReturnType<typeof constructGameTitles>
+) {
+	const gamesMap = gamesLoaded
+		.map((e) => [e.gameTitle, e] as const)
+		.let((xs) => new Map(xs));
+	const liveSeriesMap = liveSeriesLoaded
+		.map((e) => [e.seriesTitle, e] as const)
+		.let((xs) => new Map(xs));
+
+	const games = gamesLoaded;
+	const liveSeries = liveSeriesLoaded.map(({ gameTitle, ...rest }) => ({
+		...rest,
+		gameId: gamesMap.has(gameTitle)
+			? gamesMap.get(gameTitle)?.id ?? null
+			: null,
+	}));
+
+	const lives = livesLoaded.map(({ liveSeriesTitle, ...rest }) => ({
+		...rest,
+		liveSeriesId: liveSeriesMap.has(liveSeriesTitle)
+			? liveSeriesMap.get(liveSeriesTitle)?.id ?? null
+			: null,
+	}));
+
+	return {
+		lives,
+		liveSeries,
+		games,
+	} as const;
+}
+
 async function write(data: Record<string, unknown>) {
 	await Object.entries(data)
 		.map(async ([key, value]) => {
@@ -156,13 +190,17 @@ async function write(data: Record<string, unknown>) {
 async function main() {
 	const sheets = await fetchSheets();
 
-	const lives = constructLives(sheets.lives);
-	const liveSeries = constructLiveSeries(sheets.liveSeries);
-	const games = constructGameTitles(sheets.games);
+	const livesLoaded = constructLives(sheets.lives);
+	const liveSeriesLoaded = constructLiveSeries(sheets.liveSeries);
+	const gamesLoaded = constructGameTitles(sheets.games);
+
+	const { lives, liveSeries, games } = linkIds(
+		livesLoaded,
+		liveSeriesLoaded,
+		gamesLoaded
+	);
 
 	await write({ lives, liveSeries, games });
-
-	console.info('lives: ', lives.slice(-3));
 }
 
 main()
