@@ -179,9 +179,9 @@ function linkIds(
 
 async function write(data: Record<string, unknown>) {
 	await Object.entries(data)
-		.map(async ([key, value]) => {
-			const filepath = path.resolve(outputDir, `${key}.json`);
-			await writeFile(filepath, JSON.stringify(value));
+		.map(async ([name, items]) => {
+			const filepath = path.resolve(outputDir, `${name}.json`);
+			await writeFile(filepath, JSON.stringify({ items }));
 			console.info(`${filepath} written.`);
 		})
 		.let((xs) => Promise.all(xs));
