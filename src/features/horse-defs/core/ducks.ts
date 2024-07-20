@@ -17,4 +17,6 @@ const horseDefsSlice = createSlice({
 });
 
 export const { actions, reducer } = horseDefsSlice;
-export type HorseDefsAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type HorseDefsAction = ReturnType<
+	(typeof actions)[keyof typeof actions]
+>;

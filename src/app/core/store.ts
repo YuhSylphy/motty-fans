@@ -26,7 +26,7 @@ const reducer = {
 };
 
 export type RootState = {
-	[K in keyof typeof reducer]: ReducerState<typeof reducer[K]>;
+	[K in keyof typeof reducer]: ReducerState<(typeof reducer)[K]>;
 };
 
 const dependencies = {};

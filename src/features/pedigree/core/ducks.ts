@@ -28,4 +28,4 @@ const slice = createSlice({
 });
 
 export const { actions, reducer } = slice;
-export type PedigreeAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type PedigreeAction = ReturnType<(typeof actions)[keyof typeof actions]>;

@@ -6,12 +6,15 @@ export type LiveSeriesState = {
 
 const videoSlice = createSlice({
 	name: 'liveSeries',
-	initialState: {
-	} as LiveSeriesState,
+	initialState: {} as LiveSeriesState,
 	reducers: {
-		init: () => { /* noop */ },
+		init: () => {
+			/* noop */
+		},
 	},
 });
 
 export const { actions, reducer } = videoSlice;
-export type LiveSeriesAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type LiveSeriesAction = ReturnType<
+	(typeof actions)[keyof typeof actions]
+>;

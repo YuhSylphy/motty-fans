@@ -48,6 +48,6 @@ export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 						description: def.snippet.description,
 						thumbnails: def.snippet.thumbnails,
 						tags: def.tags && def.tags.length > 0 ? [...def.tags] : ['no tags'],
-				  }))
+					}))
 		)
 		.catch((e) => [{ ...dummy, description: e }]);

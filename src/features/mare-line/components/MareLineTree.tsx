@@ -72,7 +72,7 @@ const setNodeProperty = (node: Datum, def: HorseDef) => {
 					case 'unknown':
 						return <FontAwesomeIcon icon={faQuestion} />;
 					default: {
-						const __exhaust: never = def.sex; // eslint-disable-line @typescript-eslint/no-unused-vars
+						const __exhaust: never = def.sex;
 					}
 				}
 			})()}

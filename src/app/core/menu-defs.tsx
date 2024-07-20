@@ -62,7 +62,9 @@ export const menuDefs: MenuItemDef[] = [
 		path: '/live-series',
 		Page: React.lazy(
 			() =>
-				import(/* webpackChunkName: "live-series" */ 'src/features/live-series/lazy')
+				import(
+					/* webpackChunkName: "live-series" */ 'src/features/live-series/lazy'
+				)
 		),
 		title: 'MOTTY fans - 実況シリーズ一覧',
 		hideInMenu: hideInDev,

@@ -76,4 +76,4 @@ const videoSlice = createSlice({
 });
 
 export const { actions, reducer } = videoSlice;
-export type VideosAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type VideosAction = ReturnType<(typeof actions)[keyof typeof actions]>;

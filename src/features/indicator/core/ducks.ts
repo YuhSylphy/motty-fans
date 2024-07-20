@@ -32,4 +32,6 @@ const slice = createSlice({
 });
 
 export const { actions, reducer } = slice;
-export type IndicatorAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type IndicatorAction = ReturnType<
+	(typeof actions)[keyof typeof actions]
+>;

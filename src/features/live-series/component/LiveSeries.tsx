@@ -144,7 +144,7 @@ function LiveSeriesList({ defs }: LiveSeriesListProps) {
 										sx={{ marginLeft: 0 }}
 									/>,
 									li,
-							  ]
+								]
 					)}
 			</List>
 		</Paper>
