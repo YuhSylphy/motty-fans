@@ -80,7 +80,7 @@ function constructLives(lives: Sheet) {
 				liveTitle,
 				publishedIn,
 				liveStyle,
-				liveSeriesId,
+				liveSeriesTitle,
 				...tags
 			]) => ({
 				no,
@@ -89,7 +89,7 @@ function constructLives(lives: Sheet) {
 				liveTitle: liveTitle ?? null,
 				publishedIn,
 				liveStyle: liveStyle ?? null,
-				liveSeriesId: liveSeriesId ?? null,
+				liveSeriesTitle: liveSeriesTitle ?? null,
 				tags: (tags ?? [])?.takeWhile((tag) => !!tag),
 			})
 		)
@@ -102,33 +102,48 @@ function constructLives(lives: Sheet) {
 				publishedAt: _publishedAt,
 				liveStyle,
 				...rest
-			}) =>
-				({
-					...rest,
-					liveStyle: convertLiveStyleFromLabel(liveStyle),
-				}) as LiveDef
+			}) => ({
+				...rest,
+				liveStyle: convertLiveStyleFromLabel(liveStyle),
+			})
 		);
 }
 
 function constructLiveSeries(liveSeries: Sheet) {
-	// TODO: 備考がいない
 	return liveSeries.values
 		.slice(1)
-		.map(([no, id, seriesTitle, gameId, lives, publishedFrom, ...tags]) => ({
-			no,
-			id,
-			seriesTitle,
-			gameId,
-			lives,
-			publishedFrom,
-			tags: (tags ?? [])?.takeWhile((tag) => !!tag),
-		}))
-		.filter(({ id }) => !!id)
 		.map(
-			({ no: _no, lives: _lives, publishedFrom: _publishedFrom, ...rest }) =>
-				({
-					...rest,
-				}) as LiveSeriesDef
+			([
+				no,
+				id,
+				seriesTitle,
+				gameTitle,
+				remarks,
+				lives,
+				publishedFrom,
+				...tags
+			]) => ({
+				no,
+				id,
+				seriesTitle,
+				remarks,
+				gameTitle: gameTitle ?? null,
+				lives,
+				publishedFrom,
+				tags: (tags ?? [])?.takeWhile((tag) => !!tag),
+			})
+		)
+		.filter((record) => {
+			const { id } = record;
+			if (id === '読み込んでいます...') {
+				throw Error('ID読込中。要リロード / ' + JSON.stringify(record));
+			}
+			return !!id;
+		})
+		.map(
+			({ no: _no, lives: _lives, publishedFrom: _publishedFrom, ...rest }) => ({
+				...rest,
+			})
 		);
 }
 
@@ -156,7 +171,13 @@ function constructGameTitles(games: Sheet) {
 				tags: (tags ?? [])?.takeWhile((tag) => !!tag),
 			})
 		)
-		.filter(({ id }) => !!id)
+		.filter((record) => {
+			const { id } = record;
+			if (id === '読み込んでいます...') {
+				throw Error('ID読込中。要リロード / ' + JSON.stringify(record));
+			}
+			return !!id;
+		})
 		.map(
 			({ no: _no, lives: _lives, releasedIn, masteryLevel, ...rest }) =>
 				({
@@ -182,20 +203,22 @@ function linkIds(
 		.map((e) => [e.seriesTitle, e] as const)
 		.let((xs) => new Map(xs));
 
-	const games = gamesLoaded;
-	const liveSeries = liveSeriesLoaded.map(({ gameId, ...rest }) => ({
-		...rest,
-		gameId:
-			!!gameId && gamesMap.has(gameId)
-				? (gamesMap.get(gameId)?.id ?? null)
-				: null,
-	}));
+	const games: GameDef[] = gamesLoaded;
+	const liveSeries: LiveSeriesDef[] = liveSeriesLoaded.map(
+		({ gameTitle, ...rest }) => ({
+			...rest,
+			gameId:
+				!!gameTitle && gamesMap.has(gameTitle)
+					? (gamesMap.get(gameTitle)?.id ?? null)
+					: null,
+		})
+	);
 
-	const lives = livesLoaded.map(({ liveSeriesId, ...rest }) => ({
+	const lives: LiveDef[] = livesLoaded.map(({ liveSeriesTitle, ...rest }) => ({
 		...rest,
 		liveSeriesId:
-			!!liveSeriesId && liveSeriesMap.has(liveSeriesId)
-				? (liveSeriesMap.get(liveSeriesId)?.id ?? null)
+			!!liveSeriesTitle && liveSeriesMap.has(liveSeriesTitle)
+				? (liveSeriesMap.get(liveSeriesTitle)?.id ?? null)
 				: null,
 	}));
 
@@ -222,14 +245,6 @@ async function main() {
 	const livesLoaded = constructLives(sheets.lives);
 	const liveSeriesLoaded = constructLiveSeries(sheets.liveSeries);
 	const gamesLoaded = constructGameTitles(sheets.games);
-
-	const loading = livesLoaded.find(
-		(x) => x.liveSeriesId === '読み込んでいます...'
-	);
-	console.info('pick: ', loading);
-	if (loading !== undefined) {
-		throw Error('ID読込中。要リロード / ' + JSON.stringify(loading));
-	}
 
 	const { lives, liveSeries, games } = linkIds(
 		livesLoaded,

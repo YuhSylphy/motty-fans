@@ -68,6 +68,7 @@ export type LiveSeriesDef = {
 	seriesTitle: string;
 	tags: string[];
 	gameId: string | null;
+	remarks: string;
 };
 
 export type LiveSeriesJson = {
