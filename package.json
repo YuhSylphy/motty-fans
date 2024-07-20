@@ -101,6 +101,7 @@
     "refetch:prettier": "run-s lint:prettier:assets",
     "export:video.tsv": "sh -c \"jq '.items[] | [.id.videoId,.snippet.publishedAt,.snippet.title,.tags] | flatten | @tsv' -r ./public/assets/videos/videos.json > ./work/videos.tsv\"",
     "fetch-sheets": "run-s fetch-sheets:*",
+    "fetch-sheets:lint": "eslint --fix scripts",
     "fetch-sheets:spreadsheet": "dotenv -e .env.dev ts-node scripts/fetch-sheets.ts",
     "fetch-sheets:merge": "ts-node scripts/merge-lives.ts",
     "fetch-sheets:prettier": "run-s lint:prettier:assets"
