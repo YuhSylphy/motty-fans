@@ -13,11 +13,13 @@ import {
 import { liveSeriesActions } from '..';
 import {
 	AppBar,
+	Box,
 	Container,
 	Divider,
 	Grid,
 	IconButton,
 	InputAdornment,
+	Link,
 	List,
 	ListItem,
 	ListItemText,
@@ -37,7 +39,6 @@ import {
 import { Search as SearchIcon, Link as LinkIcon } from '@mui/icons-material';
 import { LiveStyle, convertLiveStyleToLabel } from '../core/jsonTypes';
 import { Thumbnail } from 'src/features/videos/core/jsonTypes';
-import { DateTime } from 'luxon';
 
 function Loader() {
 	return <div>Loading...</div>;
@@ -52,9 +53,10 @@ interface LiveSeriesRecord {
 	amount: number;
 	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
 	part1: {
-		publishedAt: DateTime;
+		publishedIn: number;
 		url: string;
 		thumbnail: Thumbnail;
+		title: string;
 	} | null;
 	remarks: string;
 }
@@ -72,71 +74,110 @@ interface LiveSeriesListProps {
 	defs: LiveSeriesRecord[];
 }
 
+interface ThumbsProps {
+	href: string;
+	alt: string;
+	thumbnail: Thumbnail;
+}
+
+function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
+	return (
+		<Link
+			href={href}
+			sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<Box
+				component="img"
+				alt={alt}
+				src={url}
+				sx={(_theme) => ({
+					maxHeight: '100%',
+					aspectRatio: `${width} / ${height}`,
+					display: 'block',
+				})}
+			/>
+		</Link>
+	);
+}
+
+function LiveSeriesListItem({
+	id,
+	platform,
+	title,
+	titleReleasedIn,
+	style,
+	amount,
+	masteryLevel,
+	part1,
+	remarks,
+}: LiveSeriesRecord) {
+	const Details = useCallback(
+		() => (
+			<Grid container>
+				<Grid item xs={6}>
+					<Typography>{convertLiveStyleToLabel(style)}</Typography>
+				</Grid>
+				<Grid item xs={6}>
+					<Typography>{masteryLevelLabel(masteryLevel)}</Typography>
+				</Grid>
+				<Grid item xs={6}>
+					<Typography>{platform}</Typography>
+				</Grid>
+				<Grid item xs={6}>
+					<Typography>実況: {part1?.publishedIn ?? '(未設定)'}</Typography>
+				</Grid>
+				<Grid item xs={6}>
+					<Typography>配信数: {amount}</Typography>
+				</Grid>
+				<Grid item xs={6}>
+					<Typography>発売: {titleReleasedIn ?? '(未設定)'}</Typography>
+				</Grid>
+				<Grid item xs={12}>
+					<Typography>{remarks}</Typography>
+				</Grid>
+			</Grid>
+		),
+		[amount, masteryLevel, part1, platform, remarks, style, titleReleasedIn]
+	);
+
+	return (
+		<ListItem
+			key={id}
+			secondaryAction={
+				<IconButton edge="end" {...(part1 !== null ? { href: part1.url } : {})}>
+					<LinkIcon />
+				</IconButton>
+			}
+		>
+			<Grid container>
+				<Grid item xs={12}>
+					<ListItemText primary={title} />
+				</Grid>
+				<Grid item xs={4}>
+					{part1 == null ? null : (
+						<Thumbs
+							thumbnail={part1.thumbnail}
+							href={part1.url}
+							alt={part1.title}
+						/>
+					)}
+				</Grid>
+				<Grid item xs={8}>
+					<Details />
+				</Grid>
+			</Grid>
+		</ListItem>
+	);
+}
+
 function LiveSeriesList({ defs }: LiveSeriesListProps) {
 	return (
 		<Paper>
 			<List sx={{ width: '100%' }}>
 				{defs
-					.map(
-						({
-							id,
-							platform,
-							title,
-							titleReleasedIn,
-							style,
-							amount,
-							masteryLevel,
-							part1,
-							remarks,
-						}) => (
-							<ListItem
-								key={id}
-								secondaryAction={
-									<IconButton
-										edge="end"
-										{...(part1 !== null ? { href: part1.url } : {})}
-									>
-										<LinkIcon />
-									</IconButton>
-								}
-							>
-								<ListItemText
-									primary={title}
-									secondary={
-										<Grid container>
-											<Grid item xs={4}>
-												<Typography>
-													{convertLiveStyleToLabel(style)}
-												</Typography>
-											</Grid>
-											<Grid item xs={4}>
-												<Typography>{platform}</Typography>
-											</Grid>
-											<Grid item xs={4}>
-												<Typography>配信数: {amount}</Typography>
-											</Grid>
-											<Grid item xs={4}>
-												<Typography>
-													{masteryLevelLabel(masteryLevel)}
-												</Typography>
-											</Grid>
-											<Grid item xs={4}>
-												<Typography>
-													実況: {part1?.publishedAt?.year}
-												</Typography>
-											</Grid>
-											<Grid item xs={4}>
-												<Typography>発売: {titleReleasedIn}</Typography>
-											</Grid>
-											<Grid item xs={12}>
-												<Typography>{remarks}</Typography>
-											</Grid>
-										</Grid>
-									}
-								/>
-							</ListItem>
-						)
-					)
+					.map(LiveSeriesListItem)
 					// 間に挟み込む
 					.flatMap((li, ix) =>
 						ix === 0
@@ -160,62 +201,101 @@ interface LiveSeriesTableProps {
 	defs: LiveSeriesRecord[];
 }
 
+function LiveSeriesTableRow(
+	{
+		id,
+		platform,
+		title,
+		titleReleasedIn,
+		style,
+		amount,
+		masteryLevel,
+		part1,
+		remarks,
+	}: LiveSeriesRecord,
+	ix: number
+) {
+	const UrlLinkColumn = useCallback(
+		() =>
+			!part1 ? (
+				<TableCell align="center">
+					<Typography>(未設定)</Typography>
+				</TableCell>
+			) : (
+				<TableCell
+					align="center"
+					sx={(theme) => ({
+						padding: `${theme.spacing(0.5)} ${theme.spacing(2)}`,
+					})}
+				>
+					<Thumbs thumbnail={part1.thumbnail} alt={title} href={part1.url} />
+				</TableCell>
+			),
+		[part1, title]
+	);
+
+	return (
+		<TableRow
+			key={id}
+			sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+		>
+			<TableCell component="th" scope="row" align="center">
+				<Typography>{ix + 1}</Typography>
+			</TableCell>
+			<UrlLinkColumn />
+			<TableCell align="center">
+				<Typography>{platform}</Typography>
+			</TableCell>
+			<TableCell>
+				<Typography>{title}</Typography>
+			</TableCell>
+			<TableCell align="center">
+				<Typography>{part1?.publishedIn ?? '(未設定)'}</Typography>
+			</TableCell>
+			<TableCell align="center">
+				<Typography>{titleReleasedIn ?? '(未設定)'}</Typography>
+			</TableCell>
+			<TableCell align="center">
+				<Typography>{convertLiveStyleToLabel(style)}</Typography>
+			</TableCell>
+			<TableCell align="center">
+				<Typography>{amount}</Typography>
+			</TableCell>
+			<TableCell align="center">
+				<Typography>{masteryLevelLabel(masteryLevel)}</Typography>
+			</TableCell>
+			<TableCell>
+				<Typography>{remarks}</Typography>
+			</TableCell>
+		</TableRow>
+	);
+}
+
 function LiveSeriesTable({ defs }: LiveSeriesTableProps) {
 	return (
 		<TableContainer component={Paper}>
 			<Table aria-label="simple table">
 				<TableHead>
 					<TableRow>
-						<TableCell component="th" scope="row">
-							#
-						</TableCell>
-						<TableCell>機種</TableCell>
-						<TableCell>タイトル</TableCell>
-						<TableCell>実況年</TableCell>
-						<TableCell>発売年</TableCell>
-						<TableCell>形式</TableCell>
-						<TableCell>本数</TableCell>
-						<TableCell>やりこみ</TableCell>
-						<TableCell>Part1 URL</TableCell>
-						<TableCell>備考</TableCell>
+						{[
+							'#',
+							'Part 1.',
+							'機種',
+							'タイトル',
+							'実況年',
+							'発売年',
+							'実況形式',
+							'実況本数',
+							'やりこみ評価',
+							'備考',
+						].map((title, ix) => (
+							<TableCell key={ix} component="th" scope="row" align="center">
+								{title}
+							</TableCell>
+						))}
 					</TableRow>
 				</TableHead>
-				<TableBody>
-					{defs.map(
-						(
-							{
-								id,
-								platform,
-								title,
-								titleReleasedIn,
-								style,
-								amount,
-								masteryLevel,
-								part1,
-								remarks,
-							},
-							ix
-						) => (
-							<TableRow
-								key={id}
-								sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-							>
-								<TableCell component="th" scope="row">
-									{ix + 1}
-								</TableCell>
-								<TableCell>{platform}</TableCell>
-								<TableCell>{title}</TableCell>
-								<TableCell>{part1?.publishedAt?.year}</TableCell>
-								<TableCell>{titleReleasedIn}</TableCell>
-								<TableCell>{convertLiveStyleToLabel(style)}</TableCell>
-								<TableCell>{amount}</TableCell>
-								<TableCell>{masteryLevelLabel(masteryLevel)}</TableCell>
-								<TableCell>{part1?.url}</TableCell>
-								<TableCell>{remarks}</TableCell>
-							</TableRow>
-						)
-					)}
-				</TableBody>
+				<TableBody>{defs.map(LiveSeriesTableRow)}</TableBody>
 			</Table>
 		</TableContainer>
 	);
@@ -231,22 +311,6 @@ function LiveSeriesHeader() {
 
 const useLiveSeriesBodyHooks = () => {
 	const { series } = useAppSelector((state) => state.liveSeries);
-	// const dummy = useMemo<LiveSeriesRecord>(
-	// 	() => ({
-	// 		id: 'dummy',
-	// 		platform: 'Switch',
-	// 		title: 'ソリティ馬 Ride On!',
-	// 		livePublishedIn: 2024,
-	// 		titleReleasedIn: 2024,
-	// 		style: 'broadcast',
-	// 		amount: 29,
-	// 		masteryLevel: 3,
-	// 		partOneUrl: 'https://foo.bar.example.com/awesomeHash',
-	// 		remarks: 'ゲーフリ',
-	// 	}),
-	// 	[]
-	// );
-
 	const defs = useMemo(
 		() =>
 			series.map(
@@ -263,18 +327,19 @@ const useLiveSeriesBodyHooks = () => {
 						part1:
 							lives.length === 0
 								? null
-								: lives.slice(0, 1).map(({ publishedAt, url, thumbnail }) => ({
-										publishedAt,
-										url,
-										thumbnail,
-									}))[0],
+								: lives
+										.slice(0, 1)
+										.map(({ publishedAt, url, thumbnail, title }) => ({
+											publishedIn: publishedAt.year,
+											url,
+											thumbnail,
+											title,
+										}))[0],
 						remarks,
 					}) as LiveSeriesRecord
 			),
 		[series]
 	);
-
-	console.info(defs);
 
 	const viewMode = useValueWithMediaQuery({
 		xs: 'list',
@@ -351,7 +416,6 @@ const useLiveSeriesContainerHooks = () => {
 	const dispatch = useAppDispatch();
 
 	useEffect(() => {
-		console.info('debug', intialized);
 		if (intialized) return;
 
 		dispatch(liveSeriesActions.init());
