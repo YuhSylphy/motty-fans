@@ -85,9 +85,17 @@ function constructLives(lives: Sheet) {
 			})
 		)
 		.filter(({ id }) => !!id)
-		.map(({ no, liveTitle, publishedIn, publishedAt, ...rest }) => ({
-			...rest,
-		}));
+		.map(
+			({
+				no: _no,
+				liveTitle: _liveTitle,
+				publishedIn: _publishedIn,
+				publishedAt: _publishedAt,
+				...rest
+			}) => ({
+				...rest,
+			})
+		);
 }
 
 function constructLiveSeries(liveSeries: Sheet) {
@@ -103,9 +111,11 @@ function constructLiveSeries(liveSeries: Sheet) {
 			tags: (tags ?? [])?.takeWhile((tag) => !!tag),
 		}))
 		.filter(({ id }) => !!id)
-		.map(({ no, lives, publishedFrom, ...rest }) => ({
-			...rest,
-		}));
+		.map(
+			({ no: _no, lives: _lives, publishedFrom: _publishedFrom, ...rest }) => ({
+				...rest,
+			})
+		);
 }
 
 function constructGameTitles(games: Sheet) {
@@ -133,7 +143,7 @@ function constructGameTitles(games: Sheet) {
 			})
 		)
 		.filter(({ id }) => !!id)
-		.map(({ no, releasedIn, masteryLevel, lives, ...rest }) => ({
+		.map(({ no: _no, lives: _lives, releasedIn, masteryLevel, ...rest }) => ({
 			...rest,
 			releasedIn: ((x, o) => (Number.isSafeInteger(x) ? x : o))(
 				Number.parseInt(releasedIn, 10),
@@ -159,14 +169,14 @@ function linkIds(
 	const liveSeries = liveSeriesLoaded.map(({ gameTitle, ...rest }) => ({
 		...rest,
 		gameId: gamesMap.has(gameTitle)
-			? gamesMap.get(gameTitle)?.id ?? null
+			? (gamesMap.get(gameTitle)?.id ?? null)
 			: null,
 	}));
 
 	const lives = livesLoaded.map(({ liveSeriesTitle, ...rest }) => ({
 		...rest,
 		liveSeriesId: liveSeriesMap.has(liveSeriesTitle)
-			? liveSeriesMap.get(liveSeriesTitle)?.id ?? null
+			? (liveSeriesMap.get(liveSeriesTitle)?.id ?? null)
 			: null,
 	}));
 

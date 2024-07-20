@@ -46,7 +46,7 @@ async function main() {
 
 			const tagsMerged = (item.tags ?? [])
 				.filter((x) => !['live', 'taped'].includes(x))
-				.let((ts) => tags.reduce((ret, e) => ret, ts));
+				.let((ts) => tags.reduce((ret, e) => [...ret, e], ts));
 
 			return {
 				...item,

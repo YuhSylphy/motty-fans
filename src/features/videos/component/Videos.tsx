@@ -158,10 +158,10 @@ const useVideoChipHooks = (
 	const dispatch = useAppDispatch();
 	const findTag = useCallback(() => {
 		dispatch(videosActions.addConditionTags([tag]));
-	}, [tag]);
+	}, [dispatch, tag]);
 	const deleteTag = useCallback(() => {
 		dispatch(videosActions.removeConditionTags([tag]));
-	}, [tag]);
+	}, [dispatch, tag]);
 
 	return {
 		findTag: findable ? findTag : void 0,
@@ -274,11 +274,11 @@ const useVideoBodyHooks = (defs: VideoBodyProps['defs']) => {
 		} else {
 			setLoaded([...defs]);
 		}
-	}, [loaded, steps, setLoaded, defs]);
+	}, [loaded, setLoaded, defs]);
 
 	useEffect(() => {
 		fetchNext(); // 初回
-	}, [defs]);
+	}, [fetchNext]);
 
 	const itemsPerRow = useValueWithMediaQuery({
 		xs: 1,
