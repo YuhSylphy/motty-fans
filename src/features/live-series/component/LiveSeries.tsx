@@ -36,6 +36,8 @@ import {
 } from '@mui/material';
 import { Search as SearchIcon, Link as LinkIcon } from '@mui/icons-material';
 import { LiveStyle, convertLiveStyleToLabel } from '../core/jsonTypes';
+import { Thumbnail } from 'src/features/videos/core/jsonTypes';
+import { DateTime } from 'luxon';
 
 function Loader() {
 	return <div>Loading...</div>;
@@ -45,12 +47,15 @@ interface LiveSeriesRecord {
 	id: string;
 	platform: string;
 	title: string;
-	livePublishedIn: number | null;
-	titleReleasedIn: number;
+	titleReleasedIn: number | string | null;
 	style: LiveStyle | null;
 	amount: number;
 	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
-	partOneUrl: string;
+	part1: {
+		publishedAt: DateTime;
+		url: string;
+		thumbnail: Thumbnail;
+	} | null;
 	remarks: string;
 }
 
@@ -77,18 +82,20 @@ function LiveSeriesList({ defs }: LiveSeriesListProps) {
 							id,
 							platform,
 							title,
-							livePublishedIn,
-							titleReleasedIn: titleSoldIn,
+							titleReleasedIn,
 							style,
 							amount,
 							masteryLevel,
-							partOneUrl,
+							part1,
 							remarks,
 						}) => (
 							<ListItem
 								key={id}
 								secondaryAction={
-									<IconButton edge="end" href={partOneUrl}>
+									<IconButton
+										edge="end"
+										{...(part1 !== null ? { href: part1.url } : {})}
+									>
 										<LinkIcon />
 									</IconButton>
 								}
@@ -114,10 +121,12 @@ function LiveSeriesList({ defs }: LiveSeriesListProps) {
 												</Typography>
 											</Grid>
 											<Grid item xs={4}>
-												<Typography>実況: {livePublishedIn}</Typography>
+												<Typography>
+													実況: {part1?.publishedAt?.year}
+												</Typography>
 											</Grid>
 											<Grid item xs={4}>
-												<Typography>発売: {titleSoldIn}</Typography>
+												<Typography>発売: {titleReleasedIn}</Typography>
 											</Grid>
 											<Grid item xs={12}>
 												<Typography>{remarks}</Typography>
@@ -178,12 +187,11 @@ function LiveSeriesTable({ defs }: LiveSeriesTableProps) {
 								id,
 								platform,
 								title,
-								livePublishedIn,
-								titleReleasedIn: titleSoldIn,
+								titleReleasedIn,
 								style,
 								amount,
 								masteryLevel,
-								partOneUrl,
+								part1,
 								remarks,
 							},
 							ix
@@ -197,12 +205,12 @@ function LiveSeriesTable({ defs }: LiveSeriesTableProps) {
 								</TableCell>
 								<TableCell>{platform}</TableCell>
 								<TableCell>{title}</TableCell>
-								<TableCell>{livePublishedIn}</TableCell>
-								<TableCell>{titleSoldIn}</TableCell>
+								<TableCell>{part1?.publishedAt?.year}</TableCell>
+								<TableCell>{titleReleasedIn}</TableCell>
 								<TableCell>{convertLiveStyleToLabel(style)}</TableCell>
 								<TableCell>{amount}</TableCell>
 								<TableCell>{masteryLevelLabel(masteryLevel)}</TableCell>
-								<TableCell>{partOneUrl}</TableCell>
+								<TableCell>{part1?.url}</TableCell>
 								<TableCell>{remarks}</TableCell>
 							</TableRow>
 						)
@@ -242,19 +250,25 @@ const useLiveSeriesBodyHooks = () => {
 	const defs = useMemo(
 		() =>
 			series.map(
-				({ id, game: games, seriesTitle, lives }) =>
+				({ id, game, seriesTitle, lives, remarks }) =>
 					({
 						id,
-						platform: games?.platform,
+						platform: game?.platform,
 						title: seriesTitle,
-						livePublishedIn: lives.reduce((min, {}) => min, null),
-						titleReleasedIn: games?.releasedIn,
+						titleReleasedIn: game?.releasedIn || null,
 						style:
 							lives.map(({ liveStyle }) => liveStyle).find((_) => true) ?? null,
 						amount: lives.length,
-						masteryLevel: games?.masteryLevel,
-						partOneUrl: lives.find(() => true)?.id?.videoId,
-						remarks: 'TODO',
+						masteryLevel: game?.masteryLevel,
+						part1:
+							lives.length === 0
+								? null
+								: lives.slice(0, 1).map(({ publishedAt, url, thumbnail }) => ({
+										publishedAt,
+										url,
+										thumbnail,
+									}))[0],
+						remarks,
 					}) as LiveSeriesRecord
 			),
 		[series]

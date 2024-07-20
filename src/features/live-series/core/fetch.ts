@@ -1,5 +1,17 @@
-import { JsonVideoDef, VideosJson } from 'src/features/videos/core/jsonTypes';
-import { GameDef, GamesJson, LiveSeriesDef, LiveSeriesJson } from './jsonTypes';
+import { DateTime } from 'luxon';
+
+import {
+	JsonVideoDef,
+	Thumbnail,
+	VideosJson,
+} from 'src/features/videos/core/jsonTypes';
+import {
+	GameDef,
+	GamesJson,
+	LiveSeriesDef,
+	LiveSeriesJson,
+	LiveStyle,
+} from './jsonTypes';
 
 const videosJson = `${process.env.PUBLIC_URL}/assets/videos/videos.json`;
 const liveSeriesJson = `${process.env.PUBLIC_URL}/assets/live-series/liveSeries.json`;
@@ -24,18 +36,59 @@ export async function fetchGamesJson(): Promise<GamesJson> {
 }
 
 export type LiveSeries = LiveSeriesDef & {
-	lives: JsonVideoDef[];
+	lives: LiveSeriesVideo[];
 	game: GameDef | null;
+};
+
+export type LiveSeriesVideo = {
+	id: string;
+	description: string;
+	publishedAt: DateTime;
+	title: string;
+	thumbnail: Thumbnail;
+	liveSeriesId: string | null;
+	liveStyle: LiveStyle | null;
+	tags: string[];
+	url: string;
+};
+
+const convertVideoDefFromJson = (
+	{
+		id: { videoId: id },
+		snippet: { description, publishedAt, title, thumbnails },
+		liveSeriesId,
+		liveStyle,
+		tags,
+	}: JsonVideoDef,
+	_ix: number,
+	_array: JsonVideoDef[]
+): LiveSeriesVideo => {
+	return {
+		id,
+		description,
+		publishedAt: DateTime.fromISO(publishedAt),
+		title,
+		thumbnail: thumbnails.default,
+		liveSeriesId: liveSeriesId,
+		liveStyle,
+		tags: tags ?? [],
+		url: `https://www.youtube.com/watch?v=${id}`,
+	};
 };
 
 export async function fetchLiveSeries(): Promise<LiveSeries[]> {
 	const [videosMap, liveSeries, gamesMap] = await Promise.all([
 		(async () => {
-			// FIXME: JSONのままだと日付の処理とかが面倒なので、使う要素だけ変換しつつ抜き出す
 			const videosJson = await fetchVideosJson();
 			return Object.groupBy(
-				videosJson.items.filter(({ liveSeriesId }) => liveSeriesId != null),
-				({ liveSeriesId }: JsonVideoDef) => liveSeriesId ?? ''
+				videosJson.items
+					.filter(({ liveSeriesId }) => liveSeriesId != null)
+					.map(convertVideoDefFromJson),
+				({ liveSeriesId }) =>
+					liveSeriesId ??
+					(() => {
+						throw new Error('unexpected video record having no live-series id');
+					})()
 			);
 		})(),
 		(async () => {
