@@ -1,20 +1,24 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { LiveSeries } from './fetch';
 
 export type LiveSeriesState = {
-	// no props
+	series: LiveSeries[];
 };
 
-const videoSlice = createSlice({
-	name: 'liveSeries',
-	initialState: {} as LiveSeriesState,
+const liveSeriesSlice = createSlice({
+	name: 'live-series',
+	initialState: {
+		series: [],
+	} as LiveSeriesState,
 	reducers: {
-		init: () => {
-			/* noop */
+		init: () => {},
+		setSeries: (draft, action: PayloadAction<{ series: LiveSeries[] }>) => {
+			draft.series = action.payload.series;
 		},
 	},
 });
 
-export const { actions, reducer } = videoSlice;
+export const { actions, reducer } = liveSeriesSlice;
 export type LiveSeriesAction = ReturnType<
 	(typeof actions)[keyof typeof actions]
 >;

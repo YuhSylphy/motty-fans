@@ -1,4 +1,10 @@
-import React, { Suspense, useEffect, useMemo, useState } from 'react';
+import React, {
+	Suspense,
+	useCallback,
+	useEffect,
+	useMemo,
+	useState,
+} from 'react';
 import {
 	useAppDispatch,
 	useAppSelector,
@@ -29,6 +35,7 @@ import {
 	// useMediaQuery,
 } from '@mui/material';
 import { Search as SearchIcon, Link as LinkIcon } from '@mui/icons-material';
+import { LiveStyle, convertLiveStyleToLabel } from '../core/jsonTypes';
 
 function Loader() {
 	return <div>Loading...</div>;
@@ -38,31 +45,18 @@ interface LiveSeriesRecord {
 	id: string;
 	platform: string;
 	title: string;
-	livePublishedIn: number;
-	titleSoldIn: number;
-	style: 'video' | 'broadcast';
+	livePublishedIn: number | null;
+	titleReleasedIn: number;
+	style: LiveStyle | null;
 	amount: number;
 	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
 	partOneUrl: string;
 	remarks: string;
 }
 
-const styleLabel = (style: LiveSeriesRecord['style']) => {
-	switch (style) {
-		case 'broadcast':
-			return '生配信';
-		case 'video':
-			return '動画';
-		default: {
-			const _exhaust: never = style;
-			throw _exhaust;
-		}
-	}
-};
-
 const masteryLevelLabel = (masteryLevel: LiveSeriesRecord['masteryLevel']) =>
 	[
-		// FIXME: 範囲外ケア
+		// 0~5
 		'★'.repeat(masteryLevel),
 		'☆'.repeat(5 - masteryLevel),
 	]
@@ -84,7 +78,7 @@ function LiveSeriesList({ defs }: LiveSeriesListProps) {
 							platform,
 							title,
 							livePublishedIn,
-							titleSoldIn,
+							titleReleasedIn: titleSoldIn,
 							style,
 							amount,
 							masteryLevel,
@@ -104,7 +98,9 @@ function LiveSeriesList({ defs }: LiveSeriesListProps) {
 									secondary={
 										<Grid container>
 											<Grid item xs={4}>
-												<Typography>{styleLabel(style)}</Typography>
+												<Typography>
+													{convertLiveStyleToLabel(style)}
+												</Typography>
 											</Grid>
 											<Grid item xs={4}>
 												<Typography>{platform}</Typography>
@@ -183,7 +179,7 @@ function LiveSeriesTable({ defs }: LiveSeriesTableProps) {
 								platform,
 								title,
 								livePublishedIn,
-								titleSoldIn,
+								titleReleasedIn: titleSoldIn,
 								style,
 								amount,
 								masteryLevel,
@@ -203,7 +199,7 @@ function LiveSeriesTable({ defs }: LiveSeriesTableProps) {
 								<TableCell>{title}</TableCell>
 								<TableCell>{livePublishedIn}</TableCell>
 								<TableCell>{titleSoldIn}</TableCell>
-								<TableCell>{styleLabel(style)}</TableCell>
+								<TableCell>{convertLiveStyleToLabel(style)}</TableCell>
 								<TableCell>{amount}</TableCell>
 								<TableCell>{masteryLevelLabel(masteryLevel)}</TableCell>
 								<TableCell>{partOneUrl}</TableCell>
@@ -226,24 +222,47 @@ function LiveSeriesHeader() {
 }
 
 const useLiveSeriesBodyHooks = () => {
-	const dummy = useMemo<LiveSeriesRecord>(
-		() => ({
-			id: 'dummy',
-			platform: 'Switch',
-			title: 'ソリティ馬 Ride On!',
-			livePublishedIn: 2024,
-			titleSoldIn: 2024,
-			style: 'broadcast',
-			amount: 29,
-			masteryLevel: 3,
-			partOneUrl: 'https://foo.bar.example.com/awesomeHash',
-			remarks: 'ゲーフリ',
-		}),
-		[]
-	);
-	const defs = useMemo(() => [dummy, dummy, dummy], [dummy]);
+	const { series } = useAppSelector((state) => state.liveSeries);
+	// const dummy = useMemo<LiveSeriesRecord>(
+	// 	() => ({
+	// 		id: 'dummy',
+	// 		platform: 'Switch',
+	// 		title: 'ソリティ馬 Ride On!',
+	// 		livePublishedIn: 2024,
+	// 		titleReleasedIn: 2024,
+	// 		style: 'broadcast',
+	// 		amount: 29,
+	// 		masteryLevel: 3,
+	// 		partOneUrl: 'https://foo.bar.example.com/awesomeHash',
+	// 		remarks: 'ゲーフリ',
+	// 	}),
+	// 	[]
+	// );
 
-	const mode = useValueWithMediaQuery({
+	const defs = useMemo(
+		() =>
+			series.map(
+				({ id, game: games, seriesTitle, lives }) =>
+					({
+						id,
+						platform: games?.platform,
+						title: seriesTitle,
+						livePublishedIn: lives.reduce((min, {}) => min, null),
+						titleReleasedIn: games?.releasedIn,
+						style:
+							lives.map(({ liveStyle }) => liveStyle).find((_) => true) ?? null,
+						amount: lives.length,
+						masteryLevel: games?.masteryLevel,
+						partOneUrl: lives.find(() => true)?.id?.videoId,
+						remarks: 'TODO',
+					}) as LiveSeriesRecord
+			),
+		[series]
+	);
+
+	console.info(defs);
+
+	const viewMode = useValueWithMediaQuery({
 		xs: 'list',
 		sm: 'list',
 		md: 'table',
@@ -251,28 +270,28 @@ const useLiveSeriesBodyHooks = () => {
 		xl: 'table',
 	} as const);
 
-	return { mode, defs };
+	return { viewMode, defs };
 };
 
 function LiveSeriesBody() {
-	const { mode, defs } = useLiveSeriesBodyHooks();
-	const body = useMemo(() => {
-		switch (mode) {
+	const { viewMode, defs } = useLiveSeriesBodyHooks();
+	const Body = useCallback(() => {
+		switch (viewMode) {
 			case 'list':
 				return <LiveSeriesList defs={defs} />;
 			case 'table':
 				return <LiveSeriesTable defs={defs} />;
 			default: {
-				const _exhaust: never = mode;
+				const _exhaust: never = viewMode;
 				throw _exhaust;
 			}
 		}
-	}, [mode, defs]);
+	}, [viewMode, defs]);
 
 	return (
 		<React.Fragment>
 			<LiveSeriesHeader />
-			{body}
+			<Body />
 		</React.Fragment>
 	);
 }
@@ -284,7 +303,6 @@ const LiveSeriesConditionFormPaper = styled(Paper)(({ theme }) => ({
 }));
 
 // const useLiveSeriesConditionFormHooks = () => {
-// 	return {};
 // };
 
 function LiveSeriesConditionForm() {
@@ -314,21 +332,22 @@ function LiveSeriesConditionForm() {
  * コンテナ用user hooks
  */
 const useLiveSeriesContainerHooks = () => {
-	const [toBeInitialized, setToBeInitialized] = useState(true);
+	const [intialized, setInitialized] = useState(false);
 
 	const dispatch = useAppDispatch();
-	const { loaded, list } = useAppSelector((state) => state.videos);
 
 	useEffect(() => {
-		if (toBeInitialized) {
-			dispatch(liveSeriesActions.init());
-			setToBeInitialized(false);
-		}
-	}, [toBeInitialized, setToBeInitialized, dispatch]);
+		console.info('debug', intialized);
+		if (intialized) return;
 
-	const loading = useMemo(() => !loaded, [loaded]);
+		dispatch(liveSeriesActions.init());
+		setInitialized(true);
+	}, [intialized, setInitialized, dispatch]);
 
-	return { loading, list };
+	const { series } = useAppSelector((state) => state.liveSeries);
+	const loading = useMemo(() => !series || series.length === 0, [series]);
+
+	return { loading };
 };
 
 /**

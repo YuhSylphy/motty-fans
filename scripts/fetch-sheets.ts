@@ -111,6 +111,7 @@ function constructLives(lives: Sheet) {
 }
 
 function constructLiveSeries(liveSeries: Sheet) {
+	// TODO: 備考がいない
 	return liveSeries.values
 		.slice(1)
 		.map(([no, id, seriesTitle, gameId, lives, publishedFrom, ...tags]) => ({
