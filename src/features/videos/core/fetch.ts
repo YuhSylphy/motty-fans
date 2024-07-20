@@ -32,9 +32,10 @@ export type VideoDef = {
 	title: string;
 	description: string;
 	thumbnails: Thumbnails;
-	tags: string[];
+	tags: string[]; // TODO: タグを一部色付きに？ どこ由来のタグか仕分ける
 };
 
+// TODO: liveSeries, gamesも取得して情報マージ -> 旧タグを整理
 export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 	fetch(`${process.env.PUBLIC_URL}/assets/videos/videos.json`)
 		.then((res) => res.json())

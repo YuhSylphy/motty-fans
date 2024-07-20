@@ -40,6 +40,8 @@ import { Search as SearchIcon, Link as LinkIcon } from '@mui/icons-material';
 import { LiveStyle, convertLiveStyleToLabel } from '../core/jsonTypes';
 import { Thumbnail } from 'src/features/videos/core/jsonTypes';
 
+// TODO: レイアウト調整
+
 function Loader() {
 	return <div>Loading...</div>;
 }
@@ -49,7 +51,7 @@ interface LiveSeriesRecord {
 	platform: string;
 	title: string;
 	titleReleasedIn: number | string | null;
-	style: LiveStyle | null;
+	style: LiveStyle | null; // TODO: 代表の1つでなくリストにする
 	amount: number;
 	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
 	part1: {

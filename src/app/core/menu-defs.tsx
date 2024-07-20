@@ -67,8 +67,9 @@ export const menuDefs: MenuItemDef[] = [
 				)
 		),
 		title: 'MOTTY fans - 実況シリーズ一覧',
-		hideInMenu: hideInDev,
+		hideInMenu: hideInDev, // TODO: 公開に合わせてメニュー表示？
 	},
+	// TODO: クエリパラメータによる条件保存対応: フレームワーク移行後？
 	...['', '/:hash'].map((params) => ({
 		type: 'page' as const,
 		icon: <YouTubeIcon />,
