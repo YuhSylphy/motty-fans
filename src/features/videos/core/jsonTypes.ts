@@ -38,6 +38,6 @@ export type JsonVideoDef = {
 	liveStyle: LiveStyle | null;
 };
 
-export type JsonType = {
+export type VideosJson = {
 	items: JsonVideoDef[];
 };

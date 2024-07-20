@@ -24,7 +24,7 @@ export type LiveSeriesJson = {
 
 export type MasteryLevel = 0 | 1 | 2 | 3 | 4 | 5;
 
-export type GamesDef = {
+export type GameDef = {
 	id: string;
 	gameTitle: string;
 	platform: string | null;
@@ -34,5 +34,5 @@ export type GamesDef = {
 };
 
 export type GamesJson = {
-	items: GamesDef[];
+	items: GameDef[];
 };

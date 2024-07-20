@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { JsonType, Thumbnails } from './jsonTypes';
+import { VideosJson, Thumbnails } from './jsonTypes';
 
 const dummy: VideoDef = {
 	id: 'dummy',
@@ -38,7 +38,7 @@ export type VideoDef = {
 export const fetchVideoDefs = (): Promise<VideoDef[]> =>
 	fetch(`${process.env.PUBLIC_URL}/assets/videos/videos.json`)
 		.then((res) => res.json())
-		.then(({ items }: JsonType) =>
+		.then(({ items }: VideosJson) =>
 			!(items && items.length > 0)
 				? [dummy]
 				: items.map((def) => ({

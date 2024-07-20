@@ -3,7 +3,7 @@ import path from 'path';
 
 import '../src/util/scoped';
 
-import type { JsonType as VideosJson } from '../src/features/videos/core/jsonTypes';
+import type { VideosJson } from '../src/features/videos/core/jsonTypes';
 import type { LivesJson } from '../src/features/live-series/core/jsonTypes';
 
 const livesPath = './public/assets/live-series/lives.json';
