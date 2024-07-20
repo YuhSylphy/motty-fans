@@ -6,8 +6,17 @@ curl https://sheets.googleapis.com/v4/spreadsheets/1aGNBpMi2K-q_JLGTTynAOM-EAHX6
 
 import { writeFile } from 'fs/promises';
 
+import { from } from 'rxjs';
+import { retry } from 'rxjs/operators';
+
 import '../src/util/scoped';
 import path from 'path';
+import {
+	GameDef,
+	LiveDef,
+	LiveSeriesDef,
+	convertLiveStyleFromLabel,
+} from '../src/features/live-series/core/jsonTypes';
 
 const outputDir = './public/assets/live-series/';
 
@@ -71,7 +80,7 @@ function constructLives(lives: Sheet) {
 				liveTitle,
 				publishedIn,
 				liveStyle,
-				liveSeriesTitle,
+				liveSeriesId,
 				...tags
 			]) => ({
 				no,
@@ -80,7 +89,7 @@ function constructLives(lives: Sheet) {
 				liveTitle: liveTitle ?? null,
 				publishedIn,
 				liveStyle: liveStyle ?? null,
-				liveSeriesTitle: liveSeriesTitle ?? null,
+				liveSeriesId: liveSeriesId ?? null,
 				tags: (tags ?? [])?.takeWhile((tag) => !!tag),
 			})
 		)
@@ -91,30 +100,34 @@ function constructLives(lives: Sheet) {
 				liveTitle: _liveTitle,
 				publishedIn: _publishedIn,
 				publishedAt: _publishedAt,
+				liveStyle,
 				...rest
-			}) => ({
-				...rest,
-			})
+			}) =>
+				({
+					...rest,
+					liveStyle: convertLiveStyleFromLabel(liveStyle),
+				}) as LiveDef
 		);
 }
 
 function constructLiveSeries(liveSeries: Sheet) {
 	return liveSeries.values
 		.slice(1)
-		.map(([no, id, seriesTitle, gameTitle, lives, publishedFrom, ...tags]) => ({
+		.map(([no, id, seriesTitle, gameId, lives, publishedFrom, ...tags]) => ({
 			no,
 			id,
 			seriesTitle,
-			gameTitle,
+			gameId,
 			lives,
 			publishedFrom,
 			tags: (tags ?? [])?.takeWhile((tag) => !!tag),
 		}))
 		.filter(({ id }) => !!id)
 		.map(
-			({ no: _no, lives: _lives, publishedFrom: _publishedFrom, ...rest }) => ({
-				...rest,
-			})
+			({ no: _no, lives: _lives, publishedFrom: _publishedFrom, ...rest }) =>
+				({
+					...rest,
+				}) as LiveSeriesDef
 		);
 }
 
@@ -143,14 +156,17 @@ function constructGameTitles(games: Sheet) {
 			})
 		)
 		.filter(({ id }) => !!id)
-		.map(({ no: _no, lives: _lives, releasedIn, masteryLevel, ...rest }) => ({
-			...rest,
-			releasedIn: ((x, o) => (Number.isSafeInteger(x) ? x : o))(
-				Number.parseInt(releasedIn, 10),
-				releasedIn
-			),
-			masteryLevel: (masteryLevel.match(/★/g) || []).length,
-		}));
+		.map(
+			({ no: _no, lives: _lives, releasedIn, masteryLevel, ...rest }) =>
+				({
+					...rest,
+					releasedIn: ((x, o) => (Number.isSafeInteger(x) ? x : o))(
+						Number.parseInt(releasedIn, 10),
+						releasedIn
+					),
+					masteryLevel: (masteryLevel.match(/★/g) || []).length,
+				}) as GameDef
+		);
 }
 
 function linkIds(
@@ -166,18 +182,20 @@ function linkIds(
 		.let((xs) => new Map(xs));
 
 	const games = gamesLoaded;
-	const liveSeries = liveSeriesLoaded.map(({ gameTitle, ...rest }) => ({
+	const liveSeries = liveSeriesLoaded.map(({ gameId, ...rest }) => ({
 		...rest,
-		gameId: gamesMap.has(gameTitle)
-			? (gamesMap.get(gameTitle)?.id ?? null)
-			: null,
+		gameId:
+			!!gameId && gamesMap.has(gameId)
+				? (gamesMap.get(gameId)?.id ?? null)
+				: null,
 	}));
 
-	const lives = livesLoaded.map(({ liveSeriesTitle, ...rest }) => ({
+	const lives = livesLoaded.map(({ liveSeriesId, ...rest }) => ({
 		...rest,
-		liveSeriesId: liveSeriesMap.has(liveSeriesTitle)
-			? (liveSeriesMap.get(liveSeriesTitle)?.id ?? null)
-			: null,
+		liveSeriesId:
+			!!liveSeriesId && liveSeriesMap.has(liveSeriesId)
+				? (liveSeriesMap.get(liveSeriesId)?.id ?? null)
+				: null,
 	}));
 
 	return {
@@ -204,6 +222,14 @@ async function main() {
 	const liveSeriesLoaded = constructLiveSeries(sheets.liveSeries);
 	const gamesLoaded = constructGameTitles(sheets.games);
 
+	const loading = livesLoaded.find(
+		(x) => x.liveSeriesId === '読み込んでいます...'
+	);
+	console.info('pick: ', loading);
+	if (loading !== undefined) {
+		throw Error('ID読込中。要リロード / ' + JSON.stringify(loading));
+	}
+
 	const { lives, liveSeries, games } = linkIds(
 		livesLoaded,
 		liveSeriesLoaded,
@@ -213,10 +239,13 @@ async function main() {
 	await write({ lives, liveSeries, games });
 }
 
-main()
-	.catch((e) => {
-		console.error(e);
-	})
-	.finally(() => {
-		console.info('done');
+from(main())
+	.pipe(retry(3))
+	.subscribe({
+		error: (e) => {
+			console.error(e);
+		},
+		complete: () => {
+			console.info('done');
+		},
 	});
