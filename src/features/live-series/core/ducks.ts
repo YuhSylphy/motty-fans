@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { LiveSeries } from './fetch';
+import { LiveSeries } from 'src/features/videos/core/fetch/liveSeries';
 
 export type LiveSeriesState = {
 	series: LiveSeries[];

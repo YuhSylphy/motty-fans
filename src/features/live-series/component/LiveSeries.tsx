@@ -37,8 +37,9 @@ import {
 	// useMediaQuery,
 } from '@mui/material';
 import { Search as SearchIcon, Link as LinkIcon } from '@mui/icons-material';
-import { LiveStyle, convertLiveStyleToLabel } from '../core/jsonTypes';
-import { Thumbnail } from 'src/features/videos/core/jsonTypes';
+import { Thumbnail } from 'src/features/videos/core/types/videos';
+import { LiveStyle } from 'src/features/videos/core/types';
+import { convertLiveStyleToLabel } from 'src/features/videos/core/types/utils';
 
 // TODO: レイアウト調整
 

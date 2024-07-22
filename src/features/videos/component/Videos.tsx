@@ -5,6 +5,7 @@ import React, {
 	useMemo,
 	useState,
 } from 'react';
+import { useParams } from 'react-router';
 
 import {
 	Autocomplete,
@@ -41,8 +42,9 @@ import {
 } from 'src/util';
 
 import { videosActions } from '..';
-import { VideoDef } from '../core/fetch';
-import { useParams } from 'react-router';
+import { VideoDef } from '../core/fetch/videos';
+import { VideoTag } from '../core/types';
+import { defaultStyledTag } from '../core/types/utils';
 
 const showImage = true;
 
@@ -145,46 +147,58 @@ function VideoThumbnail({ imageUrl, alt, videoId }: VideoThumbnailProps) {
 }
 
 type VideoChipProps = {
-	tag: string;
+	tag: VideoTag;
 	deletable?: boolean;
 	findable?: boolean;
 };
 
 const useVideoChipHooks = (
-	tag: string,
+	{ label, style }: VideoTag,
 	deletable?: boolean,
 	findable?: boolean
 ) => {
 	const dispatch = useAppDispatch();
 	const findTag = useCallback(() => {
-		dispatch(videosActions.addConditionTags([tag]));
-	}, [dispatch, tag]);
+		dispatch(videosActions.addConditionTags([label]));
+	}, [dispatch, label]);
 	const deleteTag = useCallback(() => {
-		dispatch(videosActions.removeConditionTags([tag]));
-	}, [dispatch, tag]);
+		dispatch(videosActions.removeConditionTags([label]));
+	}, [dispatch, label]);
+
+	const chipColor = useMemo(() => `chip-${style}-tags` as const, [style]);
 
 	return {
 		findTag: findable ? findTag : void 0,
 		deleteTag: deletable ? deleteTag : void 0,
+		chipColor,
 	};
 };
 
 function VideoChip({ tag, deletable, findable }: VideoChipProps) {
-	const { findTag, deleteTag } = useVideoChipHooks(tag, deletable, findable);
+	const { findTag, deleteTag, chipColor } = useVideoChipHooks(
+		tag,
+		deletable,
+		findable
+	);
+	if (chipColor !== 'chip-none-tags') {
+		console.info('unknown: ', chipColor);
+	}
 	return (
+		// TODO: 文字が小さすぎる。Style調整
 		<TagChip
-			label={tag}
+			label={tag.label}
 			size="small"
 			icon={findable ? <SearchIcon /> : void 0}
 			clickable={findable}
 			onClick={findTag}
 			onDelete={deleteTag}
+			color={'default'} // TODO: テーマ定義(chip-xxxx-tags)をいくつか MUIのThemeに追加
 		/>
 	);
 }
 
-type TagsProps = {
-	tags: string[];
+type VideoTagsProps = {
+	tags: VideoTag[];
 	deletable?: boolean;
 	findable?: boolean;
 };
@@ -197,12 +211,12 @@ const TagChip = styled(Chip)({
 	fontSize: '.4rem',
 });
 
-function VideoTags({ tags, deletable, findable }: TagsProps) {
+function VideoTags({ tags, deletable, findable }: VideoTagsProps) {
 	return (
 		<VideoTagsBox>
 			{tags.map((tag) => (
 				<VideoChip
-					key={tag}
+					key={tag.label}
 					tag={tag}
 					deletable={deletable}
 					findable={findable}
@@ -333,7 +347,7 @@ const useVideoConditionFormHooks = () => {
 	const dispatch = useAppDispatch();
 	const {
 		condition: {
-			tags,
+			tags: tagLabels,
 			dateSpan: { from, to },
 		},
 	} = useAppSelector((state) => state.videos);
@@ -415,6 +429,8 @@ const useVideoConditionFormHooks = () => {
 		},
 		[setAutocompleteValue]
 	);
+
+	const tags = useMemo(() => tagLabels.map(defaultStyledTag), [tagLabels]);
 
 	return {
 		tags,
@@ -539,7 +555,10 @@ const useVideoContainerHooks = () => {
 					(d) =>
 						// タグ判定
 						(tags.length === 0 ||
-							tags.every((selected) => d.tags.includes(selected))) &&
+							((labels: string[]) =>
+								tags.every((selected) => labels.includes(selected)))(
+								d.tags.map(({ label }) => label)
+							)) &&
 						// 公開日範囲
 						(from === null || from <= d.publishedAt) &&
 						(to === null || d.publishedAt <= to)
@@ -552,7 +571,10 @@ const useVideoContainerHooks = () => {
 
 	const tagCandidates = Array.from(
 		(() => {
-			const ret = new Set(defs.flatMap(({ tags }) => tags));
+			const ret = new Set(
+				defs.flatMap(({ tags }) => tags.map(({ label }) => label))
+			);
+
 			tags.forEach((selected) => ret.delete(selected));
 			return ret;
 		})().keys()

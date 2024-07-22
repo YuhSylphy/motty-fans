@@ -3,8 +3,7 @@ import path from 'path';
 
 import '../src/util/scoped';
 
-import type { VideosJson } from '../src/features/videos/core/jsonTypes';
-import type { LivesJson } from '../src/features/live-series/core/jsonTypes';
+import { LivesJson, VideosJson } from 'src/features/videos/core/types';
 
 const livesPath = './public/assets/live-series/lives.json';
 const videosPath = './public/assets/videos/videos.json';
@@ -44,9 +43,9 @@ async function main() {
 			if (!livesMap.has(videoId)) return item;
 			const { liveSeriesId, liveStyle, tags } = livesMap.get(videoId)!;
 
-			const tagsMerged = (item.tags ?? [])
-				.filter((x) => !['live', 'taped'].includes(x))
-				.let((ts) => tags.reduce((ret, e) => [...ret, e], ts));
+			const tagsMerged = (item.tags ?? []).let((ts) =>
+				tags.reduce((ret, e) => [...ret, e], ts)
+			);
 
 			return {
 				...item,

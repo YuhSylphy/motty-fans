@@ -7,7 +7,7 @@ import type { Epic } from 'src/app';
 import { withIndicator } from 'src/util';
 
 import { liveSeriesActions } from '..';
-import { fetchLiveSeries } from './fetch';
+import { fetchLiveSeries } from 'src/features/videos/core/fetch/liveSeries';
 
 export const fetchDefEpic: Epic = (action$) =>
 	action$.pipe(

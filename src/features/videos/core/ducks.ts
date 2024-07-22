@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-import { VideoDef } from './fetch';
+import { VideoDef } from './fetch/videos';
 
 export type VideoFinderCondition = {
 	tags: string[];

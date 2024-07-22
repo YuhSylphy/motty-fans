@@ -1,39 +1,14 @@
 import { DateTime } from 'luxon';
-
-import {
-	JsonVideoDef,
-	Thumbnail,
-	VideosJson,
-} from 'src/features/videos/core/jsonTypes';
-import {
+import type {
 	GameDef,
-	GamesJson,
+	JsonVideoDef,
 	LiveSeriesDef,
-	LiveSeriesJson,
 	LiveStyle,
-} from './jsonTypes';
-
-const videosJson = `${process.env.PUBLIC_URL}/assets/videos/videos.json`;
-const liveSeriesJson = `${process.env.PUBLIC_URL}/assets/live-series/liveSeries.json`;
-const gamesJson = `${process.env.PUBLIC_URL}/assets/live-series/games.json`;
-
-export async function fetchVideosJson(): Promise<VideosJson> {
-	const res = await fetch(videosJson);
-	const ret = await res.json();
-	return ret;
-}
-
-export async function fetchLiveSeriesJson(): Promise<LiveSeriesJson> {
-	const res = await fetch(liveSeriesJson);
-	const ret = await res.json();
-	return ret;
-}
-
-export async function fetchGamesJson(): Promise<GamesJson> {
-	const res = await fetch(gamesJson);
-	const ret = await res.json();
-	return ret;
-}
+	Thumbnail,
+	VideoTag,
+} from '../types';
+import { defaultStyledTag } from '../types/utils';
+import { fetchGamesJson, fetchLiveSeriesJson, fetchVideosJson } from './base';
 
 export type LiveSeries = LiveSeriesDef & {
 	lives: LiveSeriesVideo[];
@@ -48,7 +23,7 @@ export type LiveSeriesVideo = {
 	thumbnail: Thumbnail;
 	liveSeriesId: string | null;
 	liveStyle: LiveStyle | null;
-	tags: string[];
+	tags: VideoTag[];
 	url: string;
 };
 
@@ -71,7 +46,7 @@ const convertVideoDefFromJson = (
 		thumbnail: thumbnails.default,
 		liveSeriesId: liveSeriesId,
 		liveStyle,
-		tags: tags ?? [],
+		tags: tags?.map(defaultStyledTag) ?? [],
 		url: `https://www.youtube.com/watch?v=${id}`,
 	};
 };

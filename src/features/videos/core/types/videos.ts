@@ -1,4 +1,5 @@
-import { LiveStyle } from 'src/features/live-series/core/jsonTypes';
+import { LiveStyle } from './liveStyles';
+import { VideoTagUnion } from './tags';
 
 export type YouTubeId = {
 	kind: 'youtube#video';
@@ -33,7 +34,8 @@ export type JsonVideoDef = {
 	etag: string;
 	id: YouTubeId;
 	snippet: YouTubeSnippet;
-	tags?: string[];
+	tags?: VideoTagUnion[];
+	'tags.bak'?: string[];
 	liveSeriesId: string | null;
 	liveStyle: LiveStyle | null;
 };

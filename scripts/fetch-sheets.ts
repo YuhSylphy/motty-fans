@@ -15,8 +15,8 @@ import {
 	GameDef,
 	LiveDef,
 	LiveSeriesDef,
-	convertLiveStyleFromLabel,
-} from '../src/features/live-series/core/jsonTypes';
+} from '../src/features/videos/core/types';
+import { convertLiveStyleFromLabel } from '../src/features/videos/core/types/utils';
 
 const outputDir = './public/assets/live-series/';
 
