@@ -1,7 +1,7 @@
 {
 	"items": [
 		{
-			"id": "QBcoyVIJGyu-",
+			"id": "#NAME?",
 			"gameTitle": "―",
 			"platform": "―",
 			"tags": [],
@@ -9,7 +9,7 @@
 			"masteryLevel": 0
 		},
 		{
-			"id": "i7RwJcMzkD9b",
+			"id": "#NAME?",
 			"gameTitle": "ポケモンORAS",
 			"platform": "3DS",
 			"tags": ["ポケットモンスターシリーズ"],
@@ -17,7 +17,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "Zk6l6Dqurczn",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダの伝説 ムジュラの仮面 3D",
 			"platform": "3DS",
 			"tags": ["ゼルダの伝説シリーズ"],
@@ -25,7 +25,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "YEOHBoQCG3F8",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダの伝説 ブレスオブザワイルド",
 			"platform": "Switch",
 			"tags": ["ゼルダの伝説シリーズ"],
@@ -33,7 +33,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "M3J2Z_EA4GrF",
+			"id": "#NAME?",
 			"gameTitle": "スプラトゥーン2",
 			"platform": "Switch",
 			"tags": ["スプラトゥーンシリーズ"],
@@ -41,7 +41,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "yPLJ-u-vGgGj",
+			"id": "#NAME?",
 			"gameTitle": "マリオ+ラビッツ キングダムバトル",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -49,7 +49,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "cGik0ew2bBtz",
+			"id": "#NAME?",
 			"gameTitle": "マリオカート8デラックス",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
@@ -57,7 +57,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "vNJcpdWifoAY",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダの伝説 時のオカリナ",
 			"platform": "N64",
 			"tags": [],
@@ -65,7 +65,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "RejOCo8kqNKU",
+			"id": "#NAME?",
 			"gameTitle": "マリオのピクロス",
 			"platform": "GB",
 			"tags": [],
@@ -73,7 +73,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "vRuNXhTvD-yb",
+			"id": "#NAME?",
 			"gameTitle": "マリオストライカーズ",
 			"platform": "GC",
 			"tags": ["マリオシリーズ"],
@@ -81,7 +81,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "RG2YZLzdMTuQ",
+			"id": "#NAME?",
 			"gameTitle": "ルイージマンション",
 			"platform": "GC",
 			"tags": ["マリオシリーズ", "ルイージマンションシリーズ"],
@@ -89,7 +89,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "3LJiyO7DOep7",
+			"id": "#NAME?",
 			"gameTitle": "マリオパーティ アイランドツアー",
 			"platform": "3DS",
 			"tags": ["マリオシリーズ"],
@@ -97,7 +97,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "7gJgHRXnA5L8",
+			"id": "#NAME?",
 			"gameTitle": "ルイージマンション2",
 			"platform": "3DS",
 			"tags": ["マリオシリーズ"],
@@ -105,7 +105,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "FJh1HlVJNeXM",
+			"id": "#NAME?",
 			"gameTitle": "マリオパーティ9",
 			"platform": "Wii",
 			"tags": ["マリオシリーズ"],
@@ -113,7 +113,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "VKB6Mh5oPMqZ",
+			"id": "#NAME?",
 			"gameTitle": "ルイージマンション3",
 			"platform": "3DS",
 			"tags": ["マリオシリーズ"],
@@ -121,7 +121,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "8wLG0OvvL8cl",
+			"id": "#NAME?",
 			"gameTitle": "マリオパーティ10",
 			"platform": "WiiU",
 			"tags": ["マリオシリーズ"],
@@ -129,7 +129,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "vxKtP5nggBJ5",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオスタジアム ミラクルベースボール",
 			"platform": "GC",
 			"tags": [],
@@ -137,7 +137,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "mGfyIMOnbmtA",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオ64",
 			"platform": "N64",
 			"tags": [],
@@ -145,7 +145,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "uQgLTPWm1AO7",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオブラザーズ35",
 			"platform": "Switch",
 			"tags": [],
@@ -153,7 +153,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "muX1jYMNW7pG",
+			"id": "#NAME?",
 			"gameTitle": "ダービースタリオン(Switch)",
 			"platform": "Switch",
 			"tags": [],
@@ -161,7 +161,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "AWhAx0kaTUx7",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオ3Dワールド + フューリーワールド",
 			"platform": "Switch",
 			"tags": [],
@@ -169,7 +169,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "kO06DzJZTnAI",
+			"id": "#NAME?",
 			"gameTitle": "ピクミン3 デラックス",
 			"platform": "Switch",
 			"tags": [],
@@ -177,7 +177,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "o6grGNzBlyeb",
+			"id": "#NAME?",
 			"gameTitle": "マリオゴルフ64",
 			"platform": "N64",
 			"tags": ["マリオシリーズ"],
@@ -185,7 +185,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "_dOAJE9LuW5c",
+			"id": "#NAME?",
 			"gameTitle": "マリオゴルフ ファミリーツアー",
 			"platform": "GC",
 			"tags": ["マリオシリーズ"],
@@ -193,7 +193,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "fZVNkfkcdlDW",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオギャラクシー (3Dコレクション)",
 			"platform": "Switch",
 			"tags": [],
@@ -201,7 +201,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "kbBaorWZne8K",
+			"id": "#NAME?",
 			"gameTitle": "あつまれ どうぶつの森",
 			"platform": "Switch",
 			"tags": [],
@@ -209,7 +209,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "rZR1Mm66jEZt",
+			"id": "#NAME?",
 			"gameTitle": "ウマ娘 プリティーダービー",
 			"platform": "iOS",
 			"tags": [],
@@ -217,7 +217,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "hVGGjzBnZkMH",
+			"id": "#NAME?",
 			"gameTitle": "スーパーボンバーマンR オンライン",
 			"platform": "Switch",
 			"tags": [],
@@ -225,7 +225,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "IYt_ETmEv7Ul",
+			"id": "#NAME?",
 			"gameTitle": "世界のアソビ大全51",
 			"platform": "Switch",
 			"tags": [],
@@ -233,7 +233,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "Q6SoKRmZiJ2G",
+			"id": "#NAME?",
 			"gameTitle": "マリオゴルフ スーパーラッシュ",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -241,7 +241,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "NMk8xVfShdeg",
+			"id": "#NAME?",
 			"gameTitle": "クラッシュ・バンディクー ブッとび3段もり！",
 			"platform": "Switch",
 			"tags": [],
@@ -249,7 +249,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "6Sd1HFtBlMKj",
+			"id": "#NAME?",
 			"gameTitle": "マリオカートWii",
 			"platform": "Wii",
 			"tags": ["マリオシリーズ"],
@@ -257,7 +257,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "UNfF6bEE3W4k",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダの伝説 スカイウォードソード HD",
 			"platform": "Switch",
 			"tags": [],
@@ -265,7 +265,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "rBDj_YpMt-sC",
+			"id": "#NAME?",
 			"gameTitle": "マリオ&ソニック AT 東京2020オリンピック",
 			"platform": "Switch",
 			"tags": [],
@@ -273,7 +273,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "Cu0kM6YO2lzU",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオスタジアム ファミリーベースボール",
 			"platform": "Wii",
 			"tags": [],
@@ -281,7 +281,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "TDDm38viBdp1",
+			"id": "#NAME?",
 			"gameTitle": "マリオストライカーズ チャージド",
 			"platform": "Wii",
 			"tags": ["マリオシリーズ"],
@@ -289,7 +289,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "PF0GIYOk8qYS",
+			"id": "#NAME?",
 			"gameTitle": "MARIO SPORTS MIX",
 			"platform": "Wii",
 			"tags": [],
@@ -297,7 +297,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "1HR7Qd3Z3Yy6",
+			"id": "#NAME?",
 			"gameTitle": "Cuphead",
 			"platform": "Switch",
 			"tags": [],
@@ -305,7 +305,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "iE7r5DsZY_uH",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオパーティ",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -313,7 +313,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "bBYoOjoPYU_o",
+			"id": "#NAME?",
 			"gameTitle": "おどるメイドインワリオ",
 			"platform": "Wii",
 			"tags": ["マリオシリーズ"],
@@ -321,7 +321,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "U3kFyRCoj3mQ",
+			"id": "#NAME?",
 			"gameTitle": "さわるメイドインワリオ",
 			"platform": "DS",
 			"tags": ["マリオシリーズ"],
@@ -329,7 +329,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "sjuZawUftxt1",
+			"id": "#NAME?",
 			"gameTitle": "ゲーム&ワリオ",
 			"platform": "WiiU",
 			"tags": ["マリオシリーズ"],
@@ -337,7 +337,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "VzAanKGqTYZt",
+			"id": "#NAME?",
 			"gameTitle": "マリオスポーツ スーパースターズ",
 			"platform": "3DS",
 			"tags": [],
@@ -345,7 +345,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "JDNegElNG3Or",
+			"id": "#NAME?",
 			"gameTitle": "マリオのスーパーピクロス",
 			"platform": "SFC",
 			"tags": [],
@@ -353,7 +353,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "Y2fe_2dLwyD8",
+			"id": "#NAME?",
 			"gameTitle": "大人の常識力トレーニングDS",
 			"platform": "DS",
 			"tags": [],
@@ -361,7 +361,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "8TNtzxp9GJlB",
+			"id": "#NAME?",
 			"gameTitle": "マリオカート7",
 			"platform": "3DS",
 			"tags": ["マリオシリーズ"],
@@ -369,7 +369,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "PDS5gp3TpY9c",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオボール",
 			"platform": "GBA",
 			"tags": [],
@@ -377,7 +377,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "ELUH83xPZjoI",
+			"id": "#NAME?",
 			"gameTitle": "おすそわける メイドインワリオ",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -385,7 +385,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "UyvhI6BD2fAP",
+			"id": "#NAME?",
 			"gameTitle": "いただきストリートDS",
 			"platform": "DS",
 			"tags": [],
@@ -393,7 +393,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "D1Qb7eS3B_qF",
+			"id": "#NAME?",
 			"gameTitle": "スーパーメトロイド",
 			"platform": "SFC",
 			"tags": [],
@@ -401,7 +401,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "P4ITjxeiqJlX",
+			"id": "#NAME?",
 			"gameTitle": "メトロイドフュージョン",
 			"platform": "GBA",
 			"tags": [],
@@ -409,7 +409,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "ubIH6CFl-BVf",
+			"id": "#NAME?",
 			"gameTitle": "メトロイドドレッド",
 			"platform": "Switch",
 			"tags": [],
@@ -417,7 +417,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "UnpMDePRWCI7",
+			"id": "#NAME?",
 			"gameTitle": "役満DS",
 			"platform": "DS",
 			"tags": [],
@@ -425,7 +425,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "7QDOJ0Qdubt8",
+			"id": "#NAME?",
 			"gameTitle": "マリオパーティ スーパースターズ",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -433,7 +433,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "XCX2ZjVs5RIl",
+			"id": "#NAME?",
 			"gameTitle": "たべごろ!スーパーモンキーボール 1&2リメイク",
 			"platform": "Switch",
 			"tags": [],
@@ -441,7 +441,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "jzEUT65iveX9",
+			"id": "#NAME?",
 			"gameTitle": "パワプロクンポケットR",
 			"platform": "Switch",
 			"tags": [],
@@ -449,7 +449,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "bEPo64e5fnsP",
+			"id": "#NAME?",
 			"gameTitle": "SSX On Tour with マリオ",
 			"platform": "GC",
 			"tags": [],
@@ -457,7 +457,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "vcg_XH4S2r-D",
+			"id": "#NAME?",
 			"gameTitle": "いただきストリートWii",
 			"platform": "Wii",
 			"tags": [],
@@ -465,7 +465,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "x7NAPXc43b9K",
+			"id": "#NAME?",
 			"gameTitle": "マリオテニス64",
 			"platform": "N64",
 			"tags": [],
@@ -473,7 +473,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "uTi-1nc0nI0p",
+			"id": "#NAME?",
 			"gameTitle": "ヨッシーストーリー",
 			"platform": "N64",
 			"tags": ["マリオシリーズ"],
@@ -481,7 +481,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "lznt3d_D-L72",
+			"id": "#NAME?",
 			"gameTitle": "マリオカート64",
 			"platform": "N64",
 			"tags": ["マリオシリーズ"],
@@ -489,7 +489,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "zRB4UyCMfd9d",
+			"id": "#NAME?",
 			"gameTitle": "大乱闘スマッシュブラザーズSPECIAL",
 			"platform": "Switch",
 			"tags": [],
@@ -497,7 +497,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "7X7v8hSMoVoi",
+			"id": "#NAME?",
 			"gameTitle": "桃太郎電鉄 ～昭和 平成 令和も定番！～",
 			"platform": "Switch",
 			"tags": [],
@@ -505,7 +505,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "HtN7MZhsvRyH",
+			"id": "#NAME?",
 			"gameTitle": "Wii Sports",
 			"platform": "Wii",
 			"tags": [],
@@ -513,7 +513,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "NSqmjS5cHBPO",
+			"id": "#NAME?",
 			"gameTitle": "マリオ＆ソニック AT 北京オリンピック",
 			"platform": "Wii",
 			"tags": [],
@@ -521,7 +521,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "uj6irY-UZ07q",
+			"id": "#NAME?",
 			"gameTitle": "Wii Sports Resort",
 			"platform": "Wii",
 			"tags": [],
@@ -529,7 +529,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "S8puP1m2ahwM",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ Wii",
 			"platform": "Wii",
 			"tags": [],
@@ -537,7 +537,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "VNYZ_MbMiNQc",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ トリプルデラックス",
 			"platform": "3DS",
 			"tags": [],
@@ -545,7 +545,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "6jDqu7dupB0v",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ 参上！ドロッチェ団",
 			"platform": "DS",
 			"tags": [],
@@ -553,7 +553,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "vtsW7X9iznkh",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ ディスカバリー",
 			"platform": "Switch",
 			"tags": [],
@@ -561,7 +561,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "DC76t52xMTY1",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ 夢の泉の物語",
 			"platform": "FC",
 			"tags": [],
@@ -569,7 +569,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "b2bal9j6BtsH",
+			"id": "#NAME?",
 			"gameTitle": "ハコボーイ！＆ハコガール！",
 			"platform": "Switch",
 			"tags": [],
@@ -577,7 +577,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "pUKdWHkwMkte",
+			"id": "#NAME?",
 			"gameTitle": "大乱闘スマッシュブラザーズX",
 			"platform": "Wii",
 			"tags": [],
@@ -585,7 +585,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "kwdGOknZuHia",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ ウルトラスーパーデラックス",
 			"platform": "DS",
 			"tags": [],
@@ -593,7 +593,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "fPwFFfzVBjvc",
+			"id": "#NAME?",
 			"gameTitle": "Nintendo Switch Sports",
 			"platform": "Switch",
 			"tags": [],
@@ -601,7 +601,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "Zbh0iv8iH9n2",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダ無双 厄災の黙示録",
 			"platform": "Switch",
 			"tags": [],
@@ -609,7 +609,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "MWC0Iq22MLxN",
+			"id": "#NAME?",
 			"gameTitle": "マリオストライカーズ バトルリーグ",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -617,7 +617,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "n24o5cgVdVMQ",
+			"id": "#NAME?",
 			"gameTitle": "ゲームボーイギャラリー4",
 			"platform": "GBA",
 			"tags": ["マリオシリーズ"],
@@ -625,7 +625,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "h3xFNxf6Y_QJ",
+			"id": "#NAME?",
 			"gameTitle": "Minecraft (Java)",
 			"platform": "PC",
 			"tags": [],
@@ -633,7 +633,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "lzS0E42wHU-a",
+			"id": "#NAME?",
 			"gameTitle": "FallGuys (Switch)",
 			"platform": "Switch",
 			"tags": [],
@@ -641,7 +641,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "C5N5e0bZb81K",
+			"id": "#NAME?",
 			"gameTitle": "FallGuys (PC)",
 			"platform": "PC",
 			"tags": [],
@@ -649,7 +649,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "aq017QagjXp7",
+			"id": "#NAME?",
 			"gameTitle": "カービィのグルメフェス",
 			"platform": "Switch",
 			"tags": [],
@@ -657,7 +657,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "D6hGLrRwrE5X",
+			"id": "#NAME?",
 			"gameTitle": "スプラトゥーン3",
 			"platform": "Switch",
 			"tags": [],
@@ -665,7 +665,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "ZTTFuoG1MiCg",
+			"id": "#NAME?",
 			"gameTitle": "一般人格付けチェック",
 			"platform": "Switch",
 			"tags": [],
@@ -673,7 +673,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "G-rPLUkcyCfj",
+			"id": "#NAME?",
 			"gameTitle": "マリオ+ラビッツ ギャラクシーバトル",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -681,7 +681,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "J7kdBl5o3QOh",
+			"id": "#NAME?",
 			"gameTitle": "ソリティ馬 Ride On!",
 			"platform": "iOS",
 			"tags": [],
@@ -689,7 +689,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "bUrViA2yGBK2",
+			"id": "#NAME?",
 			"gameTitle": "やわらかあたま塾",
 			"platform": "Switch",
 			"tags": [],
@@ -697,7 +697,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "DQ8np1oXPj5F",
+			"id": "#NAME?",
 			"gameTitle": "毛糸のカービィ",
 			"platform": "Wii",
 			"tags": [],
@@ -705,7 +705,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "7PxKdkhuV-N3",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ (初代)",
 			"platform": "GB",
 			"tags": [],
@@ -713,7 +713,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "S_zh8UvknnFL",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィWiiデラックス",
 			"platform": "Switch",
 			"tags": [],
@@ -721,7 +721,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "U-aEkeXTFkEe",
+			"id": "#NAME?",
 			"gameTitle": "星のカービィ2",
 			"platform": "GBC",
 			"tags": [],
@@ -729,7 +729,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "Um4b4TD0NErH",
+			"id": "#NAME?",
 			"gameTitle": "カービィボウル",
 			"platform": "SFC",
 			"tags": [],
@@ -737,7 +737,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "c9tgTz8QdBsH",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダの伝説 ティアーズオブザキングダム",
 			"platform": "Switch",
 			"tags": [],
@@ -745,7 +745,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "R672SrUgF808",
+			"id": "#NAME?",
 			"gameTitle": "パズルボブル エブリバブル！",
 			"platform": "Switch",
 			"tags": [],
@@ -753,7 +753,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "ErT3B7KhSQ3b",
+			"id": "#NAME?",
 			"gameTitle": "ピクミン4",
 			"platform": "Switch",
 			"tags": [],
@@ -761,7 +761,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "fi-YntTDbN53",
+			"id": "#NAME?",
 			"gameTitle": "F-ZERO 99",
 			"platform": "Switch",
 			"tags": [],
@@ -769,7 +769,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "HcpHljs_11pX",
+			"id": "#NAME?",
 			"gameTitle": "漢字でGO!",
 			"platform": "PC",
 			"tags": [],
@@ -777,7 +777,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "T9TmEDUnH2jH",
+			"id": "#NAME?",
 			"gameTitle": "スイカゲーム",
 			"platform": "PC",
 			"tags": [],
@@ -785,7 +785,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "flqcwZP8E3gJ",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオブラザーズワンダー",
 			"platform": "Switch",
 			"tags": [],
@@ -793,7 +793,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "pu9lau88P4vq",
+			"id": "#NAME?",
 			"gameTitle": "スーパーマリオRPG(リメイク)",
 			"platform": "Switch",
 			"tags": [],
@@ -801,7 +801,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "A7c6LFoysWEf",
+			"id": "#NAME?",
 			"gameTitle": "桃太郎電鉄ワールド ～地球は希望でまわってる！～",
 			"platform": "Switch",
 			"tags": [],
@@ -809,7 +809,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "J2BLjSfKTiaG",
+			"id": "#NAME?",
 			"gameTitle": "風来のシレン5plus フォーチュンタワーと運命のダイス",
 			"platform": "Switch",
 			"tags": [],
@@ -817,7 +817,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "XV9B7KoDPL7_",
+			"id": "#NAME?",
 			"gameTitle": "雀魂-じゃんたま-",
 			"platform": "PC",
 			"tags": [],
@@ -825,7 +825,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "wPN04-RrF8o7",
+			"id": "#NAME?",
 			"gameTitle": "風来のシレン6 とぐろ島探検録",
 			"platform": "Switch",
 			"tags": [],
@@ -833,7 +833,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "FvGiop3nAkIe",
+			"id": "#NAME?",
 			"gameTitle": "マリオvs.ドンキーコング (Switch)",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -841,7 +841,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "LFSuVwAjgCM4",
+			"id": "#NAME?",
 			"gameTitle": "ソリティ馬 Ride On! (Switch)",
 			"platform": "Switch",
 			"tags": [],
@@ -849,7 +849,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "y8jXgcFr0QN_",
+			"id": "#NAME?",
 			"gameTitle": "プリンセスピーチ Showtime!",
 			"platform": "Switch",
 			"tags": [],
@@ -857,7 +857,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "A5Vyf7gyNZDS",
+			"id": "#NAME?",
 			"gameTitle": "スプラトゥーン",
 			"platform": "WiiU",
 			"tags": [],
@@ -865,7 +865,7 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "AvXPVGWA9W4R",
+			"id": "#NAME?",
 			"gameTitle": "グノーシア -GNOSIA- (Switch)",
 			"platform": "Switch",
 			"tags": [],
@@ -873,7 +873,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "QiJtoGA7x8rz",
+			"id": "#NAME?",
 			"gameTitle": "Sticky Business",
 			"platform": "Switch",
 			"tags": [],
@@ -881,7 +881,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "lw8tn3jlpWS_",
+			"id": "#NAME?",
 			"gameTitle": "FOREVER BLUE LUMINOUS",
 			"platform": "Switch",
 			"tags": [],
@@ -889,7 +889,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "Er_dTTnYUwgw",
+			"id": "#NAME?",
 			"gameTitle": "エルシャダイ-El Shaddai- (Switch)",
 			"platform": "Switch",
 			"tags": [],
@@ -897,7 +897,7 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "j-EAJzbDqQBR",
+			"id": "#NAME?",
 			"gameTitle": "ペーパーマリオRPG (Switch)",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -905,7 +905,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "DxoEsFzhDxlg",
+			"id": "#NAME?",
 			"gameTitle": "ゼルダの伝説 神々のトライフォース&4つの剣",
 			"platform": "GBA",
 			"tags": [],
@@ -913,7 +913,7 @@
 			"masteryLevel": 4
 		},
 		{
-			"id": "wnYkxw2m_1fJ",
+			"id": "#NAME?",
 			"gameTitle": "パンドランド",
 			"platform": "iOS",
 			"tags": [],
@@ -921,7 +921,7 @@
 			"masteryLevel": 1
 		},
 		{
-			"id": "iy04cF6FpL5l",
+			"id": "#NAME?",
 			"gameTitle": "ルイージマンション2 HD",
 			"platform": "Switch",
 			"tags": ["マリオシリーズ"],
@@ -929,7 +929,7 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "-GVTWgpgTZsO",
+			"id": "#NAME?",
 			"gameTitle": "伝説のスタフィー(初代)",
 			"platform": "GBA",
 			"tags": [],
@@ -937,7 +937,7 @@
 			"masteryLevel": 0
 		},
 		{
-			"id": "30W3q6Qk0Vzi",
+			"id": "#NAME?",
 			"gameTitle": "Nintendo World Championships ファミコン世界大会",
 			"platform": "Switch",
 			"tags": [],
