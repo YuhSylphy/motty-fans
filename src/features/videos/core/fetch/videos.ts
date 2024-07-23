@@ -3,45 +3,6 @@ import type { Thumbnails, VideoTag } from '../types';
 import { defaultStyledTag } from '../types/utils';
 import { fetchGamesJson, fetchLiveSeriesJson, fetchVideosJson } from './base';
 
-// function convertTags(
-// 	lhs: (string | VideoTag)[] | undefined,
-// 	rhs: string[] | undefined
-// ): VideoTag[] {
-// 	// def.tags && def.tags.length > 0 ? [...def.tags] : ['no tags']
-// 	const convertedLhs = lhs?.map(defaultStyledTag('lives')) ?? [];
-// 	const convertedRhs = rhs?.map(defaultStyledTag('none')) ?? [];
-// 	const merged = [...convertedLhs, ...convertedRhs].filter(
-// 		({ label: lhs }, _, array) =>
-// 			array.find(({ label: rhs }) => lhs == rhs) != null
-// 	);
-// 	return merged.length > 0 ? merged : [defaultStyledTag('none')('no tags')];
-// }
-
-// const dummy: VideoDef = {
-// 	id: 'dummy',
-// 	publishedAt: DateTime.fromISO('2014-09-07T00:00:00Z').toMillis(),
-// 	title: 'dummy',
-// 	description: 'no videos fetched',
-// 	thumbnails: {
-// 		default: {
-// 			url: 'dummy',
-// 			width: 120,
-// 			height: 90,
-// 		},
-// 		medium: {
-// 			url: 'dummy',
-// 			width: 320,
-// 			height: 180,
-// 		},
-// 		high: {
-// 			url: 'dummy',
-// 			width: 480,
-// 			height: 360,
-// 		},
-// 	},
-// 	tags: [],
-// };
-
 export type VideoDef = {
 	id: string;
 	publishedAt: number;
@@ -124,12 +85,11 @@ export async function fetchVideoDefs(): Promise<VideoDef[]> {
 					...(liveSeriesId ? (seriesMap.get(liveSeriesId)?.tags ?? []) : []),
 					...bak,
 				].filter(
-					// 重複ラベルは後ろ側を削除
-					({ label: lhs }, ix, array) => {
-						return (
-							array.slice(0, ix).find(({ label: rhs }) => lhs == rhs) == null
-						);
-					}
+					({ label: lhs }, ix, array) =>
+						// ignores リストに入るものは除外
+						!ignores.includes(lhs) &&
+						// 重複ラベルは後ろ側を削除
+						array.slice(0, ix).find(({ label: rhs }) => lhs == rhs) == null
 				)
 			),
 		})
@@ -137,3 +97,5 @@ export async function fetchVideoDefs(): Promise<VideoDef[]> {
 
 	return ret;
 }
+
+const ignores = ['―', 'live', 'taped'];
