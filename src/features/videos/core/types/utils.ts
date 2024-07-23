@@ -5,4 +5,4 @@ export {
 	isLiveStyleLabel,
 } from './liveStyles';
 
-export { convertTags, defaultStyledTag, isVideoTag } from './tags';
+export { defaultStyledTag, isVideoTag } from './tags';

@@ -46,7 +46,7 @@ const convertVideoDefFromJson = (
 		thumbnail: thumbnails.default,
 		liveSeriesId: liveSeriesId,
 		liveStyle,
-		tags: tags?.map(defaultStyledTag) ?? [],
+		tags: tags?.map(defaultStyledTag('none')) ?? [],
 		url: `https://www.youtube.com/watch?v=${id}`,
 	};
 };
