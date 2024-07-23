@@ -173,7 +173,7 @@ function constructGameTitles(games: Sheet) {
 		)
 		.filter((record) => {
 			const { id } = record;
-			if (id === '読み込んでいます...') {
+			if (id in ['読み込んでいます...', '#NAME?']) {
 				throw Error('ID読込中。要リロード / ' + JSON.stringify(record));
 			}
 			return !!id;
