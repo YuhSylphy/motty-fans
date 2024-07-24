@@ -14,7 +14,7 @@ export function HorseDefsContainer({ children }: HorseDefProps) {
 		if (list.length == 0) {
 			dispatch(horseDefsActions.init());
 		}
-	}, [dispatch, horseDefsActions]);
+	}, [dispatch, list.length]);
 
 	return <React.Fragment>{children}</React.Fragment>;
 }

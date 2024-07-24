@@ -5,6 +5,7 @@ import type { PedigreeAction } from 'src/features/pedigree';
 import type { ChangeLogAction } from 'src/features/changelog';
 import type { VideosAction } from 'src/features/videos';
 import type { ProfileAction } from 'src/features/profile';
+import type { LiveSeriesAction } from 'src/features/live-series';
 
 export type AppAction =
 	| CoreAction
@@ -13,4 +14,5 @@ export type AppAction =
 	| PedigreeAction
 	| ChangeLogAction
 	| VideosAction
-	| ProfileAction;
+	| ProfileAction
+	| LiveSeriesAction;

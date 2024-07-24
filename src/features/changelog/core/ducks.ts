@@ -16,4 +16,6 @@ const slice = createSlice({
 });
 
 export const { actions, reducer } = slice;
-export type ChangeLogAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type ChangeLogAction = ReturnType<
+	(typeof actions)[keyof typeof actions]
+>;

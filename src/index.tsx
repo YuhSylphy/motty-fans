@@ -25,3 +25,6 @@ root.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+// TODO: manifest.json? PWA対応
+// TODO: CRA廃止につきフレームワーク移行が必要。Remix SPAか

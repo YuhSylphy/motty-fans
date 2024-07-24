@@ -48,7 +48,7 @@ function NestItem(def: NestMenuItemDefWithDepth) {
 			def.children
 				.map((child) => ({ ...child, depth: def.depth + 1 }))
 				.map(MenuListItem),
-		[def.children]
+		[def.children, def.depth]
 	);
 	return (
 		<React.Fragment>

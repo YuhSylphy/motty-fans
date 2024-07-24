@@ -1,18 +1,7 @@
-import { red, pink } from '@mui/material/colors';
-import {
-	createTheme,
-	ThemeProvider,
-	StyledEngineProvider,
-} from '@mui/material/styles';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import React, { ReactNode } from 'react';
 
-const theme = createTheme({
-	palette: {
-		mode: 'dark',
-		primary: red,
-		secondary: pink,
-	},
-});
+import { theme } from '../core/appTheme';
 
 export type AppThemeProviderProps = {
 	children: ReactNode;
