@@ -5,12 +5,8 @@ import React, {
 	useMemo,
 	useState,
 } from 'react';
-import {
-	useAppDispatch,
-	useAppSelector,
-	useValueWithMediaQuery,
-} from 'src/util';
-import { liveSeriesActions } from '..';
+import { DateTime } from 'luxon';
+
 import {
 	AppBar,
 	Box,
@@ -37,6 +33,14 @@ import {
 	// useMediaQuery,
 } from '@mui/material';
 import { Search as SearchIcon, Link as LinkIcon } from '@mui/icons-material';
+
+import {
+	useAppDispatch,
+	useAppSelector,
+	useValueWithMediaQuery,
+} from 'src/util';
+
+import { liveSeriesActions } from '..';
 import { Thumbnail } from 'src/features/videos/core/types/videos';
 import { LiveStyle } from 'src/features/videos/core/types';
 import { convertLiveStyleToLabel } from 'src/features/videos/core/types/utils';
@@ -361,7 +365,9 @@ const useLiveSeriesBodyHooks = () => {
 								: lives
 										.slice(0, 1)
 										.map(({ publishedAt, url, thumbnail, title }) => ({
-											publishedIn: publishedAt.year,
+											publishedIn: DateTime.fromMillis(publishedAt, {
+												zone: 'JST',
+											}).year,
 											url,
 											thumbnail,
 											title,

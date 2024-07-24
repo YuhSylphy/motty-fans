@@ -18,7 +18,7 @@ export type LiveSeries = LiveSeriesDef & {
 export type LiveSeriesVideo = {
 	id: string;
 	description: string;
-	publishedAt: DateTime;
+	publishedAt: number;
 	title: string;
 	thumbnail: Thumbnail;
 	liveSeriesId: string | null;
@@ -41,7 +41,7 @@ const convertVideoDefFromJson = (
 	return {
 		id,
 		description,
-		publishedAt: DateTime.fromISO(publishedAt),
+		publishedAt: DateTime.fromISO(publishedAt).toMillis(),
 		title,
 		thumbnail: thumbnails.default,
 		liveSeriesId: liveSeriesId,
