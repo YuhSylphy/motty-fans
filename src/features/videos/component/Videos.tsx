@@ -454,7 +454,9 @@ const useVideoConditionFormHooks = () => {
 			undefined
 		>
 	>((option, value) => {
-		console.info(option, value);
+		// TODO: fix MUI: The value provided to Autocomplete is invalid.
+		// None of the options match with `"Nintendo World Championships ファミコン世界大会"`.
+		// You can use the `isOptionEqualToValue` prop to customize the equality test.
 		return option === value;
 	}, []);
 
