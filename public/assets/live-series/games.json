@@ -44,7 +44,7 @@
 			"id": "yPLJ-u-vGgGj",
 			"gameTitle": "マリオ+ラビッツ キングダムバトル",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオ+ラビッツシリーズ"],
 			"releasedIn": 2018,
 			"masteryLevel": 4
 		},
@@ -60,7 +60,7 @@
 			"id": "vNJcpdWifoAY",
 			"gameTitle": "ゼルダの伝説 時のオカリナ",
 			"platform": "N64",
-			"tags": [],
+			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 1998,
 			"masteryLevel": 3
 		},
@@ -68,7 +68,7 @@
 			"id": "RejOCo8kqNKU",
 			"gameTitle": "マリオのピクロス",
 			"platform": "GB",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 1995,
 			"masteryLevel": 3
 		},
@@ -76,7 +76,7 @@
 			"id": "vRuNXhTvD-yb",
 			"gameTitle": "マリオストライカーズ",
 			"platform": "GC",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオストライカーズシリーズ"],
 			"releasedIn": 2005,
 			"masteryLevel": 2
 		},
@@ -92,7 +92,7 @@
 			"id": "3LJiyO7DOep7",
 			"gameTitle": "マリオパーティ アイランドツアー",
 			"platform": "3DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
 			"releasedIn": 2013,
 			"masteryLevel": 2
 		},
@@ -100,7 +100,7 @@
 			"id": "7gJgHRXnA5L8",
 			"gameTitle": "ルイージマンション2",
 			"platform": "3DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ルイージマンションシリーズ"],
 			"releasedIn": 2013,
 			"masteryLevel": 2
 		},
@@ -108,7 +108,7 @@
 			"id": "FJh1HlVJNeXM",
 			"gameTitle": "マリオパーティ9",
 			"platform": "Wii",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
 			"releasedIn": 2012,
 			"masteryLevel": 2
 		},
@@ -116,7 +116,7 @@
 			"id": "VKB6Mh5oPMqZ",
 			"gameTitle": "ルイージマンション3",
 			"platform": "3DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ルイージマンションシリーズ"],
 			"releasedIn": 2019,
 			"masteryLevel": 4
 		},
@@ -124,7 +124,7 @@
 			"id": "8wLG0OvvL8cl",
 			"gameTitle": "マリオパーティ10",
 			"platform": "WiiU",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
 			"releasedIn": 2015,
 			"masteryLevel": 2
 		},
@@ -132,7 +132,7 @@
 			"id": "vxKtP5nggBJ5",
 			"gameTitle": "スーパーマリオスタジアム ミラクルベースボール",
 			"platform": "GC",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2005,
 			"masteryLevel": 2
 		},
@@ -140,7 +140,7 @@
 			"id": "mGfyIMOnbmtA",
 			"gameTitle": "スーパーマリオ64",
 			"platform": "N64",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 1996,
 			"masteryLevel": 5
 		},
@@ -148,7 +148,7 @@
 			"id": "uQgLTPWm1AO7",
 			"gameTitle": "スーパーマリオブラザーズ35",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 2
 		},
@@ -164,7 +164,7 @@
 			"id": "AWhAx0kaTUx7",
 			"gameTitle": "スーパーマリオ3Dワールド + フューリーワールド",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2021,
 			"masteryLevel": 4
 		},
@@ -172,7 +172,7 @@
 			"id": "kO06DzJZTnAI",
 			"gameTitle": "ピクミン3 デラックス",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["ピクミンシリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 2
 		},
@@ -180,7 +180,7 @@
 			"id": "o6grGNzBlyeb",
 			"gameTitle": "マリオゴルフ64",
 			"platform": "N64",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオゴルフシリーズ"],
 			"releasedIn": 1999,
 			"masteryLevel": 2
 		},
@@ -188,7 +188,7 @@
 			"id": "_dOAJE9LuW5c",
 			"gameTitle": "マリオゴルフ ファミリーツアー",
 			"platform": "GC",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオゴルフシリーズ"],
 			"releasedIn": 2003,
 			"masteryLevel": 2
 		},
@@ -196,7 +196,7 @@
 			"id": "fZVNkfkcdlDW",
 			"gameTitle": "スーパーマリオギャラクシー (3Dコレクション)",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 4
 		},
@@ -204,7 +204,7 @@
 			"id": "kbBaorWZne8K",
 			"gameTitle": "あつまれ どうぶつの森",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["どうぶつの森シリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 5
 		},
@@ -236,7 +236,7 @@
 			"id": "Q6SoKRmZiJ2G",
 			"gameTitle": "マリオゴルフ スーパーラッシュ",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオゴルフシリーズ"],
 			"releasedIn": 2021,
 			"masteryLevel": 3
 		},
@@ -252,7 +252,7 @@
 			"id": "6Sd1HFtBlMKj",
 			"gameTitle": "マリオカートWii",
 			"platform": "Wii",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
 			"releasedIn": 2008,
 			"masteryLevel": 3
 		},
@@ -260,7 +260,7 @@
 			"id": "UNfF6bEE3W4k",
 			"gameTitle": "ゼルダの伝説 スカイウォードソード HD",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 2021,
 			"masteryLevel": 2
 		},
@@ -268,7 +268,7 @@
 			"id": "rBDj_YpMt-sC",
 			"gameTitle": "マリオ&ソニック AT 東京2020オリンピック",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2019,
 			"masteryLevel": 4
 		},
@@ -276,7 +276,7 @@
 			"id": "Cu0kM6YO2lzU",
 			"gameTitle": "スーパーマリオスタジアム ファミリーベースボール",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2008,
 			"masteryLevel": 2
 		},
@@ -284,7 +284,7 @@
 			"id": "TDDm38viBdp1",
 			"gameTitle": "マリオストライカーズ チャージド",
 			"platform": "Wii",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオストライカーズシリーズ"],
 			"releasedIn": 2007,
 			"masteryLevel": 2
 		},
@@ -292,7 +292,7 @@
 			"id": "PF0GIYOk8qYS",
 			"gameTitle": "MARIO SPORTS MIX",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2010,
 			"masteryLevel": 2
 		},
@@ -308,7 +308,7 @@
 			"id": "iE7r5DsZY_uH",
 			"gameTitle": "スーパーマリオパーティ",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
 			"releasedIn": 2018,
 			"masteryLevel": 4
 		},
@@ -316,7 +316,7 @@
 			"id": "bBYoOjoPYU_o",
 			"gameTitle": "おどるメイドインワリオ",
 			"platform": "Wii",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
 			"releasedIn": 2006,
 			"masteryLevel": 2
 		},
@@ -324,7 +324,7 @@
 			"id": "U3kFyRCoj3mQ",
 			"gameTitle": "さわるメイドインワリオ",
 			"platform": "DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
 			"releasedIn": 2004,
 			"masteryLevel": 2
 		},
@@ -332,7 +332,7 @@
 			"id": "sjuZawUftxt1",
 			"gameTitle": "ゲーム&ワリオ",
 			"platform": "WiiU",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
 			"releasedIn": 2013,
 			"masteryLevel": 2
 		},
@@ -340,7 +340,7 @@
 			"id": "VzAanKGqTYZt",
 			"gameTitle": "マリオスポーツ スーパースターズ",
 			"platform": "3DS",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2017,
 			"masteryLevel": 3
 		},
@@ -348,7 +348,7 @@
 			"id": "JDNegElNG3Or",
 			"gameTitle": "マリオのスーパーピクロス",
 			"platform": "SFC",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 1995,
 			"masteryLevel": 3
 		},
@@ -364,7 +364,7 @@
 			"id": "8TNtzxp9GJlB",
 			"gameTitle": "マリオカート7",
 			"platform": "3DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
 			"releasedIn": 2011,
 			"masteryLevel": 5
 		},
@@ -372,7 +372,7 @@
 			"id": "PDS5gp3TpY9c",
 			"gameTitle": "スーパーマリオボール",
 			"platform": "GBA",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2004,
 			"masteryLevel": 2
 		},
@@ -380,7 +380,7 @@
 			"id": "ELUH83xPZjoI",
 			"gameTitle": "おすそわける メイドインワリオ",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
 			"releasedIn": 2021,
 			"masteryLevel": 3
 		},
@@ -388,7 +388,7 @@
 			"id": "UyvhI6BD2fAP",
 			"gameTitle": "いただきストリートDS",
 			"platform": "DS",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2007,
 			"masteryLevel": 3
 		},
@@ -396,7 +396,7 @@
 			"id": "D1Qb7eS3B_qF",
 			"gameTitle": "スーパーメトロイド",
 			"platform": "SFC",
-			"tags": [],
+			"tags": ["メトロイドシリーズ"],
 			"releasedIn": 1994,
 			"masteryLevel": 2
 		},
@@ -404,7 +404,7 @@
 			"id": "P4ITjxeiqJlX",
 			"gameTitle": "メトロイドフュージョン",
 			"platform": "GBA",
-			"tags": [],
+			"tags": ["メトロイドシリーズ"],
 			"releasedIn": 2002,
 			"masteryLevel": 2
 		},
@@ -412,7 +412,7 @@
 			"id": "ubIH6CFl-BVf",
 			"gameTitle": "メトロイドドレッド",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["メトロイドシリーズ"],
 			"releasedIn": 2021,
 			"masteryLevel": 4
 		},
@@ -420,7 +420,7 @@
 			"id": "UnpMDePRWCI7",
 			"gameTitle": "役満DS",
 			"platform": "DS",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2005,
 			"masteryLevel": 2
 		},
@@ -428,7 +428,7 @@
 			"id": "7QDOJ0Qdubt8",
 			"gameTitle": "マリオパーティ スーパースターズ",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
 			"releasedIn": 2021,
 			"masteryLevel": 4
 		},
@@ -452,7 +452,7 @@
 			"id": "bEPo64e5fnsP",
 			"gameTitle": "SSX On Tour with マリオ",
 			"platform": "GC",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2005,
 			"masteryLevel": 1
 		},
@@ -460,7 +460,7 @@
 			"id": "vcg_XH4S2r-D",
 			"gameTitle": "いただきストリートWii",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2011,
 			"masteryLevel": 3
 		},
@@ -468,7 +468,7 @@
 			"id": "x7NAPXc43b9K",
 			"gameTitle": "マリオテニス64",
 			"platform": "N64",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2000,
 			"masteryLevel": 3
 		},
@@ -476,7 +476,7 @@
 			"id": "uTi-1nc0nI0p",
 			"gameTitle": "ヨッシーストーリー",
 			"platform": "N64",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ヨッシーシリーズ"],
 			"releasedIn": 1997,
 			"masteryLevel": 4
 		},
@@ -484,7 +484,7 @@
 			"id": "lznt3d_D-L72",
 			"gameTitle": "マリオカート64",
 			"platform": "N64",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
 			"releasedIn": 1996,
 			"masteryLevel": 5
 		},
@@ -492,7 +492,7 @@
 			"id": "zRB4UyCMfd9d",
 			"gameTitle": "大乱闘スマッシュブラザーズSPECIAL",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["大乱闘スマッシュブラザーズシリーズ"],
 			"releasedIn": 2018,
 			"masteryLevel": 3
 		},
@@ -500,7 +500,7 @@
 			"id": "7X7v8hSMoVoi",
 			"gameTitle": "桃太郎電鉄 ～昭和 平成 令和も定番！～",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["桃太郎電鉄シリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 5
 		},
@@ -508,7 +508,7 @@
 			"id": "HtN7MZhsvRyH",
 			"gameTitle": "Wii Sports",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["Wii Sportsシリーズ"],
 			"releasedIn": 2006,
 			"masteryLevel": 3
 		},
@@ -516,7 +516,7 @@
 			"id": "NSqmjS5cHBPO",
 			"gameTitle": "マリオ＆ソニック AT 北京オリンピック",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2007,
 			"masteryLevel": 1
 		},
@@ -524,7 +524,7 @@
 			"id": "uj6irY-UZ07q",
 			"gameTitle": "Wii Sports Resort",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["Wii Sportsシリーズ"],
 			"releasedIn": 2009,
 			"masteryLevel": 3
 		},
@@ -532,7 +532,7 @@
 			"id": "S8puP1m2ahwM",
 			"gameTitle": "星のカービィ Wii",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2011,
 			"masteryLevel": 4
 		},
@@ -540,7 +540,7 @@
 			"id": "VNYZ_MbMiNQc",
 			"gameTitle": "星のカービィ トリプルデラックス",
 			"platform": "3DS",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2014,
 			"masteryLevel": 4
 		},
@@ -548,7 +548,7 @@
 			"id": "6jDqu7dupB0v",
 			"gameTitle": "星のカービィ 参上！ドロッチェ団",
 			"platform": "DS",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2006,
 			"masteryLevel": 4
 		},
@@ -556,7 +556,7 @@
 			"id": "vtsW7X9iznkh",
 			"gameTitle": "星のカービィ ディスカバリー",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 4
 		},
@@ -564,7 +564,7 @@
 			"id": "DC76t52xMTY1",
 			"gameTitle": "星のカービィ 夢の泉の物語",
 			"platform": "FC",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 1993,
 			"masteryLevel": 4
 		},
@@ -580,7 +580,7 @@
 			"id": "pUKdWHkwMkte",
 			"gameTitle": "大乱闘スマッシュブラザーズX",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["大乱闘スマッシュブラザーズシリーズ"],
 			"releasedIn": 2008,
 			"masteryLevel": 3
 		},
@@ -588,7 +588,7 @@
 			"id": "kwdGOknZuHia",
 			"gameTitle": "星のカービィ ウルトラスーパーデラックス",
 			"platform": "DS",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2008,
 			"masteryLevel": 4
 		},
@@ -596,7 +596,7 @@
 			"id": "fPwFFfzVBjvc",
 			"gameTitle": "Nintendo Switch Sports",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["Wii Sportsシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 3
 		},
@@ -604,7 +604,7 @@
 			"id": "Zbh0iv8iH9n2",
 			"gameTitle": "ゼルダ無双 厄災の黙示録",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 4
 		},
@@ -612,7 +612,7 @@
 			"id": "MWC0Iq22MLxN",
 			"gameTitle": "マリオストライカーズ バトルリーグ",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオストライカーズシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 2
 		},
@@ -620,7 +620,7 @@
 			"id": "n24o5cgVdVMQ",
 			"gameTitle": "ゲームボーイギャラリー4",
 			"platform": "GBA",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ゲームボーイギャラリーシリーズ"],
 			"releasedIn": 2002,
 			"masteryLevel": 3
 		},
@@ -652,7 +652,7 @@
 			"id": "aq017QagjXp7",
 			"gameTitle": "カービィのグルメフェス",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 2
 		},
@@ -660,7 +660,7 @@
 			"id": "D6hGLrRwrE5X",
 			"gameTitle": "スプラトゥーン3",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["スプラトゥーンシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 5
 		},
@@ -676,7 +676,7 @@
 			"id": "G-rPLUkcyCfj",
 			"gameTitle": "マリオ+ラビッツ ギャラクシーバトル",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオ+ラビッツシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 4
 		},
@@ -684,7 +684,7 @@
 			"id": "J7kdBl5o3QOh",
 			"gameTitle": "ソリティ馬 Ride On!",
 			"platform": "iOS",
-			"tags": [],
+			"tags": ["ソリティ馬シリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
@@ -700,7 +700,7 @@
 			"id": "DQ8np1oXPj5F",
 			"gameTitle": "毛糸のカービィ",
 			"platform": "Wii",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2010,
 			"masteryLevel": 4
 		},
@@ -708,7 +708,7 @@
 			"id": "7PxKdkhuV-N3",
 			"gameTitle": "星のカービィ (初代)",
 			"platform": "GB",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 1992,
 			"masteryLevel": 2
 		},
@@ -716,7 +716,7 @@
 			"id": "S_zh8UvknnFL",
 			"gameTitle": "星のカービィWiiデラックス",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 4
 		},
@@ -724,7 +724,7 @@
 			"id": "U-aEkeXTFkEe",
 			"gameTitle": "星のカービィ2",
 			"platform": "GBC",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 1995,
 			"masteryLevel": 3
 		},
@@ -732,7 +732,7 @@
 			"id": "Um4b4TD0NErH",
 			"gameTitle": "カービィボウル",
 			"platform": "SFC",
-			"tags": [],
+			"tags": ["星のカービィシリーズ"],
 			"releasedIn": 1994,
 			"masteryLevel": 2
 		},
@@ -740,7 +740,7 @@
 			"id": "c9tgTz8QdBsH",
 			"gameTitle": "ゼルダの伝説 ティアーズオブザキングダム",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
@@ -756,7 +756,7 @@
 			"id": "ErT3B7KhSQ3b",
 			"gameTitle": "ピクミン4",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["ピクミンシリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 4
 		},
@@ -788,7 +788,7 @@
 			"id": "flqcwZP8E3gJ",
 			"gameTitle": "スーパーマリオブラザーズワンダー",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
@@ -796,7 +796,7 @@
 			"id": "pu9lau88P4vq",
 			"gameTitle": "スーパーマリオRPG(リメイク)",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 4
 		},
@@ -804,7 +804,7 @@
 			"id": "A7c6LFoysWEf",
 			"gameTitle": "桃太郎電鉄ワールド ～地球は希望でまわってる！～",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["桃太郎電鉄シリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
@@ -812,7 +812,7 @@
 			"id": "J2BLjSfKTiaG",
 			"gameTitle": "風来のシレン5plus フォーチュンタワーと運命のダイス",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["風来のシレンシリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 3
 		},
@@ -828,7 +828,7 @@
 			"id": "wPN04-RrF8o7",
 			"gameTitle": "風来のシレン6 とぐろ島探検録",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["風来のシレンシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 3
 		},
@@ -836,7 +836,7 @@
 			"id": "FvGiop3nAkIe",
 			"gameTitle": "マリオvs.ドンキーコング (Switch)",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "マリオvs.ドンキーコングシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 3
 		},
@@ -844,7 +844,7 @@
 			"id": "LFSuVwAjgCM4",
 			"gameTitle": "ソリティ馬 Ride On! (Switch)",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["ソリティ馬シリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 5
 		},
@@ -852,7 +852,7 @@
 			"id": "y8jXgcFr0QN_",
 			"gameTitle": "プリンセスピーチ Showtime!",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["マリオシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 2
 		},
@@ -860,7 +860,7 @@
 			"id": "A5Vyf7gyNZDS",
 			"gameTitle": "スプラトゥーン",
 			"platform": "WiiU",
-			"tags": [],
+			"tags": ["スプラトゥーンシリーズ"],
 			"releasedIn": 2015,
 			"masteryLevel": 5
 		},
@@ -900,7 +900,7 @@
 			"id": "j-EAJzbDqQBR",
 			"gameTitle": "ペーパーマリオRPG (Switch)",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ペーパーマリオシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 4
 		},
@@ -908,7 +908,7 @@
 			"id": "DxoEsFzhDxlg",
 			"gameTitle": "ゼルダの伝説 神々のトライフォース&4つの剣",
 			"platform": "GBA",
-			"tags": [],
+			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 2003,
 			"masteryLevel": 4
 		},
@@ -916,7 +916,7 @@
 			"id": "wnYkxw2m_1fJ",
 			"gameTitle": "パンドランド",
 			"platform": "iOS",
-			"tags": [],
+			"tags": ["ゲームフリーク"],
 			"releasedIn": 2024,
 			"masteryLevel": 1
 		},
@@ -924,7 +924,7 @@
 			"id": "iy04cF6FpL5l",
 			"gameTitle": "ルイージマンション2 HD",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "ルイージマンションシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 3
 		},
@@ -932,7 +932,7 @@
 			"id": "-GVTWgpgTZsO",
 			"gameTitle": "伝説のスタフィー(初代)",
 			"platform": "GBA",
-			"tags": [],
+			"tags": ["伝説のスタフィーシリーズ"],
 			"releasedIn": "",
 			"masteryLevel": 0
 		},
