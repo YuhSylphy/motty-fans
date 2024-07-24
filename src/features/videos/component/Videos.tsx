@@ -203,7 +203,6 @@ function VideoChip({ tag, deletable, findable }: VideoChipProps) {
 	);
 
 	return (
-		// TODO: 文字が小さすぎる。Style調整
 		<TagChip
 			label={tag.label}
 			size="small"
@@ -227,7 +226,7 @@ const VideoTagsBox = styled(Box)({
 });
 
 const TagChip = styled(Chip)({
-	fontSize: '.4rem',
+	fontSize: '.6rem',
 });
 
 function VideoTags({ tags, deletable, findable }: VideoTagsProps) {
