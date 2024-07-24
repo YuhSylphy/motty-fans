@@ -17,4 +17,4 @@ const profileSlice = createSlice({
 });
 
 export const { actions, reducer } = profileSlice;
-export type ProfileAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type ProfileAction = ReturnType<(typeof actions)[keyof typeof actions]>;

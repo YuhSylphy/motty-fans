@@ -118,7 +118,7 @@ function Head() {
 export function App() {
 	useEffect(() => {
 		registerEpic(exportEpic);
-	}, [registerEpic, exportEpic]);
+	}, []);
 
 	return (
 		<LocalizationProvider dateAdapter={AdapterLuxon}>

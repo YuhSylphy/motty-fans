@@ -8,6 +8,7 @@ import { indicatorReducer } from 'src/features/indicator';
 import { pedigreeReducer } from 'src/features/pedigree';
 import { changeLogReducer } from 'src/features/changelog';
 import { videosReducer } from 'src/features/videos';
+import { liveSeriesReducer } from 'src/features/live-series';
 
 import type { AppAction } from './actions';
 import { profileReducer } from 'src/features/profile';
@@ -21,10 +22,11 @@ const reducer = {
 	changeLog: changeLogReducer,
 	videos: videosReducer,
 	profile: profileReducer,
+	liveSeries: liveSeriesReducer,
 };
 
 export type RootState = {
-	[K in keyof typeof reducer]: ReducerState<typeof reducer[K]>;
+	[K in keyof typeof reducer]: ReducerState<(typeof reducer)[K]>;
 };
 
 const dependencies = {};

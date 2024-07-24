@@ -295,7 +295,7 @@ function ProfileContainer() {
 			initializedRef.current = true;
 			dispatch(profileActions.init());
 		}
-	}, [initializedRef]);
+	}, [dispatch, initializedRef]);
 
 	return (
 		<ProfileStyledContainer id="profile">

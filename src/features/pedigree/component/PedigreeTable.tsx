@@ -211,7 +211,7 @@ export const PedigreeTable: React.FC<PedigreeTableProps> = ({ def }) => {
 		() =>
 			defs.reduce(
 				(map, def) => map.set(def.name, def),
-				new Map<string, typeof defs[number]>()
+				new Map<string, (typeof defs)[number]>()
 			),
 		[defs]
 	);
