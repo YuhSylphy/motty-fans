@@ -47,5 +47,5 @@ Array.prototype.takeWhile = function takeWhile<T, R extends T>(
 	block: (elem: T, index: number, obj: T[]) => elem is R
 ): R[] {
 	const index = this.findIndex((e, ix, obj) => !block(e, ix, obj));
-	return this.slice(0, index) as R[];
+	return (index < 0 ? this : this.slice(0, index)) as R[];
 };
