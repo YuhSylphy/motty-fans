@@ -52,7 +52,7 @@ interface LiveSeriesRecord {
 	platform: string;
 	title: string;
 	titleReleasedIn: number | string | null;
-	style: LiveStyle | null; // TODO: 代表の1つでなくリストにする
+	styles: [LiveStyle]; // TODO: 代表の1つでなくリストにする
 	amount: number;
 	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
 	part1: {
@@ -96,13 +96,26 @@ function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 				alt={alt}
 				src={url}
 				sx={(_theme) => ({
-					maxHeight: '100%',
 					aspectRatio: `${width} / ${height}`,
+					width: '100%',
+					height: '100%',
+					objectFit: 'contain',
 					display: 'block',
 				})}
 			/>
 		</Link>
 	);
+}
+function convertStylesToLabel(styles: (LiveStyle | null)[]) {
+	const converted = styles.map(convertLiveStyleToLabel);
+	switch (converted.length) {
+		case 0:
+			return null;
+		case 1:
+			return converted[0];
+		default:
+			return converted.map((x) => x?.slice(0, 1)).join(' / ');
+	}
 }
 
 function LiveSeriesListItem({
@@ -110,17 +123,19 @@ function LiveSeriesListItem({
 	platform,
 	title,
 	titleReleasedIn,
-	style,
+	styles,
 	amount,
 	masteryLevel,
 	part1,
 	remarks,
 }: LiveSeriesRecord) {
+	const liveStyleLabel = useMemo(() => convertStylesToLabel(styles), [styles]);
+
 	const Details = useCallback(
 		() => (
 			<Grid container>
 				<Grid item xs={6}>
-					<Typography>{convertLiveStyleToLabel(style)}</Typography>
+					<Typography>{liveStyleLabel}</Typography>
 				</Grid>
 				<Grid item xs={6}>
 					<Typography>{masteryLevelLabel(masteryLevel)}</Typography>
@@ -142,7 +157,15 @@ function LiveSeriesListItem({
 				</Grid>
 			</Grid>
 		),
-		[amount, masteryLevel, part1, platform, remarks, style, titleReleasedIn]
+		[
+			amount,
+			masteryLevel,
+			part1,
+			platform,
+			remarks,
+			titleReleasedIn,
+			liveStyleLabel,
+		]
 	);
 
 	return (
@@ -210,7 +233,7 @@ function LiveSeriesTableRow(
 		platform,
 		title,
 		titleReleasedIn,
-		style,
+		styles,
 		amount,
 		masteryLevel,
 		part1,
@@ -218,6 +241,8 @@ function LiveSeriesTableRow(
 	}: LiveSeriesRecord,
 	ix: number
 ) {
+	const liveStyleLabel = useMemo(() => convertStylesToLabel(styles), [styles]);
+
 	const UrlLinkColumn = useCallback(
 		() =>
 			!part1 ? (
@@ -259,7 +284,7 @@ function LiveSeriesTableRow(
 				<Typography>{titleReleasedIn ?? '(未設定)'}</Typography>
 			</TableCell>
 			<TableCell align="center">
-				<Typography>{convertLiveStyleToLabel(style)}</Typography>
+				<Typography>{liveStyleLabel}</Typography>
 			</TableCell>
 			<TableCell align="center">
 				<Typography>{amount}</Typography>
@@ -323,8 +348,11 @@ const useLiveSeriesBodyHooks = () => {
 						platform: game?.platform,
 						title: seriesTitle,
 						titleReleasedIn: game?.releasedIn || null,
-						style:
-							lives.map(({ liveStyle }) => liveStyle).find((_) => true) ?? null,
+						styles: ((set) => Array.from(set))(
+							lives
+								.map(({ liveStyle }) => liveStyle)
+								.reduce((s, e) => s.add(e), new Set())
+						),
 						amount: lives.length,
 						masteryLevel: game?.masteryLevel,
 						part1:
