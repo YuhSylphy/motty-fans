@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-import { VideoDef } from './fetch';
+import { VideoDef } from './fetch/videos';
 
 export type VideoFinderCondition = {
 	tags: string[];
@@ -11,6 +10,7 @@ export type VideoFinderCondition = {
 };
 
 export type VideosState = {
+	loaded: boolean;
 	list: VideoDef[];
 	condition: VideoFinderCondition;
 };
@@ -18,6 +18,7 @@ export type VideosState = {
 const videoSlice = createSlice({
 	name: 'videos',
 	initialState: {
+		loaded: false,
 		list: [],
 		condition: {
 			tags: [],
@@ -31,6 +32,7 @@ const videoSlice = createSlice({
 		init: () => {},
 		setList: (draft, action: PayloadAction<VideosState['list']>) => {
 			draft.list = action.payload;
+			draft.loaded = true;
 		},
 		addConditionTags: (
 			draft,
@@ -73,4 +75,4 @@ const videoSlice = createSlice({
 });
 
 export const { actions, reducer } = videoSlice;
-export type VideosAction = ReturnType<typeof actions[keyof typeof actions]>;
+export type VideosAction = ReturnType<(typeof actions)[keyof typeof actions]>;

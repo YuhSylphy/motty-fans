@@ -16,5 +16,5 @@ const slice = createSlice({
 
 export const { actions: coreActions, reducer: coreReducer } = slice;
 export type CoreAction = ReturnType<
-	typeof coreActions[keyof typeof coreActions]
+	(typeof coreActions)[keyof typeof coreActions]
 >;

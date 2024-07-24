@@ -4,8 +4,8 @@ import React, {
 	useEffect,
 	useMemo,
 	useState,
-	useRef,
 } from 'react';
+import { useParams } from 'react-router';
 
 import {
 	Autocomplete,
@@ -26,7 +26,7 @@ import {
 	Typography,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+import { DatePicker } from '@mui/x-date-pickers/';
 
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
@@ -42,8 +42,9 @@ import {
 } from 'src/util';
 
 import { videosActions } from '..';
-import { VideoDef } from '../core/fetch';
-import { useParams } from 'react-router';
+import { VideoDef } from '../core/fetch/videos';
+import { VideoTag } from '../core/types';
+import { defaultStyledTag } from '../core/types/utils';
 
 const showImage = true;
 
@@ -146,46 +147,76 @@ function VideoThumbnail({ imageUrl, alt, videoId }: VideoThumbnailProps) {
 }
 
 type VideoChipProps = {
-	tag: string;
+	tag: VideoTag;
 	deletable?: boolean;
 	findable?: boolean;
 };
 
 const useVideoChipHooks = (
-	tag: string,
+	{ label, style }: VideoTag,
 	deletable?: boolean,
 	findable?: boolean
 ) => {
 	const dispatch = useAppDispatch();
 	const findTag = useCallback(() => {
-		dispatch(videosActions.addConditionTags([tag]));
-	}, [tag]);
+		dispatch(videosActions.addConditionTags([label]));
+	}, [dispatch, label]);
 	const deleteTag = useCallback(() => {
-		dispatch(videosActions.removeConditionTags([tag]));
-	}, [tag]);
+		dispatch(videosActions.removeConditionTags([label]));
+	}, [dispatch, label]);
+
+	const chipColor = useMemo(() => {
+		switch (style) {
+			case 'none':
+				return 'default' as const;
+			case 'lives':
+				return 'chipTagsFromLives' as const;
+			case 'series':
+				return 'chipTagsFromSeries' as const;
+			case 'games':
+				return 'chipTagsFromGames' as const;
+			case 'broadcast':
+				return 'chipLiveStylesBroadcast' as const;
+			case 'video':
+				return 'chipLiveStylesVideo' as const;
+			case 'short':
+				return 'chipLiveStylesShort' as const;
+			default: {
+				const _exhaust: never = style;
+				throw _exhaust;
+			}
+		}
+	}, [style]);
 
 	return {
 		findTag: findable ? findTag : void 0,
 		deleteTag: deletable ? deleteTag : void 0,
+		chipColor,
 	};
 };
 
 function VideoChip({ tag, deletable, findable }: VideoChipProps) {
-	const { findTag, deleteTag } = useVideoChipHooks(tag, deletable, findable);
+	const { findTag, deleteTag, chipColor } = useVideoChipHooks(
+		tag,
+		deletable,
+		findable
+	);
+
 	return (
 		<TagChip
-			label={tag}
+			label={tag.label}
 			size="small"
 			icon={findable ? <SearchIcon /> : void 0}
 			clickable={findable}
 			onClick={findTag}
 			onDelete={deleteTag}
+			color={chipColor}
 		/>
 	);
 }
 
-type TagsProps = {
-	tags: string[];
+type VideoTagsProps = {
+	tags: VideoTag[];
 	deletable?: boolean;
 	findable?: boolean;
 };
@@ -195,15 +226,15 @@ const VideoTagsBox = styled(Box)({
 });
 
 const TagChip = styled(Chip)({
-	fontSize: '.4rem',
+	fontSize: '.6rem',
 });
 
-function VideoTags({ tags, deletable, findable }: TagsProps) {
+function VideoTags({ tags, deletable, findable }: VideoTagsProps) {
 	return (
 		<VideoTagsBox>
 			{tags.map((tag) => (
 				<VideoChip
-					key={tag}
+					key={tag.label}
 					tag={tag}
 					deletable={deletable}
 					findable={findable}
@@ -275,11 +306,11 @@ const useVideoBodyHooks = (defs: VideoBodyProps['defs']) => {
 		} else {
 			setLoaded([...defs]);
 		}
-	}, [loaded, steps, setLoaded, defs]);
+	}, [loaded, setLoaded, defs]);
 
 	useEffect(() => {
 		fetchNext(); // 初回
-	}, [defs]);
+	}, [fetchNext]);
 
 	const itemsPerRow = useValueWithMediaQuery({
 		xs: 1,
@@ -334,21 +365,21 @@ const useVideoConditionFormHooks = () => {
 	const dispatch = useAppDispatch();
 	const {
 		condition: {
-			tags,
+			tags: tagLabels,
 			dateSpan: { from, to },
 		},
 	} = useAppSelector((state) => state.videos);
 
 	const onChangeFrom = useCallback<
-		React.ComponentProps<typeof MobileDatePicker>['onChange']
+		Exclude<React.ComponentProps<typeof DatePicker>['onChange'], undefined>
 	>(
 		(date) => {
 			if (date === null) {
 				dispatch(videosActions.clearConditionDateFrom());
 			} else if (date instanceof DateTime) {
 				dispatch(videosActions.setConditionDateFrom(date.toMillis()));
-			} else if (date instanceof Date) {
-				dispatch(videosActions.setConditionDateFrom(date));
+				// } else if (date instanceof Date) {
+				// 	dispatch(videosActions.setConditionDateFrom(date));
 			} else {
 				console.error('from condition is not a date nor null', date);
 			}
@@ -357,15 +388,15 @@ const useVideoConditionFormHooks = () => {
 	);
 
 	const onChangeTo = useCallback<
-		React.ComponentProps<typeof MobileDatePicker>['onChange']
+		Exclude<React.ComponentProps<typeof DatePicker>['onChange'], undefined>
 	>(
 		(date) => {
 			if (date === null) {
 				dispatch(videosActions.clearConditionDateTo());
 			} else if (date instanceof DateTime) {
 				dispatch(videosActions.setConditionDateTo(date.toMillis()));
-			} else if (date instanceof Date) {
-				dispatch(videosActions.setConditionDateTo(date));
+				// } else if (date instanceof Date) {
+				// 	dispatch(videosActions.setConditionDateTo(date));
 			} else {
 				console.error('to condition is not a date nor null', date);
 			}
@@ -417,16 +448,34 @@ const useVideoConditionFormHooks = () => {
 		[setAutocompleteValue]
 	);
 
+	const isOptionEqualToValue = useCallback<
+		Exclude<
+			React.ComponentProps<typeof Autocomplete>['isOptionEqualToValue'],
+			undefined
+		>
+	>((option, value) => {
+		// TODO: fix MUI: The value provided to Autocomplete is invalid.
+		// None of the options match with `"Nintendo World Championships ファミコン世界大会"`.
+		// You can use the `isOptionEqualToValue` prop to customize the equality test.
+		return option === value;
+	}, []);
+
+	const tags = useMemo(
+		() => tagLabels.map(defaultStyledTag('none')),
+		[tagLabels]
+	);
+
 	return {
 		tags,
-		from: from !== null ? new Date(from) : null,
-		to: to !== null ? new Date(to) : null,
+		from: from !== null ? DateTime.fromMillis(from) : null,
+		to: to !== null ? DateTime.fromMillis(to) : null,
 		autocompleteValue,
 		renderTagAutocompleteInput,
 		onChangeFrom,
 		onChangeTo,
 		onChangeTag,
 		onInputChangeTag,
+		isOptionEqualToValue,
 	};
 };
 
@@ -445,6 +494,7 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 		onChangeTo,
 		onChangeTag,
 		onInputChangeTag,
+		isOptionEqualToValue,
 	} = useVideoConditionFormHooks();
 	return (
 		<Container>
@@ -457,6 +507,7 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 						<Autocomplete
 							options={tagCandidates}
 							renderInput={renderTagAutocompleteInput}
+							isOptionEqualToValue={isOptionEqualToValue}
 							autoHighlight
 							autoSelect
 							blurOnSelect
@@ -484,27 +535,33 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 						<VideoTags tags={tags} deletable />
 					</Grid>
 					<Grid item xs={12}>
-						<MobileDatePicker
+						<DatePicker
 							label="配信・投稿日(from)"
-							inputFormat="yyyy-MM-dd"
+							format="yyyy-MM-dd"
 							value={from}
 							onChange={onChangeFrom}
-							renderInput={(params) => <TextField {...params} />}
-							clearable
+							// renderInput={(params) => <TextField {...params} />}
+							// clearable
 							showDaysOutsideCurrentMonth
-							showTodayButton
-							showToolbar
+							// showTodayButton
+							// showToolbar
+							slotProps={{
+								actionBar: { actions: ['clear', 'today', 'cancel', 'accept'] },
+							}}
 						/>
-						<MobileDatePicker
+						<DatePicker
 							label="配信・投稿日(to)"
-							inputFormat="yyyy-MM-dd"
+							format="yyyy-MM-dd"
 							value={to}
 							onChange={onChangeTo}
-							renderInput={(params) => <TextField {...params} />}
-							clearable
+							// renderInput={(params) => <TextField {...params} />}
+							// clearable
 							showDaysOutsideCurrentMonth
-							showTodayButton
-							showToolbar
+							// showTodayButton
+							// showToolbar
+							slotProps={{
+								actionBar: { actions: ['clear', 'today', 'cancel', 'accept'] },
+							}}
 						/>
 					</Grid>
 				</Grid>
@@ -514,10 +571,11 @@ function VideoConditionForm({ tagCandidates }: VideoConditionFormProps) {
 }
 
 const useVideoContainerHooks = () => {
-	const initialized = useRef(true);
+	const [toBeInitialized, setToBeInitialized] = useState(true);
 
 	const dispatch = useAppDispatch();
 	const {
+		loaded,
 		list,
 		condition: {
 			tags,
@@ -526,11 +584,11 @@ const useVideoContainerHooks = () => {
 	} = useAppSelector((state) => state.videos);
 
 	useEffect(() => {
-		if (initialized.current) {
+		if (toBeInitialized) {
 			dispatch(videosActions.init());
-			initialized.current = false;
+			setToBeInitialized(false);
 		}
-	}, [initialized]);
+	}, [toBeInitialized, setToBeInitialized, dispatch]);
 
 	const defs = useMemo(
 		() =>
@@ -539,7 +597,10 @@ const useVideoContainerHooks = () => {
 					(d) =>
 						// タグ判定
 						(tags.length === 0 ||
-							tags.every((selected) => d.tags.includes(selected))) &&
+							((labels: string[]) =>
+								tags.every((selected) => labels.includes(selected)))(
+								d.tags.map(({ label }) => label)
+							)) &&
 						// 公開日範囲
 						(from === null || from <= d.publishedAt) &&
 						(to === null || d.publishedAt <= to)
@@ -552,7 +613,10 @@ const useVideoContainerHooks = () => {
 
 	const tagCandidates = Array.from(
 		(() => {
-			const ret = new Set(defs.flatMap(({ tags }) => tags));
+			const ret = new Set(
+				defs.flatMap(({ tags }) => tags.map(({ label }) => label))
+			);
+
 			tags.forEach((selected) => ret.delete(selected));
 			return ret;
 		})().keys()
@@ -560,7 +624,7 @@ const useVideoContainerHooks = () => {
 
 	const { hash } = useParams();
 
-	const loading = useMemo(() => list.length === 0, [list]);
+	const loading = useMemo(() => !loaded, [loaded]);
 
 	return { loading, defs, tagCandidates, hash };
 };

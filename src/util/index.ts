@@ -35,6 +35,6 @@ export const useValueWithMediaQuery = <T>(dict: { [K in Breakpoint]: T }) => {
 					Object.entries({ xs, sm, md, lg, xl }).find(([, value]) => value)?.[0]
 				)
 			],
-		[xs, sm, md, lg, xl]
+		[dict, xs, sm, md, lg, xl]
 	);
 };
