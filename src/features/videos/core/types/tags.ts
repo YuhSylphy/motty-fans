@@ -1,4 +1,12 @@
-const tagStyles = ['none', 'lives', 'series', 'games'] as const;
+const tagStyles = [
+	'none',
+	'lives',
+	'series',
+	'games',
+	'broadcast',
+	'video',
+	'short',
+] as const;
 
 export type TagStyle = (typeof tagStyles)[number];
 

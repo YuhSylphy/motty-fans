@@ -2,9 +2,11 @@ import {
 	red,
 	pink,
 	lightBlue,
-	blueGrey,
-	amber,
 	deepOrange,
+	indigo,
+	teal,
+	lime,
+	brown,
 } from '@mui/material/colors';
 import { PaletteColorOptions, createTheme } from '@mui/material/styles';
 
@@ -14,8 +16,8 @@ declare module '@mui/material/styles' {
 		chipTagsFromSeries: PaletteColorOptions;
 		chipTagsFromGames: PaletteColorOptions;
 
-		chipLiveStylesVideo: PaletteColorOptions;
 		chipLiveStylesBroadcast: PaletteColorOptions;
+		chipLiveStylesVideo: PaletteColorOptions;
 		chipLiveStylesShort: PaletteColorOptions;
 	}
 }
@@ -26,8 +28,8 @@ declare module '@mui/material/Chip' {
 		chipTagsFromSeries: true;
 		chipTagsFromGames: true;
 
-		chipLiveStylesVideo: true;
 		chipLiveStylesBroadcast: true;
+		chipLiveStylesVideo: true;
 		chipLiveStylesShort: true;
 	}
 }
@@ -36,18 +38,19 @@ const {
 	palette: { augmentColor },
 } = createTheme({});
 
+// TODO: 色味調整
 export const theme = createTheme({
 	palette: {
 		mode: 'dark',
 		primary: red,
 		secondary: pink,
 
-		chipTagsFromLives: augmentColor({ color: lightBlue }),
-		chipTagsFromSeries: augmentColor({ color: blueGrey }),
-		chipTagsFromGames: augmentColor({ color: amber }),
+		chipTagsFromLives: augmentColor({ color: brown }),
+		chipTagsFromSeries: augmentColor({ color: lime }),
+		chipTagsFromGames: augmentColor({ color: lightBlue }),
 
-		chipLiveStylesVideo: augmentColor({ color: deepOrange }),
 		chipLiveStylesBroadcast: augmentColor({ color: deepOrange }),
-		chipLiveStylesShort: augmentColor({ color: deepOrange }),
+		chipLiveStylesVideo: augmentColor({ color: teal }),
+		chipLiveStylesShort: augmentColor({ color: indigo }),
 	},
 });

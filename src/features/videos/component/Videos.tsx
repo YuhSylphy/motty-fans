@@ -175,6 +175,12 @@ const useVideoChipHooks = (
 				return 'chipTagsFromSeries' as const;
 			case 'games':
 				return 'chipTagsFromGames' as const;
+			case 'broadcast':
+				return 'chipLiveStylesBroadcast' as const;
+			case 'video':
+				return 'chipLiveStylesVideo' as const;
+			case 'short':
+				return 'chipLiveStylesShort' as const;
 			default: {
 				const _exhaust: never = style;
 				throw _exhaust;
@@ -205,8 +211,6 @@ function VideoChip({ tag, deletable, findable }: VideoChipProps) {
 			clickable={findable}
 			onClick={findTag}
 			onDelete={deleteTag}
-			// DONE: テーマ定義(chip-xxxx-tags)をいくつか MUIのThemeに追加
-			// TODO: ゲームのタグが正しく取得できてないっぽい。調査。
 			color={chipColor}
 		/>
 	);

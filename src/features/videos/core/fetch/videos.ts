@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import type { Thumbnails, VideoTag } from '../types';
+import type { LiveStyle, Thumbnails, VideoTag } from '../types';
 import { defaultStyledTag } from '../types/utils';
 import { fetchGamesJson, fetchLiveSeriesJson, fetchVideosJson } from './base';
 
@@ -9,12 +9,26 @@ export type VideoDef = {
 	title: string;
 	description: string;
 	thumbnails: Thumbnails;
-	// DONE : タグを一部色付きに？ どこ由来のタグか仕分ける: WIP(スタイル指定の型だけつけた)
-	// TODO: タグを一部色付きに？ どこ由来のタグか仕分ける: スタイル指定のパターンを新規追加する
 	tags: VideoTag[];
 };
 
-// TODO: データ整理ができたら旧タグを削除
+export const liveStyleTagFor = (style: LiveStyle) => {
+	const label = (() => {
+		switch (style) {
+			case 'broadcast':
+				return '生配信' as const;
+			case 'video':
+				return '動画' as const;
+			case 'short':
+				return 'ショート' as const;
+			default: {
+				const _exhaust: never = style;
+				throw _exhaust;
+			}
+		}
+	})();
+	return { label, style };
+};
 
 export async function fetchVideoDefs(): Promise<VideoDef[]> {
 	const [noneTag, livesTag, seriesTag, gamesTag] = (
@@ -32,9 +46,10 @@ export async function fetchVideoDefs(): Promise<VideoDef[]> {
 						thumbnails: def.snippet.thumbnails,
 						liveSeriesId: def.liveSeriesId,
 						tags: [
-							...(liveStyle ? [noneTag(liveStyle)] : []),
+							...(liveStyle ? [liveStyleTagFor(liveStyle)] : []),
 							...(def.tags?.map(livesTag) ?? []),
 						],
+						// TODO: データ整理ができたら旧タグを削除
 						'tags.bak': def['tags.bak']?.map(noneTag) ?? [],
 					}))
 				: [];
