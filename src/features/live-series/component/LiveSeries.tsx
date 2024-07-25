@@ -27,6 +27,7 @@ import {
 	TableHead,
 	TableRow,
 	TextField,
+	Theme,
 	// Theme,
 	Typography,
 	styled,
@@ -56,7 +57,7 @@ interface LiveSeriesRecord {
 	platform: string;
 	title: string;
 	titleReleasedIn: number | string | null;
-	styles: [LiveStyle]; // TODO: 代表の1つでなくリストにする
+	styles: [LiveStyle];
 	amount: number;
 	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
 	part1: {
@@ -87,11 +88,24 @@ interface ThumbsProps {
 	thumbnail: Thumbnail;
 }
 
+// TODO: レイアウトによってたまにはみ出ているので調整
 function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
+	const additional = useValueWithMediaQuery({
+		xs: (theme: Theme) => ({ maxHeight: theme.spacing(9) }),
+		sm: (theme: Theme) => ({ maxHeight: theme.spacing(9) }),
+		md: (theme: Theme) => ({ maxHeight: theme.spacing(6) }),
+		lg: (theme: Theme) => ({ maxHeight: theme.spacing(6) }),
+		xl: (theme: Theme) => ({ maxHeight: theme.spacing(6) }),
+	} as const);
 	return (
 		<Link
 			href={href}
-			sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+			sx={(theme) => ({
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+				...additional(theme),
+			})}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
