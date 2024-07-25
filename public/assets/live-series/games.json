@@ -9,6 +9,30 @@
 			"masteryLevel": 0
 		},
 		{
+			"id": "mGfyIMOnbmtA",
+			"gameTitle": "スーパーマリオ64",
+			"platform": "N64",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 1996,
+			"masteryLevel": 5
+		},
+		{
+			"id": "u6LMtlTfDigQ",
+			"gameTitle": "ヨッシーNewアイランド",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "ヨッシーシリーズ"],
+			"releasedIn": 2014,
+			"masteryLevel": 0
+		},
+		{
+			"id": "K6pS5KdFZUuN",
+			"gameTitle": "大乱闘スマッシュブラザーズ for Nintendo 3DS",
+			"platform": "3DS",
+			"tags": ["スマブラシリーズ"],
+			"releasedIn": 2014,
+			"masteryLevel": 0
+		},
+		{
 			"id": "i7RwJcMzkD9b",
 			"gameTitle": "ポケモンORAS",
 			"platform": "3DS",
@@ -137,11 +161,15 @@
 			"masteryLevel": 2
 		},
 		{
-			"id": "mGfyIMOnbmtA",
-			"gameTitle": "スーパーマリオ64",
-			"platform": "N64",
-			"tags": ["マリオシリーズ"],
-			"releasedIn": 1996,
+			"id": "mrrhKYXSGwBI",
+			"gameTitle": "スーパーマリオ64 (3Dコレクション)",
+			"platform": "Switch",
+			"tags": [
+				"マリオシリーズ",
+				"スーパーマリオ 3Dコレクション",
+				"スーパーマリオ64"
+			],
+			"releasedIn": 2020,
 			"masteryLevel": 5
 		},
 		{
