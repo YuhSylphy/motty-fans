@@ -22,7 +22,7 @@
 			"platform": "3DS",
 			"tags": ["マリオシリーズ", "ヨッシーシリーズ"],
 			"releasedIn": 2014,
-			"masteryLevel": 0
+			"masteryLevel": 2
 		},
 		{
 			"id": "K6pS5KdFZUuN",
@@ -30,7 +30,7 @@
 			"platform": "3DS",
 			"tags": ["スマブラシリーズ"],
 			"releasedIn": 2014,
-			"masteryLevel": 0
+			"masteryLevel": 5
 		},
 		{
 			"id": "i7RwJcMzkD9b",
@@ -961,7 +961,7 @@
 			"gameTitle": "伝説のスタフィー(初代)",
 			"platform": "GBA",
 			"tags": ["伝説のスタフィーシリーズ"],
-			"releasedIn": "",
+			"releasedIn": 2002,
 			"masteryLevel": 0
 		},
 		{
@@ -970,7 +970,7 @@
 			"platform": "Switch",
 			"tags": [],
 			"releasedIn": 2024,
-			"masteryLevel": 0
+			"masteryLevel": 5
 		}
 	]
 }
