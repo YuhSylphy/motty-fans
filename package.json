@@ -122,6 +122,7 @@
     "fetch-sheets:lint": "eslint --fix scripts",
     "fetch-sheets:spreadsheet": "dotenv -e .env.dev tsx scripts/fetch-sheets.ts",
     "fetch-sheets:merge": "dotenv -e .env.dev tsx scripts/merge-lives.ts",
-    "fetch-sheets:prettier": "run-s lint:prettier:assets"
+    "fetch-sheets:prettier": "run-s lint:prettier:assets",
+    "serve-pages": "cpx -C 'build/client/**' './docs/' && tsx scripts/serve-builts.ts"
   }
 }
