@@ -39,7 +39,6 @@ jobs:
             yarn --network-timeout=1000000
             yarn build
             yarn cpx -C 'build/client/**' './docs/'
-            touch './docs/.nojekyll'
             git add docs/
             git commit -m "Rebuild docs by Actions"
           elif ! git diff --exit-code --quiet @..@^1 -- ./public/assets/*; then
