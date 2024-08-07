@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-CAOzMBF_.js";import{f as n}from"./menu-defs-zBJLu_tM.js";const{title:t,Page:a}=n("/family"),i=()=>[{title:t},{name:"description",content:t}];function m(){return e.jsx(a,{})}export{m as default,i as meta};

@@ -1,1 +1,0 @@
-import{n as e,x as a,l as s,C as t}from"./menu-defs-zBJLu_tM.js";import{c as o}from"./createBox-BAz1JWN1.js";const r=e("MuiBox",["root"]),m=a(),c=o({themeId:s,defaultTheme:m,defaultClassName:r.root,generateClassName:t.generate});export{c as B};
