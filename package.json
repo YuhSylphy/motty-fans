@@ -28,6 +28,7 @@
     "dexie": "^4.0.8",
     "dotenv-cli": "^7.4.2",
     "github-markdown-css": "^5.6.1",
+    "isbot": "^4",
     "luxon": "^3.4.4",
     "pako": "^2.1.0",
     "react": "^18.2.0",
@@ -123,7 +124,6 @@
     "fetch-sheets:lint": "eslint --fix scripts",
     "fetch-sheets:spreadsheet": "dotenv -e .env.dev tsx scripts/fetch-sheets.ts",
     "fetch-sheets:merge": "dotenv -e .env.dev tsx scripts/merge-lives.ts",
-    "fetch-sheets:prettier": "run-s lint:prettier:assets",
-    "serve-pages": "rimraf './docs/' && cpx -C 'build/client/**' './docs/' && tsx scripts/serve-builts.ts"
+    "fetch-sheets:prettier": "run-s lint:prettier:assets"
   }
 }

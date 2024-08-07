@@ -29,6 +29,9 @@ export default defineConfig({
 		tsconfigPaths(),
 	],
 	ssr: {
-		noExternal: ['react-helmet-async'],
+		noExternal: [
+			'react-helmet-async',
+			...(process.env.NODE_ENV === 'production' ? [/^@mui\//] : []),
+		],
 	},
 });
