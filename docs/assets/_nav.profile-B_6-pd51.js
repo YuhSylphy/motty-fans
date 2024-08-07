@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-CAOzMBF_.js";import{f as o}from"./menu-defs-zBJLu_tM.js";const{title:t,Page:r}=o("/profile"),a=()=>[{title:t},{name:"description",content:t}];function f(){return e.jsx(r,{})}export{f as default,a as meta};

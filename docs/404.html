@@ -1,26 +1,7 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>MOTTV Derby</title>
-    <script>
-      // Web サイトをサブディレクトリに配置するなら、この値を 1 にする。
-      const SEGMENT_COUNT = 1;
+<html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/motty-fans/assets/root-VwSoU07w.css"/></head><body><p>Loading...</p><link rel="modulepreload" href="/motty-fans/assets/manifest-5d421ed4.js"/><link rel="modulepreload" href="/motty-fans/assets/entry.client-6QsS1xgU.js"/><link rel="modulepreload" href="/motty-fans/assets/jsx-runtime-CAOzMBF_.js"/><link rel="modulepreload" href="/motty-fans/assets/index-egQcTmbd.js"/><link rel="modulepreload" href="/motty-fans/assets/router-MTvvMfzu.js"/><link rel="modulepreload" href="/motty-fans/assets/components-l1WjxgB9.js"/><link rel="modulepreload" href="/motty-fans/assets/store-CRWDXcVn.js"/><link rel="modulepreload" href="/motty-fans/assets/root-CEHT-DYn.js"/><script>window.__remixContext = {"url":"/motty-fans/","basename":"/motty-fans/","future":{"v3_fetcherPersist":true,"v3_relativeSplatPath":true,"v3_throwAbortReason":true,"unstable_singleFetch":false,"unstable_fogOfWar":false},"isSpaMode":true,"state":{"loaderData":{"root":null,"routes/_index":null},"actionData":null,"errors":null}};</script><script type="module" async="">import "/motty-fans/assets/manifest-5d421ed4.js";
+import * as route0 from "/motty-fans/assets/root-CEHT-DYn.js";
 
-      // 例えば、SEGMENT_COUNT = 1 の場合、
-      // https://yourname.github.io/repo-name/book/123 のような URL のうち、
-      // repo-name までをベースアドレスとみなし、末尾のパス (books/123)
-      // をエンコードして次のような URL へリダイレクトする。
-      // https://yourname.github.io/repo-name?p=book%2F123
-      const loc = window.location;
-      const origin = loc.origin; //=> https://yourname.github.io
-      const path = loc.href.substr(origin.length + 1); //=> repo-name/book/123
-      const segments = path.split("/"); //=> [repo-name, book, 123]
-      const repo = segments.slice(0, SEGMENT_COUNT).join("/"); //=> repo-name
-      const param = segments.slice(SEGMENT_COUNT).join("/"); //=> book/123
-      const url = origin + "/" + repo + "?p=" + encodeURIComponent(param);
-      loc.replace(url);
-    </script>
-  </head>
-  <body></body>
-</html>
+window.__remixRouteModules = {"root":route0};
+
+import("/motty-fans/assets/entry.client-6QsS1xgU.js");</script></body></html>
