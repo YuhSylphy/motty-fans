@@ -1,9 +1,9 @@
 import { readFile, writeFile } from 'fs/promises';
 import path from 'path';
 
-import '~/util/scoped';
+import '../src/util/scoped';
 
-import { LivesJson, VideosJson } from '~/features/videos/core/types';
+import { LivesJson, VideosJson } from 'src/features/videos/core/types';
 
 const livesPath = './public/assets/live-series/lives.json';
 const videosPath = './public/assets/videos/videos.json';

@@ -114,7 +114,6 @@ dist
 
 # production
 /build
-/public/build
 
 # misc
 .DS_Store
@@ -129,5 +128,3 @@ dist
 /work/*
 !/work/last-fetched
 *.bak
-
-/.cache
