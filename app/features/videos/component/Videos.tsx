@@ -255,11 +255,18 @@ function VideoCard({ def }: VideoCardProps) {
 				.toFormat('yyyy-MM-dd HH:mm:ss'),
 		[def.publishedAt]
 	);
+	const tags = useMemo(
+		() =>
+			def.tags.toSorted(
+				({ label: { length: lhs } }, { label: { length: rhs } }) => lhs - rhs
+			),
+		[def.tags]
+	);
 	return (
 		<Card>
 			<VideoThumbnail imageUrl={thumb.url} alt={def.title} videoId={def.id} />
 			<CardContent>
-				<VideoTags tags={def.tags} findable />
+				<VideoTags tags={tags} findable />
 				<Spacer />
 				<TitleTypography>{def.title}</TitleTypography>
 				<PublishedAtTypography>{publishedAt}</PublishedAtTypography>
