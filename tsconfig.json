@@ -17,11 +17,10 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"],
-      "src": ["./src/*"]
+      "~/*": ["./app/*"]
     },
     // Remix takes care of building everything in `remix build`.
     "noEmit": true
   },
-  "include": ["src", "app", "scripts"]
+  "include": ["app", "scripts"]
 }

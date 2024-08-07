@@ -28,4 +28,7 @@ export default defineConfig({
 		}),
 		tsconfigPaths(),
 	],
+	ssr: {
+		noExternal: ['react-helmet-async'],
+	},
 });
