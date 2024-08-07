@@ -38,7 +38,7 @@ jobs:
             echo REACT_APP_GA_MEASUREMENT_ID=G-4ZNXNCE4SW > .env.prod
             yarn --network-timeout=1000000
             yarn build
-            yarn cpx -C 'build/client/**' './docs/'
+            yarn cpx -C 'build/**' './docs/'
             git add docs/
             git commit -m "Rebuild docs by Actions"
           elif ! git diff --exit-code --quiet @..@^1 -- ./public/assets/*; then

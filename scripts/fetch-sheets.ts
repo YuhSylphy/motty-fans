@@ -9,10 +9,14 @@ import { writeFile } from 'fs/promises';
 import { from } from 'rxjs';
 import { retry } from 'rxjs/operators';
 
-import '~/util/scoped';
+import '../src/util/scoped';
 import path from 'path';
-import { GameDef, LiveDef, LiveSeriesDef } from '~/features/videos/core/types';
-import { convertLiveStyleFromLabel } from '~/features/videos/core/types/utils';
+import {
+	GameDef,
+	LiveDef,
+	LiveSeriesDef,
+} from '../src/features/videos/core/types';
+import { convertLiveStyleFromLabel } from '../src/features/videos/core/types/utils';
 
 const outputDir = './public/assets/live-series/';
 
