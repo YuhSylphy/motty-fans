@@ -22,6 +22,62 @@
 			"gameId": "QBcoyVIJGyu-"
 		},
 		{
+			"id": "tIu0f4nzESek",
+			"seriesTitle": "スーパーマリオ64 実況",
+			"remarks": "",
+			"tags": [],
+			"gameId": "mGfyIMOnbmtA"
+		},
+		{
+			"id": "5lIK1wy8xF_M",
+			"seriesTitle": "スーパーマリオ64 16枚RTA",
+			"remarks": "",
+			"tags": ["RTA"],
+			"gameId": "mGfyIMOnbmtA"
+		},
+		{
+			"id": "nmFQMXTt6KhW",
+			"seriesTitle": "スーパーマリオ64 120枚RTA",
+			"remarks": "",
+			"tags": ["RTA"],
+			"gameId": "mGfyIMOnbmtA"
+		},
+		{
+			"id": "S8zPEseaA9Bt",
+			"seriesTitle": "ヨッシーNewアイランド実況！",
+			"remarks": "",
+			"tags": [],
+			"gameId": "u6LMtlTfDigQ"
+		},
+		{
+			"id": "bKiJuTslHIxQ",
+			"seriesTitle": "スマブラ3DS実況！",
+			"remarks": "",
+			"tags": [],
+			"gameId": "K6pS5KdFZUuN"
+		},
+		{
+			"id": "7ZmHrG0S3Z6u",
+			"seriesTitle": "スーパーマリオ64 実況 (3Dコレクション)",
+			"remarks": "",
+			"tags": [],
+			"gameId": "mrrhKYXSGwBI"
+		},
+		{
+			"id": "hr9JToCfQO_l",
+			"seriesTitle": "スーパーマリオ64 120枚RTA (3Dコレクション)",
+			"remarks": "",
+			"tags": ["RTA"],
+			"gameId": "mrrhKYXSGwBI"
+		},
+		{
+			"id": "dc3lDDT1CrWE",
+			"seriesTitle": "スーパーマリオ64 BINGO (3Dコレクション)",
+			"remarks": "",
+			"tags": ["BINGO"],
+			"gameId": "mrrhKYXSGwBI"
+		},
+		{
 			"id": "GPRjD6va7wSI",
 			"seriesTitle": "紙の世界を旅するRPG！ペーパーマリオRPG 実況プレイ！",
 			"remarks": "",
@@ -62,6 +118,13 @@
 			"remarks": "",
 			"tags": [],
 			"gameId": "30W3q6Qk0Vzi"
+		},
+		{
+			"id": "bZf6o97GKTiR",
+			"seriesTitle": "『青鬼 -AOONI-』実況プレイ！",
+			"remarks": "",
+			"tags": [],
+			"gameId": "_S-OCqCY2Kad"
 		}
 	]
 }
