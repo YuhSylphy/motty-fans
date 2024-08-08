@@ -1,5 +1,5 @@
-import { type MetaFunction } from '@remix-run/node';
-// import { defaultRoute } from '~/core/logics/menu-defs';
+import { redirect, type MetaFunction } from '@remix-run/react';
+import { defaultRoute } from '~/core/logics/menu-defs';
 
 export const meta: MetaFunction = () => {
 	return [
@@ -7,7 +7,10 @@ export const meta: MetaFunction = () => {
 		{ name: 'description', content: 'MOTTY fans' },
 	];
 };
+export const clientLoader = async () => {
+	return redirect(defaultRoute);
+};
 
 export default function RootPage() {
-	return null; //redirect(defaultRoute);
+	return null;
 }
