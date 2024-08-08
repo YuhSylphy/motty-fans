@@ -9,7 +9,7 @@ const StyledBackdrop = styled(Backdrop)(({ theme }) => ({
 	color: '#fff',
 }));
 
-export function Indicator() {
+export const useIndicatorHooks = () => {
 	const { awaits } = useAppSelector((state) => state.indicator);
 
 	const waiting = useMemo(
@@ -17,8 +17,21 @@ export function Indicator() {
 		[awaits]
 	);
 
+	return { waiting };
+};
+
+export function Indicator() {
+	const { waiting } = useIndicatorHooks();
 	return (
 		<StyledBackdrop open={waiting}>
+			<CircularProgress color="inherit" />
+		</StyledBackdrop>
+	);
+}
+
+export function FixedIndicator() {
+	return (
+		<StyledBackdrop open={true}>
 			<CircularProgress color="inherit" />
 		</StyledBackdrop>
 	);

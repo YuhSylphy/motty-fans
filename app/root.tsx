@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {
 	Links,
 	Meta,
@@ -10,6 +10,13 @@ import './tailwind.css';
 import { Provider } from 'react-redux';
 
 import { store } from './core/logics/store';
+import { Indicator } from './features/indicator';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';
+import { AppThemeProvider } from './core/components/AppThemeProvider';
+import { BrowserRouter } from 'react-router-dom';
+import { CssBaseline } from '@mui/material';
+import { FixedIndicator } from './features/indicator/components/Indicator';
 
 function GoogleAnalytics() {
 	const id = (() => {
@@ -72,9 +79,21 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
 	return (
 		<React.StrictMode>
-			<Provider store={store}>
-				<Outlet />
-			</Provider>
+			<Suspense fallback={<HydrateFallback />}>
+				<Provider store={store}>
+					<AppThemeProvider>
+						<Suspense fallback={<FixedIndicator />}>
+							<LocalizationProvider dateAdapter={AdapterLuxon}>
+								<BrowserRouter basename={import.meta.env.BASE_URL}>
+									<CssBaseline />
+									<Outlet />
+									<Indicator />
+								</BrowserRouter>
+							</LocalizationProvider>
+						</Suspense>
+					</AppThemeProvider>
+				</Provider>
+			</Suspense>
 		</React.StrictMode>
 	);
 }
