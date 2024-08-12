@@ -962,7 +962,7 @@
 			"platform": "GBA",
 			"tags": ["伝説のスタフィーシリーズ"],
 			"releasedIn": 2002,
-			"masteryLevel": 0
+			"masteryLevel": 2
 		},
 		{
 			"id": "30W3q6Qk0Vzi",
@@ -973,12 +973,20 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "_S-OCqCY2Kad",
-			"gameTitle": "青鬼 -AOONI-",
-			"platform": "",
+			"id": "V51evOrM_A3L",
+			"gameTitle": "青鬼 -AOONI- (Switch)",
+			"platform": "Switch",
 			"tags": [],
-			"releasedIn": "",
-			"masteryLevel": 0
+			"releasedIn": 2004,
+			"masteryLevel": 1
+		},
+		{
+			"id": "UCN3pYsRM8ij",
+			"gameTitle": "星のカービィ3",
+			"platform": "SFC",
+			"tags": ["カービィシリーズ"],
+			"releasedIn": 1998,
+			"masteryLevel": 1
 		}
 	]
 }
