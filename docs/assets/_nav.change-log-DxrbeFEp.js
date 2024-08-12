@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-CAOzMBF_.js";import{f as n}from"./menu-defs-zBJLu_tM.js";const{title:t,Page:o}=n("/change-log"),s=()=>[{title:t},{name:"description",content:t}];function i(){return e.jsx(o,{})}export{i as default,s as meta};

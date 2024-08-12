@@ -1,1 +1,0 @@
-import{r as n}from"./jsx-runtime-CAOzMBF_.js";import{T as r,c as s}from"./menu-defs-zBJLu_tM.js";function o(e){return Object.keys(e).length===0}function m(e=null){const t=n.useContext(r);return!t||o(t)?e:t}const u=s();function h(e=u){return m(e)}export{h as a,m as u};

@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-CAOzMBF_.js";import{f as o}from"./menu-defs-zBJLu_tM.js";const{title:t,Page:n}=o("/videos"),i=()=>[{title:t},{name:"description",content:t}];function a(){return e.jsx(n,{})}export{a as default,i as meta};

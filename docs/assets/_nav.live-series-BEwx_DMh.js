@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-CAOzMBF_.js";import{f as r}from"./menu-defs-zBJLu_tM.js";const{title:e,Page:i}=r("/live-series"),o=()=>[{title:e},{name:"description",content:e}];function a(){return t.jsx(i,{})}export{a as default,o as meta};

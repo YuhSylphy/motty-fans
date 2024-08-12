@@ -78,6 +78,13 @@
 			"gameId": "mrrhKYXSGwBI"
 		},
 		{
+			"id": "Y7roOcLeoCgO",
+			"seriesTitle": "スプラトゥーン3 実況プレイ！",
+			"remarks": "",
+			"tags": [],
+			"gameId": "D6hGLrRwrE5X"
+		},
+		{
 			"id": "GPRjD6va7wSI",
 			"seriesTitle": "紙の世界を旅するRPG！ペーパーマリオRPG 実況プレイ！",
 			"remarks": "",
@@ -124,7 +131,14 @@
 			"seriesTitle": "『青鬼 -AOONI-』実況プレイ！",
 			"remarks": "",
 			"tags": [],
-			"gameId": "_S-OCqCY2Kad"
+			"gameId": "V51evOrM_A3L"
+		},
+		{
+			"id": "hpvzAPecAIRO",
+			"seriesTitle": "『星のカービィ3』実況プレイ！",
+			"remarks": "",
+			"tags": ["NSO"],
+			"gameId": "UCN3pYsRM8ij"
 		}
 	]
 }
