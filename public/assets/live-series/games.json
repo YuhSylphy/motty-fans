@@ -978,7 +978,7 @@
 			"platform": "Switch",
 			"tags": [],
 			"releasedIn": 2004,
-			"masteryLevel": 1
+			"masteryLevel": 2
 		},
 		{
 			"id": "UCN3pYsRM8ij",
@@ -986,7 +986,7 @@
 			"platform": "SFC",
 			"tags": ["カービィシリーズ"],
 			"releasedIn": 1998,
-			"masteryLevel": 1
+			"masteryLevel": 4
 		}
 	]
 }
