@@ -1,45 +1,28 @@
-import {
-	OperatorFunction,
-	ObservableInput,
-	ObservedValueOf,
-	of,
-	defer,
-	concat,
-} from 'rxjs';
-import { mergeMap } from 'rxjs/operators';
+import { OperatorFunction, ObservableInput, of, defer, concat } from 'rxjs';
+import { filter, mergeMap } from 'rxjs/operators';
 import { Dispatch } from 'react';
 import { Action, AnyAction } from 'redux';
 import { indicatorActions, IndicatorAction } from '..';
 
 const { open, close } = indicatorActions;
-// export const withIndicator = <T extends Action>(
-//   label: string
-// ): OperatorFunction<T, T | IndicatorAction> => (action$) =>
-//   action$.pipe(startWith(open(label)), endWith(close(label)));
+
 export const withIndicator =
-	<T extends Action, O extends ObservableInput<Action>>(
+	<T extends Action, O extends Action>(
 		label: string,
-		input: (action: T) => O
-	): OperatorFunction<T, ObservedValueOf<O> | IndicatorAction> =>
+		input: (action: T) => ObservableInput<O | undefined>
+	): OperatorFunction<T, O | IndicatorAction> =>
 	(action$) =>
 		action$.pipe(
 			mergeMap((action) =>
 				concat(
 					of(open(label)),
-					defer(() => input(action)),
+					defer(() => input(action)).pipe(
+						filter(<T>(x: T | undefined): x is T => !!x)
+					),
 					of(close(label))
 				)
 			)
 		);
-//   action$.pipe(
-//     mergeMap((action) =>
-//       concat(
-//         of(open(label)),
-//         defer(() => input(action)),
-//         of(endWith(close(label)))
-//       )
-//     )
-//   );
 
 export const withIndicatorSync =
 	(dispatch: Dispatch<AnyAction>) =>
