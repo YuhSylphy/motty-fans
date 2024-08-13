@@ -98,6 +98,7 @@ export default function App() {
 	);
 }
 
+// TODO: テーマカラーを反映したい
 export function HydrateFallback() {
 	return <p>Loading...</p>;
 }
