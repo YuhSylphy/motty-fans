@@ -83,7 +83,6 @@ interface ThumbsProps {
 	alt: string;
 	thumbnail: Thumbnail;
 }
-
 // TODO: レイアウトによってたまにはみ出ているので調整
 function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 	const additional = useValueWithMediaQuery({
@@ -132,6 +131,7 @@ function convertStylesToLabel(styles: (LiveStyle | null)[]) {
 	}
 }
 
+// TODO: 動画一覧のタグをURL指定できるようになったので、そのハッシュ列を設けてリンク先をそこに向ける
 function LiveSeriesListItem({
 	id,
 	platform,
