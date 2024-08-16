@@ -1,1 +1,0 @@
-import{G as l,b as n,d as m,T as u}from"./DefaultPropsProvider-Cd7czArd.js";import{j as s}from"./jsx-runtime-_5WuVDLK.js";import{u as f}from"./useTheme-gLwWT2hx.js";function p({styles:e,themeId:o,defaultTheme:r={}}){const t=f(r),a=typeof e=="function"?e(o&&t[o]||t):e;return s.jsx(l,{styles:a})}function c(e){return s.jsx(p,n({},e,{defaultTheme:m,themeId:u}))}export{c as G};
