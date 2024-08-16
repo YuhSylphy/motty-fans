@@ -148,9 +148,9 @@ const useLiveSeriesListItemHooks = ({
 
 	const iconButtonAdditionalProps =
 		href !== null
-			? { href }
+			? { href, target: '_blank', rel: 'noopener noreferrer' }
 			: part1 !== null && part1.url != null
-				? { href: part1.url }
+				? { href: part1.url, target: '_blank', rel: 'noopener noreferrer' }
 				: {};
 
 	return { liveStyleLabel, masteryLevelLabel, iconButtonAdditionalProps };
@@ -227,7 +227,16 @@ function LiveSeriesListItem({
 					<ListItemText primary={title} />
 				</Grid>
 				<Grid item xs={4}>
-					{part1 == null || !iconButtonAdditionalProps.href ? null : (
+					{part1 == null || !iconButtonAdditionalProps.href ? (
+						<Box
+							display="flex"
+							justifyContent="center"
+							alignItems="center"
+							height="100%"
+						>
+							<Typography>(未設定)</Typography>
+						</Box>
+					) : (
 						<Thumbs
 							thumbnail={part1.thumbnail}
 							alt={part1.title}
