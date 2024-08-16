@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-_5WuVDLK.js";import{f as o}from"./menu-defs-CCPwfijY.js";import"./DefaultPropsProvider-Cd7czArd.js";const{title:t,Page:r}=o("/profile"),f=()=>[{title:t},{name:"description",content:t}];function s(){return e.jsx(r,{})}export{s as default,f as meta};

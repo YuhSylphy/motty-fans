@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-_5WuVDLK.js";import{f as n}from"./menu-defs-CCPwfijY.js";import"./DefaultPropsProvider-Cd7czArd.js";const{title:e,Page:r}=n("/mare-line"),m=()=>[{title:e},{name:"description",content:e}];function s(){return t.jsx(r,{})}export{s as default,m as meta};
