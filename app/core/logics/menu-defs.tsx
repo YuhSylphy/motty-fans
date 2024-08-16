@@ -6,6 +6,7 @@ import {
 	YouTube as YouTubeIcon,
 	Info as InfoIcon,
 	BrowseGallery as BrowseGalleryIcon,
+	DeveloperMode as DeveloperModeIcon,
 } from '@mui/icons-material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHorse } from '@fortawesome/free-solid-svg-icons';
@@ -138,5 +139,19 @@ export const menuDefs: MenuItemDef[] = [
 				import(/* webpackChunkName: "change-log" */ '~/features/changelog/lazy')
 		),
 		title: 'MOTTY fans - 変更履歴',
+	},
+	{
+		type: 'page',
+		icon: <DeveloperModeIcon />,
+		label: '変更履歴',
+		path: '/hash-testing',
+		Page: React.lazy(
+			() =>
+				import(
+					/* webpackChunkName: "hash-testing" */ '~/features/hash-testing/lazy'
+				)
+		),
+		title: '(ハッシュテスト用)',
+		hideInMenu: hideInDev, // 常に非表示
 	},
 ];
