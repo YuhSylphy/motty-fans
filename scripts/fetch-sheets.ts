@@ -115,6 +115,7 @@ function constructLiveSeries(liveSeries: Sheet) {
 				seriesTitle,
 				gameTitle,
 				remarks,
+				videosHash,
 				lives,
 				publishedFrom,
 				...tags
@@ -123,7 +124,8 @@ function constructLiveSeries(liveSeries: Sheet) {
 				id,
 				seriesTitle,
 				remarks,
-				gameTitle: gameTitle ?? null,
+				videosHash: videosHash ? videosHash : null,
+				gameTitle: gameTitle ? gameTitle : null,
 				lives,
 				publishedFrom,
 				tags: (tags ?? [])?.takeWhile((tag) => !!tag),

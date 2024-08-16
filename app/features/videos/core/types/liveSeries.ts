@@ -4,6 +4,7 @@ export type LiveSeriesDef = {
 	tags: string[];
 	gameId: string | null;
 	remarks: string;
+	videosHash: string | null;
 };
 
 export type LiveSeriesJson = {
