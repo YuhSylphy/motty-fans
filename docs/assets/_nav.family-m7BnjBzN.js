@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-_5WuVDLK.js";import{f as n}from"./menu-defs-CCPwfijY.js";import"./DefaultPropsProvider-Cd7czArd.js";const{title:t,Page:o}=n("/family"),m=()=>[{title:t},{name:"description",content:t}];function s(){return e.jsx(o,{})}export{s as default,m as meta};

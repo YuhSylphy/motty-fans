@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime-_5WuVDLK.js";import{f as r}from"./menu-defs-CCPwfijY.js";import"./DefaultPropsProvider-Cd7czArd.js";const{title:e,Page:i}=r("/live-series"),a=()=>[{title:e},{name:"description",content:e}];function m(){return t.jsx(i,{})}export{m as default,a as meta};
