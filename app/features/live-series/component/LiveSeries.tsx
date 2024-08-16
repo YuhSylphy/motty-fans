@@ -86,7 +86,7 @@ interface ThumbsProps {
 	alt: string;
 	thumbnail: Thumbnail;
 }
-// TODO: レイアウトによってたまにはみ出ているので調整
+
 function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 	const additional = useValueWithMediaQuery({
 		xs: (theme: Theme) => ({ maxHeight: theme.spacing(9) }),
@@ -113,8 +113,8 @@ function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 				src={url}
 				sx={(_theme) => ({
 					aspectRatio: `${width} / ${height}`,
-					width: '100%',
-					height: '100%',
+					maxWidth: '100%',
+					maxHeight: '100%',
 					objectFit: 'contain',
 					display: 'block',
 				})}
