@@ -63,9 +63,12 @@ interface LiveSeriesRecord {
 		title: string;
 	} | null;
 	remarks: string;
+	href: string | null;
 }
 
-const masteryLevelLabel = (masteryLevel: LiveSeriesRecord['masteryLevel']) =>
+const convertMasteryLevelToLabel = (
+	masteryLevel: LiveSeriesRecord['masteryLevel']
+) =>
 	[
 		// 0~5
 		'★'.repeat(masteryLevel),
@@ -131,7 +134,28 @@ function convertStylesToLabel(styles: (LiveStyle | null)[]) {
 	}
 }
 
-// TODO: 動画一覧のタグをURL指定できるようになったので、そのハッシュ列を設けてリンク先をそこに向ける
+const useLiveSeriesListItemHooks = ({
+	styles,
+	masteryLevel,
+	part1,
+	href,
+}: Pick<LiveSeriesRecord, 'styles' | 'masteryLevel' | 'part1' | 'href'>) => {
+	const liveStyleLabel = useMemo(() => convertStylesToLabel(styles), [styles]);
+	const masteryLevelLabel = useMemo(
+		() => convertMasteryLevelToLabel(masteryLevel),
+		[masteryLevel]
+	);
+
+	const iconButtonAdditionalProps =
+		href !== null
+			? { href }
+			: part1 !== null && part1.url != null
+				? { href: part1.url }
+				: {};
+
+	return { liveStyleLabel, masteryLevelLabel, iconButtonAdditionalProps };
+};
+
 function LiveSeriesListItem({
 	id,
 	platform,
@@ -142,8 +166,15 @@ function LiveSeriesListItem({
 	masteryLevel,
 	part1,
 	remarks,
+	href,
 }: LiveSeriesRecord) {
-	const liveStyleLabel = useMemo(() => convertStylesToLabel(styles), [styles]);
+	const { liveStyleLabel, masteryLevelLabel, iconButtonAdditionalProps } =
+		useLiveSeriesListItemHooks({
+			styles,
+			masteryLevel,
+			part1,
+			href,
+		});
 
 	const Details = useCallback(
 		() => (
@@ -152,7 +183,7 @@ function LiveSeriesListItem({
 					<Typography>{liveStyleLabel}</Typography>
 				</Grid>
 				<Grid item xs={6}>
-					<Typography>{masteryLevelLabel(masteryLevel)}</Typography>
+					<Typography>{masteryLevelLabel}</Typography>
 				</Grid>
 				<Grid item xs={6}>
 					<Typography>{platform}</Typography>
@@ -172,13 +203,13 @@ function LiveSeriesListItem({
 			</Grid>
 		),
 		[
-			amount,
-			masteryLevel,
-			part1,
-			platform,
-			remarks,
-			titleReleasedIn,
 			liveStyleLabel,
+			masteryLevelLabel,
+			platform,
+			part1?.publishedIn,
+			amount,
+			titleReleasedIn,
+			remarks,
 		]
 	);
 
@@ -186,7 +217,7 @@ function LiveSeriesListItem({
 		<ListItem
 			key={id}
 			secondaryAction={
-				<IconButton edge="end" {...(part1 !== null ? { href: part1.url } : {})}>
+				<IconButton edge="end" {...iconButtonAdditionalProps}>
 					<LinkIcon />
 				</IconButton>
 			}
@@ -196,11 +227,11 @@ function LiveSeriesListItem({
 					<ListItemText primary={title} />
 				</Grid>
 				<Grid item xs={4}>
-					{part1 == null ? null : (
+					{part1 == null || !iconButtonAdditionalProps.href ? null : (
 						<Thumbs
 							thumbnail={part1.thumbnail}
-							href={part1.url}
 							alt={part1.title}
+							{...iconButtonAdditionalProps}
 						/>
 					)}
 				</Grid>
@@ -252,6 +283,7 @@ function LiveSeriesTableRow(
 		masteryLevel,
 		part1,
 		remarks,
+		href,
 	}: LiveSeriesRecord,
 	ix: number
 ) {
@@ -270,10 +302,14 @@ function LiveSeriesTableRow(
 						padding: `${theme.spacing(0.5)} ${theme.spacing(2)}`,
 					})}
 				>
-					<Thumbs thumbnail={part1.thumbnail} alt={title} href={part1.url} />
+					<Thumbs
+						thumbnail={part1.thumbnail}
+						alt={title}
+						href={href ? href : part1.url}
+					/>
 				</TableCell>
 			),
-		[part1, title]
+		[part1, title, href]
 	);
 
 	return (
@@ -304,7 +340,7 @@ function LiveSeriesTableRow(
 				<Typography>{amount}</Typography>
 			</TableCell>
 			<TableCell align="center">
-				<Typography>{masteryLevelLabel(masteryLevel)}</Typography>
+				<Typography>{convertMasteryLevelToLabel(masteryLevel)}</Typography>
 			</TableCell>
 			<TableCell>
 				<Typography>{remarks}</Typography>
@@ -356,7 +392,7 @@ const useLiveSeriesBodyHooks = () => {
 	const defs = useMemo(
 		() =>
 			series.map(
-				({ id, game, seriesTitle, lives, remarks }) =>
+				({ id, game, seriesTitle, lives, remarks, videosHash }) =>
 					({
 						id,
 						platform: game?.platform,
@@ -383,6 +419,9 @@ const useLiveSeriesBodyHooks = () => {
 											title,
 										}))[0],
 						remarks,
+						href: videosHash
+							? `${import.meta.env.BASE_URL}videos/${videosHash}`
+							: null,
 					}) as LiveSeriesRecord
 			),
 		[series]
