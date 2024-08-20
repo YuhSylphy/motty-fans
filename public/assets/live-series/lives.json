@@ -26,9 +26,9 @@
 		},
 		{
 			"id": "jn7AxoNiGuA",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "V_YBTuqwsfQP"
 		},
 		{
 			"id": "8UYGg4EIxwU",
@@ -44,9 +44,9 @@
 		},
 		{
 			"id": "4nvS4l_RwvQ",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "2baWrTbsvsxo"
 		},
 		{
 			"id": "EK4jd8zux8U",
@@ -98,7 +98,7 @@
 		},
 		{
 			"id": "JkapzRZDpHg",
-			"tags": ["30分10本勝負", "BINGO"],
+			"tags": ["30分10本勝負", "3010アーカイブ", "BINGO"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "tIu0f4nzESek"
 		},
@@ -122,9 +122,9 @@
 		},
 		{
 			"id": "O9RCPO3GClY",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "EDy7CeGWOCI0"
 		},
 		{
 			"id": "KGCzuo4nJvM",
@@ -164,9 +164,9 @@
 		},
 		{
 			"id": "kAPBSEZ3fso",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "m5ZE04VcbQBr"
 		},
 		{
 			"id": "JLGogyXI690",
@@ -188,9 +188,9 @@
 		},
 		{
 			"id": "SWksd6fHaM4",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "EDy7CeGWOCI0"
 		},
 		{
 			"id": "0xwGVMTsui0",
@@ -260,9 +260,9 @@
 		},
 		{
 			"id": "wy8VwLjHpvk",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "hfCxYpEW2AB2"
 		},
 		{
 			"id": "PrPBeLDiHCU",
@@ -284,9 +284,9 @@
 		},
 		{
 			"id": "OAN1G7MqZXI",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "EDy7CeGWOCI0"
 		},
 		{
 			"id": "cy0LcyZruQo",
@@ -357,8 +357,8 @@
 		{
 			"id": "g9fnqaj2xmE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "6uuDYsIYM8Y",
@@ -369,26 +369,26 @@
 		{
 			"id": "fOaKxMEmxIM",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AVKWotGSvnaS"
 		},
 		{
 			"id": "w1S-o4UwX-Q",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AVKWotGSvnaS"
 		},
 		{
 			"id": "jtpKN9ma-5I",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "XSxRd5Krmdw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AVKWotGSvnaS"
 		},
 		{
 			"id": "pIUnObp3Vrg",
@@ -399,20 +399,20 @@
 		{
 			"id": "TFwuNAUwwGc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AVKWotGSvnaS"
 		},
 		{
 			"id": "BPdQFRx-KfA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "z1kn8hwHVjE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AVKWotGSvnaS"
 		},
 		{
 			"id": "KoC6veESWWE",
@@ -423,8 +423,8 @@
 		{
 			"id": "MVx1KGL_2HU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "xN6IpmnPGvo",
@@ -434,9 +434,9 @@
 		},
 		{
 			"id": "raOeGBSidNk",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "1Z5u2ISFRFnx"
 		},
 		{
 			"id": "mYN_Qk2Rtsk",
@@ -447,8 +447,8 @@
 		{
 			"id": "ovTAVnN-_4Y",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "g_lnBVK_joo",
@@ -458,9 +458,9 @@
 		},
 		{
 			"id": "J6UkcG9qvP4",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "EDy7CeGWOCI0"
 		},
 		{
 			"id": "flK4x_6qhWA",
@@ -471,32 +471,32 @@
 		{
 			"id": "OnW0CJJGXv4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "Q-65zJLp1_g",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "gbx1MsPEPIM",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "KBzPmO_YXMI",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "xWZP11NgVCk",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "EKYBH6AdWjk",
@@ -506,33 +506,33 @@
 		},
 		{
 			"id": "YQQuNgEfI0I",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "zaIauOcEX2G9"
 		},
 		{
 			"id": "h-UamleRcs0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "5_QgWm-WJqU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "S2rZ3xlRjVQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "mhe1-vU3zl4",
-			"tags": ["30分10本勝負"],
+			"tags": ["30分10本勝負", "3010アーカイブ"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "EDy7CeGWOCI0"
 		},
 		{
 			"id": "dC-Uq-8m48c",
@@ -543,8 +543,8 @@
 		{
 			"id": "nTwLw7kNjkE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "PMR6yPD4Dis",
@@ -555,14 +555,14 @@
 		{
 			"id": "vGFTMzcPqf4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "rlbHghiD26A",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "kEeqQ0PK64w",
@@ -573,14 +573,14 @@
 		{
 			"id": "D6vvHuMdfVg",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4lN9juWxhpBZ"
 		},
 		{
 			"id": "s96M3TjD97g",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "Q8Nl_fGuEx8",
@@ -591,8 +591,8 @@
 		{
 			"id": "TaIK2s2m5Q0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "OmNJbbtj7zY",
@@ -603,8 +603,8 @@
 		{
 			"id": "6wAfFcKGDKQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "RKTBl2AKarxT"
 		},
 		{
 			"id": "nRlyfMc2m6E",
@@ -615,14 +615,14 @@
 		{
 			"id": "9Lmm4APkBP8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "qNjUn460qkU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "RKTBl2AKarxT"
 		},
 		{
 			"id": "PIwMrNB3qCg",
@@ -639,14 +639,14 @@
 		{
 			"id": "l8R-AvqXxiM",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "U7ENd_lI2N8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "RKTBl2AKarxT"
 		},
 		{
 			"id": "6Hj8ty87flI",
@@ -657,8 +657,8 @@
 		{
 			"id": "ouStdvupHbk",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "8Bv_-M0Zi0c",
@@ -669,19 +669,19 @@
 		{
 			"id": "KaS0iC_Lqk0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "MOq8uaG7fyZA"
 		},
 		{
 			"id": "5fqUT87JfEk",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "VtXMMUN36Xc",
-			"tags": ["30分10本勝負"],
-			"liveStyle": "broadcast",
+			"tags": ["30分10本勝負", "3010アーカイブ"],
+			"liveStyle": "video",
 			"liveSeriesId": "tIu0f4nzESek"
 		},
 		{
@@ -693,8 +693,8 @@
 		{
 			"id": "Kxjc7hL0UUE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "Hg5qg3eY2kQ",
@@ -705,8 +705,8 @@
 		{
 			"id": "TOhqLajSIxc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "x0L-WUWbXFg",
@@ -723,14 +723,14 @@
 		{
 			"id": "KhUQYmuxxNQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "JkEckvA1yO0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AOFZV7eAwIP_"
 		},
 		{
 			"id": "PMfnxw4zA7U",
@@ -741,26 +741,26 @@
 		{
 			"id": "XH8yapVkxog",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "oVfXeoCutSZd"
 		},
 		{
 			"id": "F3pzqMa497s",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AOFZV7eAwIP_"
 		},
 		{
 			"id": "-N7v3ew8CF4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "-vb2PyyiGTo",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AOFZV7eAwIP_"
 		},
 		{
 			"id": "de0L-SZw3f4",
@@ -771,26 +771,26 @@
 		{
 			"id": "1_qXINaXe6E",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "AOFZV7eAwIP_"
 		},
 		{
 			"id": "MRccl7CKi9I",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "Z5jolw82ZfA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "tB5bE9hoCSk",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "0fBT9nOu23s",
@@ -801,32 +801,32 @@
 		{
 			"id": "T9Ax-xiStoQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "1aD89VKF9Hw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "VyRDMb8c_Ro",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "a3BnBEllk_A",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "cEIG4kScYMY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "7qHJOCNWcjg",
@@ -837,26 +837,26 @@
 		{
 			"id": "lJ9Na_MESWs",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "DF5ZSeYfC1M",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "b6738G9q6Rg",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "Ag0wlbrLxBw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "jadTkAPWsBM",
@@ -873,14 +873,14 @@
 		{
 			"id": "J6lhWRoS4fE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "8P_iUxEed9c",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "2fn5GeLLu_w",
@@ -891,32 +891,32 @@
 		{
 			"id": "PmlnM0IMVEk",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "opuNeW2zxIY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "5idx5fvCTTw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "CKn2mcR-1gY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "tqHz3H0zyqQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "aL16l3DkH6g",
@@ -927,26 +927,26 @@
 		{
 			"id": "HSEXoSTJcew",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "e_Bh6rsAEK0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "nxnNzsOU4ds",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "6700u2mOxOI",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "F6qnPeJsKRw",
@@ -957,20 +957,20 @@
 		{
 			"id": "NRYIQLezExY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "AvJmmrdMT1g",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "I_qJi-eNTEw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "dKko-w3PsEY",
@@ -981,20 +981,20 @@
 		{
 			"id": "5MNT6ysjebg",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "JOmWbEQpAGQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "r0J5yyKMrXs",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "sm9iroZ5jpc",
@@ -1005,32 +1005,32 @@
 		{
 			"id": "DrdCQqcRwFA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "CoHBxMMA5_E",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "VImQAMJtJGg",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "9zoKbRxYQ7c",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "n_4_rDRqb-s",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "ra-ElmyME_4",
@@ -1041,26 +1041,26 @@
 		{
 			"id": "sYD4GSc5yZU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "HOvcdqbXliw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "WaFwEaLLvoE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "ZyNmLQAk4zE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "7PfAJ9kmfYc",
@@ -1071,20 +1071,20 @@
 		{
 			"id": "wck0S3SyEJM",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "I9FrIJZ5VTE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "XC4zJn25Cgw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "U6rfrDdHiSM",
@@ -1095,50 +1095,50 @@
 		{
 			"id": "lScz938xlo8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "8jpPxY7Ndzg",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "WBc5p9YTJig",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "MZW8Nmtoemk",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "W47yFmD2GRQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "s_rAntjV5OY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "-z7BneSh8mg4"
 		},
 		{
 			"id": "GHxgW_G8ANg",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "xE124FaFZqc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "MwDZgV81hVA",
@@ -1149,26 +1149,26 @@
 		{
 			"id": "OfihgCS484M",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "yJstf4MjKqY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "lQN6KVNK4IY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "t3rZcewfZl8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "14ZnkkHMYDuU"
 		},
 		{
 			"id": "gnTfM5KWQy4",
@@ -1179,14 +1179,14 @@
 		{
 			"id": "JOTWPkTMFig",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "znT41wZG-UA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "JGIbGRR0l8w",
@@ -1197,38 +1197,38 @@
 		{
 			"id": "LLJNpGgqSB8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "9pYRxdpXJBs",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "2w_uvYQnqRc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "pL1Wd4Owslc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "GnwNCZFdjr4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "SzK9_OZ057Y",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "9yLEsApnpCA",
@@ -1239,20 +1239,20 @@
 		{
 			"id": "v-JawI-kDyQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "jvaiZgnmv_Y",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "21JNajLXxd4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "4p1qEtAjfZg",
@@ -1263,32 +1263,32 @@
 		{
 			"id": "znf-0SYCWSA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "ynbADJh1Nms",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "kQvc4DhbwyQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "hVqA4Oofvug",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "LIyiakqKoC0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "3YUlWUWp53s",
@@ -1299,8 +1299,8 @@
 		{
 			"id": "ojKQpeuz45Y",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "wCyPny6-2Zw",
@@ -1311,26 +1311,26 @@
 		{
 			"id": "F0VUjozuRrY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "To7DdS2bznU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "YADfLgvyoqs",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "HqQjX0E-M3Y",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "Pjn3Qx1BNBI",
@@ -1341,26 +1341,26 @@
 		{
 			"id": "Oib9al9f9c4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "pYhIdwUqVqA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "k7VEMa7unS0",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "zuWxXumBWLU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "4PysWrGwJdPh"
 		},
 		{
 			"id": "nhA1KHQlodM",
@@ -1371,26 +1371,26 @@
 		{
 			"id": "IK5rfHA5j-w",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "Yq-l00UO8Pg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "fjgtlkPQx9s",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "WXaiTaHh7vk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "5y2gDMfzMho",
@@ -1401,272 +1401,272 @@
 		{
 			"id": "P7s88M44DMU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "DXLHOkmYDG4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "2Hn5IHYJ3vc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "BUuKRh_pueU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "QyapFRQuEQs",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "s9NK7SYqNUw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["おみくじ"],
+			"liveStyle": "video",
+			"liveSeriesId": "C5gTLyHd8Z-0"
 		},
 		{
 			"id": "0X0MJxvEj6A",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "Zav_43KP8zw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "mUeNr9PQ-jE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "XI9AV_rWkKM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "rbzyhA2Va0U",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "8yNk4m8N2uE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "r1YXcxj1v-s",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "fmy64Tp9NF4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "14ZnkkHMYDuU"
 		},
 		{
 			"id": "Dso5E9TeKsQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "ZX4iflfUrbk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "CDcbvgHl4s4",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "Ka1Qyuhkuq4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Oovgiq-Ik28",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "SFHSf1Utst8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "Q1U-p0D-C2JB"
 		},
 		{
 			"id": "P90FDd0oBAw",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "GiOSIgv744I",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "14ZnkkHMYDuU"
 		},
 		{
 			"id": "1BiFRkgY7CQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "wa-NgZrxgY8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "cWuni_Cunqc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "SisbdTYTyfU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "zoNejehFfLQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "CZxwaHRfEFM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "5yXDD9fXvps",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "WB0xslOneQo",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "14ZnkkHMYDuU"
 		},
 		{
 			"id": "DWKyxXMWrmM",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "C5gTLyHd8Z-0"
 		},
 		{
 			"id": "JYF_E3R44AQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "hlAZz1f73M8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "7QzZvgvslRc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "Q1U-p0D-C2JB"
 		},
 		{
 			"id": "7oNHqPJxgOc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "p2ZK5scTUYU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "z8l7SmZAoEU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "4VFTOALKWMc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "NqTDP8yAgng",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "rbZtdSNINXA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "MWvrSIgY-mM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "8SW81w4YoCc",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "EzLqhPIRxhA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "2wapO7edILo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "LIf-b4ThCC8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "QjYR6ZZd5Og",
@@ -1676,9 +1676,9 @@
 		},
 		{
 			"id": "qtSpBSsHUis",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "IkNY6IE6jx4",
@@ -1689,26 +1689,26 @@
 		{
 			"id": "unfIA81TgxE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "h0Pp1z4cCZM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "3Bi2-kvolVE",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "Q1U-p0D-C2JB"
 		},
 		{
 			"id": "kXlYrlyktKE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "fS6dpflekc4",
@@ -1725,20 +1725,20 @@
 		{
 			"id": "NCPU7DV7Jek",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "s_WwcT6vtvk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "kxCPoGSzs1I",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "9H7vtm_4h8s",
@@ -1749,26 +1749,26 @@
 		{
 			"id": "3-sqe37HCWA",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "YGfT582MDzA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "CwM5CW7uBIg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "raKkl6Pji9A",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "-vfJ3sTvzKQ",
@@ -1779,26 +1779,26 @@
 		{
 			"id": "ZTgWdHUnFr8",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "qkuKD-0h9p4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "kVSUCwfmd2I",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "L_zUWQw-YMQ",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "Q1U-p0D-C2JB"
 		},
 		{
 			"id": "fjc1gqVXO7E",
@@ -1809,20 +1809,20 @@
 		{
 			"id": "uFD01mdaYiY",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "rsWfK4oZUVM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "KgLZijgyxOY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "QG6hUcNjgGw",
@@ -1833,26 +1833,26 @@
 		{
 			"id": "O7NiHdREfkU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "wmyDMRQ4CMs",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "3gu_zdA5qGg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Pl6Kag5LfBM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "z1BfoQRlCm8",
@@ -1863,26 +1863,26 @@
 		{
 			"id": "W773hqnE9XI",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "mqZgFO0y7Cw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "m6obbdEfZss",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Co3kdaPmvQA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Bm4EwTzeSkE",
@@ -1893,26 +1893,26 @@
 		{
 			"id": "Cb-2LaDdjok",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "puHqvOL9PN0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "DxkZEAFH0IU",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "Q1U-p0D-C2JB"
 		},
 		{
 			"id": "5stX5-02vPk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "gfhvJrCb72g",
@@ -1929,20 +1929,20 @@
 		{
 			"id": "CWbjkRohI3c",
 			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"liveStyle": "video",
+			"liveSeriesId": "tHTiZ9swNWot"
 		},
 		{
 			"id": "N-b5HAzd4bs",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "pNFiBZ8_Yek",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "a7dSNvtOuA4",
@@ -1952,15 +1952,15 @@
 		},
 		{
 			"id": "RSOtXWB33Kw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "fyS9RVPvS30",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "W0YTVTAdEHM",
@@ -1970,9 +1970,9 @@
 		},
 		{
 			"id": "MWZ4GuFmkRw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "fpzqC5Bud_o",
@@ -1982,9 +1982,9 @@
 		},
 		{
 			"id": "8P7-ZuFEtDQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "5QQsMJ4BU5A",
@@ -1994,9 +1994,9 @@
 		},
 		{
 			"id": "McsM5Q9nTYw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "LgxEjtGNZG4",
@@ -2012,9 +2012,9 @@
 		},
 		{
 			"id": "mlyZv4s4kQk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "G-KileD0Rqg",
@@ -2024,9 +2024,9 @@
 		},
 		{
 			"id": "pxKZks4xTpY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "nULH2Mf7lwo",
@@ -2042,9 +2042,9 @@
 		},
 		{
 			"id": "Il1n9Mc87LI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "T2L0xeHZm2o",
@@ -2054,9 +2054,9 @@
 		},
 		{
 			"id": "DwG-81ggvZA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "oxqW7tqYpEY",
@@ -2072,9 +2072,9 @@
 		},
 		{
 			"id": "oS5O0Q1xTIA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Ru1Q-88PPK8",
@@ -2084,15 +2084,15 @@
 		},
 		{
 			"id": "VVl25nsw-bk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "wFTHs_NxyL4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "kwpFuSJc82U",
@@ -2102,9 +2102,9 @@
 		},
 		{
 			"id": "YAEWeXqa3-k",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "iqIil60Sd-U",
@@ -2114,9 +2114,9 @@
 		},
 		{
 			"id": "dazRd6sVAR0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "ImgwwS2YghM",
@@ -2132,9 +2132,9 @@
 		},
 		{
 			"id": "H1yzTImAb3U",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Ksg8LH-Fzbs",
@@ -2150,9 +2150,9 @@
 		},
 		{
 			"id": "nqC1QWDNArA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Ln7xcdi_Nuo",
@@ -2162,9 +2162,9 @@
 		},
 		{
 			"id": "4a3xwzSUZrU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "NLAZcryIOjA",
@@ -2174,15 +2174,15 @@
 		},
 		{
 			"id": "3UJ0SmMtrFM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season1"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "TGeeSq92EnQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "nBRy_3HttVg",
@@ -2198,9 +2198,9 @@
 		},
 		{
 			"id": "dxyId6TzhAE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "_t2614md_U8",
@@ -2210,9 +2210,9 @@
 		},
 		{
 			"id": "FRmrWlUzlfo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "d_O5WHQI0AY",
@@ -2234,15 +2234,15 @@
 		},
 		{
 			"id": "r0sFXG0wYxo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ntvXT-rVXaA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "yd0oDBcsfyo",
@@ -2270,9 +2270,9 @@
 		},
 		{
 			"id": "gIedO7lSOM8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "hTJuRcNr6UI",
@@ -2288,9 +2288,9 @@
 		},
 		{
 			"id": "68N94CXhioY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "b6dY8Wgydqk",
@@ -2324,9 +2324,9 @@
 		},
 		{
 			"id": "Vp5hyH0QN1E",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "XhLc0_8TvSM",
@@ -2354,9 +2354,9 @@
 		},
 		{
 			"id": "iN-H0C-RR34",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "VBQZjokstiU",
@@ -2384,9 +2384,9 @@
 		},
 		{
 			"id": "5MldyN_iQAE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "09I5C-jdf84",
@@ -2402,9 +2402,9 @@
 		},
 		{
 			"id": "XfQZIW0UmFw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "yTAsEyr3tZI",
@@ -2420,9 +2420,9 @@
 		},
 		{
 			"id": "7Wg9Fnr26pg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "aISMWrwNcSs",
@@ -2444,9 +2444,9 @@
 		},
 		{
 			"id": "Jvs_T6dl-sI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Zt_tVLI2UKc",
@@ -2456,9 +2456,9 @@
 		},
 		{
 			"id": "qGgKGEd2exI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "XAMF-u2vDOA",
@@ -2486,9 +2486,9 @@
 		},
 		{
 			"id": "Bm9e0fGVaZA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "-_M4SmcjcyQ",
@@ -2510,9 +2510,9 @@
 		},
 		{
 			"id": "yOJ1yZHTJgY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "8xeFX8jFeRQ",
@@ -2546,9 +2546,9 @@
 		},
 		{
 			"id": "3tdlWXWFZiU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "U5MoVqpoZ6I",
@@ -2600,9 +2600,9 @@
 		},
 		{
 			"id": "T8Z7jkeeV9M",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Aa8RLFxDV9w",
@@ -2612,9 +2612,9 @@
 		},
 		{
 			"id": "BQTJoYRSaJU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "87kFjjm2pbI",
@@ -2636,15 +2636,15 @@
 		},
 		{
 			"id": "QZCFid2BGuM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "_q3a5dzJnhY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "fCC2jLqbHzA",
@@ -2666,15 +2666,15 @@
 		},
 		{
 			"id": "7AOqAU-wWS4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "dNCzNEhLN6Q",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "g_cBVC8Ve_M",
@@ -2696,9 +2696,9 @@
 		},
 		{
 			"id": "yhLSLO3CXUU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "7FgDUsb6XCc",
@@ -2708,9 +2708,9 @@
 		},
 		{
 			"id": "hCt230fL8q4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "9ygnHttcq2M",
@@ -2732,21 +2732,21 @@
 		},
 		{
 			"id": "xDvGEUA0zJw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "grFea8FVNpA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Njamqodo5V8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "R3op-92MfvY",
@@ -2768,15 +2768,15 @@
 		},
 		{
 			"id": "VHDennQ0slY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "cR4p6t5n9n0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "TgiUcaZiIVs",
@@ -2798,15 +2798,15 @@
 		},
 		{
 			"id": "wVhE0sCvpg0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "4ttCHkSFCrE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "8-mitJuJs4k",
@@ -2828,15 +2828,15 @@
 		},
 		{
 			"id": "onFYA9clc1s",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "WNFY4tVrG_o",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "54geb_l6DuQ",
@@ -2846,15 +2846,15 @@
 		},
 		{
 			"id": "YvOlm0mtlU4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "KfwtPjSZALY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "OTWLS-WOBmw",
@@ -2864,9 +2864,9 @@
 		},
 		{
 			"id": "ehzI4Cn0SYM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "EG8h4EdIq2s",
@@ -2948,15 +2948,15 @@
 		},
 		{
 			"id": "DScKuqU9Dbo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "-gbPith4UEU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "QiuZ29h2SfI",
@@ -2972,15 +2972,15 @@
 		},
 		{
 			"id": "rNgAOM_-4mE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "0HGDpNUscZU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "J4KQ8L58Ko4",
@@ -2990,21 +2990,21 @@
 		},
 		{
 			"id": "htgrPOMvd2E",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Hy3pF6Q7Wzg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "gNfSTHB4-54",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "0Xa-ILwpjDQ",
@@ -3020,9 +3020,9 @@
 		},
 		{
 			"id": "DE_w3mluYuQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "wm1NXGfK46w",
@@ -3050,9 +3050,9 @@
 		},
 		{
 			"id": "yxOXKWEcM2Q",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "KdEfbeobWyg",
@@ -3062,15 +3062,15 @@
 		},
 		{
 			"id": "y1gR_DoOu7A",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "rDcYM4qVFiI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "s48ct_sBRg0",
@@ -3080,21 +3080,21 @@
 		},
 		{
 			"id": "hpWhoWjx8Ak",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "vPAtlqWo-BY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "VHt5pxraKL8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "pSfmd-LjvTY",
@@ -3116,9 +3116,9 @@
 		},
 		{
 			"id": "izFh1fCGi3M",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "2_15n2UOa2I",
@@ -3134,9 +3134,9 @@
 		},
 		{
 			"id": "Mywzm-PkaqI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "I6Ur9mezxKo",
@@ -3158,9 +3158,9 @@
 		},
 		{
 			"id": "aRSlAwgZ-28",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "lGiwO7MRT7A",
@@ -3188,9 +3188,9 @@
 		},
 		{
 			"id": "pNx5tFSwcS4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "NkZfbuNTvTc",
@@ -3218,9 +3218,9 @@
 		},
 		{
 			"id": "-fMEtxHIi7k",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "wC8f3xm0PJg",
@@ -3242,9 +3242,9 @@
 		},
 		{
 			"id": "CimjAFgBMj4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "DuUk75-mNug",
@@ -3266,9 +3266,9 @@
 		},
 		{
 			"id": "9MJ810Yjrro",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Xr1y2iUBrIM",
@@ -3290,9 +3290,9 @@
 		},
 		{
 			"id": "W8PXZzXEBiM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "oMWowYbg9bA",
@@ -3308,21 +3308,21 @@
 		},
 		{
 			"id": "yqxcPgFr8KY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "T7DSdsDW5mE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "LmC8VA61jZw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "489MmLcZ_7g",
@@ -3344,9 +3344,9 @@
 		},
 		{
 			"id": "-xOfy3t3N9o",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "5WwUrDhaOAg",
@@ -3362,9 +3362,9 @@
 		},
 		{
 			"id": "h92sqdHpmL0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["続・ガチ勢に俺はなるッ！"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "bp62SxufnV0",
@@ -3380,9 +3380,9 @@
 		},
 		{
 			"id": "T0vBS1Wlko0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "5FgezDp58eo",
@@ -3398,9 +3398,9 @@
 		},
 		{
 			"id": "92X7hwmqdPk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "_GLIaU5jy8k",
@@ -3416,9 +3416,9 @@
 		},
 		{
 			"id": "YluPMUvN86o",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "TIrVc6wjqtY",
@@ -3434,9 +3434,9 @@
 		},
 		{
 			"id": "ck-0v15f4Ug",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "3k2bfSJjVjQ",
@@ -3464,9 +3464,9 @@
 		},
 		{
 			"id": "zBfjxDCyc_Y",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "2V2icVZNZLU",
@@ -3482,9 +3482,9 @@
 		},
 		{
 			"id": "W1aDeERGFQ4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "c2srnrwY3ZM",
@@ -3500,9 +3500,9 @@
 		},
 		{
 			"id": "mbOycgNfCVc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "9sFvCi3e_4o",
@@ -3536,9 +3536,9 @@
 		},
 		{
 			"id": "GZUzG5q5Ofw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "czsfd6_HWzk",
@@ -3560,9 +3560,9 @@
 		},
 		{
 			"id": "eGxgouzoFW4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "jaqlF_qMQr0",
@@ -3608,9 +3608,9 @@
 		},
 		{
 			"id": "ekzY5LE-xlg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "rkr4_ujnJkI",
@@ -3632,9 +3632,9 @@
 		},
 		{
 			"id": "4ZGAarOewX8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ifgIQC8b4_s",
@@ -3656,9 +3656,9 @@
 		},
 		{
 			"id": "Mvz0qRZP2YQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "VPUZbSAr71U",
@@ -3680,9 +3680,9 @@
 		},
 		{
 			"id": "Ywh3gaC3Eyo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "4PlxrKc7Weo",
@@ -3704,9 +3704,9 @@
 		},
 		{
 			"id": "EWn9opaSW1k",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Yld5uosOACo",
@@ -3734,9 +3734,9 @@
 		},
 		{
 			"id": "P9YNIpwINNM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "mRJnaCKHTvQ",
@@ -3758,9 +3758,9 @@
 		},
 		{
 			"id": "EBoA9SHj2W4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "ziRgPbPZj7Y",
@@ -3782,9 +3782,9 @@
 		},
 		{
 			"id": "KJVHDG-w-5U",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Tb3Smc6sYKo",
@@ -3806,9 +3806,9 @@
 		},
 		{
 			"id": "2xxkxJKjPqM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "z8PO0DCjjwg",
@@ -3830,9 +3830,9 @@
 		},
 		{
 			"id": "TsBh-aPZG4c",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "9xpbyVIb8gc",
@@ -3854,9 +3854,9 @@
 		},
 		{
 			"id": "o8IH9GVTZNg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "4HZudOFF4Os",
@@ -3878,9 +3878,9 @@
 		},
 		{
 			"id": "dZqQHB6EQNQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "AqIIHkvEyg4",
@@ -3902,9 +3902,9 @@
 		},
 		{
 			"id": "nH-H9d__uNU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "SVempAFSxSk",
@@ -3962,9 +3962,9 @@
 		},
 		{
 			"id": "VZEVfN3thsQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "E3_ePO89g-E",
@@ -3980,9 +3980,9 @@
 		},
 		{
 			"id": "i6CfPdC1WAU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "b5ykqjsbMjI",
@@ -4010,9 +4010,9 @@
 		},
 		{
 			"id": "DiGklKNuW0E",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "xWCDSD0l3R8",
@@ -4028,9 +4028,9 @@
 		},
 		{
 			"id": "DuaqRRbeChM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "6ic0JOnWeHs",
@@ -4046,9 +4046,9 @@
 		},
 		{
 			"id": "UWxu9ulAzNQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "3IdnD382M4Q",
@@ -4064,9 +4064,9 @@
 		},
 		{
 			"id": "kVh11zIF5Gk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "L2NqoLyL3fQ",
@@ -4082,9 +4082,9 @@
 		},
 		{
 			"id": "wlo-4gwUnGE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "wN00rzDzKHo",
@@ -4100,9 +4100,9 @@
 		},
 		{
 			"id": "zAkPlLtbCfA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "TEC2tPpSB3Y",
@@ -4118,9 +4118,9 @@
 		},
 		{
 			"id": "1EnU6xfeT-0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "laJkHEsfH8U",
@@ -4136,9 +4136,9 @@
 		},
 		{
 			"id": "yuFZFAg1SUA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "evW1jUZzkwE",
@@ -4154,9 +4154,9 @@
 		},
 		{
 			"id": "XYw7VHLaF-I",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "o4TfPqhK6Ro",
@@ -4172,9 +4172,9 @@
 		},
 		{
 			"id": "VY-by2WLeRI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "JIRuvu_uwm4",
@@ -4196,9 +4196,9 @@
 		},
 		{
 			"id": "pXDDGn03Ebs",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ZwOcsHhHYFU",
@@ -4214,9 +4214,9 @@
 		},
 		{
 			"id": "GzPU6dZlVtk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "AI6UCj8i1jQ",
@@ -4232,9 +4232,9 @@
 		},
 		{
 			"id": "EqNFq5XZlgQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "LUWJmAqqQe8",
@@ -4250,9 +4250,9 @@
 		},
 		{
 			"id": "wac8xr3mw3U",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "mzExsQT8F-I",
@@ -4268,9 +4268,9 @@
 		},
 		{
 			"id": "vTan9BC6MaY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "VtAbEhRfCfc",
@@ -4286,9 +4286,9 @@
 		},
 		{
 			"id": "8iE1HbA7m_c",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "fEgSf-rGOvI",
@@ -4304,9 +4304,9 @@
 		},
 		{
 			"id": "_v5tXyqfJkQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "Wli_nGGh1_A",
@@ -4322,9 +4322,9 @@
 		},
 		{
 			"id": "48f7I2jcZ4c",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "fTq4Qy2ua88",
@@ -4334,9 +4334,9 @@
 		},
 		{
 			"id": "0V-1xHqptX8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "hdu8e4l2hJE",
@@ -4352,9 +4352,9 @@
 		},
 		{
 			"id": "uligrHdJg0A",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "P-VagckMEbo",
@@ -4370,9 +4370,9 @@
 		},
 		{
 			"id": "g5WKWmrJJj8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "-tlFelGOeAY",
@@ -4388,9 +4388,9 @@
 		},
 		{
 			"id": "RLipjgFF2pA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "YPdqfYD-tUw",
@@ -4406,9 +4406,9 @@
 		},
 		{
 			"id": "t9OBa3Faqxg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "7k1IWz1FB14",
@@ -4424,9 +4424,9 @@
 		},
 		{
 			"id": "hrCBQQ4lX3s",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "BB9OP9qUOVQ",
@@ -4442,9 +4442,9 @@
 		},
 		{
 			"id": "LNvy_Nv6KcU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "X6qVB80Y1EI",
@@ -4460,9 +4460,9 @@
 		},
 		{
 			"id": "-Sdx0--PAU0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "BNaPlI_Kj_s",
@@ -4478,9 +4478,9 @@
 		},
 		{
 			"id": "gukP8yXvOlA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "b6s7avMz4H0",
@@ -4496,9 +4496,9 @@
 		},
 		{
 			"id": "OdhnZHjhxus",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "-dixsoGXbSc",
@@ -4514,9 +4514,9 @@
 		},
 		{
 			"id": "O1NNTruN3Hc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "05AIIz5LMAs",
@@ -4538,9 +4538,9 @@
 		},
 		{
 			"id": "Gd5ay_rSCbc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "dzhva62qrRY",
@@ -4556,9 +4556,9 @@
 		},
 		{
 			"id": "0xGB8dda7mM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "fW0ZNqIcQ4Y",
@@ -4586,9 +4586,9 @@
 		},
 		{
 			"id": "CxK7XfDy_1I",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン10"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "IKpmyfgPm8c",
@@ -4610,9 +4610,9 @@
 		},
 		{
 			"id": "Yn3UGV802SA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "2Mve_-pmlQ8",
@@ -4652,9 +4652,9 @@
 		},
 		{
 			"id": "eVPTIds-1Wo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "9nk6GWdzyA0",
@@ -4730,9 +4730,9 @@
 		},
 		{
 			"id": "IdwBK9SQFtc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["Season2"],
+			"liveStyle": "video",
+			"liveSeriesId": "FBez046n73nA"
 		},
 		{
 			"id": "N7IwO376Lq0",
@@ -4760,9 +4760,9 @@
 		},
 		{
 			"id": "bayJYz1Jur0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "DmR2ngVn3Qg",
@@ -4778,9 +4778,9 @@
 		},
 		{
 			"id": "kEBRdf99yj8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "8FNDQzy-M2w",
@@ -4814,9 +4814,9 @@
 		},
 		{
 			"id": "FyV4JqOVwOo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "sq_wdHmyGpo",
@@ -4838,9 +4838,9 @@
 		},
 		{
 			"id": "IPg2B9QFOc4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "RotzzufRVVU",
@@ -4850,9 +4850,9 @@
 		},
 		{
 			"id": "Q_iDOktRyJU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "LKZJp_T3adg",
@@ -4886,9 +4886,9 @@
 		},
 		{
 			"id": "06MoY1nzEy0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "i5qszEHTwKo",
@@ -4904,9 +4904,9 @@
 		},
 		{
 			"id": "TrFukkIc0d0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ldOJyg_Ydbw",
@@ -4922,9 +4922,9 @@
 		},
 		{
 			"id": "PhhgOvyZLhY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "iMfzmG73oSg",
@@ -4946,9 +4946,9 @@
 		},
 		{
 			"id": "Fjl9v5Ej2ec",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "dtsh9nZV0us",
@@ -4964,9 +4964,9 @@
 		},
 		{
 			"id": "C_UI5fCmlkk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "0d-vCUtDqCw",
@@ -4982,9 +4982,9 @@
 		},
 		{
 			"id": "dFdeMWmea4I",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "NXoP970qfRA",
@@ -5048,9 +5048,9 @@
 		},
 		{
 			"id": "Qu6RS9aPaK4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "WcrHk3iBgAA",
@@ -5078,9 +5078,9 @@
 		},
 		{
 			"id": "RAPBXmmZh2s",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "rpp_oyVZHMg",
@@ -5096,9 +5096,9 @@
 		},
 		{
 			"id": "Zrbc7RqhLAY",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ZN5tLz0y2sk",
@@ -5114,9 +5114,9 @@
 		},
 		{
 			"id": "bS-av1-zdMs",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "DWFaBijW5C4",
@@ -5138,9 +5138,9 @@
 		},
 		{
 			"id": "3ybCplwiJSA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "9goFNu08CJA",
@@ -5150,9 +5150,9 @@
 		},
 		{
 			"id": "3-lnq9RpvJE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "pg0B2FKZXws",
@@ -5168,9 +5168,9 @@
 		},
 		{
 			"id": "nwF4esQ8dz4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "_GGRUM5hg7E",
@@ -5186,9 +5186,9 @@
 		},
 		{
 			"id": "JisoJU1Qy5A",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "A52ieGHlRnY",
@@ -5204,9 +5204,9 @@
 		},
 		{
 			"id": "9DpjJGv3D-8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Isc963Tid-M",
@@ -5222,9 +5222,9 @@
 		},
 		{
 			"id": "doUcGyYg5Y4",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "MRpQQFaQVJ8",
@@ -5366,9 +5366,9 @@
 		},
 		{
 			"id": "t-8nIwY0MZs",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "8N4FpuAtJ3c",
@@ -5384,9 +5384,9 @@
 		},
 		{
 			"id": "h2MjWlFpnkE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "btv_Jm5TWZY",
@@ -5402,9 +5402,9 @@
 		},
 		{
 			"id": "227zYGkdS2I",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Jp9kl4Js8P8",
@@ -5420,9 +5420,9 @@
 		},
 		{
 			"id": "34etDFfCePA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "2iGFqAgVhHs",
@@ -5438,9 +5438,9 @@
 		},
 		{
 			"id": "iIU8BHNkP_8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Qv-tvq-4eqE",
@@ -5456,9 +5456,9 @@
 		},
 		{
 			"id": "9lKbsdn1Ad0",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "k6shV6984no",
@@ -5480,9 +5480,9 @@
 		},
 		{
 			"id": "0smVtmLC3EE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Ja0F5O9wk78",
@@ -5528,9 +5528,9 @@
 		},
 		{
 			"id": "aq_MwIZLekM",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "IidoHQJ9b18",
@@ -5546,9 +5546,9 @@
 		},
 		{
 			"id": "gjy2r4utHUo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "MT3PBhhY0rY",
@@ -5570,9 +5570,9 @@
 		},
 		{
 			"id": "F5csv1gvQO8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "BIhpFdAXCNo",
@@ -5594,9 +5594,9 @@
 		},
 		{
 			"id": "Q08lgHcaF54",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "DHw2CZZnT4s",
@@ -5612,9 +5612,9 @@
 		},
 		{
 			"id": "Uzr6NvbNg8U",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "HSDLA84lEj8",
@@ -5630,9 +5630,9 @@
 		},
 		{
 			"id": "jdUgIzamaAo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "U-Mj80KNs3k",
@@ -5648,9 +5648,9 @@
 		},
 		{
 			"id": "BlOnxNY_MYg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "xRScbhr1DAI",
@@ -5666,9 +5666,9 @@
 		},
 		{
 			"id": "8_yFppfyl8o",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "4MEqj4L1hug",
@@ -5732,9 +5732,9 @@
 		},
 		{
 			"id": "naVl6N-grsg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン11"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "trLZ1PpI54Q",
@@ -6026,9 +6026,9 @@
 		},
 		{
 			"id": "EZCRgohUhe8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Pc4wL_9akTg",
@@ -6080,9 +6080,9 @@
 		},
 		{
 			"id": "3-ZvJX5FokQ",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "Oqx2RoECXaM",
@@ -6152,9 +6152,9 @@
 		},
 		{
 			"id": "eCRKXdYv28Y",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "n9-eUp7Xmgk",
@@ -6206,9 +6206,9 @@
 		},
 		{
 			"id": "gN9iqcLfrBA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "_6W9e3UZplM",
@@ -6278,9 +6278,9 @@
 		},
 		{
 			"id": "r-oK42azySo",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "M2aGvNEyXuQ",
@@ -6332,9 +6332,9 @@
 		},
 		{
 			"id": "DYiOWcZS7pc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "fK4C9AS8NJU",
@@ -6404,9 +6404,9 @@
 		},
 		{
 			"id": "jRSm7n0Yi9U",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "nslfUnPGPFM",
@@ -6458,9 +6458,9 @@
 		},
 		{
 			"id": "ktS-XGViyWc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "y06qwFz7oiA",
@@ -6530,9 +6530,9 @@
 		},
 		{
 			"id": "LvbxkBipXbg",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "AU82jCmuigs",
@@ -6656,9 +6656,9 @@
 		},
 		{
 			"id": "-6nLhKi4WRU",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ccn_2wUMlx0",
@@ -6716,9 +6716,9 @@
 		},
 		{
 			"id": "87SfRv2D1Jw",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "ax0J4KXF7NQ",
@@ -6776,9 +6776,9 @@
 		},
 		{
 			"id": "tcC8n8NXqQE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "064E8H-WBos",
@@ -6830,9 +6830,9 @@
 		},
 		{
 			"id": "JbWvVLLAhDc",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン12"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "NdAsS-DUFdY",
@@ -7214,9 +7214,9 @@
 		},
 		{
 			"id": "B8wzxmInr-g",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "HNLK9xeKMDA",
@@ -7316,9 +7316,9 @@
 		},
 		{
 			"id": "nFVaWDbro98",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "psaO9FwbbE0",
@@ -7334,9 +7334,9 @@
 		},
 		{
 			"id": "bnbzSc7aC1g",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "RjGba9HF0IM",
@@ -7442,9 +7442,9 @@
 		},
 		{
 			"id": "UrTJsLKGDAA",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "bye0UBq5OSM",
@@ -7460,9 +7460,9 @@
 		},
 		{
 			"id": "ml2IIlcIt6Y",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "g9DkzuRe0lw",
@@ -7568,9 +7568,9 @@
 		},
 		{
 			"id": "5RC81yJm7z8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "b1e15gBY-4o",
@@ -7586,9 +7586,9 @@
 		},
 		{
 			"id": "hfh5NVqVCxk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "-oF2CUmGDyY",
@@ -7700,9 +7700,9 @@
 		},
 		{
 			"id": "slAIxwG_yyE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "wszN_yXW78g",
@@ -7718,9 +7718,9 @@
 		},
 		{
 			"id": "50SMMD-Vz5k",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "lTnPPHTwc-8",
@@ -7826,9 +7826,9 @@
 		},
 		{
 			"id": "T2KYclhJSfk",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "aQS7yw5vs0o",
@@ -7844,9 +7844,9 @@
 		},
 		{
 			"id": "K5qVJVTs3m8",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "cuM-f_t0Pp4",
@@ -7958,9 +7958,9 @@
 		},
 		{
 			"id": "0NytC_7zaXI",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "F5M1c-zpvAA",
@@ -7976,9 +7976,9 @@
 		},
 		{
 			"id": "TNb2xHe0dyE",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "WbMRkshYL80",
@@ -8114,9 +8114,9 @@
 		},
 		{
 			"id": "k60-txoiW34",
-			"tags": [],
-			"liveStyle": null,
-			"liveSeriesId": null
+			"tags": ["6世代シーズン13"],
+			"liveStyle": "video",
+			"liveSeriesId": "4Vh327xzXXGY"
 		},
 		{
 			"id": "wHgwNnq1Ukk",
@@ -28780,7 +28780,7 @@
 			"id": "dFqGQbD5CcM",
 			"tags": ["30分10本勝負"],
 			"liveStyle": "broadcast",
-			"liveSeriesId": null
+			"liveSeriesId": "dOSulZBdSWQT"
 		},
 		{
 			"id": "slJzQcjXEX4",
@@ -34904,6 +34904,24 @@
 		},
 		{
 			"id": "A1s42Ddrf4g",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "z9QpW1ycNH3i"
+		},
+		{
+			"id": "fj2eTU7OYT8",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "3W_-2fkqzPsj"
+		},
+		{
+			"id": "WKX7JIQ_SQQ",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "Y7roOcLeoCgO"
+		},
+		{
+			"id": "W5Wojwuio4c",
 			"tags": [],
 			"liveStyle": "short",
 			"liveSeriesId": "z9QpW1ycNH3i"
