@@ -25,6 +25,22 @@
 			"masteryLevel": 2
 		},
 		{
+			"id": "4nx1upvdDNP4",
+			"gameTitle": "ポケモンスタジアム金銀",
+			"platform": "N64",
+			"tags": [],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "QeZIRiWluczH",
+			"gameTitle": "ポケモンスナップ",
+			"platform": "N64",
+			"tags": [],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
 			"id": "K6pS5KdFZUuN",
 			"gameTitle": "大乱闘スマッシュブラザーズ for Nintendo 3DS",
 			"platform": "3DS",
@@ -33,12 +49,116 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "i7RwJcMzkD9b",
-			"gameTitle": "ポケモンORAS",
+			"id": "i2r4swtThO60",
+			"gameTitle": "ザ・シムズ",
+			"platform": "",
+			"tags": [],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "SVRwWXGOHkev",
+			"gameTitle": "桃太郎電鉄11 ブラックボンビー出現!の巻",
+			"platform": "GC",
+			"tags": ["桃鉄シリーズ"],
+			"releasedIn": 2002,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ofZpj_mk1lJu",
+			"gameTitle": "マリオパーティ3",
+			"platform": "",
+			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "3aDmoDSzukJ1",
+			"gameTitle": "ダビつく3 ダービー馬をつくろう！",
+			"platform": "GC",
+			"tags": [],
+			"releasedIn": 2003,
+			"masteryLevel": 0
+		},
+		{
+			"id": "pTioY5sh3-la",
+			"gameTitle": "どうぶつの森+",
+			"platform": "",
+			"tags": ["どうぶつの森シリーズ"],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "rsdZOp5t6Gq9",
+			"gameTitle": "ソリティ馬",
 			"platform": "3DS",
-			"tags": ["ポケットモンスターシリーズ"],
+			"tags": ["ソリティ馬シリーズ"],
+			"releasedIn": 2013,
+			"masteryLevel": 0
+		},
+		{
+			"id": "i9_xyG1TR082",
+			"gameTitle": "ポケットモンスター オメガルビー・アルファサファイア",
+			"platform": "3DS",
+			"tags": ["ポケットモンスターシリーズ", "ポケモン本編", "ポケモンORAS"],
 			"releasedIn": 2014,
 			"masteryLevel": 5
+		},
+		{
+			"id": "Ao5_0NXgL75x",
+			"gameTitle": "妖怪ウォッチ",
+			"platform": "3DS",
+			"tags": ["妖怪ウォッチシリーズ"],
+			"releasedIn": 2013,
+			"masteryLevel": 0
+		},
+		{
+			"id": "5Ia8RTo9aQQr",
+			"gameTitle": "ポケットモンスター X・Y",
+			"platform": "3DS",
+			"tags": ["ポケットモンスターシリーズ", "ポケモン本編", "ポケモンXY"],
+			"releasedIn": 2013,
+			"masteryLevel": 0
+		},
+		{
+			"id": "pltCt76ccucp",
+			"gameTitle": "ポケモン不思議のダンジョン ～マグナゲートと∞迷宮～",
+			"platform": "",
+			"tags": ["ポケットモンスターシリーズ", "ポケダンシリーズ"],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "rMcxDSvE6-c8",
+			"gameTitle": "ゲームセンターCX 3丁目の有野",
+			"platform": null,
+			"tags": [],
+			"releasedIn": null,
+			"masteryLevel": 0
+		},
+		{
+			"id": "nQk3Kg8Gc3H2",
+			"gameTitle": "ぷよぷよテトリス",
+			"platform": null,
+			"tags": [],
+			"releasedIn": null,
+			"masteryLevel": 0
+		},
+		{
+			"id": "mIWXpH7nNCUW",
+			"gameTitle": "妖怪ウォッチ2 真打",
+			"platform": "",
+			"tags": ["妖怪ウォッチシリーズ"],
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "AGsPI6luuexY",
+			"gameTitle": "NEWラブプラス+",
+			"platform": "3DS",
+			"tags": [],
+			"releasedIn": 2014,
+			"masteryLevel": 0
 		},
 		{
 			"id": "Zk6l6Dqurczn",
@@ -987,6 +1107,14 @@
 			"tags": ["カービィシリーズ"],
 			"releasedIn": 1998,
 			"masteryLevel": 4
+		},
+		{
+			"id": "SBB0q2L0x283",
+			"gameTitle": "Sandtrix",
+			"platform": "PC",
+			"tags": [],
+			"releasedIn": null,
+			"masteryLevel": 0
 		}
 	]
 }
