@@ -185,6 +185,46 @@
 			"masteryLevel": 0
 		},
 		{
+			"id": "hGbFX_fR-woD",
+			"gameTitle": "マリオvs.ドンキーコング みんなでミニランド",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Ng3y5eGx7rJ3",
+			"gameTitle": "スーパーマリオ 3Dランド",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2011,
+			"masteryLevel": 0
+		},
+		{
+			"id": "UwgEvIC62KD3",
+			"gameTitle": "パズル&ドラゴンズ スーパーマリオブラザーズ エディション",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "OT7iG8wAXfAN",
+			"gameTitle": "マリオカート8",
+			"platform": "WiiU",
+			"tags": [],
+			"releasedIn": 2014,
+			"masteryLevel": 0
+		},
+		{
+			"id": "A5Vyf7gyNZDS",
+			"gameTitle": "スプラトゥーン",
+			"platform": "WiiU",
+			"tags": ["スプラトゥーンシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 5
+		},
+		{
 			"id": "YEOHBoQCG3F8",
 			"gameTitle": "ゼルダの伝説 ブレスオブザワイルド",
 			"platform": "Switch",
@@ -1019,14 +1059,6 @@
 			"tags": ["マリオシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 2
-		},
-		{
-			"id": "A5Vyf7gyNZDS",
-			"gameTitle": "スプラトゥーン",
-			"platform": "WiiU",
-			"tags": ["スプラトゥーンシリーズ"],
-			"releasedIn": 2015,
-			"masteryLevel": 5
 		},
 		{
 			"id": "AvXPVGWA9W4R",
