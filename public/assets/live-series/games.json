@@ -100,7 +100,7 @@
 			"id": "i9_xyG1TR082",
 			"gameTitle": "ポケットモンスター オメガルビー・アルファサファイア",
 			"platform": "3DS",
-			"tags": ["ポケットモンスターシリーズ", "ポケモン本編", "ポケモンORAS"],
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンORAS"],
 			"releasedIn": 2014,
 			"masteryLevel": 5
 		},
@@ -116,7 +116,7 @@
 			"id": "5Ia8RTo9aQQr",
 			"gameTitle": "ポケットモンスター X・Y",
 			"platform": "3DS",
-			"tags": ["ポケットモンスターシリーズ", "ポケモン本編", "ポケモンXY"],
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンXY"],
 			"releasedIn": 2013,
 			"masteryLevel": 0
 		},
@@ -124,24 +124,24 @@
 			"id": "pltCt76ccucp",
 			"gameTitle": "ポケモン不思議のダンジョン ～マグナゲートと∞迷宮～",
 			"platform": "",
-			"tags": ["ポケットモンスターシリーズ", "ポケダンシリーズ"],
+			"tags": ["ポケモンシリーズ", "ポケダンシリーズ"],
 			"releasedIn": "",
 			"masteryLevel": 0
 		},
 		{
 			"id": "rMcxDSvE6-c8",
 			"gameTitle": "ゲームセンターCX 3丁目の有野",
-			"platform": null,
+			"platform": "",
 			"tags": [],
-			"releasedIn": null,
+			"releasedIn": "",
 			"masteryLevel": 0
 		},
 		{
 			"id": "nQk3Kg8Gc3H2",
 			"gameTitle": "ぷよぷよテトリス",
-			"platform": null,
+			"platform": "",
 			"tags": [],
-			"releasedIn": null,
+			"releasedIn": "",
 			"masteryLevel": 0
 		},
 		{
@@ -161,12 +161,28 @@
 			"masteryLevel": 0
 		},
 		{
+			"id": "PrFP7NhXOz9i",
+			"gameTitle": "スーパーマリオ64DS",
+			"platform": "DS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2004,
+			"masteryLevel": 0
+		},
+		{
 			"id": "Zk6l6Dqurczn",
 			"gameTitle": "ゼルダの伝説 ムジュラの仮面 3D",
 			"platform": "3DS",
 			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 2015,
 			"masteryLevel": 2
+		},
+		{
+			"id": "toDFu5WsfzAJ",
+			"gameTitle": "ピクミン2",
+			"platform": "GC",
+			"tags": ["ピクミンシリーズ"],
+			"releasedIn": 2004,
+			"masteryLevel": 0
 		},
 		{
 			"id": "YEOHBoQCG3F8",
@@ -1113,7 +1129,15 @@
 			"gameTitle": "Sandtrix",
 			"platform": "PC",
 			"tags": [],
-			"releasedIn": null,
+			"releasedIn": "",
+			"masteryLevel": 0
+		},
+		{
+			"id": "6zI9Eoh2ntPo",
+			"gameTitle": "ことばのパズル もじぴったんアンコール",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2020,
 			"masteryLevel": 0
 		}
 	]

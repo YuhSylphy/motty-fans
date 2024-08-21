@@ -143,7 +143,7 @@ export const menuDefs: MenuItemDef[] = [
 	{
 		type: 'page',
 		icon: <DeveloperModeIcon />,
-		label: '変更履歴',
+		label: 'ハッシュテスト',
 		path: '/hash-testing',
 		Page: React.lazy(
 			() =>
