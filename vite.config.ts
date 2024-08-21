@@ -8,6 +8,7 @@ const repositoryName = '/motty-fans/';
 
 export default defineConfig({
 	base: repositoryName,
+	build: { assetsDir: 'static' },
 	plugins: [
 		remix({
 			ssr: false,
