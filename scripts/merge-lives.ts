@@ -43,13 +43,13 @@ async function main() {
 			if (!livesMap.has(videoId)) return item;
 			const { liveSeriesId, liveStyle, tags } = livesMap.get(videoId)!;
 
-			const tagsMerged = (item.tags ?? []).let((ts) =>
-				tags.reduce((ret, e) => [...ret, e], ts)
-			);
+			const tagsMerged = (item.tags ?? [])
+				.let((ts) => tags.reduce((set, e) => set.add(e), new Set(ts)))
+				.values();
 
 			return {
 				...item,
-				tags: tagsMerged,
+				tags: Array.from(tagsMerged),
 				liveSeriesId,
 				liveStyle,
 			};
