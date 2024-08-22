@@ -28,7 +28,7 @@
 			"id": "4nx1upvdDNP4",
 			"gameTitle": "ポケモンスタジアム金銀",
 			"platform": "N64",
-			"tags": [],
+			"tags": ["ポケモンシリーズ"],
 			"releasedIn": "",
 			"masteryLevel": 0
 		},
@@ -36,7 +36,7 @@
 			"id": "QeZIRiWluczH",
 			"gameTitle": "ポケモンスナップ",
 			"platform": "N64",
-			"tags": [],
+			"tags": ["ポケモンシリーズ"],
 			"releasedIn": "",
 			"masteryLevel": 0
 		},
@@ -182,6 +182,222 @@
 			"platform": "GC",
 			"tags": ["ピクミンシリーズ"],
 			"releasedIn": 2004,
+			"masteryLevel": 0
+		},
+		{
+			"id": "hGbFX_fR-woD",
+			"gameTitle": "マリオvs.ドンキーコング みんなでミニランド",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Ng3y5eGx7rJ3",
+			"gameTitle": "スーパーマリオ 3Dランド",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2011,
+			"masteryLevel": 0
+		},
+		{
+			"id": "UwgEvIC62KD3",
+			"gameTitle": "パズル&ドラゴンズ スーパーマリオブラザーズ エディション",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "OT7iG8wAXfAN",
+			"gameTitle": "マリオカート8",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
+			"releasedIn": 2014,
+			"masteryLevel": 0
+		},
+		{
+			"id": "A5Vyf7gyNZDS",
+			"gameTitle": "スプラトゥーン",
+			"platform": "WiiU",
+			"tags": ["スプラトゥーンシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 5
+		},
+		{
+			"id": "BAiTqlk08xce",
+			"gameTitle": "ヨッシーウールワールド",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ", "ヨッシーシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "xo19C6o--QYM",
+			"gameTitle": "リズム天国 ザ・ベスト＋",
+			"platform": "3DS",
+			"tags": [],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "vcCrpAlPH7BV",
+			"gameTitle": "スーパーマリオメーカー",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "NUMFquhrnen3",
+			"gameTitle": "ポケモン超不思議のダンジョン",
+			"platform": "3DS",
+			"tags": ["ポケモンシリーズ", "ポケダンシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "mE9hjnsbVwYz",
+			"gameTitle": "モンスターハンタークロス",
+			"platform": "3DS",
+			"tags": ["モンハンシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ZejWQ8DHJuJ4",
+			"gameTitle": "どうぶつの森 amiiboフェスティバル",
+			"platform": "WiiU",
+			"tags": ["どうぶつの森シリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "vXKNn3c7oB1k",
+			"gameTitle": "マリオテニス ウルトラスマッシュ",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ", "マリオテニスシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "yc_zGh-j27h0",
+			"gameTitle": "名探偵ピカチュウ ～新コンビ誕生～",
+			"platform": "3DS",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "QKPJVaFTuCFl",
+			"gameTitle": "ポケットモンスター 青",
+			"platform": "GB",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモン(初代)"],
+			"releasedIn": 1996,
+			"masteryLevel": 0
+		},
+		{
+			"id": "RBX0KyoMvT9l",
+			"gameTitle": "ポッ拳 POKKÉN TOURNAMENT",
+			"platform": "WiiU",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "lX5rQX47jh3h",
+			"gameTitle": "スターフォックス ゼロ",
+			"platform": "WiiU",
+			"tags": ["スターフォックスシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "yKW0eAW2sYyJ",
+			"gameTitle": "星のカービィ ロボボプラネット",
+			"platform": "3DS",
+			"tags": ["星のカービィシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "JbVkPQ9y-MQ6",
+			"gameTitle": "ポケットモンスター パール",
+			"platform": "DS",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンDPt"],
+			"releasedIn": 2006,
+			"masteryLevel": 0
+		},
+		{
+			"id": "3k6CXVa9TiVa",
+			"gameTitle": "マインクラフト",
+			"platform": "PC",
+			"tags": [],
+			"releasedIn": 2011,
+			"masteryLevel": 0
+		},
+		{
+			"id": "QN1-PCQmkkak",
+			"gameTitle": "ポケットモンスター ホワイト",
+			"platform": "DS",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンBW"],
+			"releasedIn": 2010,
+			"masteryLevel": 0
+		},
+		{
+			"id": "aIBhhizuqz9i",
+			"gameTitle": "ポケットモンスター ホワイト2",
+			"platform": "DS",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンBW2"],
+			"releasedIn": 2012,
+			"masteryLevel": 0
+		},
+		{
+			"id": "J3vR04wvReTK",
+			"gameTitle": "スーパーペーパーマリオ",
+			"platform": "Wii",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ"],
+			"releasedIn": 2007,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ZjIGRYp0M_BI",
+			"gameTitle": "めざせ！なきごえマスター！なきごえ151",
+			"platform": "PC",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "JlurFPSF3JEo",
+			"gameTitle": "ペーパーマリオ カラースプラッシュ",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "dF0WMOBS95pO",
+			"gameTitle": "ポケットモンスター サン・ムーン",
+			"platform": "3DS",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンSM"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "dZ6ZUAmHv232",
+			"gameTitle": "白猫テニス ",
+			"platform": "iOS",
+			"tags": [],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "sBUmbmSJYXDf",
+			"gameTitle": "スーパーマリオ ラン",
+			"platform": "iOS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2016,
 			"masteryLevel": 0
 		},
 		{
@@ -1019,14 +1235,6 @@
 			"tags": ["マリオシリーズ"],
 			"releasedIn": 2024,
 			"masteryLevel": 2
-		},
-		{
-			"id": "A5Vyf7gyNZDS",
-			"gameTitle": "スプラトゥーン",
-			"platform": "WiiU",
-			"tags": ["スプラトゥーンシリーズ"],
-			"releasedIn": 2015,
-			"masteryLevel": 5
 		},
 		{
 			"id": "AvXPVGWA9W4R",
