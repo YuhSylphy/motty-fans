@@ -68,7 +68,7 @@
 			"id": "ofZpj_mk1lJu",
 			"gameTitle": "マリオパーティ3",
 			"platform": "",
-			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
 			"releasedIn": "",
 			"masteryLevel": 0
 		},
@@ -276,7 +276,7 @@
 			"id": "vXKNn3c7oB1k",
 			"gameTitle": "マリオテニス ウルトラスマッシュ",
 			"platform": "WiiU",
-			"tags": ["マリオシリーズ", "マリオテニスシリーズ"],
+			"tags": ["マリオシリーズ", "マリテニシリーズ"],
 			"releasedIn": 2015,
 			"masteryLevel": 0
 		},
@@ -316,7 +316,7 @@
 			"id": "yKW0eAW2sYyJ",
 			"gameTitle": "星のカービィ ロボボプラネット",
 			"platform": "3DS",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2016,
 			"masteryLevel": 0
 		},
@@ -329,12 +329,12 @@
 			"masteryLevel": 0
 		},
 		{
-			"id": "3k6CXVa9TiVa",
-			"gameTitle": "マインクラフト",
+			"id": "h3xFNxf6Y_QJ",
+			"gameTitle": "Minecraft (Java)",
 			"platform": "PC",
 			"tags": [],
 			"releasedIn": 2011,
-			"masteryLevel": 0
+			"masteryLevel": 5
 		},
 		{
 			"id": "QN1-PCQmkkak",
@@ -401,12 +401,36 @@
 			"masteryLevel": 0
 		},
 		{
+			"id": "BViSN11Kc51Z",
+			"gameTitle": "スーパーマリオ3Dワールド",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2013,
+			"masteryLevel": 0
+		},
+		{
 			"id": "YEOHBoQCG3F8",
 			"gameTitle": "ゼルダの伝説 ブレスオブザワイルド",
 			"platform": "Switch",
 			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 2017,
 			"masteryLevel": 5
+		},
+		{
+			"id": "daCGKDs2gBKG",
+			"gameTitle": "スーパーボンバーマンR",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "9ajryAYPuuIJ",
+			"gameTitle": "モンスターハンターダブルクロス",
+			"platform": "3DS",
+			"tags": ["モンハンシリーズ"],
+			"releasedIn": 2017,
+			"masteryLevel": 0
 		},
 		{
 			"id": "M3J2Z_EA4GrF",
@@ -417,12 +441,12 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "yPLJ-u-vGgGj",
-			"gameTitle": "マリオ+ラビッツ キングダムバトル",
-			"platform": "Switch",
-			"tags": ["マリオシリーズ", "マリオ+ラビッツシリーズ"],
-			"releasedIn": 2018,
-			"masteryLevel": 4
+			"id": "le5W9aXCEEMF",
+			"gameTitle": "サマナーズウォー: Sky Arena",
+			"platform": "iOS",
+			"tags": [],
+			"releasedIn": 2014,
+			"masteryLevel": 0
 		},
 		{
 			"id": "cGik0ew2bBtz",
@@ -431,6 +455,230 @@
 			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
 			"releasedIn": 2017,
 			"masteryLevel": 5
+		},
+		{
+			"id": "B9-ErkKSFaDP",
+			"gameTitle": "はねろ！コイキング",
+			"platform": "iOS",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "UGmLBBFWehGQ",
+			"gameTitle": "ARMS",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "mPB9fojhuHdv",
+			"gameTitle": "スマッシュ＆マジック",
+			"platform": "iOS",
+			"tags": [],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Wsufh_uLch16",
+			"gameTitle": "スーパーマリオギャラクシー",
+			"platform": "Wii",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2007,
+			"masteryLevel": 0
+		},
+		{
+			"id": "VO5BGsxkh1Z2",
+			"gameTitle": "Pokémon GO",
+			"platform": "iOS",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "4XULjX3QkwZ1",
+			"gameTitle": "ポケットモンスター 金・銀",
+			"platform": "GBC",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモン金銀"],
+			"releasedIn": 1999,
+			"masteryLevel": 0
+		},
+		{
+			"id": "-pAPmMFPIqiz",
+			"gameTitle": "進め! キノピオ隊長",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2014,
+			"masteryLevel": 0
+		},
+		{
+			"id": "0AC6upd6qAa1",
+			"gameTitle": "スーパーマリオ オデッセイ",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "pjdk0Jae78gn",
+			"gameTitle": "ポケットモンスター ウルトラサン・ウルトラムーン",
+			"platform": "3DS",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンUSUM"],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "DQ-kUmBNdHwr",
+			"gameTitle": "どうぶつの森 ポケットキャンプ",
+			"platform": "iOS",
+			"tags": ["どうぶつの森シリーズ"],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "zoX8t84szx4W",
+			"gameTitle": "マリオパーティ100 ミニゲームコレクション",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2017,
+			"masteryLevel": 0
+		},
+		{
+			"id": "yPLJ-u-vGgGj",
+			"gameTitle": "マリオ+ラビッツ キングダムバトル",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "マリラビシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 4
+		},
+		{
+			"id": "z5-sdbdnkTEp",
+			"gameTitle": "星のカービィ スーパーデラックス",
+			"platform": "SFC",
+			"tags": ["カービィシリーズ"],
+			"releasedIn": 1996,
+			"masteryLevel": 0
+		},
+		{
+			"id": "rUIKbheDufQ_",
+			"gameTitle": "星のカービィ スターアライズ",
+			"platform": "Switch",
+			"tags": ["カービィシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "vbfF1NLLp5DR",
+			"gameTitle": "名探偵ピカチュウ (完全版)",
+			"platform": "3DS",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "XWH96FWS_IFA",
+			"gameTitle": "ポケットモンスター ハートゴールド・ソウルシルバー",
+			"platform": "DS",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンHGSS"],
+			"releasedIn": 2009,
+			"masteryLevel": 0
+		},
+		{
+			"id": "tjDxQQ3MzkYY",
+			"gameTitle": "ドンキーコング リターンズ",
+			"platform": "Wii",
+			"tags": ["マリオシリーズ", "ドンキーシリーズ"],
+			"releasedIn": 2010,
+			"masteryLevel": 0
+		},
+		{
+			"id": "pZKoZd9lAy7S",
+			"gameTitle": "Nintendo Labo",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "kSW4UQTFP6ZA",
+			"gameTitle": "ドンキーコング トロピカルフリーズ (Switch)",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "ドンキーシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "xv7bz6eD6WiO",
+			"gameTitle": "ポケモンクエスト",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "xqHkJe39BucI",
+			"gameTitle": "マリオテニス エース",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "マリテニシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "PW8VEDQ4J_xQ",
+			"gameTitle": "OCTOPATH TRAVELER",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "w9h4kVKWQW69",
+			"gameTitle": "メイド イン ワリオ ゴージャス",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "iIcOe1EXD6M7",
+			"gameTitle": "ロックマン11 運命の歯車!!",
+			"platform": "Switch",
+			"tags": ["ロックマンシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Ja4iKnmSUQWr",
+			"gameTitle": "スーパー マリオパーティ",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "b2uEShu2n5E0",
+			"gameTitle": "ポケットモンスター Let’s Go! ピカチュウ・Let’s Go! イーブイ",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンLPLE"],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "XBCUq_Ui507o",
+			"gameTitle": "大乱闘スマッシュブラザーズ SPECIAL",
+			"platform": "Switch",
+			"tags": ["スマブラシリーズ"],
+			"releasedIn": 2018,
+			"masteryLevel": 3
+		},
+		{
+			"id": "pOnU7t7BG5QV",
+			"gameTitle": "伝説対決 -Arena of Valor-",
+			"platform": "iOS",
+			"tags": [],
+			"releasedIn": 2016,
+			"masteryLevel": 0
 		},
 		{
 			"id": "vNJcpdWifoAY",
@@ -869,14 +1117,6 @@
 			"masteryLevel": 5
 		},
 		{
-			"id": "zRB4UyCMfd9d",
-			"gameTitle": "大乱闘スマッシュブラザーズSPECIAL",
-			"platform": "Switch",
-			"tags": ["大乱闘スマッシュブラザーズシリーズ"],
-			"releasedIn": 2018,
-			"masteryLevel": 3
-		},
-		{
 			"id": "7X7v8hSMoVoi",
 			"gameTitle": "桃太郎電鉄 ～昭和 平成 令和も定番！～",
 			"platform": "Switch",
@@ -912,7 +1152,7 @@
 			"id": "S8puP1m2ahwM",
 			"gameTitle": "星のカービィ Wii",
 			"platform": "Wii",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2011,
 			"masteryLevel": 4
 		},
@@ -920,7 +1160,7 @@
 			"id": "VNYZ_MbMiNQc",
 			"gameTitle": "星のカービィ トリプルデラックス",
 			"platform": "3DS",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2014,
 			"masteryLevel": 4
 		},
@@ -928,7 +1168,7 @@
 			"id": "6jDqu7dupB0v",
 			"gameTitle": "星のカービィ 参上！ドロッチェ団",
 			"platform": "DS",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2006,
 			"masteryLevel": 4
 		},
@@ -936,7 +1176,7 @@
 			"id": "vtsW7X9iznkh",
 			"gameTitle": "星のカービィ ディスカバリー",
 			"platform": "Switch",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 4
 		},
@@ -944,7 +1184,7 @@
 			"id": "DC76t52xMTY1",
 			"gameTitle": "星のカービィ 夢の泉の物語",
 			"platform": "FC",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 1993,
 			"masteryLevel": 4
 		},
@@ -960,7 +1200,7 @@
 			"id": "pUKdWHkwMkte",
 			"gameTitle": "大乱闘スマッシュブラザーズX",
 			"platform": "Wii",
-			"tags": ["大乱闘スマッシュブラザーズシリーズ"],
+			"tags": ["スマブラシリーズ"],
 			"releasedIn": 2008,
 			"masteryLevel": 3
 		},
@@ -968,7 +1208,7 @@
 			"id": "kwdGOknZuHia",
 			"gameTitle": "星のカービィ ウルトラスーパーデラックス",
 			"platform": "DS",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2008,
 			"masteryLevel": 4
 		},
@@ -1005,14 +1245,6 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "h3xFNxf6Y_QJ",
-			"gameTitle": "Minecraft (Java)",
-			"platform": "PC",
-			"tags": [],
-			"releasedIn": 2011,
-			"masteryLevel": 5
-		},
-		{
 			"id": "lzS0E42wHU-a",
 			"gameTitle": "FallGuys (Switch)",
 			"platform": "Switch",
@@ -1032,7 +1264,7 @@
 			"id": "aq017QagjXp7",
 			"gameTitle": "カービィのグルメフェス",
 			"platform": "Switch",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2022,
 			"masteryLevel": 2
 		},
@@ -1080,7 +1312,7 @@
 			"id": "DQ8np1oXPj5F",
 			"gameTitle": "毛糸のカービィ",
 			"platform": "Wii",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2010,
 			"masteryLevel": 4
 		},
@@ -1088,7 +1320,7 @@
 			"id": "7PxKdkhuV-N3",
 			"gameTitle": "星のカービィ (初代)",
 			"platform": "GB",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 1992,
 			"masteryLevel": 2
 		},
@@ -1096,7 +1328,7 @@
 			"id": "S_zh8UvknnFL",
 			"gameTitle": "星のカービィWiiデラックス",
 			"platform": "Switch",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 2023,
 			"masteryLevel": 4
 		},
@@ -1104,7 +1336,7 @@
 			"id": "U-aEkeXTFkEe",
 			"gameTitle": "星のカービィ2",
 			"platform": "GBC",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 1995,
 			"masteryLevel": 3
 		},
@@ -1112,7 +1344,7 @@
 			"id": "Um4b4TD0NErH",
 			"gameTitle": "カービィボウル",
 			"platform": "SFC",
-			"tags": ["星のカービィシリーズ"],
+			"tags": ["カービィシリーズ"],
 			"releasedIn": 1994,
 			"masteryLevel": 2
 		},
