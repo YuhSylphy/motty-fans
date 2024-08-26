@@ -112,9 +112,10 @@ function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 				alt={alt}
 				src={url}
 				sx={(_theme) => ({
+					// TODO: PCレイアウトで広いときにはみ出るっぽい
 					aspectRatio: `${width} / ${height}`,
-					maxWidth: '100%',
-					maxHeight: '100%',
+					// maxWidth: '100%',
+					// maxHeight: '100%',
 					objectFit: 'contain',
 					display: 'block',
 				})}
@@ -480,6 +481,7 @@ const LiveSeriesConditionFormPaper = styled(Paper)(({ theme }) => ({
 // };
 
 function LiveSeriesConditionForm() {
+	// TODO: 絞り込み/並べ替え機能実装
 	// const {} = useLiveSeriesConditionFormHooks();
 	return (
 		<Container>
