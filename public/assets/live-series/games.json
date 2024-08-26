@@ -12,7 +12,7 @@
 			"id": "mGfyIMOnbmtA",
 			"gameTitle": "スーパーマリオ64",
 			"platform": "N64",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 1996,
 			"masteryLevel": 5
 		},
@@ -67,9 +67,9 @@
 		{
 			"id": "ofZpj_mk1lJu",
 			"gameTitle": "マリオパーティ3",
-			"platform": "",
+			"platform": "N64",
 			"tags": ["マリオシリーズ", "マリパシリーズ"],
-			"releasedIn": "",
+			"releasedIn": 2000,
 			"masteryLevel": 0
 		},
 		{
@@ -164,7 +164,7 @@
 			"id": "PrFP7NhXOz9i",
 			"gameTitle": "スーパーマリオ64DS",
 			"platform": "DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 2004,
 			"masteryLevel": 0
 		},
@@ -196,7 +196,7 @@
 			"id": "Ng3y5eGx7rJ3",
 			"gameTitle": "スーパーマリオ 3Dランド",
 			"platform": "3DS",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 2011,
 			"masteryLevel": 0
 		},
@@ -404,7 +404,7 @@
 			"id": "BViSN11Kc51Z",
 			"gameTitle": "スーパーマリオ3Dワールド",
 			"platform": "WiiU",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 2013,
 			"masteryLevel": 0
 		},
@@ -484,7 +484,7 @@
 			"id": "Wsufh_uLch16",
 			"gameTitle": "スーパーマリオギャラクシー",
 			"platform": "Wii",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 2007,
 			"masteryLevel": 0
 		},
@@ -516,7 +516,7 @@
 			"id": "0AC6upd6qAa1",
 			"gameTitle": "スーパーマリオ オデッセイ",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 2017,
 			"masteryLevel": 0
 		},
@@ -681,12 +681,364 @@
 			"masteryLevel": 0
 		},
 		{
+			"id": "xuGEQsbkwOVR",
+			"gameTitle": "スーパーマリオRPG",
+			"platform": "SFC",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 1995,
+			"masteryLevel": 0
+		},
+		{
+			"id": "N-IYYHCfMQSu",
+			"gameTitle": "MOTHER",
+			"platform": "FC",
+			"tags": [],
+			"releasedIn": 1989,
+			"masteryLevel": 0
+		},
+		{
+			"id": "MgnbwMx5kWvy",
+			"gameTitle": "ドクターマリオ",
+			"platform": "FC",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 1990,
+			"masteryLevel": 0
+		},
+		{
+			"id": "9g1M1RIbtCy-",
+			"gameTitle": "MOTHER2 ギーグの逆襲",
+			"platform": "SFC",
+			"tags": [],
+			"releasedIn": 1994,
+			"masteryLevel": 0
+		},
+		{
+			"id": "OnTNAb6TcKOR",
+			"gameTitle": "ソニック・ザ・ヘッジホッグ (8ビット版)",
+			"platform": "GG",
+			"tags": [],
+			"releasedIn": 1991,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Ue_YEOOfAVHQ",
+			"gameTitle": "スーパーマリオブラザーズ",
+			"platform": "FC",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1985,
+			"masteryLevel": 0
+		},
+		{
+			"id": "MGQJrNEaau2_",
+			"gameTitle": "夜廻と深夜廻 for Nintendo Switch",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2018,
+			"masteryLevel": 0
+		},
+		{
+			"id": "3FW1wkTXGFHY",
+			"gameTitle": "ヨッシーアイランド",
+			"platform": "SFC",
+			"tags": ["マリオシリーズ", "ヨッシーシリーズ"],
+			"releasedIn": 1995,
+			"masteryLevel": 0
+		},
+		{
+			"id": "eloU6BKRarzY",
+			"gameTitle": "スーパーマリオワールド",
+			"platform": "SFC",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1990,
+			"masteryLevel": 0
+		},
+		{
+			"id": "8isYG3nEXpH1",
+			"gameTitle": "リトルタウンヒーロー",
+			"platform": "Switch",
+			"tags": ["ゲーフリ"],
+			"releasedIn": 2019,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Tzj9UfxUe_Rw",
+			"gameTitle": "New スーパーマリオブラザーズ",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 2006,
+			"masteryLevel": 0
+		},
+		{
+			"id": "Hgs1aWOQ9NZY",
+			"gameTitle": "スーパープリンセスピーチ",
+			"platform": "DS",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "xY2rv-0d065E",
+			"gameTitle": "リズム天国ゴールド",
+			"platform": "DS",
+			"tags": ["リズム天国シリーズ"],
+			"releasedIn": 2008,
+			"masteryLevel": 0
+		},
+		{
+			"id": "b8i83DcAMsaF",
+			"gameTitle": "みんなのリズム天国",
+			"platform": "Wii",
+			"tags": ["リズム天国シリーズ"],
+			"releasedIn": 2011,
+			"masteryLevel": 0
+		},
+		{
+			"id": "TFo7UK99NOqP",
+			"gameTitle": "もっと脳を鍛える大人のDSトレーニング",
+			"platform": "DS",
+			"tags": [],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "YhB9IJB8LEY8",
+			"gameTitle": "スーパーマリオギャラクシー2",
+			"platform": "Wii",
+			"tags": ["マリオシリーズ", "3Dマリオ"],
+			"releasedIn": 2010,
+			"masteryLevel": 0
+		},
+		{
+			"id": "sKFVvgiSXnsr",
+			"gameTitle": "New スーパーマリオブラザーズ Wii",
+			"platform": "Wii",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 2009,
+			"masteryLevel": 0
+		},
+		{
+			"id": "g4K3SYmRUw6d",
+			"gameTitle": "New スーパーマリオブラザーズ 2",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 2012,
+			"masteryLevel": 0
+		},
+		{
+			"id": "70lF71ADzm4O",
+			"gameTitle": "スーパーマリオサンシャイン",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "3Dマリオ"],
+			"releasedIn": 2002,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ngr_rEK6oZhN",
+			"gameTitle": "マリオカートDS",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "_dTv_NXMZFld",
+			"gameTitle": "New スーパーマリオブラザーズ U",
+			"platform": "WiiU",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
+		},
+		{
+			"id": "hB_FFIMRfYQP",
+			"gameTitle": "マリオカート ダブルダッシュ!!",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
+			"releasedIn": 2003,
+			"masteryLevel": 0
+		},
+		{
+			"id": "0xnBtaUibAmd",
+			"gameTitle": "ペーパーマリオRPG",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ"],
+			"releasedIn": 2004,
+			"masteryLevel": 0
+		},
+		{
+			"id": "0RV6g3LFzmoq",
+			"gameTitle": "ピクミン",
+			"platform": "GC",
+			"tags": ["ピクミンシリーズ"],
+			"releasedIn": 2001,
+			"masteryLevel": 0
+		},
+		{
+			"id": "-h26SAud3wzc",
+			"gameTitle": "ペーパーマリオ スーパーシール",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ"],
+			"releasedIn": 2012,
+			"masteryLevel": 0
+		},
+		{
+			"id": "VAeTLhGjpgLC",
+			"gameTitle": "スーパーマリオブラザーズ3",
+			"platform": "FC",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1988,
+			"masteryLevel": 0
+		},
+		{
+			"id": "uv6j_OufoAme",
+			"gameTitle": "スーパーマリオUSA",
+			"platform": "FC",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1988,
+			"masteryLevel": 0
+		},
+		{
+			"id": "9igsnMyViZuV",
+			"gameTitle": "スーパーマリオランド",
+			"platform": "GB",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1989,
+			"masteryLevel": 0
+		},
+		{
+			"id": "MFpKJIZPHn4h",
+			"gameTitle": "スーパーマリオランド2 6つの金貨",
+			"platform": "GB",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1992,
+			"masteryLevel": 0
+		},
+		{
+			"id": "wq1CQSEs8rQ_",
+			"gameTitle": "スーパーマリオランド3 ワリオランド",
+			"platform": "GB",
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
+			"releasedIn": 1994,
+			"masteryLevel": 0
+		},
+		{
+			"id": "BQbuMW2RbSMr",
+			"gameTitle": "スーパーマリオブラザーズ2",
+			"platform": "FC",
+			"tags": ["マリオシリーズ", "2Dマリオ"],
+			"releasedIn": 1986,
+			"masteryLevel": 0
+		},
+		{
+			"id": "SV7ND-gSF5F2",
+			"gameTitle": "マリオストーリー",
+			"platform": "N64",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ"],
+			"releasedIn": 2000,
+			"masteryLevel": 0
+		},
+		{
+			"id": "MkRSfqbs9eMt",
+			"gameTitle": "スーパードンキーコング",
+			"platform": "SFC",
+			"tags": ["ドンキーシリーズ"],
+			"releasedIn": 1994,
+			"masteryLevel": 0
+		},
+		{
+			"id": "LTstAjEmH7r3",
+			"gameTitle": "スーパードンキーコング2",
+			"platform": "SFC",
+			"tags": ["ドンキーシリーズ"],
+			"releasedIn": 1995,
+			"masteryLevel": 0
+		},
+		{
+			"id": "rwKLHWLBoKEy",
+			"gameTitle": "スーパードンキーコング3",
+			"platform": "SFC",
+			"tags": ["ドンキーシリーズ"],
+			"releasedIn": 1996,
+			"masteryLevel": 0
+		},
+		{
+			"id": "1KOu7bx5iHOJ",
+			"gameTitle": "マリオ&ルイージRPG",
+			"platform": "GBA",
+			"tags": ["マリオシリーズ", "マリルイシリーズ"],
+			"releasedIn": 2003,
+			"masteryLevel": 0
+		},
+		{
+			"id": "sCXRA32EQP8I",
+			"gameTitle": "マリオパーティDS",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2006,
+			"masteryLevel": 0
+		},
+		{
+			"id": "flGql9ZxBzp8",
+			"gameTitle": "ドンキーコング64",
+			"platform": "N64",
+			"tags": ["ドンキーシリーズ"],
+			"releasedIn": 1999,
+			"masteryLevel": 0
+		},
+		{
+			"id": "IX3UjYQZNPcs",
+			"gameTitle": "マリオ&ルイージRPG2",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリルイシリーズ"],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "05lorvk5QSxv",
+			"gameTitle": "マリオパーティ スターラッシュ",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2016,
+			"masteryLevel": 0
+		},
+		{
+			"id": "rprlifh10JHt",
+			"gameTitle": "マリオ&ルイージRPG3!!!",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリルイシリーズ"],
+			"releasedIn": 2009,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ufLlKzvj_ab0",
+			"gameTitle": "マリオ&ルイージRPG4 ドリームアドベンチャー",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "マリルイシリーズ"],
+			"releasedIn": 2013,
+			"masteryLevel": 0
+		},
+		{
 			"id": "vNJcpdWifoAY",
 			"gameTitle": "ゼルダの伝説 時のオカリナ",
 			"platform": "N64",
 			"tags": ["ゼルダの伝説シリーズ"],
 			"releasedIn": 1998,
 			"masteryLevel": 3
+		},
+		{
+			"id": "lznt3d_D-L72",
+			"gameTitle": "マリオカート64",
+			"platform": "N64",
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
+			"releasedIn": 1996,
+			"masteryLevel": 5
+		},
+		{
+			"id": "pR8SKdvN-Yti",
+			"gameTitle": "マリオ&ルイージRPG ペーパーマリオMIX",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ", "マリルイシリーズ"],
+			"releasedIn": 2015,
+			"masteryLevel": 0
 		},
 		{
 			"id": "RejOCo8kqNKU",
@@ -697,12 +1049,148 @@
 			"masteryLevel": 3
 		},
 		{
-			"id": "vRuNXhTvD-yb",
-			"gameTitle": "マリオストライカーズ",
+			"id": "DZLu4zeTdcu6",
+			"gameTitle": "マリオパーティ",
+			"platform": "N64",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 1998,
+			"masteryLevel": 0
+		},
+		{
+			"id": "IJzs8X4q8hBo",
+			"gameTitle": "マリオパーティ2",
+			"platform": "N64",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 1999,
+			"masteryLevel": 0
+		},
+		{
+			"id": "2AD_chHBGyN6",
+			"gameTitle": "マリオvs.ドンキーコング",
+			"platform": "GBA",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2004,
+			"masteryLevel": 0
+		},
+		{
+			"id": "PWFi0qo29W6j",
+			"gameTitle": "マリオパーティ4",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2002,
+			"masteryLevel": 0
+		},
+		{
+			"id": "o4weZkxP10U7",
+			"gameTitle": "マリオカートアドバンス",
+			"platform": "GBA",
+			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
+			"releasedIn": 2001,
+			"masteryLevel": 0
+		},
+		{
+			"id": "x6tjiYCF9g2-",
+			"gameTitle": "マリオvs.ドンキーコング2 ミニミニ大行進!",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2006,
+			"masteryLevel": 0
+		},
+		{
+			"id": "sIqVQ4l-EsRS",
+			"gameTitle": "マリオパーティ5",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2003,
+			"masteryLevel": 0
+		},
+		{
+			"id": "XgnaIDt-QIj1",
+			"gameTitle": "伝説のクイズ王決定戦",
+			"platform": "GC",
+			"tags": [],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ZufwwYGztrL3",
+			"gameTitle": "マリオvs.ドンキーコング 突撃!ミニランド",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2010,
+			"masteryLevel": 0
+		},
+		{
+			"id": "RZu9mzlh8nzw",
+			"gameTitle": "マリオパーティ6",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2004,
+			"masteryLevel": 0
+		},
+		{
+			"id": "zYu22ddEYBGi",
+			"gameTitle": "マリオvs.ドンキーコング ミニミニ再行進!",
+			"platform": "DS",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2009,
+			"masteryLevel": 0
+		},
+		{
+			"id": "9BnaLlleY0X0",
+			"gameTitle": "マリオパーティ7",
+			"platform": "GC",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "ulQAzwsq1WDH",
+			"gameTitle": "マリオ AND ドンキーコング ミニミニカーニバル",
+			"platform": "3DS",
+			"tags": ["マリオシリーズ", "マリドンシリーズ"],
+			"releasedIn": 2013,
+			"masteryLevel": 0
+		},
+		{
+			"id": "DozjYnwJGOXA",
+			"gameTitle": "キャサリン・フルボディ for Nintendo Switch",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2020,
+			"masteryLevel": 0
+		},
+		{
+			"id": "2akkwOW9JKSP",
+			"gameTitle": "マリオパーティ アドバンス",
+			"platform": "GBA",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2005,
+			"masteryLevel": 0
+		},
+		{
+			"id": "NQZZVP3dk73A",
+			"gameTitle": "スーパーマリオストライカーズ",
 			"platform": "GC",
 			"tags": ["マリオシリーズ", "マリオストライカーズシリーズ"],
 			"releasedIn": 2005,
 			"masteryLevel": 2
+		},
+		{
+			"id": "YKd16xieUSSY",
+			"gameTitle": "マリオパーティ8",
+			"platform": "Wii",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2007,
+			"masteryLevel": 0
+		},
+		{
+			"id": "B9ZKTrDG55RV",
+			"gameTitle": "ペーパーマリオ オリガミキング",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "ペパマリシリーズ"],
+			"releasedIn": 2020,
+			"masteryLevel": 0
 		},
 		{
 			"id": "RG2YZLzdMTuQ",
@@ -767,7 +1255,8 @@
 			"tags": [
 				"マリオシリーズ",
 				"スーパーマリオ 3Dコレクション",
-				"スーパーマリオ64"
+				"スーパーマリオ64",
+				"3Dマリオ"
 			],
 			"releasedIn": 2020,
 			"masteryLevel": 5
@@ -792,7 +1281,7 @@
 			"id": "AWhAx0kaTUx7",
 			"gameTitle": "スーパーマリオ3Dワールド + フューリーワールド",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "3Dマリオ"],
 			"releasedIn": 2021,
 			"masteryLevel": 4
 		},
@@ -824,7 +1313,12 @@
 			"id": "fZVNkfkcdlDW",
 			"gameTitle": "スーパーマリオギャラクシー (3Dコレクション)",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": [
+				"マリオシリーズ",
+				"スーパーマリオ 3Dコレクション",
+				"スーパーマリオギャラクシー",
+				"3Dマリオ"
+			],
 			"releasedIn": 2020,
 			"masteryLevel": 4
 		},
@@ -1107,14 +1601,6 @@
 			"tags": ["マリオシリーズ", "ヨッシーシリーズ"],
 			"releasedIn": 1997,
 			"masteryLevel": 4
-		},
-		{
-			"id": "lznt3d_D-L72",
-			"gameTitle": "マリオカート64",
-			"platform": "N64",
-			"tags": ["マリオシリーズ", "マリオカートシリーズ"],
-			"releasedIn": 1996,
-			"masteryLevel": 5
 		},
 		{
 			"id": "7X7v8hSMoVoi",
@@ -1400,7 +1886,7 @@
 			"id": "flqcwZP8E3gJ",
 			"gameTitle": "スーパーマリオブラザーズワンダー",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "2Dマリオ"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
