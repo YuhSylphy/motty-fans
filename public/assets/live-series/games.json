@@ -654,7 +654,7 @@
 			"platform": "Switch",
 			"tags": ["マリオシリーズ", "マリパシリーズ"],
 			"releasedIn": 2018,
-			"masteryLevel": 0
+			"masteryLevel": 4
 		},
 		{
 			"id": "b2uEShu2n5E0",
@@ -1265,7 +1265,7 @@
 			"id": "uQgLTPWm1AO7",
 			"gameTitle": "スーパーマリオブラザーズ35",
 			"platform": "Switch",
-			"tags": ["マリオシリーズ"],
+			"tags": ["マリオシリーズ", "NSO"],
 			"releasedIn": 2020,
 			"masteryLevel": 2
 		},
@@ -1424,14 +1424,6 @@
 			"platform": "Switch",
 			"tags": [],
 			"releasedIn": 2019,
-			"masteryLevel": 4
-		},
-		{
-			"id": "iE7r5DsZY_uH",
-			"gameTitle": "スーパーマリオパーティ",
-			"platform": "Switch",
-			"tags": ["マリオシリーズ", "マリオパーティシリーズ"],
-			"releasedIn": 2018,
 			"masteryLevel": 4
 		},
 		{
@@ -1782,7 +1774,7 @@
 			"id": "J7kdBl5o3QOh",
 			"gameTitle": "ソリティ馬 Ride On!",
 			"platform": "iOS",
-			"tags": ["ソリティ馬シリーズ"],
+			"tags": ["ソリティ馬シリーズ", "Apple Arcade"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
@@ -1862,7 +1854,7 @@
 			"id": "fi-YntTDbN53",
 			"gameTitle": "F-ZERO 99",
 			"platform": "Switch",
-			"tags": [],
+			"tags": ["NSO"],
 			"releasedIn": 2023,
 			"masteryLevel": 1
 		},
