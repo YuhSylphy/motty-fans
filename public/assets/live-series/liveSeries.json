@@ -2177,10 +2177,18 @@
 			"gameId": "aq017QagjXp7"
 		},
 		{
-			"id": "Y7roOcLeoCgO",
-			"seriesTitle": "スプラトゥーン3 実況プレイ！",
+			"id": "1r-2XOkFefMO",
+			"seriesTitle": "スプラトゥーン3 本編",
 			"remarks": "",
 			"videosHash": "q1YqSUwvVrKKVnrctPNx8_THzSsfN3c8blr6uHnP4-bNxgpP181_trkRLLPmcdOS93salWJ1lFISS1KDCxLzlKyqldKK8nOVrPJKc3J0lEryIazaWgA",
+			"tags": [],
+			"gameId": "D6hGLrRwrE5X"
+		},
+		{
+			"id": "1IEcOtwiuZrE",
+			"seriesTitle": "スプラトゥーン3 フェス",
+			"remarks": "",
+			"videosHash": null,
 			"tags": [],
 			"gameId": "D6hGLrRwrE5X"
 		},
