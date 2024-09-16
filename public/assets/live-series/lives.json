@@ -35015,6 +35015,42 @@
 			"tags": [],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "U1Am1ZSTr1El"
+		},
+		{
+			"id": "axnFeMAdKs4",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "jzmxsAMFoY-A"
+		},
+		{
+			"id": "T7B3yxl1JYw",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vI0NwUNYHaC5"
+		},
+		{
+			"id": "KHBSLuf7_c0",
+			"tags": ["グランドフェスティバル"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1IEcOtwiuZrE"
+		},
+		{
+			"id": "9IAuMmYJyvw",
+			"tags": ["グランドフェスティバル"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1IEcOtwiuZrE"
+		},
+		{
+			"id": "YCj4KFqUh7E",
+			"tags": ["グランドフェスティバル"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1IEcOtwiuZrE"
+		},
+		{
+			"id": "9SiSS39hrrs",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "z9QpW1ycNH3i"
 		}
 	]
 }
