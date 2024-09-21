@@ -87,6 +87,10 @@ interface ThumbsProps {
 	thumbnail: Thumbnail;
 }
 
+const ThumbsStyledImg = styled('img')((_theme) => ({
+	objectFit: 'cover',
+}));
+
 function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 	const additional = useValueWithMediaQuery({
 		xs: (theme: Theme) => ({ maxHeight: theme.spacing(9) }),
@@ -95,31 +99,26 @@ function Thumbs({ thumbnail: { url, width, height }, href, alt }: ThumbsProps) {
 		lg: (theme: Theme) => ({ maxHeight: theme.spacing(6) }),
 		xl: (theme: Theme) => ({ maxHeight: theme.spacing(6) }),
 	} as const);
+	const aspectRatio = useMemo(() => `${width} / ${height}`, [width, height]);
 	return (
 		<Link
 			href={href}
 			sx={(theme) => ({
+				width: '100%',
+				height: '100%',
+				overflow: 'hidden',
+
 				display: 'flex',
 				alignItems: 'center',
 				justifyContent: 'center',
+				alignContent: 'center',
+
 				...additional(theme),
 			})}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<Box
-				component="img"
-				alt={alt}
-				src={url}
-				sx={(_theme) => ({
-					// TODO: PCレイアウトで広いときにはみ出るっぽい
-					aspectRatio: `${width} / ${height}`,
-					// maxWidth: '100%',
-					// maxHeight: '100%',
-					objectFit: 'contain',
-					display: 'block',
-				})}
-			/>
+			<ThumbsStyledImg sx={{ aspectRatio }} alt={alt} src={url} />
 		</Link>
 	);
 }
