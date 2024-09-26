@@ -172,7 +172,7 @@
 			"id": "Zk6l6Dqurczn",
 			"gameTitle": "ゼルダの伝説 ムジュラの仮面 3D",
 			"platform": "3DS",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "箱庭ゼルダ"],
 			"releasedIn": 2015,
 			"masteryLevel": 2
 		},
@@ -412,7 +412,7 @@
 			"id": "YEOHBoQCG3F8",
 			"gameTitle": "ゼルダの伝説 ブレスオブザワイルド",
 			"platform": "Switch",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "オープンワールドゼルダ"],
 			"releasedIn": 2017,
 			"masteryLevel": 5
 		},
@@ -1020,7 +1020,7 @@
 			"id": "vNJcpdWifoAY",
 			"gameTitle": "ゼルダの伝説 時のオカリナ",
 			"platform": "N64",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "箱庭ゼルダ"],
 			"releasedIn": 1998,
 			"masteryLevel": 3
 		},
@@ -1382,7 +1382,7 @@
 			"id": "UNfF6bEE3W4k",
 			"gameTitle": "ゼルダの伝説 スカイウォードソード HD",
 			"platform": "Switch",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "箱庭ゼルダ"],
 			"releasedIn": 2021,
 			"masteryLevel": 2
 		},
@@ -1702,7 +1702,7 @@
 			"id": "Zbh0iv8iH9n2",
 			"gameTitle": "ゼルダ無双 厄災の黙示録",
 			"platform": "Switch",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "無双シリーズ"],
 			"releasedIn": 2020,
 			"masteryLevel": 4
 		},
@@ -1830,7 +1830,7 @@
 			"id": "c9tgTz8QdBsH",
 			"gameTitle": "ゼルダの伝説 ティアーズオブザキングダム",
 			"platform": "Switch",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "オープンワールドゼルダ"],
 			"releasedIn": 2023,
 			"masteryLevel": 5
 		},
@@ -1990,7 +1990,7 @@
 			"id": "DxoEsFzhDxlg",
 			"gameTitle": "ゼルダの伝説 神々のトライフォース&4つの剣",
 			"platform": "GBA",
-			"tags": ["ゼルダの伝説シリーズ"],
+			"tags": ["ゼルダの伝説シリーズ", "見下ろしゼルダ"],
 			"releasedIn": 2003,
 			"masteryLevel": 4
 		},
@@ -2065,6 +2065,14 @@
 			"tags": [],
 			"releasedIn": 2024,
 			"masteryLevel": 2
+		},
+		{
+			"id": "K77ezpNc1M4_",
+			"gameTitle": "ゼルダの伝説 知恵のかりもの",
+			"platform": "Switch",
+			"tags": ["ゼルダの伝説シリーズ", "見下ろしゼルダ"],
+			"releasedIn": 2024,
+			"masteryLevel": 1
 		}
 	]
 }
