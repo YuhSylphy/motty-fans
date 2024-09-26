@@ -1,11 +1,11 @@
 import React, {
+	ComponentProps,
 	Suspense,
 	useCallback,
 	useEffect,
 	useMemo,
 	useState,
 } from 'react';
-import { DateTime } from 'luxon';
 
 import {
 	AppBar,
@@ -41,29 +41,12 @@ import { liveSeriesActions } from '..';
 import { Thumbnail } from '~/features/videos/core/types/videos';
 import { LiveStyle } from '~/features/videos/core/types';
 import { convertLiveStyleToLabel } from '~/features/videos/core/types/utils';
+import { LiveSeriesRecord } from '../core/logic';
 
 // TODO: レイアウト調整
 
 function Loader() {
 	return <div>Loading...</div>;
-}
-
-interface LiveSeriesRecord {
-	id: string;
-	platform: string;
-	title: string;
-	titleReleasedIn: number | string | null;
-	styles: [LiveStyle];
-	amount: number;
-	masteryLevel: 0 | 1 | 2 | 3 | 4 | 5;
-	part1: {
-		publishedIn: number;
-		url: string;
-		thumbnail: Thumbnail;
-		title: string;
-	} | null;
-	remarks: string;
-	href: string | null;
 }
 
 const convertMasteryLevelToLabel = (
@@ -397,44 +380,7 @@ function LiveSeriesHeader() {
 }
 
 const useLiveSeriesBodyHooks = () => {
-	const { series } = useAppSelector((state) => state.liveSeries);
-	const defs = useMemo(
-		() =>
-			series.map(
-				({ id, game, seriesTitle, lives, remarks, videosHash }) =>
-					({
-						id,
-						platform: game?.platform,
-						title: seriesTitle,
-						titleReleasedIn: game?.releasedIn || null,
-						styles: ((set) => Array.from(set))(
-							lives
-								.map(({ liveStyle }) => liveStyle)
-								.reduce((s, e) => s.add(e), new Set())
-						),
-						amount: lives.length,
-						masteryLevel: game?.masteryLevel,
-						part1:
-							lives.length === 0
-								? null
-								: lives
-										.slice(0, 1)
-										.map(({ publishedAt, url, thumbnail, title }) => ({
-											publishedIn: DateTime.fromMillis(publishedAt, {
-												zone: 'JST',
-											}).year,
-											url,
-											thumbnail,
-											title,
-										}))[0],
-						remarks,
-						href: videosHash
-							? `${import.meta.env.BASE_URL}videos/${videosHash}`
-							: null,
-					}) as LiveSeriesRecord
-			),
-		[series]
-	);
+	const { displayRecords: defs } = useAppSelector((state) => state.liveSeries);
 
 	const viewMode = useValueWithMediaQuery({
 		xs: 'list',
@@ -476,12 +422,27 @@ const LiveSeriesConditionFormPaper = styled(Paper)(({ theme }) => ({
 	padding: theme.spacing(1),
 }));
 
-// const useLiveSeriesConditionFormHooks = () => {
-// };
+const useLiveSeriesConditionFormHooks = () => {
+	const dispatch = useAppDispatch();
+	const [conditionTextInput, setConditionTextInput] = useState<string>('');
+
+	const updateTextInput = useCallback<
+		Exclude<ComponentProps<typeof TextField>['onChange'], undefined>
+	>(
+		({ target: { value: conditionText } }) => {
+			setConditionTextInput(conditionText);
+			dispatch(liveSeriesActions.setConditionText({ conditionText }));
+		},
+		[dispatch]
+	);
+
+	return { conditionTextInput, updateTextInput };
+};
 
 function LiveSeriesConditionForm() {
 	// TODO: 絞り込み/並べ替え機能実装
-	// const {} = useLiveSeriesConditionFormHooks();
+	const { conditionTextInput, updateTextInput } =
+		useLiveSeriesConditionFormHooks();
 	return (
 		<Container>
 			<LiveSeriesConditionFormPaper>
@@ -497,6 +458,8 @@ function LiveSeriesConditionForm() {
 					}}
 					variant="standard"
 					fullWidth
+					value={conditionTextInput}
+					onChange={updateTextInput}
 				/>
 			</LiveSeriesConditionFormPaper>
 		</Container>
@@ -518,8 +481,8 @@ const useLiveSeriesContainerHooks = () => {
 		setInitialized(true);
 	}, [intialized, setInitialized, dispatch]);
 
-	const { series } = useAppSelector((state) => state.liveSeries);
-	const loading = useMemo(() => !series || series.length === 0, [series]);
+	const { records } = useAppSelector((state) => state.liveSeries);
+	const loading = useMemo(() => !records || records.length === 0, [records]);
 
 	return { loading };
 };
