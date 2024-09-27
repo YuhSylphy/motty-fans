@@ -1,4 +1,4 @@
-import{d as e}from"./menu-defs-CWIIiuKP.js";import{d as n}from"./router-CHF4NMPy.js";import"./jsx-runtime-_5WuVDLK.js";import"./DefaultPropsProvider-CSjmKMGg.js";/**
+import{d as e}from"./menu-defs-D72kqyz3.js";import{d as n}from"./router-CHF4NMPy.js";import"./jsx-runtime-_5WuVDLK.js";import"./DefaultPropsProvider-CSjmKMGg.js";/**
  * @remix-run/server-runtime v2.10.3
  *
  * Copyright (c) Remix Software Inc.
