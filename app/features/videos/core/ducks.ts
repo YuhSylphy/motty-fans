@@ -10,23 +10,23 @@ export type VideoFinderCondition = {
 };
 
 export type VideoFinderConditionMinimized = {
-	tags?: string[] | undefined;
-	dateSpan?:
+	t?: string[] | undefined;
+	d?:
 		| {
-				from?: number | null | undefined;
-				to?: number | null | undefined;
+				f?: number | null | undefined;
+				t?: number | null | undefined;
 		  }
 		| undefined;
 };
 
 export const normalizeVideoFinderCondition = ({
-	dateSpan,
-	tags,
+	d,
+	t,
 }: VideoFinderConditionMinimized): VideoFinderCondition => ({
-	tags: tags ?? [],
+	tags: t ?? [],
 	dateSpan: {
-		from: dateSpan?.from ?? null,
-		to: dateSpan?.to ?? null,
+		from: d?.f ?? null,
+		to: d?.t ?? null,
 	},
 });
 
@@ -34,40 +34,39 @@ export const minimizeVideoFinderCondition = ({
 	tags,
 	dateSpan: { from, to },
 }: VideoFinderCondition): VideoFinderConditionMinimized => ({
-	...(tags.length === 0 ? {} : { tags }),
+	...(tags.length === 0 ? {} : { t: tags }),
 	...(from != null && to != null
 		? {}
 		: {
-				dateSpan: {
-					...(from != null ? {} : { from }),
-					...(to != null ? {} : { to }),
+				d: {
+					...(from != null ? {} : { f: from }),
+					...(to != null ? {} : { t: to }),
 				},
 			}),
 });
 
-// TODO: {"dateSpan": { "to": null }} がエラーになる
 export function isVideoFinderConditionMinimized(
 	arg: unknown
 ): arg is VideoFinderConditionMinimized {
 	if (!arg || typeof arg !== 'object') return false;
 
-	if ('tags' in arg) {
-		const { tags } = arg;
-		if (!Array.isArray(tags)) return false;
-		if (tags.length > 0 && typeof tags[0] !== 'string') return false;
+	if ('t' in arg) {
+		const { t } = arg;
+		if (!Array.isArray(t)) return false;
+		if (t.length > 0 && typeof t[0] !== 'string') return false;
 	}
-	if ('dateSpan' in arg) {
-		const { dateSpan } = arg;
-		if (dateSpan === null || typeof dateSpan !== 'object') return false;
+	if ('d' in arg) {
+		const { d } = arg;
+		if (d === null || typeof d !== 'object') return false;
 
 		console.info(3);
-		if ('from' in dateSpan) {
-			const { from } = dateSpan;
-			if (from !== null && typeof from !== 'number') return false;
+		if ('f' in d) {
+			const { f } = d;
+			if (f !== null && typeof f !== 'number') return false;
 		}
-		if ('to' in dateSpan) {
-			const { to } = dateSpan;
-			if (to !== null && typeof to !== 'number') return false;
+		if ('t' in d) {
+			const { t } = d;
+			if (t !== null && typeof t !== 'number') return false;
 		}
 	}
 
