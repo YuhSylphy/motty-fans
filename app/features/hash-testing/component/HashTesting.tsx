@@ -2,7 +2,9 @@ import { Box, Grid, Paper, styled, TextField } from '@mui/material';
 import Pako from 'pako';
 import React, { useCallback, useState } from 'react';
 import {
-	isVideoFinderCondition,
+	isVideoFinderConditionMinimized,
+	minimizeVideoFinderCondition,
+	normalizeVideoFinderCondition,
 	VideoFinderCondition,
 } from '~/features/videos/core/ducks';
 import {
@@ -23,7 +25,9 @@ const defaultData = createDefaultCondition();
 export function encodeConditionsHash(condition: VideoFinderCondition) {
 	let i = 0;
 	console.info(`encode: ${i++}`, condition);
-	const json = JSON.stringify(condition);
+	const minimized = minimizeVideoFinderCondition(condition);
+	console.info(`encode: ${i++}`, minimized);
+	const json = JSON.stringify(minimized);
 	console.info(`encode: ${i++}`, json);
 	const compressed = Pako.deflateRaw(json, { raw: true });
 	console.info(`encode: ${i++}`, compressed);
@@ -44,13 +48,15 @@ export function decodeConditionsHash(hash: string) {
 		console.info(`decode: ${i++}`, decoded);
 		const decompressed = Pako.inflateRaw(decoded, { to: 'string', raw: true });
 		console.info(`decode: ${i++}`, decompressed);
-		const data = JSON.parse(decompressed);
+		const data: unknown = JSON.parse(decompressed);
 		console.info(`decode: ${i++}`, data);
-		if (!isVideoFinderCondition(data))
+		if (!isVideoFinderConditionMinimized(data))
 			throw Error(
 				`content is not a VideoFinderCondition: ${JSON.stringify(data)}`
 			);
-		return data;
+		const normalized = normalizeVideoFinderCondition(data);
+		console.info(`decode: ${i++}`, normalized);
+		return normalized;
 	} catch (cause) {
 		throw Error('failed to decode conditions hash', { cause });
 	}
@@ -93,10 +99,12 @@ const useHashTestingHooks = () => {
 		Exclude<React.ComponentProps<typeof TextField>['onBlur'], undefined>
 	>(() => {
 		try {
-			const data = JSON.parse(dataString);
-			if (!isVideoFinderCondition(data)) throw Error('failed to convert');
+			const data: unknown = JSON.parse(dataString);
+			if (!isVideoFinderConditionMinimized(data))
+				throw Error('failed to convert');
 
-			const newHash = encodeConditionsHash(data);
+			const normalized = normalizeVideoFinderCondition(data);
+			const newHash = encodeConditionsHash(normalized);
 			setHash(newHash);
 		} catch (cause) {
 			console.error('', { cause });

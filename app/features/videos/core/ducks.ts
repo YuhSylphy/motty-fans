@@ -9,6 +9,69 @@ export type VideoFinderCondition = {
 	};
 };
 
+export type VideoFinderConditionMinimized = {
+	t?: string[] | undefined;
+	d?:
+		| {
+				f?: number | null | undefined;
+				t?: number | null | undefined;
+		  }
+		| undefined;
+};
+
+export const normalizeVideoFinderCondition = ({
+	d,
+	t,
+}: VideoFinderConditionMinimized): VideoFinderCondition => ({
+	tags: t ?? [],
+	dateSpan: {
+		from: d?.f ?? null,
+		to: d?.t ?? null,
+	},
+});
+
+export const minimizeVideoFinderCondition = ({
+	tags,
+	dateSpan: { from, to },
+}: VideoFinderCondition): VideoFinderConditionMinimized => ({
+	...(tags.length === 0 ? {} : { t: tags }),
+	...(from != null && to != null
+		? {}
+		: {
+				d: {
+					...(from == null ? {} : { f: from }),
+					...(to == null ? {} : { t: to }),
+				},
+			}),
+});
+
+export function isVideoFinderConditionMinimized(
+	arg: unknown
+): arg is VideoFinderConditionMinimized {
+	if (!arg || typeof arg !== 'object') return false;
+
+	if ('t' in arg) {
+		const { t } = arg;
+		if (!Array.isArray(t)) return false;
+		if (t.length > 0 && typeof t[0] !== 'string') return false;
+	}
+	if ('d' in arg) {
+		const { d } = arg;
+		if (d === null || typeof d !== 'object') return false;
+
+		if ('f' in d) {
+			const { f } = d;
+			if (f !== null && typeof f !== 'number') return false;
+		}
+		if ('t' in d) {
+			const { t } = d;
+			if (t !== null && typeof t !== 'number') return false;
+		}
+	}
+
+	return true;
+}
+
 export function isVideoFinderCondition(
 	arg: unknown
 ): arg is VideoFinderCondition {
