@@ -39,8 +39,8 @@ export const minimizeVideoFinderCondition = ({
 		? {}
 		: {
 				d: {
-					...(from != null ? {} : { f: from }),
-					...(to != null ? {} : { t: to }),
+					...(from == null ? {} : { f: from }),
+					...(to == null ? {} : { t: to }),
 				},
 			}),
 });
