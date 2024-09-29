@@ -2,6 +2,7 @@ import { Box, Grid, Paper, styled, TextField } from '@mui/material';
 import Pako from 'pako';
 import React, { useCallback, useState } from 'react';
 import {
+	isVideoFinderCondition,
 	isVideoFinderConditionMinimized,
 	minimizeVideoFinderCondition,
 	normalizeVideoFinderCondition,
@@ -100,11 +101,17 @@ const useHashTestingHooks = () => {
 	>(() => {
 		try {
 			const data: unknown = JSON.parse(dataString);
-			if (!isVideoFinderConditionMinimized(data))
-				throw Error('failed to convert');
 
-			const normalized = normalizeVideoFinderCondition(data);
+			const normalized = isVideoFinderCondition(data)
+				? data
+				: isVideoFinderConditionMinimized(data)
+					? normalizeVideoFinderCondition(data)
+					: (() => {
+							throw Error(`failed to convert ${JSON.stringify(data)}`);
+						})();
+
 			const newHash = encodeConditionsHash(normalized);
+			console.info(newHash, data, normalized);
 			setHash(newHash);
 		} catch (cause) {
 			console.error('', { cause });

@@ -35,7 +35,7 @@ export const minimizeVideoFinderCondition = ({
 	dateSpan: { from, to },
 }: VideoFinderCondition): VideoFinderConditionMinimized => ({
 	...(tags.length === 0 ? {} : { t: tags }),
-	...(from != null && to != null
+	...(from == null && to == null
 		? {}
 		: {
 				d: {
