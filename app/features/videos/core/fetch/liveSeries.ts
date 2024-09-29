@@ -9,6 +9,7 @@ import type {
 } from '../types';
 import { defaultStyledTag } from '../types/utils';
 import { fetchGamesJson, fetchLiveSeriesJson, fetchVideosJson } from './base';
+import { encodeConditionsHash } from '../hash';
 
 export type LiveSeries = LiveSeriesDef & {
 	lives: LiveSeriesVideo[];
@@ -75,6 +76,20 @@ export async function fetchLiveSeries(): Promise<LiveSeries[]> {
 			return new Map(gamesJson.items.map((x) => [x.id, x] as const));
 		})(),
 	] as const);
+
+	if (process.env.NODE_ENV === 'development') {
+		console.info(
+			liveSeries
+				.map(({ seriesTitle }, ix) => {
+					const hash = encodeConditionsHash({
+						tags: [seriesTitle],
+						dateSpan: { from: null, to: null },
+					});
+					return [ix, seriesTitle, hash].join('\t');
+				})
+				.join('\n')
+		);
+	}
 
 	return liveSeries.map((x) => ({
 		...x,

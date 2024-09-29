@@ -9,6 +9,71 @@ export type VideoFinderCondition = {
 	};
 };
 
+export type VideoFinderConditionMinimized = {
+	tags?: string[] | undefined;
+	dateSpan?:
+		| {
+				from?: number | null | undefined;
+				to?: number | null | undefined;
+		  }
+		| undefined;
+};
+
+export const normalizeVideoFinderCondition = ({
+	dateSpan,
+	tags,
+}: VideoFinderConditionMinimized): VideoFinderCondition => ({
+	tags: tags ?? [],
+	dateSpan: {
+		from: dateSpan?.from ?? null,
+		to: dateSpan?.to ?? null,
+	},
+});
+
+export const minimizeVideoFinderCondition = ({
+	tags,
+	dateSpan: { from, to },
+}: VideoFinderCondition): VideoFinderConditionMinimized => ({
+	...(tags.length === 0 ? {} : { tags }),
+	...(from != null && to != null
+		? {}
+		: {
+				dateSpan: {
+					...(from != null ? {} : { from }),
+					...(to != null ? {} : { to }),
+				},
+			}),
+});
+
+// TODO: {"dateSpan": { "to": null }} がエラーになる
+export function isVideoFinderConditionMinimized(
+	arg: unknown
+): arg is VideoFinderConditionMinimized {
+	if (!arg || typeof arg !== 'object') return false;
+
+	if ('tags' in arg) {
+		const { tags } = arg;
+		if (!Array.isArray(tags)) return false;
+		if (tags.length > 0 && typeof tags[0] !== 'string') return false;
+	}
+	if ('dateSpan' in arg) {
+		const { dateSpan } = arg;
+		if (dateSpan === null || typeof dateSpan !== 'object') return false;
+
+		console.info(3);
+		if ('from' in dateSpan) {
+			const { from } = dateSpan;
+			if (from !== null && typeof from !== 'number') return false;
+		}
+		if ('to' in dateSpan) {
+			const { to } = dateSpan;
+			if (to !== null && typeof to !== 'number') return false;
+		}
+	}
+
+	return true;
+}
+
 export function isVideoFinderCondition(
 	arg: unknown
 ): arg is VideoFinderCondition {
