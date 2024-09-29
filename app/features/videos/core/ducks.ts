@@ -59,7 +59,6 @@ export function isVideoFinderConditionMinimized(
 		const { d } = arg;
 		if (d === null || typeof d !== 'object') return false;
 
-		console.info(3);
 		if ('f' in d) {
 			const { f } = d;
 			if (f !== null && typeof f !== 'number') return false;
