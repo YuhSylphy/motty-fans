@@ -1,5 +1,10 @@
 import Pako from 'pako';
-import { isVideoFinderCondition, VideoFinderCondition } from './ducks';
+import {
+	isVideoFinderConditionMinimized,
+	minimizeVideoFinderCondition,
+	normalizeVideoFinderCondition,
+	VideoFinderCondition,
+} from './ducks';
 import { DateTime } from 'luxon';
 
 export function base64encode(data: Uint8Array) {
@@ -24,7 +29,8 @@ export function base64UrlToBase64(base64url: string) {
 }
 
 export function encodeConditionsHash(condition: VideoFinderCondition) {
-	const json = JSON.stringify(condition);
+	const minimized = minimizeVideoFinderCondition(condition);
+	const json = JSON.stringify(minimized);
 	const compressed = Pako.deflateRaw(json, { raw: true });
 	const base64 = base64encode(compressed);
 	const base64url = base64ToBase64Url(base64);
@@ -36,12 +42,13 @@ export function decodeConditionsHash(hash: string) {
 		const base64 = base64UrlToBase64(hash);
 		const decoded = base64decode(base64);
 		const decompressed = Pako.inflateRaw(decoded, { to: 'string', raw: true });
-		const data = JSON.parse(decompressed);
-		if (!isVideoFinderCondition(data))
+		const data: unknown = JSON.parse(decompressed);
+		if (!isVideoFinderConditionMinimized(data))
 			throw Error(
 				`content is not a VideoFinderCondition: ${JSON.stringify(data)}`
 			);
-		return data;
+		const normalized = normalizeVideoFinderCondition(data);
+		return normalized;
 	} catch (cause) {
 		throw Error('failed to decode conditions hash', { cause });
 	}
