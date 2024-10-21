@@ -2072,6 +2072,22 @@
 			"platform": "Switch",
 			"tags": ["ゼルダの伝説シリーズ", "見下ろしゼルダ"],
 			"releasedIn": 2024,
+			"masteryLevel": 4
+		},
+		{
+			"id": "nObHeclVW1E0",
+			"gameTitle": "Refind Self: 性格診断ゲーム",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2024,
+			"masteryLevel": 2
+		},
+		{
+			"id": "NWBwyGyIRtU-",
+			"gameTitle": "スーパー マリオパーティ ジャンボリー",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "マリパシリーズ"],
+			"releasedIn": 2024,
 			"masteryLevel": 1
 		}
 	]
