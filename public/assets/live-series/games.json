@@ -2088,7 +2088,15 @@
 			"platform": "Switch",
 			"tags": ["マリオシリーズ", "マリパシリーズ"],
 			"releasedIn": 2024,
-			"masteryLevel": 1
+			"masteryLevel": 2
+		},
+		{
+			"id": "aedhWrhsAaL9",
+			"gameTitle": "マリオ＆ルイージRPG ブラザーシップ！",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ", "マリルイシリーズ"],
+			"releasedIn": 2024,
+			"masteryLevel": 2
 		}
 	]
 }
