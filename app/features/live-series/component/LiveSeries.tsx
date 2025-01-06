@@ -42,6 +42,10 @@ import { Thumbnail } from '~/features/videos/core/types/videos';
 import { LiveStyle } from '~/features/videos/core/types';
 import { convertLiveStyleToLabel } from '~/features/videos/core/types/utils';
 import { LiveSeriesRecord } from '../core/logic';
+import {
+	CenteringBox,
+	ProfileAvatar,
+} from '~/features/profile/component/Profile';
 
 // TODO: レイアウト調整
 
@@ -393,7 +397,15 @@ const useLiveSeriesBodyHooks = () => {
 	return { viewMode, defs };
 };
 
-function LiveSeriesBody() {
+interface LiveSeriesBodyProps {
+	conditionTextInput: string;
+}
+
+function LiveSeriesBody({ conditionTextInput }: LiveSeriesBodyProps) {
+	useEffect(() => {
+		console.debug(`input: ${conditionTextInput}`);
+	}, [conditionTextInput]);
+
 	const { viewMode, defs } = useLiveSeriesBodyHooks();
 	const Body = useCallback(() => {
 		switch (viewMode) {
@@ -423,29 +435,60 @@ const LiveSeriesConditionFormPaper = styled(Paper)(({ theme }) => ({
 }));
 
 const useLiveSeriesConditionFormHooks = () => {
-	const dispatch = useAppDispatch();
-	const [conditionTextInput, setConditionTextInput] = useState<string>('');
+	// const dispatch = useAppDispatch();
+	// const [conditionTextInput, setConditionTextInput] = useState<string>('');
 
-	const updateTextInput = useCallback<
-		Exclude<ComponentProps<typeof TextField>['onChange'], undefined>
-	>(
-		({ target: { value: conditionText } }) => {
-			setConditionTextInput(conditionText);
-			dispatch(liveSeriesActions.setConditionText({ conditionText }));
-		},
-		[dispatch]
-	);
+	// const updateTextInput = useCallback<
+	// 	Exclude<ComponentProps<typeof TextField>['onChange'], undefined>
+	// >(
+	// 	({ target: { value: conditionText } }) => {
+	// 		setConditionTextInput(conditionText);
+	// 		dispatch(liveSeriesActions.setConditionText({ conditionText }));
+	// 	},
+	// 	[dispatch]
+	// );
 
-	return { conditionTextInput, updateTextInput };
+	return {};
 };
 
-function LiveSeriesConditionForm() {
+function Avatar() {
+	return (
+		<CenteringBox>
+			<ProfileAvatar />
+		</CenteringBox>
+	);
+}
+
+function HeaderText() {
+	return (
+		<CenteringBox>
+			<Typography variant="subtitle1">
+				MOTTYのゲーム実況作品一覧 & 検索ページ (仮)
+			</Typography>
+		</CenteringBox>
+	);
+}
+
+interface LiveSeriesConditionFormProps {
+	conditionTextInput: string;
+	updateTextInput: Exclude<
+		ComponentProps<typeof TextField>['onChange'],
+		undefined
+	>;
+}
+
+function LiveSeriesConditionForm({
+	conditionTextInput,
+	updateTextInput,
+}: LiveSeriesConditionFormProps) {
 	// TODO: 絞り込み/並べ替え機能実装
-	const { conditionTextInput, updateTextInput } =
-		useLiveSeriesConditionFormHooks();
+	const {} = useLiveSeriesConditionFormHooks();
+
 	return (
 		<Container>
 			<LiveSeriesConditionFormPaper>
+				<Avatar />
+				<HeaderText />
 				<TextField
 					id="live-series-condition-input"
 					label="find"
@@ -460,6 +503,8 @@ function LiveSeriesConditionForm() {
 					fullWidth
 					value={conditionTextInput}
 					onChange={updateTextInput}
+					placeholder="検索ワード (ゲームタイトル、ゲーム機など)"
+					autoFocus
 				/>
 			</LiveSeriesConditionFormPaper>
 		</Container>
@@ -481,23 +526,39 @@ const useLiveSeriesContainerHooks = () => {
 		setInitialized(true);
 	}, [intialized, setInitialized, dispatch]);
 
+	const [conditionTextInput, setConditionTextInput] = useState<string>('');
+
+	const updateTextInput = useCallback<
+		Exclude<ComponentProps<typeof TextField>['onChange'], undefined>
+	>(
+		({ target: { value: conditionText } }) => {
+			setConditionTextInput(conditionText);
+			dispatch(liveSeriesActions.setConditionText({ conditionText }));
+		},
+		[dispatch]
+	);
+
 	const { records } = useAppSelector((state) => state.liveSeries);
 	const loading = useMemo(() => !records || records.length === 0, [records]);
 
-	return { loading };
+	return { loading, conditionTextInput, updateTextInput };
 };
 
 /**
  * 実況シリーズ一覧コンテナ
  */
 function LiveSeriesContainer() {
-	const { loading } = useLiveSeriesContainerHooks();
+	const { loading, conditionTextInput, updateTextInput } =
+		useLiveSeriesContainerHooks();
 	return loading ? (
 		<Loader />
 	) : (
 		<React.Fragment>
-			<LiveSeriesConditionForm />
-			<LiveSeriesBody />
+			<LiveSeriesConditionForm
+				conditionTextInput={conditionTextInput}
+				updateTextInput={updateTextInput}
+			/>
+			<LiveSeriesBody conditionTextInput={conditionTextInput} />
 		</React.Fragment>
 	);
 }
