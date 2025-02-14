@@ -24,7 +24,7 @@ function Loader() {
 	return <div>Loading...</div>;
 }
 
-const CenteringBox = styled(Box)({
+export const CenteringBox = styled(Box)({
 	display: 'flex',
 	justifyContent: 'center',
 });
@@ -34,10 +34,14 @@ const RightAlignedBox = styled(Box)({
 	justifyContent: 'right',
 });
 
-const ProfileAvatar = styled(Avatar)(({ theme }) => ({
+const ProfileAvatarElement = styled(Avatar)(({ theme }) => ({
 	width: theme.spacing(24),
 	height: theme.spacing(24),
 }));
+
+export function ProfileAvatar() {
+	return <ProfileAvatarElement alt="MOTTY" src={avatarImage} />;
+}
 
 const youtubeUrl = 'https://www.youtube.com/user/MOTTYGAMES';
 const twitterUrl = 'https://twitter.com/MottyMusume';
@@ -163,7 +167,7 @@ function Description() {
 	return (
 		<MarginedPaper>
 			<CenteringBox>
-				<ProfileAvatar alt="MOTTY" src={avatarImage} />
+				<ProfileAvatar />
 			</CenteringBox>
 			<CenteringBox>
 				<Typography variant="h4">{header}</Typography>

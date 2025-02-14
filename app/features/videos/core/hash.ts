@@ -29,25 +29,39 @@ export function base64UrlToBase64(base64url: string) {
 }
 
 export function encodeConditionsHash(condition: VideoFinderCondition) {
+	let i = 0;
+	console.debug(`encode: ${i++}`, condition);
 	const minimized = minimizeVideoFinderCondition(condition);
+	console.debug(`encode: ${i++}`, minimized);
 	const json = JSON.stringify(minimized);
+	console.debug(`encode: ${i++}`, json);
 	const compressed = Pako.deflateRaw(json, { raw: true });
+	console.debug(`encode: ${i++}`, compressed);
 	const base64 = base64encode(compressed);
+	console.debug(`encode: ${i++}`, base64);
 	const base64url = base64ToBase64Url(base64);
+	console.debug(`encode: ${i++}`, base64url);
 	return base64url;
 }
 
 export function decodeConditionsHash(hash: string) {
+	let i = 0;
+	console.debug(`decode: ${i++}`, hash);
 	try {
 		const base64 = base64UrlToBase64(hash);
+		console.debug(`decode: ${i++}`, base64);
 		const decoded = base64decode(base64);
+		console.debug(`decode: ${i++}`, decoded);
 		const decompressed = Pako.inflateRaw(decoded, { to: 'string', raw: true });
+		console.debug(`decode: ${i++}`, decompressed);
 		const data: unknown = JSON.parse(decompressed);
+		console.debug(`decode: ${i++}`, data);
 		if (!isVideoFinderConditionMinimized(data))
 			throw Error(
 				`content is not a VideoFinderCondition: ${JSON.stringify(data)}`
 			);
 		const normalized = normalizeVideoFinderCondition(data);
+		console.debug(`decode: ${i++}`, normalized);
 		return normalized;
 	} catch (cause) {
 		throw Error('failed to decode conditions hash', { cause });
