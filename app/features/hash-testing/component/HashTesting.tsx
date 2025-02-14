@@ -1,19 +1,15 @@
 import { Box, Grid, Paper, styled, TextField } from '@mui/material';
-import Pako from 'pako';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import {
 	isVideoFinderCondition,
 	isVideoFinderConditionMinimized,
-	minimizeVideoFinderCondition,
 	normalizeVideoFinderCondition,
-	VideoFinderCondition,
 } from '~/features/videos/core/ducks';
+import { fetchLiveSeries } from '~/features/videos/core/fetch/liveSeries';
 import {
-	base64decode,
-	base64encode,
-	base64ToBase64Url,
-	base64UrlToBase64,
 	createDefaultCondition,
+	decodeConditionsHash,
+	encodeConditionsHash,
 } from '~/features/videos/core/hash';
 
 const StyledTextField = styled(TextField)(({}) => ({
@@ -23,45 +19,47 @@ const StyledTextField = styled(TextField)(({}) => ({
 const stringify = (data: unknown) => JSON.stringify(data, null, '\t');
 const defaultData = createDefaultCondition();
 
-export function encodeConditionsHash(condition: VideoFinderCondition) {
-	let i = 0;
-	console.info(`encode: ${i++}`, condition);
-	const minimized = minimizeVideoFinderCondition(condition);
-	console.info(`encode: ${i++}`, minimized);
-	const json = JSON.stringify(minimized);
-	console.info(`encode: ${i++}`, json);
-	const compressed = Pako.deflateRaw(json, { raw: true });
-	console.info(`encode: ${i++}`, compressed);
-	const base64 = base64encode(compressed);
-	console.info(`encode: ${i++}`, base64);
-	const base64url = base64ToBase64Url(base64);
-	console.info(`encode: ${i++}`, base64url);
-	return base64url;
-}
-
-export function decodeConditionsHash(hash: string) {
-	let i = 0;
-	console.info(`decode: ${i++}`, hash);
-	try {
-		const base64 = base64UrlToBase64(hash);
-		console.info(`decode: ${i++}`, base64);
-		const decoded = base64decode(base64);
-		console.info(`decode: ${i++}`, decoded);
-		const decompressed = Pako.inflateRaw(decoded, { to: 'string', raw: true });
-		console.info(`decode: ${i++}`, decompressed);
-		const data: unknown = JSON.parse(decompressed);
-		console.info(`decode: ${i++}`, data);
-		if (!isVideoFinderConditionMinimized(data))
-			throw Error(
-				`content is not a VideoFinderCondition: ${JSON.stringify(data)}`
-			);
-		const normalized = normalizeVideoFinderCondition(data);
-		console.info(`decode: ${i++}`, normalized);
-		return normalized;
-	} catch (cause) {
-		throw Error('failed to decode conditions hash', { cause });
+declare global {
+	interface Window {
+		hash: {
+			decodeConditionsHash: typeof decodeConditionsHash;
+			encodeConditionsHash: typeof encodeConditionsHash;
+		};
 	}
 }
+
+window.hash = {
+	decodeConditionsHash,
+	encodeConditionsHash,
+};
+
+const useTargetHashListString = () => {
+	const [targetHashListString, setTargetHashListString] =
+		useState<string>('loading...');
+
+	useEffect(() => {
+		const proc = async () => {
+			const liveSeries = await fetchLiveSeries();
+
+			const targetHashListString = liveSeries
+				.map(({ seriesTitle }) => [
+					seriesTitle,
+					encodeConditionsHash({
+						tags: [seriesTitle],
+						dateSpan: { from: null, to: null },
+					}),
+				])
+				.map((xs) => xs.join('\t'))
+				.join('\n');
+
+			setTargetHashListString(targetHashListString);
+		};
+
+		proc();
+	}, [setTargetHashListString]);
+
+	return targetHashListString;
+};
 
 const useHashTestingHooks = () => {
 	const [dataString, setDataString] = useState(stringify(defaultData));
@@ -111,16 +109,19 @@ const useHashTestingHooks = () => {
 						})();
 
 			const newHash = encodeConditionsHash(normalized);
-			console.info(newHash, data, normalized);
+			console.debug(newHash, data, normalized);
 			setHash(newHash);
 		} catch (cause) {
 			console.error('', { cause });
 		}
 	}, [dataString, setHash]);
 
+	const targetHashListString = useTargetHashListString();
+
 	return {
 		hash,
 		dataString,
+		targetHashListString,
 		onHashChange,
 		onDataStringChange,
 		onHashBlur,
@@ -132,6 +133,7 @@ export function HashTesting() {
 	const {
 		hash,
 		dataString,
+		targetHashListString,
 		onDataStringChange,
 		onHashChange,
 		onDataStringBlur,
@@ -165,6 +167,17 @@ export function HashTesting() {
 							value={dataString}
 							onChange={onDataStringChange}
 							onBlur={onDataStringBlur}
+						/>
+					</Grid>
+					<Grid item xs={12}>
+						<StyledTextField
+							id="data"
+							multiline
+							placeholder="data"
+							value={targetHashListString}
+							onChange={onDataStringChange}
+							onBlur={onDataStringBlur}
+							disabled
 						/>
 					</Grid>
 				</Grid>
