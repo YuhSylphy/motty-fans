@@ -2104,7 +2104,15 @@
 			"platform": "Switch",
 			"tags": ["ドラクエシリーズ"],
 			"releasedIn": 2024,
-			"masteryLevel": 1
+			"masteryLevel": 4
+		},
+		{
+			"id": "SHrIpt73P28R",
+			"gameTitle": "ドンキーコングリターンズHD",
+			"platform": "Switch",
+			"tags": ["ドンキーシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 4
 		}
 	]
 }
