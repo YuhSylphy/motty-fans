@@ -2137,6 +2137,14 @@
 			"tags": [],
 			"releasedIn": 2024,
 			"masteryLevel": 1
+		},
+		{
+			"id": "Z9S593DYYGN9",
+			"gameTitle": "ポケットモンスター ソード・シールド",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモン剣盾"],
+			"releasedIn": 2019,
+			"masteryLevel": 1
 		}
 	]
 }
