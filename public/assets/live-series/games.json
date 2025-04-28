@@ -2144,7 +2144,15 @@
 			"platform": "Switch",
 			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモン剣盾"],
 			"releasedIn": 2019,
-			"masteryLevel": 1
+			"masteryLevel": 3
+		},
+		{
+			"id": "R-0kEA1uzE4X",
+			"gameTitle": "New ポケモンスナップ",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2021,
+			"masteryLevel": 2
 		}
 	]
 }

@@ -14,6 +14,22 @@
 			"header": "リアルイベント関係",
 			"items": [
 				{
+					"date": "25/04/27",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv347149135",
+						"label": "lv347149135"
+					},
+					"text": "ゲーム実況者 超大集合 2025 Day2@ニコニコ超会議2025【4/27】"
+				},
+				{
+					"date": "24/04/26",
+					"link": {
+						"href": "https://live.nicovideo.jp/watch/lv347149115",
+						"label": "lv347149115"
+					},
+					"text": "ゲーム実況者 超大集合 2025 Day1@ニコニコ超会議2025【4/26】"
+				},
+				{
 					"date": "24/09/23",
 					"link": {
 						"href": "https://live.nicovideo.jp/watch/lv345782396",
