@@ -2113,6 +2113,46 @@
 			"tags": ["ドンキーシリーズ"],
 			"releasedIn": 2025,
 			"masteryLevel": 4
+		},
+		{
+			"id": "WF1QIKWfwygE",
+			"gameTitle": "モンスターハンターワイルズ",
+			"platform": "PC",
+			"tags": ["モンハンシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 1
+		},
+		{
+			"id": "cSBD0G8uCtYb",
+			"gameTitle": "ワリオランドアドバンス ヨーキのお宝",
+			"platform": "GBA",
+			"tags": ["マリオシリーズ", "ワリオシリーズ"],
+			"releasedIn": 2001,
+			"masteryLevel": 4
+		},
+		{
+			"id": "pghqx5DhL0CO",
+			"gameTitle": "GUITAR LIFE -LESSON1-",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2024,
+			"masteryLevel": 1
+		},
+		{
+			"id": "Z9S593DYYGN9",
+			"gameTitle": "ポケットモンスター ソード・シールド",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモン剣盾"],
+			"releasedIn": 2019,
+			"masteryLevel": 3
+		},
+		{
+			"id": "R-0kEA1uzE4X",
+			"gameTitle": "New ポケモンスナップ",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2021,
+			"masteryLevel": 2
 		}
 	]
 }

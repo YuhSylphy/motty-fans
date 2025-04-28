@@ -7,11 +7,12 @@ on:
 jobs:
   publish-gh-pages:
     name: mainリポジトリ更新時にGithub Pagesへ公開
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
     steps:
-      - uses: actions/checkout@v2
+      - name: Switch source
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: gh-pages
@@ -20,7 +21,8 @@ jobs:
         with:
           node-version: '22'
           cache: yarn
-      - uses: actions/cache@v2
+      - name: Cache dependencies
+        uses: actions/cache@v4
         id: yarn-cache
         with:
           path: '**/node_modules'
