@@ -2152,7 +2152,23 @@
 			"platform": "Switch",
 			"tags": ["ポケモンシリーズ"],
 			"releasedIn": 2021,
-			"masteryLevel": 2
+			"masteryLevel": 3
+		},
+		{
+			"id": "eLiw5nf9YYIp",
+			"gameTitle": "Pokémon HOME",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2020,
+			"masteryLevel": 1
+		},
+		{
+			"id": "nvovJT2c-prL",
+			"gameTitle": "Pokémon LEGENDS アルセウス",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編"],
+			"releasedIn": 2022,
+			"masteryLevel": 1
 		}
 	]
 }
