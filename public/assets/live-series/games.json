@@ -2168,7 +2168,15 @@
 			"platform": "Switch",
 			"tags": ["ポケモンシリーズ", "ポケモン本編"],
 			"releasedIn": 2022,
-			"masteryLevel": 1
+			"masteryLevel": 3
+		},
+		{
+			"id": "CFkql0FWpAEv",
+			"gameTitle": "マリオカート ワールド",
+			"platform": "Switch2",
+			"tags": [],
+			"releasedIn": 2025,
+			"masteryLevel": 2
 		}
 	]
 }
