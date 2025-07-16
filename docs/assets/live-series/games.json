@@ -2174,9 +2174,25 @@
 			"id": "CFkql0FWpAEv",
 			"gameTitle": "マリオカート ワールド",
 			"platform": "Switch2",
+			"tags": ["マリオシリーズ", "マリカシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 3
+		},
+		{
+			"id": "3p29teg4FUsR",
+			"gameTitle": "Nintendo Switch 2 のひみつ展",
+			"platform": "Switch2",
 			"tags": [],
 			"releasedIn": 2025,
-			"masteryLevel": 2
+			"masteryLevel": 4
+		},
+		{
+			"id": "Oo2L7nfG7KP9",
+			"gameTitle": "Pokémon Trading Card Game Pocket",
+			"platform": "iOS",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 1
 		}
 	]
 }
