@@ -2193,6 +2193,38 @@
 			"tags": ["ポケモンシリーズ"],
 			"releasedIn": 2025,
 			"masteryLevel": 1
+		},
+		{
+			"id": "BwuIx7fY4VPj",
+			"gameTitle": "ドンキーコング バナンザ",
+			"platform": "Switch2",
+			"tags": ["マリオシリーズ", "ドンキーシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 4
+		},
+		{
+			"id": "b5SSpaioty8z",
+			"gameTitle": "Pokémon Sleep",
+			"platform": "iOS",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 2
+		},
+		{
+			"id": "8zgRCp0CZpzQ",
+			"gameTitle": "メイバゲーム",
+			"platform": "iOS",
+			"tags": [],
+			"releasedIn": 2025,
+			"masteryLevel": 2
+		},
+		{
+			"id": "PnI4sYOidh0m",
+			"gameTitle": "ポケットモンスター スカーレット・バイオレット",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンSV"],
+			"releasedIn": 2025,
+			"masteryLevel": 1
 		}
 	]
 }
