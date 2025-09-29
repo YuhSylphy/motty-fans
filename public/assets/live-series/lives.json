@@ -36103,12 +36103,6 @@
 			"liveSeriesId": "OM0Z163tH7LA"
 		},
 		{
-			"id": "MK_uzt_ix-Q",
-			"tags": [],
-			"liveStyle": "broadcast",
-			"liveSeriesId": "OM0Z163tH7LA"
-		},
-		{
 			"id": "Cc6xRJbAQoQ",
 			"tags": [],
 			"liveStyle": "video",
@@ -36686,25 +36680,25 @@
 		},
 		{
 			"id": "IaWCDiIo2mE",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
 		{
 			"id": "vy7LcoDmzZY",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
 		{
 			"id": "TPHRxy868Dg",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
 		{
 			"id": "jjix2c6Gyq0",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
@@ -36722,19 +36716,19 @@
 		},
 		{
 			"id": "tffAxI5s0xk",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
 		{
 			"id": "3XEOQdWZlEo",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
 		{
 			"id": "XcN9NDWLmbE",
-			"tags": [],
+			"tags": ["本編"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		},
@@ -36742,6 +36736,114 @@
 			"id": "7iWhFA9Z2q4",
 			"tags": [],
 			"liveStyle": "short",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "0q2V5y6Pj2s",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "cLX3tepAPw8",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "fAONBj8vF0s",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "1QULxMiBtE0",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "DMsHSb7vNMw",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "hBdqzyft6l4",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "QQPhJo3McH4",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "jmrNon7VCyw",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "WYR3oK1nPGI",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "iHO_-wu4_YM",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "lO-wjXFtJPQ",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "HDlloqzYHKQ",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "BjKe4mjdcLQ",
+			"tags": ["碧の仮面"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "dKiioRecaJU",
+			"tags": ["碧の仮面"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "dFdBSjt9RXE",
+			"tags": ["碧の仮面"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "SuF3AazuKXY",
+			"tags": ["碧の仮面"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "KDmRC72R5RI",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "6vE1szo0XJs",
+			"tags": ["藍の円盤"],
+			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
 		}
 	]
