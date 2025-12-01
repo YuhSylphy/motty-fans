@@ -35828,7 +35828,7 @@
 		},
 		{
 			"id": "_3NoRmhhJ8E",
-			"tags": ["ゆびをふる大会"],
+			"tags": ["ゆびをふる大会", "参加型"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "GO8TrP9xUBbs"
 		},
@@ -36845,6 +36845,324 @@
 			"tags": ["藍の円盤"],
 			"liveStyle": "broadcast",
 			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "csBY4nOLF9U",
+			"tags": ["藍の円盤"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "GWWxK6dtsTE",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "o_f2gpV2DRiX"
+		},
+		{
+			"id": "1_VAlnyL4xM",
+			"tags": ["藍の円盤"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "9S77GXVIKYc",
+			"tags": ["藍の円盤"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "BvPPHW8DoGM",
+			"tags": ["参加型"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "bbAn_kei9q8",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "0ANuEF2vzNU",
+			"tags": ["藍の円盤"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "IuNTF41ImhQ",
+			"tags": ["藍の円盤"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "vUUH6Kvf7Zs",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "PojbEAFZCdo",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "BhMbAf7PZd0",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "tMfZKBNjzfU",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "umcbZiZwZec",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "vbtRSe0c8-hm"
+		},
+		{
+			"id": "I9htnRy0mXY",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "QkZtgxlWSqY",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "Z0-MAt7PlU0",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "li3mBvmgD9s",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "aS9Pd_WtwA0",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "DkmK6XDQLtY",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "XaFwOIzjc34",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "PLQtA6xa-cE",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "KHUlonTNl3c",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "Z3F7vFHHKB8",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "Omv-QXLEmek",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "phR5wMBxkzo",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "FZ9TsjRoE3A",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "HwsswG4PTmg",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "DIO-s-dZpSQ",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "o_f2gpV2DRiX"
+		},
+		{
+			"id": "H8bnYAgGBnY",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "dkmjb7KGgk4",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "f-MYsxrnFz4",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "XPJAola4a2E",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "xAyt3HwHLDQ",
+			"tags": [],
+			"liveStyle": "short",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "v-fcLnKAaRw",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "jby3LyMjLrI",
+			"tags": ["ランクマッチ"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "S5XDalpDZbE",
+			"tags": ["体験版"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "HyOT1oUip7qT"
+		},
+		{
+			"id": "Sh-7LFznKMg",
+			"tags": ["本編"],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "dwhkAokcFJs",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "t5vNj3lTWF8",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "1tD4zBa-VJ9C"
+		},
+		{
+			"id": "OTBK5dKl_PY",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "lFaNxf_M7pA",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "H8QRx2qU26o",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "YSKnhLLs804",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "depOD6le1oU",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "6B0AHp7uHLY",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "mh_k-wyVmT4",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "HyOT1oUip7qT"
+		},
+		{
+			"id": "-WfuxZatO4U",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "HyOT1oUip7qT"
+		},
+		{
+			"id": "NhlnR9XBhlE",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "K0PFEtm3vrI",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "JyuasT4NC4s",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "HyOT1oUip7qT"
+		},
+		{
+			"id": "6TI80-mz62Q",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "7H4N2kPMD1M",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
+		},
+		{
+			"id": "_yFcxQ6ygQo",
+			"tags": [],
+			"liveStyle": "broadcast",
+			"liveSeriesId": "y6pOcwPc3zyW"
 		}
 	]
 }

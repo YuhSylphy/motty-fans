@@ -2224,6 +2224,30 @@
 			"platform": "Switch",
 			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンSV"],
 			"releasedIn": 2025,
+			"masteryLevel": 4
+		},
+		{
+			"id": "V2aBWu5k_J8K",
+			"gameTitle": "Pokémon LEGENDS Z-A",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンZA"],
+			"releasedIn": 2025,
+			"masteryLevel": 3
+		},
+		{
+			"id": "C0EVFWe-qHpI",
+			"gameTitle": "カービィのエアライダー",
+			"platform": "Switch",
+			"tags": ["カービィシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 1
+		},
+		{
+			"id": "LVMfm_8g_iKt",
+			"gameTitle": "桃太郎電鉄2 ～あなたの町も きっとある～",
+			"platform": "Switch",
+			"tags": ["桃太郎電鉄シリーズ"],
+			"releasedIn": 2025,
 			"masteryLevel": 1
 		}
 	]
