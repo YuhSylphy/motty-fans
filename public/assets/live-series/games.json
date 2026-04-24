@@ -2232,7 +2232,7 @@
 			"platform": "Switch",
 			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンZA"],
 			"releasedIn": 2025,
-			"masteryLevel": 3
+			"masteryLevel": 4
 		},
 		{
 			"id": "C0EVFWe-qHpI",
@@ -2240,7 +2240,7 @@
 			"platform": "Switch",
 			"tags": ["カービィシリーズ"],
 			"releasedIn": 2025,
-			"masteryLevel": 1
+			"masteryLevel": 3
 		},
 		{
 			"id": "LVMfm_8g_iKt",
@@ -2248,7 +2248,55 @@
 			"platform": "Switch",
 			"tags": ["桃太郎電鉄シリーズ"],
 			"releasedIn": 2025,
+			"masteryLevel": 3
+		},
+		{
+			"id": "46zBI9M3820P",
+			"gameTitle": "スイカゲーム ぷらねっと",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2025,
+			"masteryLevel": 2
+		},
+		{
+			"id": "sKHgXpi6S4cN",
+			"gameTitle": "ドラゴンクエストI&II (HD-2D)",
+			"platform": "Switch",
+			"tags": ["ドラクエシリーズ"],
+			"releasedIn": 2025,
+			"masteryLevel": 2
+		},
+		{
+			"id": "CBg-7JHD1MZo",
+			"gameTitle": "ドラゴンクエストVII Reimagined",
+			"platform": "Switch",
+			"tags": ["ドラクエシリーズ"],
+			"releasedIn": 2026,
 			"masteryLevel": 1
+		},
+		{
+			"id": "Ix9JiAmOgM-q",
+			"gameTitle": "龍が如く 極3 ",
+			"platform": "Switch",
+			"tags": [],
+			"releasedIn": 2026,
+			"masteryLevel": 2
+		},
+		{
+			"id": "vwXk0omH8ZC7",
+			"gameTitle": "ポケットモンスター ファイアレッド・リーフグリーン (Switch)",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ", "ポケモン本編", "ポケモンFRLG"],
+			"releasedIn": 2026,
+			"masteryLevel": 3
+		},
+		{
+			"id": "Y6ACYptC7Yrg",
+			"gameTitle": "ぽこ あ ポケモン",
+			"platform": "Switch",
+			"tags": ["ポケモンシリーズ"],
+			"releasedIn": 2026,
+			"masteryLevel": 4
 		}
 	]
 }

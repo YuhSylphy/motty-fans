@@ -214447,7 +214447,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2025-07-12T13:07:22Z"
 			},
-			"tags": [],
+			"tags": ["参加型"],
 			"liveSeriesId": "OM0Z163tH7LA",
 			"liveStyle": "broadcast"
 		},
@@ -214515,7 +214515,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2025-07-14T08:00:26Z"
 			},
-			"tags": [],
+			"tags": ["参加型"],
 			"liveSeriesId": "OM0Z163tH7LA",
 			"liveStyle": "short"
 		},
@@ -215161,7 +215161,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2025-07-26T12:51:59Z"
 			},
-			"tags": [],
+			"tags": ["参加型"],
 			"liveSeriesId": "OM0Z163tH7LA",
 			"liveStyle": "broadcast"
 		},
@@ -216181,7 +216181,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2025-08-30T13:08:32Z"
 			},
-			"tags": [],
+			"tags": ["参加型"],
 			"liveSeriesId": "OM0Z163tH7LA",
 			"liveStyle": "broadcast"
 		},
@@ -218221,7 +218221,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2025-11-10T13:12:35Z"
 			},
-			"tags": [],
+			"tags": ["本編"],
 			"liveSeriesId": "1tD4zBa-VJ9C",
 			"liveStyle": "broadcast"
 		},
@@ -218255,7 +218255,7 @@
 				"liveBroadcastContent": "none",
 				"publishTime": "2025-11-12T13:06:32Z"
 			},
-			"tags": [],
+			"tags": ["本編"],
 			"liveSeriesId": "1tD4zBa-VJ9C",
 			"liveStyle": "broadcast"
 		},
@@ -218733,6 +218733,4086 @@
 			},
 			"tags": [],
 			"liveSeriesId": "y6pOcwPc3zyW",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "325ljm_iRZ85xjO4f_GnKGMKIZQ",
+			"id": { "kind": "youtube#video", "videoId": "ZTUFZFDxbmI" },
+			"snippet": {
+				"publishedAt": "2025-12-01T13:05:26Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【桃鉄2】100年決戦！東日本編『桃太郎電鉄2 あなたの町もきっとある』実況プレイ！#12【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「桃太郎電鉄2 あなたの町もきっとある」の実況プレイ生配信です！ 今回の桃太郎 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/ZTUFZFDxbmI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/ZTUFZFDxbmI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/ZTUFZFDxbmI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-01T13:05:26Z"
+			},
+			"tags": [],
+			"liveSeriesId": "y6pOcwPc3zyW",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "rtbjPkAXywAuc-HnmCBdGWNDVv0",
+			"id": { "kind": "youtube#video", "videoId": "kta9seC54LQ" },
+			"snippet": {
+				"publishedAt": "2025-12-02T13:15:31Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【桃鉄2】100年決戦！東日本編『桃太郎電鉄2 あなたの町もきっとある』実況プレイ！#13【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「桃太郎電鉄2 あなたの町もきっとある」の実況プレイ生配信です！ 今回の桃太郎 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/kta9seC54LQ/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/kta9seC54LQ/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/kta9seC54LQ/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-02T13:15:31Z"
+			},
+			"tags": [],
+			"liveSeriesId": "y6pOcwPc3zyW",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "c4B7mFV1YSZdarz_C30ebYbYlVU",
+			"id": { "kind": "youtube#video", "videoId": "hCCC_A0Z_7U" },
+			"snippet": {
+				"publishedAt": "2025-12-04T12:56:07Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【桃鉄2】全物件制覇！100年決戦！東日本編『桃太郎電鉄2 あなたの町もきっとある』実況プレイ！#14【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「桃太郎電鉄2 あなたの町もきっとある」の実況プレイ生配信です！ 今回の桃太郎 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/hCCC_A0Z_7U/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/hCCC_A0Z_7U/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/hCCC_A0Z_7U/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-04T12:56:07Z"
+			},
+			"tags": [],
+			"liveSeriesId": "y6pOcwPc3zyW",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "qQzZmd3SApxp-MrhiJT8jWdHwRs",
+			"id": { "kind": "youtube#video", "videoId": "g7PCCBrkYPY" },
+			"snippet": {
+				"publishedAt": "2025-12-07T12:15:45Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【桃鉄2】全物件制覇！100年決戦！東日本編『桃太郎電鉄2 あなたの町もきっとある』実況プレイ！#15【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「桃太郎電鉄2 あなたの町もきっとある」の実況プレイ生配信です！ 今回の桃太郎 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/g7PCCBrkYPY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/g7PCCBrkYPY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/g7PCCBrkYPY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-07T12:15:45Z"
+			},
+			"tags": [],
+			"liveSeriesId": "y6pOcwPc3zyW",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "6xcuA3b_W42xz7Uq-wgv8dnDc6I",
+			"id": { "kind": "youtube#video", "videoId": "Yv1shsSHQg4" },
+			"snippet": {
+				"publishedAt": "2025-12-08T14:58:47Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【桃鉄2】最終回！100年決戦！東日本編『桃太郎電鉄2 あなたの町もきっとある』実況プレイ！#16【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「桃太郎電鉄2 あなたの町もきっとある」の実況プレイ生配信です！ 今回の桃太郎 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Yv1shsSHQg4/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Yv1shsSHQg4/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Yv1shsSHQg4/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-08T14:58:47Z"
+			},
+			"tags": [],
+			"liveSeriesId": "y6pOcwPc3zyW",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "1KcORRi0ulRQqZ2kgaIzaAGVlmA",
+			"id": { "kind": "youtube#video", "videoId": "CsLytAYQHFw" },
+			"snippet": {
+				"publishedAt": "2025-12-09T13:13:36Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【カービィのエアライダー】シティトライアルもエアライドもいっぱい遊ぶぞおおおお！！！！！#4【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「カービィのエアライダー」の実況プレイ生配信です！ 2003年発売のゲーム ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/CsLytAYQHFw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/CsLytAYQHFw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/CsLytAYQHFw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-09T13:13:36Z"
+			},
+			"tags": [],
+			"liveSeriesId": "HyOT1oUip7qT",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "lQGpj-ER7DnwrdBcGblVYmpZQwo",
+			"id": { "kind": "youtube#video", "videoId": "Zj1KTOQA81M" },
+			"snippet": {
+				"publishedAt": "2025-12-10T13:02:57Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】本日解禁！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #1【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Zj1KTOQA81M/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Zj1KTOQA81M/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Zj1KTOQA81M/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-10T13:02:57Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "JoOC3L9VO_z6degszFx3KC3o_jo",
+			"id": { "kind": "youtube#video", "videoId": "8u0t2gb2O_g" },
+			"snippet": {
+				"publishedAt": "2025-12-11T13:03:33Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】新メガシンカ続出！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #2【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/8u0t2gb2O_g/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/8u0t2gb2O_g/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/8u0t2gb2O_g/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-11T13:03:33Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "1DfjTGtAohz6lZP6rRIw8LRmnME",
+			"id": { "kind": "youtube#video", "videoId": "Syyaj65lmUE" },
+			"snippet": {
+				"publishedAt": "2025-12-14T13:20:08Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】新メガシンカ続出！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #3【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Syyaj65lmUE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Syyaj65lmUE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Syyaj65lmUE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-14T13:20:08Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "WS6uAvHj57Z-8Cd_ciqatpilgBs",
+			"id": { "kind": "youtube#video", "videoId": "ZhTcc2R7YDI" },
+			"snippet": {
+				"publishedAt": "2025-12-16T13:19:58Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】新メガシンカ続出！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #4【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/ZhTcc2R7YDI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/ZhTcc2R7YDI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/ZhTcc2R7YDI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-16T13:19:58Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "LDMJf3b4_AZfD_nEdZinNgjiq-Y",
+			"id": { "kind": "youtube#video", "videoId": "Wwr8qewlD6s" },
+			"snippet": {
+				"publishedAt": "2025-12-17T13:06:21Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】新メガシンカ続出！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #5【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Wwr8qewlD6s/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Wwr8qewlD6s/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Wwr8qewlD6s/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-17T13:06:21Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "jY79WZvkpQ6vMZtJwrn7VAZcnI0",
+			"id": { "kind": "youtube#video", "videoId": "S_OBokWBkUA" },
+			"snippet": {
+				"publishedAt": "2025-12-18T13:11:56Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【スイカゲームぷらねっと】本日発売！スイカゲーム期待の新作を実況プレイ！#1【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「スイカゲームぷらねっと」の実況プレイ生配信です！ みんな大好き！スイカ ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/S_OBokWBkUA/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/S_OBokWBkUA/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/S_OBokWBkUA/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-18T13:11:56Z"
+			},
+			"tags": [],
+			"liveSeriesId": "FWv8xNPgA1My",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "kriX0yAqyQ84MlNO5QidI6UPcHw",
+			"id": { "kind": "youtube#video", "videoId": "icOFRcN4MWg" },
+			"snippet": {
+				"publishedAt": "2025-12-19T13:05:29Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】新メガシンカ続出！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #6【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/icOFRcN4MWg/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/icOFRcN4MWg/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/icOFRcN4MWg/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-19T13:05:29Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "2FB428EKtCyl1M3UwXaeXBEh3_Q",
+			"id": { "kind": "youtube#video", "videoId": "4vLRkCrOZxc" },
+			"snippet": {
+				"publishedAt": "2025-12-20T13:00:56Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【スイカゲームぷらねっと】ダブルスイカ目指す！スイカゲーム期待の新作を実況プレイ！#2【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「スイカゲームぷらねっと」の実況プレイ生配信です！ みんな大好き！スイカ ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/4vLRkCrOZxc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/4vLRkCrOZxc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/4vLRkCrOZxc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-20T13:00:56Z"
+			},
+			"tags": [],
+			"liveSeriesId": "FWv8xNPgA1My",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "lI8p3A12rB8gVZJuqeKsS3LnCB4",
+			"id": { "kind": "youtube#video", "videoId": "Vw-4TFpSoO0" },
+			"snippet": {
+				"publishedAt": "2025-12-21T08:00:42Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#スイカゲームぷらねっと】念願のダブルスイカ達成！！まさかの展開に大絶叫ｗｗｗ #スイカゲーム #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「スイカゲームぷらねっと」のショート動画です！先日の生配信中の切り抜き動画 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Vw-4TFpSoO0/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Vw-4TFpSoO0/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Vw-4TFpSoO0/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-21T08:00:42Z"
+			},
+			"tags": [],
+			"liveSeriesId": "FWv8xNPgA1My",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "D3bUPMHNQE7HmjUWsoWJDGQtZV8",
+			"id": { "kind": "youtube#video", "videoId": "_oU0ibt1xoY" },
+			"snippet": {
+				"publishedAt": "2025-12-21T13:06:23Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #7【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/_oU0ibt1xoY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/_oU0ibt1xoY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/_oU0ibt1xoY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-21T13:06:23Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "mdGdrUcdlGa-k5aSx8oLXhCCZ-0",
+			"id": { "kind": "youtube#video", "videoId": "fhptCwuxGdw" },
+			"snippet": {
+				"publishedAt": "2025-12-22T23:20:33Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #8【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/fhptCwuxGdw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/fhptCwuxGdw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/fhptCwuxGdw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-22T23:20:33Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "DTJ7s68kv5_GgVblbE8id4RDFcQ",
+			"id": { "kind": "youtube#video", "videoId": "sU5QLyVj5hw" },
+			"snippet": {
+				"publishedAt": "2025-12-23T13:03:44Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #9【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/sU5QLyVj5hw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/sU5QLyVj5hw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/sU5QLyVj5hw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-23T13:03:44Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "C3x-6x0JPZDk5Y2GSPuk6xd9QX4",
+			"id": { "kind": "youtube#video", "videoId": "qA_-i8CglmI" },
+			"snippet": {
+				"publishedAt": "2025-12-24T13:32:58Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #10【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/qA_-i8CglmI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/qA_-i8CglmI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/qA_-i8CglmI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-24T13:32:58Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "0Zz5aPrhjaWh0ReAKMUqPpUV71E",
+			"id": { "kind": "youtube#video", "videoId": "lmK8p-sJi4E" },
+			"snippet": {
+				"publishedAt": "2025-12-25T13:15:36Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！『M次元ラッシュ』Pokémon LEGENDS Z-A 実況プレイ！DLC #11【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/lmK8p-sJi4E/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/lmK8p-sJi4E/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/lmK8p-sJi4E/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-25T13:15:36Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "5ZspDCNJE1n2ZbCJsUC_05sZ0ZM",
+			"id": { "kind": "youtube#video", "videoId": "lyNPC1hWvGI" },
+			"snippet": {
+				"publishedAt": "2025-12-26T11:30:58Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【Minecraft】超大型建築！新丸ビル風 超高層ビル建築してみた。【マインクラフト実況】",
+				"description": "こんばんは！MOTTYです！今回はマインクフフトのサバイバルモードで『新丸ビル風 超高層ビル』を建築しました！製作期間約2 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/lyNPC1hWvGI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/lyNPC1hWvGI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/lyNPC1hWvGI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-26T11:30:58Z"
+			},
+			"tags": [],
+			"liveSeriesId": "cC06erBjkbcP",
+			"liveStyle": "video"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "7XjWEAqI2iOd8OtxNpHlYHRjRkQ",
+			"id": { "kind": "youtube#video", "videoId": "y_4cs7CmVFQ" },
+			"snippet": {
+				"publishedAt": "2025-12-27T07:00:57Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "新丸ビル風 超高層ビル建築してみた。#マインクラフト #shorts",
+				"description": "こんばんは！MOTTYです！今回はマインクフフトのサバイバルモードで『新丸ビル風 超高層ビル』を建築しました！",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/y_4cs7CmVFQ/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/y_4cs7CmVFQ/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/y_4cs7CmVFQ/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-27T07:00:57Z"
+			},
+			"tags": [],
+			"liveSeriesId": "cC06erBjkbcP",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "7HlpbU7BuTX0XCG1M6gVPB-lMQY",
+			"id": { "kind": "youtube#video", "videoId": "8PhiDxasFZI" },
+			"snippet": {
+				"publishedAt": "2025-12-27T13:21:01Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違いポケモン配布します！ポケモン交換会！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！DLC  #12【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/8PhiDxasFZI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/8PhiDxasFZI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/8PhiDxasFZI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-27T13:21:01Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Wzev09Qjti2Fos80tnDEKgjyJSQ",
+			"id": { "kind": "youtube#video", "videoId": "T_UqUx7jb2M" },
+			"snippet": {
+				"publishedAt": "2025-12-28T13:23:54Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【マリカワールド】参加型オンライン大会！マリオカートワールド 実況プレイ生配信！【MOTTY／Switch2 #33】",
+				"description": "こんばんは！MOTTYです！ニンテンドースイッチ2「マリオカートワールド」の実況プレイ生配信です！ 本日はマリオカート ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/T_UqUx7jb2M/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/T_UqUx7jb2M/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/T_UqUx7jb2M/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-28T13:23:54Z"
+			},
+			"tags": [],
+			"liveSeriesId": "OM0Z163tH7LA",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "BdxzJXOUzKQ2jpnYu-2zXdi-pwM",
+			"id": { "kind": "youtube#video", "videoId": "AyMH4qePF8w" },
+			"snippet": {
+				"publishedAt": "2025-12-30T14:14:37Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【マインクラフト】年末特別スペシャル！海底神殿、全部水抜きするまで終われない！Minecraft実況プレイ！【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！本日は「Minecraft（マインクラフト）」の実況プレイ生配信です！ 今年9月からニコ生で配信していた ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/AyMH4qePF8w/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/AyMH4qePF8w/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/AyMH4qePF8w/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-30T14:14:37Z"
+			},
+			"tags": [],
+			"liveSeriesId": "cC06erBjkbcP",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "px-qF1GyPgomlTNFjrWPcJ_90rA",
+			"id": { "kind": "youtube#video", "videoId": "02wjgiQQYv8" },
+			"snippet": {
+				"publishedAt": "2025-12-31T13:33:38Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ1リメイク】クリアするまで終われない！ドラゴンクエストI＆II 生配信！前編【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 大晦日の正午 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/02wjgiQQYv8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/02wjgiQQYv8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/02wjgiQQYv8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-31T13:33:38Z"
+			},
+			"tags": [],
+			"liveSeriesId": "bb02-csX5Eep",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "GiC2rdSAczp-gxwhBsAhqaU4J2E",
+			"id": { "kind": "youtube#video", "videoId": "OQdsJWGzYlk" },
+			"snippet": {
+				"publishedAt": "2025-12-31T21:45:09Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ1リメイク】クリアするまで終われない！ドラゴンクエストI＆II 生配信！後編【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 大晦日の正午 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/OQdsJWGzYlk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/OQdsJWGzYlk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/OQdsJWGzYlk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2025-12-31T21:45:09Z"
+			},
+			"tags": [],
+			"liveSeriesId": "bb02-csX5Eep",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "zkqkYyHtsupcHuYSk-_dT6gWBTU",
+			"id": { "kind": "youtube#video", "videoId": "P1mBSllMBJ4" },
+			"snippet": {
+				"publishedAt": "2026-01-01T17:33:06Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ2リメイク】2026年新春！ドラゴンクエストI＆II 生配信！#1【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 1月1日から4 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/P1mBSllMBJ4/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/P1mBSllMBJ4/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/P1mBSllMBJ4/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-01T17:33:06Z"
+			},
+			"tags": [],
+			"liveSeriesId": "b2WfAFtRFdLp",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "0-ixkpYbE1gsXf84sM0fGFnYBjY",
+			"id": { "kind": "youtube#video", "videoId": "sYpNvZrIiFg" },
+			"snippet": {
+				"publishedAt": "2026-01-02T15:36:17Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ2リメイク】2026年新春！ドラゴンクエストI＆II 生配信！#2【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 1月1日から4 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/sYpNvZrIiFg/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/sYpNvZrIiFg/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/sYpNvZrIiFg/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-02T15:36:17Z"
+			},
+			"tags": [],
+			"liveSeriesId": "b2WfAFtRFdLp",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "YXWXUbwiAS71Ej1WF763lUofcHs",
+			"id": { "kind": "youtube#video", "videoId": "vydNOrTfvBI" },
+			"snippet": {
+				"publishedAt": "2026-01-02T18:25:41Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ2リメイク】2026年新春！ドラゴンクエストI＆II 生配信！#2（後半）【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 1月1日から4 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/vydNOrTfvBI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/vydNOrTfvBI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/vydNOrTfvBI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-02T18:25:41Z"
+			},
+			"tags": [],
+			"liveSeriesId": "b2WfAFtRFdLp",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "ei0mCbMnsLqMuRhKKaaOn89cbH8",
+			"id": { "kind": "youtube#video", "videoId": "RTnQrPE4xHM" },
+			"snippet": {
+				"publishedAt": "2026-01-03T17:33:51Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ2リメイク】2026年新春！ドラゴンクエストI＆II 生配信！#3【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 1月1日から4 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/RTnQrPE4xHM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/RTnQrPE4xHM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/RTnQrPE4xHM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-03T17:33:51Z"
+			},
+			"tags": [],
+			"liveSeriesId": "b2WfAFtRFdLp",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "h_HBD6hVeCjiBTzji83VM4VAI7A",
+			"id": { "kind": "youtube#video", "videoId": "-MEqx1CW9AY" },
+			"snippet": {
+				"publishedAt": "2026-01-04T16:23:34Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ2リメイク】2026年新春！ドラゴンクエストI＆II 生配信！#4【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 1月1日から4 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/-MEqx1CW9AY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/-MEqx1CW9AY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/-MEqx1CW9AY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-04T16:23:34Z"
+			},
+			"tags": [],
+			"liveSeriesId": "b2WfAFtRFdLp",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "oFAGRt0ZY9nCeS1gLHZXj_wKS0A",
+			"id": { "kind": "youtube#video", "videoId": "othuwKtWdgU" },
+			"snippet": {
+				"publishedAt": "2026-01-05T15:42:05Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ2リメイク】クリア後やりこみ攻略！ドラゴンクエストI＆II 生配信！#5【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストI＆II （リメイク版）」の実況プレイ生配信です！ 1月1日から4 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/othuwKtWdgU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/othuwKtWdgU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/othuwKtWdgU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-05T15:42:05Z"
+			},
+			"tags": [],
+			"liveSeriesId": "b2WfAFtRFdLp",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "8lRIU1VXcTVPFsbCXfejzDucVSc",
+			"id": { "kind": "youtube#video", "videoId": "okf6vfs1sZw" },
+			"snippet": {
+				"publishedAt": "2026-01-10T13:27:21Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【RTA】スーパーマリオ64☆120枚RTA ～2026年新春スペシャル（※もう10日だけど）～【スーパーマリオ3Dコレクション/生配信】",
+				"description": "こんばんは！MOTTYです！ニンテンドースイッチ「スーパーマリオ3Dコレクション版 スーパーマリオ64☆120枚RTA」の実況 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/okf6vfs1sZw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/okf6vfs1sZw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/okf6vfs1sZw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-10T13:27:21Z"
+			},
+			"tags": [],
+			"liveSeriesId": "hr9JToCfQO_l",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "NtAZaZ0G3kXxWkGkErrnFtHRkGA",
+			"id": { "kind": "youtube#video", "videoId": "sqDP-gonmtU" },
+			"snippet": {
+				"publishedAt": "2026-01-11T14:54:46Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ドラクエ7 体験版】ドラゴンクエストVII Reimagined 体験版をやってみよう！生配信【ネタバレあり】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ドラゴンクエストVII Reimagined」の実況プレイ生配信です！ 2月5日(木)発売の「 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/sqDP-gonmtU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/sqDP-gonmtU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/sqDP-gonmtU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-11T14:54:46Z"
+			},
+			"tags": ["体験版"],
+			"liveSeriesId": "xG_IQkLdzTLn",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "QLbZNH_fZJl1wXfBcQ89NxQT-ZA",
+			"id": { "kind": "youtube#video", "videoId": "j0b8BHovd-k" },
+			"snippet": {
+				"publishedAt": "2026-01-13T16:55:49Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！DLC  #13【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/j0b8BHovd-k/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/j0b8BHovd-k/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/j0b8BHovd-k/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-13T16:55:49Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "cojJwr5NgXEBZGzOneKHhEP0YsY",
+			"id": { "kind": "youtube#video", "videoId": "1A6bUs5_f8c" },
+			"snippet": {
+				"publishedAt": "2026-01-14T16:32:02Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！DLC  #14【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/1A6bUs5_f8c/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/1A6bUs5_f8c/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/1A6bUs5_f8c/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-14T16:32:02Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "yDFEaVs6ao5G-kAnYUs_cdvGqeI",
+			"id": { "kind": "youtube#video", "videoId": "8jFGYC-i5m0" },
+			"snippet": {
+				"publishedAt": "2026-01-15T15:18:04Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】本日大型アップデート解禁！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #1【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/8jFGYC-i5m0/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/8jFGYC-i5m0/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/8jFGYC-i5m0/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-15T15:18:04Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "wd6pn4SZ77yXjL2bat7bQtsErFQ",
+			"id": { "kind": "youtube#video", "videoId": "l4qRT4vJlWc" },
+			"snippet": {
+				"publishedAt": "2026-01-16T15:12:51Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】大型アプデのホテル部屋づくり！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #2【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/l4qRT4vJlWc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/l4qRT4vJlWc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/l4qRT4vJlWc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-16T15:12:51Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "avW9JKn3v35SapzH_jYc07CDxAo",
+			"id": { "kind": "youtube#video", "videoId": "wy1ykQdey0c" },
+			"snippet": {
+				"publishedAt": "2026-01-17T15:23:20Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】大型アプデのホテル部屋づくり！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #3【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/wy1ykQdey0c/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/wy1ykQdey0c/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/wy1ykQdey0c/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-17T15:23:20Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Eq4v1UQ38f67nt8_FmqTsyd-TbI",
+			"id": { "kind": "youtube#video", "videoId": "qjOS-KAJB_g" },
+			"snippet": {
+				"publishedAt": "2026-01-18T15:11:15Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】大型アプデのホテル部屋づくり！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #4【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/qjOS-KAJB_g/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/qjOS-KAJB_g/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/qjOS-KAJB_g/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-18T15:11:15Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "V6Dj29dC6kujmxZFHrGYBoiVE60",
+			"id": { "kind": "youtube#video", "videoId": "oMZzYlSormo" },
+			"snippet": {
+				"publishedAt": "2026-01-20T15:32:30Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】ファミコン家具を集めたいんじゃ！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #5【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/oMZzYlSormo/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/oMZzYlSormo/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/oMZzYlSormo/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-20T15:32:30Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "AKDWO5NkhBxrF3ntpFqJTXCBStU",
+			"id": { "kind": "youtube#video", "videoId": "DBGspjw735A" },
+			"snippet": {
+				"publishedAt": "2026-01-22T15:15:46Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】ファミコン家具で遊びたいんじゃ！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #6【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/DBGspjw735A/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/DBGspjw735A/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/DBGspjw735A/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-22T15:15:46Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "7X7enWo9fP-gaVUQNPutE2rvMtM",
+			"id": { "kind": "youtube#video", "videoId": "e78ei0Sb_Iw" },
+			"snippet": {
+				"publishedAt": "2026-01-23T15:15:11Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】クリア後攻略！色違い厳選やる！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！DLC  #15【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/e78ei0Sb_Iw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/e78ei0Sb_Iw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/e78ei0Sb_Iw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-23T15:15:11Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "ByWa0cU7OP3nVmI8JswTLyNysv0",
+			"id": { "kind": "youtube#video", "videoId": "vliKF3_UUFw" },
+			"snippet": {
+				"publishedAt": "2026-01-24T15:11:05Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】参加型！夢の島をみんなでつくろう！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #7【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/vliKF3_UUFw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/vliKF3_UUFw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/vliKF3_UUFw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-24T15:11:05Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "1Pc9ECiRYS57hxdhOdzeJGt5RQY",
+			"id": { "kind": "youtube#video", "videoId": "h_dQ8Zohsvc" },
+			"snippet": {
+				"publishedAt": "2026-01-27T13:39:17Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【RTA】スーパーマリオ64☆120枚RTA ～MOTTY 14周年記念の日！～【スーパーマリオ3Dコレクション/生配信】",
+				"description": "こんばんは！MOTTYです！ニンテンドースイッチ「スーパーマリオ3Dコレクション版 スーパーマリオ64☆120枚RTA」の実況 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/h_dQ8Zohsvc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/h_dQ8Zohsvc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/h_dQ8Zohsvc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-27T13:39:17Z"
+			},
+			"tags": [],
+			"liveSeriesId": "hr9JToCfQO_l",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "_nc3vQMTKFHFz0UjUWyR3QbjZU8",
+			"id": { "kind": "youtube#video", "videoId": "_7Y9kHcr0-U" },
+			"snippet": {
+				"publishedAt": "2026-01-28T15:25:46Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違いラティオス出てくれ！！！！！！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#17【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/_7Y9kHcr0-U/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/_7Y9kHcr0-U/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/_7Y9kHcr0-U/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-28T15:25:46Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "HhLs4EJ-ws4XTOjjGsO0hlKFMD4",
+			"id": { "kind": "youtube#video", "videoId": "Cqc3PiuL7dk" },
+			"snippet": {
+				"publishedAt": "2026-01-29T15:04:10Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【スプラトゥーン3】新機能追加！ひっさびさにスプラ3で遊ぼうぜ！Splatoon3 実況プレイ！【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Splatoon3」の実況プレイ生配信です！ 本日1/29に大型 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Cqc3PiuL7dk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Cqc3PiuL7dk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Cqc3PiuL7dk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-01-29T15:04:10Z"
+			},
+			"tags": [],
+			"liveSeriesId": "1r-2XOkFefMO",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Gtmh5MhL9xz0DfaQRqhpkOg3jKw",
+			"id": { "kind": "youtube#video", "videoId": "SffpM3wNdos" },
+			"snippet": {
+				"publishedAt": "2026-02-01T09:00:45Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【マリオカートワールド】ゲーム実況者超大集合コラボ企画『超大集合杯2』主催配信【Nintendo Switch2／アーカイブ動画】",
+				"description": "こんばんは！MOTTYです！2025年1月25日にニコニコ生放送でマリオカートワールドのコラボ大会『超大集合杯2』を主催しま ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/SffpM3wNdos/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/SffpM3wNdos/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/SffpM3wNdos/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-01T09:00:45Z"
+			},
+			"tags": [],
+			"liveSeriesId": "OM0Z163tH7LA",
+			"liveStyle": "video"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "sZGpw2Mf2TNZs024w2QZvao1_c8",
+			"id": { "kind": "youtube#video", "videoId": "M7H9xDWg0Zg" },
+			"snippet": {
+				"publishedAt": "2026-02-01T13:11:55Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違いラティオス出てくれ！！！！！！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#18【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/M7H9xDWg0Zg/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/M7H9xDWg0Zg/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/M7H9xDWg0Zg/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-01T13:11:55Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "c4qALB6u61U6YsbfkEwj6K9lB9w",
+			"id": { "kind": "youtube#video", "videoId": "cpbN0Ai_XBY" },
+			"snippet": {
+				"publishedAt": "2026-02-02T15:16:53Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【あつ森】週末の企画に向けて、家具をあつめよう！あつまれどうぶつの森 Nintendo Switch 2 Edition 生配信！Ver.3.0編 #8【MOTTY】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「あつまれどうぶつの森」の実況プレイ生配信です！ 2026年1月15日に無料 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/cpbN0Ai_XBY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/cpbN0Ai_XBY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/cpbN0Ai_XBY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-02T15:16:53Z"
+			},
+			"tags": ["Ver.3.0編"],
+			"liveSeriesId": "U1Am1ZSTr1El",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "06MCPoVV2AxmcEATkSRY9QXMV90",
+			"id": { "kind": "youtube#video", "videoId": "hyqN9pb4Njw" },
+			"snippet": {
+				"publishedAt": "2026-02-03T09:00:55Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ポケモンZA】11時間半厳選した色違いラティオスを捕まえた結果ｗｗｗ #ポケモン #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ポケモンレジェンズZA」のショート動画です！先日の生配信中の切り抜き動画 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/hyqN9pb4Njw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/hyqN9pb4Njw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/hyqN9pb4Njw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-03T09:00:55Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "RoqAqHhIJ0PcYGrJF0D1-N-HPyI",
+			"id": { "kind": "youtube#video", "videoId": "1SLl1acd_vk" },
+			"snippet": {
+				"publishedAt": "2026-02-03T16:01:47Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違いラティアスの番！！！！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#19【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/1SLl1acd_vk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/1SLl1acd_vk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/1SLl1acd_vk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-03T16:01:47Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Ur8o0Z3trNi-uNS3YFTUoWhKm-w",
+			"id": { "kind": "youtube#video", "videoId": "e-0UzipXMjg" },
+			"snippet": {
+				"publishedAt": "2026-02-04T15:29:35Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【桃鉄2／カービィのエアライダー 他】30分10本勝負に向けていろんなゲームやっていく！【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！本日は2/8(日)開催の活動14周年記念特番「30分10本勝負」へ向けて、当日やる予定のゲームタイトル ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/e-0UzipXMjg/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/e-0UzipXMjg/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/e-0UzipXMjg/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-04T15:29:35Z"
+			},
+			"tags": [],
+			"liveSeriesId": "C5gTLyHd8Z-0",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "VwsRK60HcoTNo7zUo5n9s7_KUnk",
+			"id": { "kind": "youtube#video", "videoId": "XRct2EJkjCE" },
+			"snippet": {
+				"publishedAt": "2026-02-05T16:15:43Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "23時からニンダイ一緒に見ようぜ！【ポケモンZA】色違いラティアスの番！！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#20【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/XRct2EJkjCE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/XRct2EJkjCE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/XRct2EJkjCE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-05T16:15:43Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "WUx5MFupAA3nRizO9q1L-0JpXwc",
+			"id": { "kind": "youtube#video", "videoId": "3si7JM4JUjc" },
+			"snippet": {
+				"publishedAt": "2026-02-08T14:52:00Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "MOTTYゲーム実況14周年記念！『MOTTYの30分10本勝負2026』【長時間ゲーム企画生配信】",
+				"description": "こんばんは！MOTTYです。2026年1月27日でMOTTYのゲーム実況活動14周年を迎えました！それを記念して、今年も『30分10本 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/3si7JM4JUjc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/3si7JM4JUjc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/3si7JM4JUjc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-08T14:52:00Z"
+			},
+			"tags": [],
+			"liveSeriesId": "dOSulZBdSWQT",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "mGNOcGzlpmfHVFI2XDoFgewcqLQ",
+			"id": { "kind": "youtube#video", "videoId": "0wfaK1jwIOM" },
+			"snippet": {
+				"publishedAt": "2026-02-10T15:37:37Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違い準伝説ポケモンゲットしたい！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#21【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/0wfaK1jwIOM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/0wfaK1jwIOM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/0wfaK1jwIOM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-10T15:37:37Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "UFbIRCQ_2KQ94Qu6Fet8Kn0N-CI",
+			"id": { "kind": "youtube#video", "videoId": "YjsMv5ow4cI" },
+			"snippet": {
+				"publishedAt": "2026-02-11T14:00:10Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#えらべるセガアトラス】明日発売！「龍が如く 極3 / 龍が如く3外伝 Dark Ties」体験版で遊んでみよう！実況プレイ【MOTTY/生配信】#PR",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の体験版の実況プレイ生配信です！！Nintendo ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/YjsMv5ow4cI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/YjsMv5ow4cI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/YjsMv5ow4cI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-11T14:00:10Z"
+			},
+			"tags": ["体験版"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "vCrAp0OnwOpdoD27XusE2ENq2j0",
+			"id": { "kind": "youtube#video", "videoId": "U60cLUd5IC8" },
+			"snippet": {
+				"publishedAt": "2026-02-12T15:11:38Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違い準伝説ポケモンゲットしたい！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#22【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/U60cLUd5IC8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/U60cLUd5IC8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/U60cLUd5IC8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-12T15:11:38Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "qw6yHrV_7KSNANPwgMNV4NkxwtU",
+			"id": { "kind": "youtube#video", "videoId": "4mHIb1aPvg8" },
+			"snippet": {
+				"publishedAt": "2026-02-13T15:18:31Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】ついに異次元図鑑完成！Pokémon LEGENDS Z-A『M次元ラッシュ』実況プレイ！#23【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 『ポケットモンスター』 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/4mHIb1aPvg8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/4mHIb1aPvg8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/4mHIb1aPvg8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-13T15:18:31Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "v2ZDBwBSPLUbD6hgrqIldOiBdXo",
+			"id": { "kind": "youtube#video", "videoId": "DOS6iGI23tU" },
+			"snippet": {
+				"publishedAt": "2026-02-15T16:45:05Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "初回スペシャル！はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#1【MOTTY/生配信】※ネタバレあり",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/DOS6iGI23tU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/DOS6iGI23tU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/DOS6iGI23tU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-15T16:45:05Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "g753JoOLy9POK1b3kQorRdFy95I",
+			"id": { "kind": "youtube#video", "videoId": "ltkXYuNy8og" },
+			"snippet": {
+				"publishedAt": "2026-02-16T15:37:38Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#2【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/ltkXYuNy8og/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/ltkXYuNy8og/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/ltkXYuNy8og/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-16T15:37:38Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "klV2iKGkMhANYmjxBGwSiW2BIrE",
+			"id": { "kind": "youtube#video", "videoId": "-9wwi3PZywU" },
+			"snippet": {
+				"publishedAt": "2026-02-18T15:24:16Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#3【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/-9wwi3PZywU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/-9wwi3PZywU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/-9wwi3PZywU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-18T15:24:16Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "lX_i-lnoPq-uhEMc3iZCSVKR5aI",
+			"id": { "kind": "youtube#video", "videoId": "eKrq7wNSIVc" },
+			"snippet": {
+				"publishedAt": "2026-02-19T15:40:53Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#4【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/eKrq7wNSIVc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/eKrq7wNSIVc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/eKrq7wNSIVc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-19T15:40:53Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "KZ1JRfX84JFmtls2T4mERPuePho",
+			"id": { "kind": "youtube#video", "videoId": "R5zWt9dAaQE" },
+			"snippet": {
+				"publishedAt": "2026-02-20T16:10:24Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#5【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/R5zWt9dAaQE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/R5zWt9dAaQE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/R5zWt9dAaQE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-20T16:10:24Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "oHwxsurH1h4faj46ndyyybURDyM",
+			"id": { "kind": "youtube#video", "videoId": "LAnlcz9Ic4A" },
+			"snippet": {
+				"publishedAt": "2026-02-21T16:01:31Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#6【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/LAnlcz9Ic4A/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/LAnlcz9Ic4A/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/LAnlcz9Ic4A/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-21T16:01:31Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Jrehac4PqdE3-xXdfuLldJUxyGo",
+			"id": { "kind": "youtube#video", "videoId": "OairqLB_4Qc" },
+			"snippet": {
+				"publishedAt": "2026-02-22T13:03:28Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#7【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/OairqLB_4Qc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/OairqLB_4Qc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/OairqLB_4Qc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-22T13:03:28Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "d4eNCW5zsxi3z6sRh6SpKdpnDK0",
+			"id": { "kind": "youtube#video", "videoId": "Yo2Sr4rwTvE" },
+			"snippet": {
+				"publishedAt": "2026-02-23T14:17:14Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#8【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Yo2Sr4rwTvE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Yo2Sr4rwTvE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Yo2Sr4rwTvE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-23T14:17:14Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "RqkTTCUQZez84TzWAqG0cyKPUec",
+			"id": { "kind": "youtube#video", "videoId": "iNBXjxqUuyY" },
+			"snippet": {
+				"publishedAt": "2026-02-24T15:45:18Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#9【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/iNBXjxqUuyY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/iNBXjxqUuyY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/iNBXjxqUuyY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-24T15:45:18Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "XKdJcRNbfKpDZsvV90XtzlalmpU",
+			"id": { "kind": "youtube#video", "videoId": "jeJ3bwkLjEw" },
+			"snippet": {
+				"publishedAt": "2026-02-25T14:56:20Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "はじめての「龍が如く 極3 / 龍が如く3外伝 Dark Ties」実況プレイ！#10【MOTTY/生配信】※ネタバレを含みます",
+				"description": "こんばんは！MOTTYです！本日は「龍が如く 極3 / 龍が如く3外伝 Dark Ties」の実況プレイ生配信です！Nintendo Switch2版で ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/jeJ3bwkLjEw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/jeJ3bwkLjEw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/jeJ3bwkLjEw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-25T14:56:20Z"
+			},
+			"tags": ["本編"],
+			"liveSeriesId": "YO7YjZEgFTja",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "O6sG-w3iPztRw15hlx97yzw62iA",
+			"id": { "kind": "youtube#video", "videoId": "umgitC4ZGnM" },
+			"snippet": {
+				"publishedAt": "2026-02-27T14:56:54Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ポケモンZA】色違いポケモン配布・交換会！＆ポケモンプレゼンツ同時視聴配信！Pokémon LEGENDS Z-A 実況プレイ！【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「Pokémon LEGENDS Z-A」の実況プレイ生配信です！ 本日2月27日は『Pokémon ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/umgitC4ZGnM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/umgitC4ZGnM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/umgitC4ZGnM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-27T14:56:54Z"
+			},
+			"tags": ["DLC"],
+			"liveSeriesId": "1tD4zBa-VJ9C",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "OfVHLsl1t_O2WrkLfNuboGjoC3g",
+			"id": { "kind": "youtube#video", "videoId": "bOucSmpenzM" },
+			"snippet": {
+				"publishedAt": "2026-02-28T17:27:25Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ポケモン30周年】ポケットモンスター ファイアレッド 実況プレイ！#1【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ポケットモンスター ファイアレッド」の実況プレイ生配信です！",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/bOucSmpenzM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/bOucSmpenzM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/bOucSmpenzM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-02-28T17:27:25Z"
+			},
+			"tags": [],
+			"liveSeriesId": "QQO9xiX7foxt",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "AvPPIPOYr17bPJMl7gPdN5NghtY",
+			"id": { "kind": "youtube#video", "videoId": "tZoRbLCCbiE" },
+			"snippet": {
+				"publishedAt": "2026-03-01T17:12:14Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ポケモン30周年】ポケットモンスター ファイアレッド 実況プレイ！#2【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ポケットモンスター ファイアレッド」の実況プレイ生配信です！",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/tZoRbLCCbiE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/tZoRbLCCbiE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/tZoRbLCCbiE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-01T17:12:14Z"
+			},
+			"tags": [],
+			"liveSeriesId": "QQO9xiX7foxt",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "fgzqXMjxZWbfMD-z4hXfp_vvMmQ",
+			"id": { "kind": "youtube#video", "videoId": "4HMMlgO7HAs" },
+			"snippet": {
+				"publishedAt": "2026-03-02T15:21:59Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ポケモン30周年】クリア後ストーリー攻略！ポケットモンスター ファイアレッド 実況プレイ！#3【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ポケットモンスター ファイアレッド」の実況プレイ生配信です！",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/4HMMlgO7HAs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/4HMMlgO7HAs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/4HMMlgO7HAs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-02T15:21:59Z"
+			},
+			"tags": [],
+			"liveSeriesId": "QQO9xiX7foxt",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "lpVIg51Qj0JrcNNVyVx5BZflLT4",
+			"id": { "kind": "youtube#video", "videoId": "2DjMkvzITtc" },
+			"snippet": {
+				"publishedAt": "2026-03-03T09:00:02Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ポケモンFRLG】22連続まひ避けスターミーが強すぎるｗｗｗ #ポケモン #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ポケットモンスター ファイアレッド・リーフグリーン」のショート動画です！",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/2DjMkvzITtc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/2DjMkvzITtc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/2DjMkvzITtc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-03T09:00:02Z"
+			},
+			"tags": [],
+			"liveSeriesId": "QQO9xiX7foxt",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "WpZO0wHgxUOY93t9C5_3wGKwqg4",
+			"id": { "kind": "youtube#video", "videoId": "EwJ83YdcmJ0" },
+			"snippet": {
+				"publishedAt": "2026-03-03T14:17:15Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ポケモン30周年】伝説ポケモン大量捕獲編！ポケットモンスター ファイアレッド 実況プレイ！#4【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ポケットモンスター ファイアレッド」の実況プレイ生配信です！",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/EwJ83YdcmJ0/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/EwJ83YdcmJ0/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/EwJ83YdcmJ0/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-03T14:17:15Z"
+			},
+			"tags": [],
+			"liveSeriesId": "QQO9xiX7foxt",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "5ApG9HjnpAeWlu-htE2-3tlyYiw",
+			"id": { "kind": "youtube#video", "videoId": "Bxc2v33cOfI" },
+			"snippet": {
+				"publishedAt": "2026-03-05T15:13:53Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#1【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Bxc2v33cOfI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Bxc2v33cOfI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Bxc2v33cOfI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-05T15:13:53Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "iMxbba5K4O9DER-df3cNyV3eZwQ",
+			"id": { "kind": "youtube#video", "videoId": "TPF6vOGSZsU" },
+			"snippet": {
+				"publishedAt": "2026-03-06T15:33:17Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#2【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/TPF6vOGSZsU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/TPF6vOGSZsU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/TPF6vOGSZsU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-06T15:33:17Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "uXNGC2t7-Fno92hSWNtSVwGGELU",
+			"id": { "kind": "youtube#video", "videoId": "GJBsT7CGl1E" },
+			"snippet": {
+				"publishedAt": "2026-03-07T16:08:55Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#3【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/GJBsT7CGl1E/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/GJBsT7CGl1E/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/GJBsT7CGl1E/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-07T16:08:55Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "vUGiJPrJYW_fGaL-WNaQbnoZJyo",
+			"id": { "kind": "youtube#video", "videoId": "Gg4hVpHpcm8" },
+			"snippet": {
+				"publishedAt": "2026-03-08T15:37:21Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#4【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Gg4hVpHpcm8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Gg4hVpHpcm8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Gg4hVpHpcm8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-08T15:37:21Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "iv6u16pKRor6WmtEGGmZKRBfz8k",
+			"id": { "kind": "youtube#video", "videoId": "xD6q0Qwav38" },
+			"snippet": {
+				"publishedAt": "2026-03-09T15:23:35Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#5【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/xD6q0Qwav38/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/xD6q0Qwav38/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/xD6q0Qwav38/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-09T15:23:35Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "KXW2ixbeuPUGEIwoVfrkbqJ3xOQ",
+			"id": { "kind": "youtube#video", "videoId": "yWoz1NaNWmA" },
+			"snippet": {
+				"publishedAt": "2026-03-14T15:32:59Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#6【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/yWoz1NaNWmA/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/yWoz1NaNWmA/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/yWoz1NaNWmA/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-14T15:32:59Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "lyaxuMorDjI7aJRSWg5U3w6iKBo",
+			"id": { "kind": "youtube#video", "videoId": "bY9WSPhtoks" },
+			"snippet": {
+				"publishedAt": "2026-03-15T15:22:44Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#7【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/bY9WSPhtoks/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/bY9WSPhtoks/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/bY9WSPhtoks/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-15T15:22:44Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "BduGDzI_3PLaFlfgBgX3G7RiRio",
+			"id": { "kind": "youtube#video", "videoId": "9FPWfQGpLOs" },
+			"snippet": {
+				"publishedAt": "2026-03-16T15:25:35Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#8【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/9FPWfQGpLOs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/9FPWfQGpLOs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/9FPWfQGpLOs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-16T15:25:35Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "uCypGWBsRhcbnNKd706EU6atUzg",
+			"id": { "kind": "youtube#video", "videoId": "lBvilJQ0Z94" },
+			"snippet": {
+				"publishedAt": "2026-03-17T09:01:10Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】ミュウツーが仲間になる方法を解説！ #ポケモン #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！先日の生配信終了後、裏で整地作業や素材 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/lBvilJQ0Z94/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/lBvilJQ0Z94/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/lBvilJQ0Z94/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-17T09:01:10Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "4MEGY4xy71vVhazJlG7CSE00u0o",
+			"id": { "kind": "youtube#video", "videoId": "2CTRrW5zD_Q" },
+			"snippet": {
+				"publishedAt": "2026-03-17T15:34:56Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#9【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/2CTRrW5zD_Q/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/2CTRrW5zD_Q/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/2CTRrW5zD_Q/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-17T15:34:56Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "3rCpXBbFiudN9LsnaGvTeyNexmk",
+			"id": { "kind": "youtube#video", "videoId": "FNwxgnbLdZw" },
+			"snippet": {
+				"publishedAt": "2026-03-18T15:43:29Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#10【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/FNwxgnbLdZw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/FNwxgnbLdZw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/FNwxgnbLdZw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-18T15:43:29Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "frKICe1mdAa-uOECyXHCLJsZsyc",
+			"id": { "kind": "youtube#video", "videoId": "l9EbClda8iE" },
+			"snippet": {
+				"publishedAt": "2026-03-19T16:12:23Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちと新生活、始めました。#11【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/l9EbClda8iE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/l9EbClda8iE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/l9EbClda8iE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-19T16:12:23Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "c8grdfRvOUX_kAhPp71BK9v8SZs",
+			"id": { "kind": "youtube#video", "videoId": "pSUpNmzoslU" },
+			"snippet": {
+				"publishedAt": "2026-03-21T15:36:34Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】巨大地下倉庫つくります。ポケモンたちと新生活、始めました。#12【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/pSUpNmzoslU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/pSUpNmzoslU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/pSUpNmzoslU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-21T15:36:34Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "9CotZ0uqsvkm-7IexKEeXtYdvj8",
+			"id": { "kind": "youtube#video", "videoId": "RafjAYUpcpI" },
+			"snippet": {
+				"publishedAt": "2026-03-22T15:26:22Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】巨大地下倉庫つくります。ポケモンたちと新生活、始めました。#13【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/RafjAYUpcpI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/RafjAYUpcpI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/RafjAYUpcpI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-22T15:26:22Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "jMVr9V2yWNJW_5s_zGVHp2_Xg_g",
+			"id": { "kind": "youtube#video", "videoId": "v_J4Mijqjl8" },
+			"snippet": {
+				"publishedAt": "2026-03-23T15:54:01Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】地下拠点、完成しました！ポケモンたちと新生活、始めました。#14【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/v_J4Mijqjl8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/v_J4Mijqjl8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/v_J4Mijqjl8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-23T15:54:01Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "kcyLAvrRMY-3hgNPIsPRTDvI7NU",
+			"id": { "kind": "youtube#video", "videoId": "OWhMGVEqm4A" },
+			"snippet": {
+				"publishedAt": "2026-03-24T15:45:44Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ゴツゴツやまの博物館、復旧します！ポケモンたちと新生活、始めました。#15【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/OWhMGVEqm4A/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/OWhMGVEqm4A/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/OWhMGVEqm4A/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-24T15:45:44Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "-pgFUhojxUs6dUIRITKJhtI4aBw",
+			"id": { "kind": "youtube#video", "videoId": "2Du42LMJStw" },
+			"snippet": {
+				"publishedAt": "2026-03-25T15:31:05Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ゴツゴツやまの博物館、復旧します！ポケモンたちと新生活、始めました。#16【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/2Du42LMJStw/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/2Du42LMJStw/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/2Du42LMJStw/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-25T15:31:05Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "8fmc5UQh66DPlm2FP_tjaDyQunU",
+			"id": { "kind": "youtube#video", "videoId": "t7poV1-9Jgk" },
+			"snippet": {
+				"publishedAt": "2026-03-26T15:34:14Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】フリーザー・サンダー・ファイアーに会いたい！ポケモンたちと新生活、始めました。#17【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/t7poV1-9Jgk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/t7poV1-9Jgk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/t7poV1-9Jgk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-26T15:34:14Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "6FEKNP9GMHa_SEu6LnDAChoS7ww",
+			"id": { "kind": "youtube#video", "videoId": "6yMX9LTQSYk" },
+			"snippet": {
+				"publishedAt": "2026-03-28T11:42:58Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】三鳥揃った！全マップの環境レベル10にする！ポケモンたちと新生活、始めました。#18【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/6yMX9LTQSYk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/6yMX9LTQSYk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/6yMX9LTQSYk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-28T11:42:58Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "vT9LNFClm2CdKpNcQdQRWTeWKh0",
+			"id": { "kind": "youtube#video", "videoId": "e6qhWcRKxE0" },
+			"snippet": {
+				"publishedAt": "2026-03-29T12:36:37Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】パサパサこうやの街、建築します！ポケモンたちと新生活、始めました。#19【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/e6qhWcRKxE0/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/e6qhWcRKxE0/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/e6qhWcRKxE0/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-29T12:36:37Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "EGFQt7L0fej8r5ZtwasQB-_ZeUo",
+			"id": { "kind": "youtube#video", "videoId": "_H6FLPSGgRo" },
+			"snippet": {
+				"publishedAt": "2026-03-30T15:26:18Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】パサパサこうやの自宅建てます！ポケモンたちと新生活、始めました。#20【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/_H6FLPSGgRo/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/_H6FLPSGgRo/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/_H6FLPSGgRo/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-30T15:26:18Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "INXHaYjcMI6_I-taAicGm7F3gTo",
+			"id": { "kind": "youtube#video", "videoId": "NkRcfit7svs" },
+			"snippet": {
+				"publishedAt": "2026-03-31T15:47:23Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】自宅完成！内装をつくろう！ポケモンたちと新生活、始めました。#21【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/NkRcfit7svs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/NkRcfit7svs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/NkRcfit7svs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-03-31T15:47:23Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "D_sXez2GMwiwHBVISihBwbcA-Ho",
+			"id": { "kind": "youtube#video", "videoId": "uWMX5DIEpMY" },
+			"snippet": {
+				"publishedAt": "2026-04-01T15:15:54Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ドーブル先生のアトリエをつくろう！ポケモンたちと新生活、始めました。#22【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/uWMX5DIEpMY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/uWMX5DIEpMY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/uWMX5DIEpMY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-01T15:15:54Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "lbISv0HV2bkwlym8jMYswVVE8g0",
+			"id": { "kind": "youtube#video", "videoId": "ixE7eDl9xic" },
+			"snippet": {
+				"publishedAt": "2026-04-02T15:14:45Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンの家つくる？あつまる？ポケモンたちと新生活、始めました。#23【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/ixE7eDl9xic/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/ixE7eDl9xic/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/ixE7eDl9xic/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-02T15:14:45Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "x3gsU8jtGkWw8hXSJPfdqoLsLSw",
+			"id": { "kind": "youtube#video", "videoId": "70dCdjDo5Yc" },
+			"snippet": {
+				"publishedAt": "2026-04-03T15:25:01Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】店とか家とか建てていこうか。ポケモンたちと新生活、始めました。#24【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/70dCdjDo5Yc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/70dCdjDo5Yc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/70dCdjDo5Yc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-03T15:25:01Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "vlelreiYsAcqDoSQa8Qit4Wnn_U",
+			"id": { "kind": "youtube#video", "videoId": "47ULX2f3rks" },
+			"snippet": {
+				"publishedAt": "2026-04-04T15:27:12Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】今日もいろいろ建てていこうぜ。ポケモンたちと新生活、始めました。#25【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/47ULX2f3rks/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/47ULX2f3rks/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/47ULX2f3rks/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-04T15:27:12Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "REDd72NcSI6orZzsKaYB4g4Mtsw",
+			"id": { "kind": "youtube#video", "videoId": "-oMA93fmFrA" },
+			"snippet": {
+				"publishedAt": "2026-04-05T15:04:57Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】おしゃれな農園をつくろう！ポケモンたちと新生活、始めました。#26【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/-oMA93fmFrA/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/-oMA93fmFrA/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/-oMA93fmFrA/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-05T15:04:57Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "fg5Wa6-lQoqlmnIkfrXIXCnR53c",
+			"id": { "kind": "youtube#video", "videoId": "Qe_3FxkeR5Y" },
+			"snippet": {
+				"publishedAt": "2026-04-07T15:24:15Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】果樹園や街並みとかつくろうぜ！ポケモンたちと新生活、始めました。#27【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Qe_3FxkeR5Y/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Qe_3FxkeR5Y/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Qe_3FxkeR5Y/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-07T15:24:15Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Q0OaSeKkQmnn269-yN7zALivnEw",
+			"id": { "kind": "youtube#video", "videoId": "7KeCQlH0ML4" },
+			"snippet": {
+				"publishedAt": "2026-04-08T15:14:53Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】自然公園をつくろうぜ！ポケモンたちと新生活、始めました。#28【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/7KeCQlH0ML4/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/7KeCQlH0ML4/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/7KeCQlH0ML4/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-08T15:14:53Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "jUmIfrYG4HEySDhqncUsVcS4zNc",
+			"id": { "kind": "youtube#video", "videoId": "CozwJhO9WPs" },
+			"snippet": {
+				"publishedAt": "2026-04-09T14:00:38Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】街全体を整備していこう！ポケモンたちと新生活、始めました。#29【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/CozwJhO9WPs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/CozwJhO9WPs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/CozwJhO9WPs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-09T14:00:38Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "NkRqv87gScPPXn5y8ghnhd7a9X8",
+			"id": { "kind": "youtube#video", "videoId": "Uc5Mup32ewU" },
+			"snippet": {
+				"publishedAt": "2026-04-11T15:27:41Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】この街に大階段をつくりたい！ポケモンたちと新生活、始めました。#30【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Uc5Mup32ewU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Uc5Mup32ewU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Uc5Mup32ewU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-11T15:27:41Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "dmdoBJbsU_X5ZX3-UCsFyvwVYMU",
+			"id": { "kind": "youtube#video", "videoId": "_-TjNZA2AG8" },
+			"snippet": {
+				"publishedAt": "2026-04-15T09:00:58Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「フシギダネの草原」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/_-TjNZA2AG8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/_-TjNZA2AG8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/_-TjNZA2AG8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-15T09:00:58Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "x_0YSSKhR3wa6QisPTWuXWX1Zhk",
+			"id": { "kind": "youtube#video", "videoId": "QrUhvA--09Y" },
+			"snippet": {
+				"publishedAt": "2026-04-15T15:20:34Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ドンヨリうみべの開拓、はじめました！ポケモンたちと新生活、始めました。#32【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/QrUhvA--09Y/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/QrUhvA--09Y/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/QrUhvA--09Y/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-15T15:20:34Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "KnSrlmM9a3s4i6ZZMUMuvQCDbcQ",
+			"id": { "kind": "youtube#video", "videoId": "L8_s6EXyKgo" },
+			"snippet": {
+				"publishedAt": "2026-04-16T09:00:27Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ヒトカゲの空き地」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/L8_s6EXyKgo/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/L8_s6EXyKgo/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/L8_s6EXyKgo/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-16T09:00:27Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "tKi5iRzQq2tqp5KxkBScRzWcAnQ",
+			"id": { "kind": "youtube#video", "videoId": "EemmGZI2cvo" },
+			"snippet": {
+				"publishedAt": "2026-04-17T09:00:19Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ゼニガメの水槽」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/EemmGZI2cvo/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/EemmGZI2cvo/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/EemmGZI2cvo/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-17T09:00:19Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "awT7JzSPNgg6tFSVsIOgLWrL70w",
+			"id": { "kind": "youtube#video", "videoId": "X9zxzEvlark" },
+			"snippet": {
+				"publishedAt": "2026-04-17T14:29:14Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモンたちの家を建てまくろう！ポケモンたちと新生活、始めました。#33【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/X9zxzEvlark/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/X9zxzEvlark/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/X9zxzEvlark/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-17T14:29:14Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "43ZBhpNzA_otfqSacajf3OgclG0",
+			"id": { "kind": "youtube#video", "videoId": "-_K0vAxZfJI" },
+			"snippet": {
+				"publishedAt": "2026-04-18T09:00:01Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「うすチュウのお部屋」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/-_K0vAxZfJI/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/-_K0vAxZfJI/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/-_K0vAxZfJI/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-18T09:00:01Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "HQeZJyX0TD8wLdaMF49n8LJYLVs",
+			"id": { "kind": "youtube#video", "videoId": "LsP0F6UYOI8" },
+			"snippet": {
+				"publishedAt": "2026-04-19T09:00:26Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「シェフバリスのレストラン」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/LsP0F6UYOI8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/LsP0F6UYOI8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/LsP0F6UYOI8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-19T09:00:26Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "r8gxEcnkDatD5Oss_IoyXaZCJ3U",
+			"id": { "kind": "youtube#video", "videoId": "DrYdM1g9cqk" },
+			"snippet": {
+				"publishedAt": "2026-04-19T14:44:20Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】サントアンヌごう再建＆なわとび大会やる！ポケモンたちと新生活、始めました。#34【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/DrYdM1g9cqk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/DrYdM1g9cqk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/DrYdM1g9cqk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-19T14:44:20Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "KbcN142EW13kSx2TbIA5iamVlzg",
+			"id": { "kind": "youtube#video", "videoId": "fu4XqjtQpik" },
+			"snippet": {
+				"publishedAt": "2026-04-20T09:01:02Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ポッチャマのビーチサイド」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/fu4XqjtQpik/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/fu4XqjtQpik/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/fu4XqjtQpik/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-20T09:01:02Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "ge2fZShHBmWAuHilLJmDmsSQtPA",
+			"id": { "kind": "youtube#video", "videoId": "YisjYT8Wi-Q" },
+			"snippet": {
+				"publishedAt": "2026-04-22T09:00:49Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ヒトモシの墓地」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/YisjYT8Wi-Q/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/YisjYT8Wi-Q/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/YisjYT8Wi-Q/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-22T09:00:49Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "jqnl_q2EUdbWyFDxrx99zzr33QA",
+			"id": { "kind": "youtube#video", "videoId": "Grl3FfE02QM" },
+			"snippet": {
+				"publishedAt": "2026-04-22T15:29:35Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】巨大地下発電所完成！パサパサこうや再開発やるぞ！ポケモンたちと新生活、始めました。#35【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Grl3FfE02QM/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Grl3FfE02QM/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Grl3FfE02QM/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-22T15:29:35Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "HQOsTgOBTQmXBrQzuUyt-NiRY4A",
+			"id": { "kind": "youtube#video", "videoId": "ljSR8jknLuU" },
+			"snippet": {
+				"publishedAt": "2026-04-23T09:01:08Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「パピモッチのパン屋さん」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/ljSR8jknLuU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/ljSR8jknLuU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/ljSR8jknLuU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-23T09:01:08Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "_jvuGKUbtvafk61uPc4-1IPyjX4",
+			"id": { "kind": "youtube#video", "videoId": "VG-mYssizfs" },
+			"snippet": {
+				"publishedAt": "2026-04-23T14:15:45Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ポケモン図鑑完成！＆ビル建築始めます！ポケモンたちと新生活、始めました。#36【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/VG-mYssizfs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/VG-mYssizfs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/VG-mYssizfs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-23T14:15:45Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
 			"liveStyle": "broadcast"
 		}
 	]
