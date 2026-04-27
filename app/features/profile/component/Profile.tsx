@@ -18,7 +18,8 @@ import { useAppDispatch, useAppSelector } from '~/util';
 import { profileActions } from '..';
 import { HistoryItemProps, LinkExpression } from '../core/fetch';
 
-import avatarImage from './media/avatar.jpeg';
+import avatarImageIllust from './media/avatar-illust.jpeg';
+import avatarImagePhoto from './media/avatar-photo.jpeg';
 
 function Loader() {
 	return <div>Loading...</div>;
@@ -39,8 +40,14 @@ const ProfileAvatarElement = styled(Avatar)(({ theme }) => ({
 	height: theme.spacing(24),
 }));
 
+// TODO: サイズ可変、最大spacing(24)になるように
 export function ProfileAvatar() {
-	return <ProfileAvatarElement alt="MOTTY" src={avatarImage} />;
+	return (
+		<React.Fragment>
+			<ProfileAvatarElement alt="MOTTY-illust" src={avatarImageIllust} />
+			<ProfileAvatarElement alt="MOTTY-photo" src={avatarImagePhoto} />
+		</React.Fragment>
+	);
 }
 
 const youtubeUrl = 'https://www.youtube.com/user/MOTTYGAMES';
