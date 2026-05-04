@@ -2297,6 +2297,14 @@
 			"tags": ["ポケモンシリーズ"],
 			"releasedIn": 2026,
 			"masteryLevel": 4
+		},
+		{
+			"id": "9d-6uzmr18-E",
+			"gameTitle": "スーパーマリオギャラクシー＋スーパーマリオギャラクシー 2",
+			"platform": "Switch",
+			"tags": ["マリオシリーズ"],
+			"releasedIn": 2026,
+			"masteryLevel": 1
 		}
 	]
 }
