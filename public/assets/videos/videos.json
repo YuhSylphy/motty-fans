@@ -222814,6 +222814,448 @@
 			"tags": [],
 			"liveSeriesId": "vhPNiIbNVx_5",
 			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "-3pRLZ6KxhJ5DMFBm-JrtvTyviE",
+			"id": { "kind": "youtube#video", "videoId": "hwZhbazBfwk" },
+			"snippet": {
+				"publishedAt": "2026-04-25T09:00:55Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「チルットのふんわり雲と空」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/hwZhbazBfwk/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/hwZhbazBfwk/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/hwZhbazBfwk/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-25T09:00:55Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "ny3CrRKkZRFOeO6JLwQsO9qzKRw",
+			"id": { "kind": "youtube#video", "videoId": "4hFWQmRiQug" },
+			"snippet": {
+				"publishedAt": "2026-04-26T09:00:06Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「デカヌチャン親方の工事現場」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/4hFWQmRiQug/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/4hFWQmRiQug/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/4hFWQmRiQug/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-26T09:00:06Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "ZWIt-PQaM4vKnCdpQPRyDapuVS8",
+			"id": { "kind": "youtube#video", "videoId": "6BQWL3l9rS8" },
+			"snippet": {
+				"publishedAt": "2026-04-26T15:07:27Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】高層ビル建築したので内装をつくろう！ポケモンたちと新生活、始めました。#37【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/6BQWL3l9rS8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/6BQWL3l9rS8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/6BQWL3l9rS8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-26T15:07:27Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "oKKOXTT6fITe0menn91Lj3_eC_w",
+			"id": { "kind": "youtube#video", "videoId": "IhoRbU6Wb8o" },
+			"snippet": {
+				"publishedAt": "2026-04-27T09:00:33Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ポリゴンの研究所」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/IhoRbU6Wb8o/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/IhoRbU6Wb8o/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/IhoRbU6Wb8o/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-27T09:00:33Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "spZoPwGb4F14WM4dGkxYxz3kGBU",
+			"id": { "kind": "youtube#video", "videoId": "Va09ddGgsTE" },
+			"snippet": {
+				"publishedAt": "2026-04-27T15:04:03Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】高層ビルの内装をつくる！ポケモンたちと新生活、始めました。#38【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/Va09ddGgsTE/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/Va09ddGgsTE/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/Va09ddGgsTE/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-27T15:04:03Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "-TKEpBXry9SBRCojEHFdolYB664",
+			"id": { "kind": "youtube#video", "videoId": "UtULPz7ksBs" },
+			"snippet": {
+				"publishedAt": "2026-04-28T09:00:42Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ピィの保育園」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/UtULPz7ksBs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/UtULPz7ksBs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/UtULPz7ksBs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-28T09:00:42Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "4fJYLNEGrzkfWuXPl2NBajfcPU4",
+			"id": { "kind": "youtube#video", "videoId": "boT5EejmHoc" },
+			"snippet": {
+				"publishedAt": "2026-04-29T09:00:52Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ケーシィの和室と縁側」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/boT5EejmHoc/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/boT5EejmHoc/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/boT5EejmHoc/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-29T09:00:52Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Z1x-Ex5z99kuFedZBQu0ANFnJZs",
+			"id": { "kind": "youtube#video", "videoId": "aRM80YHTdHY" },
+			"snippet": {
+				"publishedAt": "2026-04-30T09:00:02Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「コイキングと海の中」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/aRM80YHTdHY/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/aRM80YHTdHY/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/aRM80YHTdHY/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-30T09:00:02Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "NzwlSfZxXNIHOCF_g8v3DVcRscI",
+			"id": { "kind": "youtube#video", "videoId": "1k2FoRlIAPA" },
+			"snippet": {
+				"publishedAt": "2026-04-30T14:45:12Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【ぽこあポケモン】ヤミラミの宝石集めイベントやるぜ！ポケモンたちと新生活、始めました。#39【MOTTY/生配信】",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2で発売された「ぽこ あ ポケモン」の実況プレイ生配信です！ ポケモン達との ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/1k2FoRlIAPA/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/1k2FoRlIAPA/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/1k2FoRlIAPA/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-04-30T14:45:12Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "80f107ZnvUd0JqHzBltv5ViWOac",
+			"id": { "kind": "youtube#video", "videoId": "NRQXnQh33FU" },
+			"snippet": {
+				"publishedAt": "2026-05-01T09:00:29Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【#ぽこあポケモン】5×5クリエイト「ラビフットの道端」つくってみた！ #pokopia #shorts",
+				"description": "こんばんは！MOTTYです！Nintendo Switch2「ぽこあポケモン」のショート動画です！ 5×5の空間で様々な空間を作り出す「55 ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/NRQXnQh33FU/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/NRQXnQh33FU/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/NRQXnQh33FU/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-05-01T09:00:29Z"
+			},
+			"tags": [],
+			"liveSeriesId": "vhPNiIbNVx_5",
+			"liveStyle": "short"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Ebe_jF6kjfIL1aBqQuOSKP8BOQY",
+			"id": { "kind": "youtube#video", "videoId": "jNeubwUWDh8" },
+			"snippet": {
+				"publishedAt": "2026-05-02T16:00:15Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【スーパーマリオギャラクシー】2026年GWスペシャル「マリオギャラクシー1+2 クリアめざして、長時間生配信」 DAY1【MOTTY】",
+				"description": "こんばんは！MOTTYです！映画『ザ・スーパーマリオギャラクシー・ムービー』公開を記念して、昨年10月にNintendo Switchで ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/jNeubwUWDh8/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/jNeubwUWDh8/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/jNeubwUWDh8/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-05-02T16:00:15Z"
+			},
+			"tags": [],
+			"liveSeriesId": "XnnpoLMSKp0S",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "TqrK9pn1nbgPGtz2T6HVOpkOBS8",
+			"id": { "kind": "youtube#video", "videoId": "JW9KQA_sMMs" },
+			"snippet": {
+				"publishedAt": "2026-05-03T16:25:50Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【スーパーマリオギャラクシー】2026年GWスペシャル「マリオギャラクシー1+2 クリアめざして、長時間生配信」 DAY2【MOTTY】",
+				"description": "こんばんは！MOTTYです！映画『ザ・スーパーマリオギャラクシー・ムービー』公開を記念して、昨年10月にNintendo Switchで ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/JW9KQA_sMMs/default.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/JW9KQA_sMMs/mqdefault.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/JW9KQA_sMMs/hqdefault.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "none",
+				"publishTime": "2026-05-03T16:25:50Z"
+			},
+			"tags": [],
+			"liveSeriesId": "XnnpoLMSKp0S",
+			"liveStyle": "broadcast"
+		},
+		{
+			"kind": "youtube#searchResult",
+			"etag": "Z-VgUqYoQXxICwk2zSioxOMQe6o",
+			"id": { "kind": "youtube#video", "videoId": "AGBXlLPiXsE" },
+			"snippet": {
+				"publishedAt": "2026-05-04T01:57:42Z",
+				"channelId": "UCPfJisP85wKhzK9Lv3pQLRg",
+				"title": "【スーパーマリオギャラクシー1→2】2026年GWスペシャル「マリオギャラクシー1+2 クリアめざして、長時間生配信」 DAY3【MOTTY】",
+				"description": "こんばんは！MOTTYです！映画『ザ・スーパーマリオギャラクシー・ムービー』公開を記念して、昨年10月にNintendo Switchで ...",
+				"thumbnails": {
+					"default": {
+						"url": "https://i.ytimg.com/vi/AGBXlLPiXsE/default_live.jpg",
+						"width": 120,
+						"height": 90
+					},
+					"medium": {
+						"url": "https://i.ytimg.com/vi/AGBXlLPiXsE/mqdefault_live.jpg",
+						"width": 320,
+						"height": 180
+					},
+					"high": {
+						"url": "https://i.ytimg.com/vi/AGBXlLPiXsE/hqdefault_live.jpg",
+						"width": 480,
+						"height": 360
+					}
+				},
+				"channelTitle": "MOTTV - MOTTYのゲーム実況ちゃんねる！",
+				"liveBroadcastContent": "upcoming",
+				"publishTime": "2026-05-04T01:57:42Z"
+			},
+			"tags": [],
+			"liveSeriesId": "XnnpoLMSKp0S",
+			"liveStyle": "broadcast"
 		}
 	]
 }
